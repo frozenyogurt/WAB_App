@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.simi.hftl_app.hftl_main">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e10075">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HFTL App"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="3px"
+            android:text="Direktstudium"
+            android:textColor="#FFFFFF"
+            android:textSize="35px"
+            android:background="#9f4c97" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="3px"
+            android:text="duales Studium"
+            android:textSize="35px"
+            android:textColor="#FFFFFF"
+            android:background="#eda95a"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="3px"
+            android:text="Berufsbegleitendes Studium"
+            android:textSize="35px"
+            android:textColor="#FFFFFF"
+            android:background="#64b9e4"
+            />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="3px"
+            android:text="Studiengangstest"
+            android:textSize="35px"
+            android:textColor="#FFFFFF"
+            android:background="#408f9a"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
