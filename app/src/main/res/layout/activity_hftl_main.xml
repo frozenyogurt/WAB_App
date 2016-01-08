@@ -20,7 +20,8 @@
             android:text="HFTL App"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:id="@+id/toolbar" />
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
@@ -37,7 +38,8 @@
             android:text="Direktstudium"
             android:textColor="#FFFFFF"
             android:textSize="35px"
-            android:background="#9f4c97" />
+            android:background="#9f4c97"
+            android:id="@+id/button_study" />
 
         <Button
             android:layout_width="0dip"
@@ -48,7 +50,7 @@
             android:textSize="35px"
             android:textColor="#FFFFFF"
             android:background="#eda95a"
-            />
+            android:id="@+id/button_study_dual" />
 
     </LinearLayout>
 
@@ -67,7 +69,7 @@
             android:textSize="35px"
             android:textColor="#FFFFFF"
             android:background="#64b9e4"
-            />
+            android:id="@+id/button_study_job" />
 
         <Button
             android:layout_width="0dip"
@@ -78,7 +80,7 @@
             android:textSize="35px"
             android:textColor="#FFFFFF"
             android:background="#408f9a"
-            />
+            android:id="@+id/button_study_test" />
 
     </LinearLayout>
 
