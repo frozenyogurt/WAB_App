@@ -7,81 +7,103 @@
     android:background="@android:color/white"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.simi.hftl_app.hftl_main">
+    tools:context=".MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#e10075">
 
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="invisible"
+            android:src="@drawable/back_button"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="HFTL App"
-            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
             android:textColor="@android:color/white"
             android:textSize="30sp"
             android:id="@+id/toolbar" />
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dip"
-        android:orientation="horizontal"
-        android:weightSum="2" >
+        android:layout_height="match_parent"
+        android:id="@+id/activityLayout">
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3px"
-            android:text="Direktstudium"
-            android:textColor="#FFFFFF"
-            android:textSize="35px"
-            android:background="#9f4c97"
-            android:id="@+id/button_study" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:id="@+id/linearLayout">
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3px"
-            android:text="duales Studium"
-            android:textSize="35px"
-            android:textColor="#FFFFFF"
-            android:background="#eda95a"
-            android:id="@+id/button_study_dual" />
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3px"
+                android:text="Direktstudium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:background="#9f4c97"
+                android:id="@+id/button_study" />
 
-    </LinearLayout>
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3px"
+                android:text="duales Studium"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="#eda95a"
+                android:id="@+id/button_study_dual" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dip"
-        android:orientation="horizontal"
-        android:weightSum="2" >
+        </LinearLayout>
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3px"
-            android:text="Berufsbegleitendes Studium"
-            android:textSize="35px"
-            android:textColor="#FFFFFF"
-            android:background="#64b9e4"
-            android:id="@+id/button_study_job" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="right|top"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3px"
-            android:text="Studiengangstest"
-            android:textSize="35px"
-            android:textColor="#FFFFFF"
-            android:background="#408f9a"
-            android:id="@+id/button_study_test" />
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3px"
+                android:text="Berufsbegleitendes Studium"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="#64b9e4"
+                android:id="@+id/button_study_job" />
 
-    </LinearLayout>
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3px"
+                android:text="Studiengangstest"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="#408f9a"
+                android:id="@+id/button_study_test" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>
