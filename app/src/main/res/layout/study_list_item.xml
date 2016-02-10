@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:text="Informations- und Kommunikationstechnik (Bachelor)"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/item_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:text="mehr erfahren"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
