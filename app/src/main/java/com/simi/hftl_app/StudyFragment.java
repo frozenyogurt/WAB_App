@@ -3,12 +3,12 @@ package com.simi.hftl_app;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -27,11 +27,11 @@ public class StudyFragment extends Fragment
 
         ListView list = (ListView) view.findViewById(R.id.listViewStudy);
         final ArrayList<StudyListItem> items = new ArrayList<>();
-        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Bachelor)"));
-        items.add(new StudyListItem("Kommunikations- und Medieninformatik (Bachelor)"));
-        items.add(new StudyListItem("Wirtschaftsinformatik (Bachelor)"));
-        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Master)"));
-        items.add(new StudyListItem("Master Information and Communication Technology (Master - english)"));
+        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Bachelor)", StudyCourse.IKT_BACHELOR));
+        items.add(new StudyListItem("Kommunikations- und Medieninformatik (Bachelor)", StudyCourse.KMI_BACHELOR));
+        items.add(new StudyListItem("Wirtschaftsinformatik (Bachelor)", StudyCourse.WI_BACHELOR));
+        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Master)", StudyCourse.IKT_MASTER));
+        items.add(new StudyListItem("Master Information and Communication Technology (Master - english)", StudyCourse.IKT_MASTER_ENGLISH));
         StudyListAdapter adapter = new StudyListAdapter((MainActivity) getActivity(), R.layout.study_list_item, items);
         list.setAdapter(adapter);
 
@@ -40,7 +40,12 @@ public class StudyFragment extends Fragment
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
             {
-                Toast.makeText(getActivity().getApplicationContext(), items.get(position).getName(), Toast.LENGTH_LONG).show();
+                ((MainActivity)getActivity()).setClickedElement(items.get(position));
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+                ft.add(R.id.activityLayout, new StudyInfoFragment());
+                ft.addToBackStack(StudyInfoFragment.class.getSimpleName());
+                ft.commit();
             }
         });
 

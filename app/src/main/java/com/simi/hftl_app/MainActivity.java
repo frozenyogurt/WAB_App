@@ -2,8 +2,6 @@ package com.simi.hftl_app;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,10 +11,14 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+//TODO Implementierung des Testfragments
+//TODO Erstellen eines Menüs
+//TODO Links auf die Website einbinden
+//TODO Inhalte der Studiengänge eintragen
 
-    ImageView backButton;
-    Fragment fragmentToClose = null;
+    private ImageView backButton;
     private boolean isClose;
+    private StudyListItem clickedElement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +34,7 @@ public class MainActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (fragmentToClose != null) {
-                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                    ft.remove(fragmentToClose);
-                    ft.commit();
-                }
-                backButton.setVisibility(View.INVISIBLE);
+                onBackPressed();
             }
         });
 
@@ -52,8 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                fragmentToClose = new StudyFragment();
-                ft.replace(R.id.activityLayout, fragmentToClose);
+                ft.replace(R.id.activityLayout, new StudyFragment());
                 ft.addToBackStack(StudyFragment.class.getSimpleName());
                 ft.commit();
                 backButton.setVisibility(View.VISIBLE);
@@ -67,8 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                fragmentToClose = new DualStudyFragment();
-                ft.replace(R.id.activityLayout, fragmentToClose);
+                ft.replace(R.id.activityLayout, new DualStudyFragment());
                 ft.addToBackStack(DualStudyFragment.class.getSimpleName());
                 ft.commit();
                 backButton.setVisibility(View.VISIBLE);
@@ -82,8 +76,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                fragmentToClose = new JobStudyFragment();
-                ft.replace(R.id.activityLayout, fragmentToClose);
+                ft.replace(R.id.activityLayout, new JobStudyFragment());
                 ft.addToBackStack(JobStudyFragment.class.getSimpleName());
                 ft.commit();
                 backButton.setVisibility(View.VISIBLE);
@@ -97,8 +90,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                fragmentToClose = new TestStudyFragment();
-                ft.replace(R.id.activityLayout, fragmentToClose);
+                ft.replace(R.id.activityLayout, new TestStudyFragment());
                 ft.addToBackStack(TestStudyFragment.class.getSimpleName());
                 ft.commit();
                 backButton.setVisibility(View.VISIBLE);
@@ -110,16 +102,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed()
     {
-        backButton.setVisibility(View.INVISIBLE);
-        boolean isPopBackStack = true;
         if (getSupportFragmentManager().getBackStackEntryCount() == 0)
         {
+            backButton.setVisibility(View.INVISIBLE);
             closeActivity();
-            isPopBackStack = false;
         }
-        if (isPopBackStack)
+        else if (getSupportFragmentManager().getBackStackEntryCount() == 1)
         {
-            getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            backButton.setVisibility(View.INVISIBLE);
+            super.onBackPressed();
+        }
+        else
+        {
+            super.onBackPressed();
         }
     }
 
@@ -134,5 +129,13 @@ public class MainActivity extends AppCompatActivity {
         {
             MainActivity.this.finish();
         }
+    }
+
+    public StudyListItem getClickedElement() {
+        return clickedElement;
+    }
+
+    public void setClickedElement(StudyListItem clickedElement) {
+        this.clickedElement = clickedElement;
     }
 }
