@@ -1,4 +1,4 @@
-package com.simi.hftl_app;
+package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,28 +10,34 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.StudyCourse;
+import com.simi.hftl_app.R;
+import com.simi.hftl_app.Listen.StudyListAdapter;
+import com.simi.hftl_app.Listen.StudyListItem;
+
 import java.util.ArrayList;
 
 /**
  * Created by student on 09.02.2016.
  */
-public class JobStudyFragment extends Fragment
+public class StudyFragment extends Fragment
 {
-    public JobStudyFragment(){}
+    public StudyFragment(){}
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View view = inflater.inflate(R.layout.job_study_fragment,container,false);
+        View view = inflater.inflate(R.layout.study_fragment,container,false);
 
-        ListView list = (ListView) view.findViewById(R.id.listViewStudyJob);
+        ListView list = (ListView) view.findViewById(R.id.listViewStudy);
         final ArrayList<StudyListItem> items = new ArrayList<>();
-        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Bachelor)", StudyCourse.JOB_IKT_BACHELOR));
-        items.add(new StudyListItem("Kommunikations- und Medieninformatik (Bachelor)", StudyCourse.JOB_KMI_BACHELOR));
-        items.add(new StudyListItem("Wirtschaftsinformatik (Bachelor)", StudyCourse.JOB_WI_BACHELOR));
-        items.add(new StudyListItem("Informations - und Kommunikationstechnik (Master)", StudyCourse.JOB_IKT_MASTER));
-        items.add(new StudyListItem("Wirtschaftsinformatik (Master)", StudyCourse.JOB_WI_MASTER));
+        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Bachelor)", StudyCourse.IKT_BACHELOR));
+        items.add(new StudyListItem("Kommunikations- und Medieninformatik (Bachelor)", StudyCourse.KMI_BACHELOR));
+        items.add(new StudyListItem("Wirtschaftsinformatik (Bachelor)", StudyCourse.WI_BACHELOR));
+        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Master)", StudyCourse.IKT_MASTER));
+        items.add(new StudyListItem("Master Information and Communication Technology (Master - english)", StudyCourse.IKT_MASTER_ENGLISH));
         StudyListAdapter adapter = new StudyListAdapter((MainActivity) getActivity(), R.layout.study_list_item, items);
         list.setAdapter(adapter);
 

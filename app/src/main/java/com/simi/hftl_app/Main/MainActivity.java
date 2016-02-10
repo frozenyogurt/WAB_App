@@ -1,4 +1,4 @@
-package com.simi.hftl_app;
+package com.simi.hftl_app.Main;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -10,14 +10,24 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.simi.hftl_app.Fragmente.DualStudyFragment;
+import com.simi.hftl_app.Fragmente.JobStudyFragment;
+import com.simi.hftl_app.Fragmente.MenuFragment;
+import com.simi.hftl_app.Fragmente.StudyFragment;
+import com.simi.hftl_app.Fragmente.TestStudyFragment;
+import com.simi.hftl_app.Listen.StudyListItem;
+import com.simi.hftl_app.R;
+
 public class MainActivity extends AppCompatActivity {
 //TODO Implementierung des Testfragments
-//TODO Erstellen eines Menüs
+//TODO Funktionen der Optionen im Menü implemetieren
 //TODO Links auf die Website einbinden
 //TODO Inhalte der Studiengänge eintragen
+//TODO Feste Strings(auch andere Werte) in xml File auslagern
 
     private ImageView backButton;
     private boolean isClose;
+    private boolean isMenuTapped = false;
     private StudyListItem clickedElement;
 
     @Override
@@ -35,6 +45,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+            }
+        });
+
+        ImageView menuButton = (ImageView) findViewById(R.id.menu_icon);
+        menuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                if (isMenuTapped)
+                {
+                    onBackPressed();
+                    isMenuTapped = true;
+                }
+                else
+                {
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+                    ft.add(R.id.activityLayout, new MenuFragment());
+                    ft.addToBackStack(MenuFragment.class.getSimpleName());
+                    ft.commit();
+                    backButton.setVisibility(View.VISIBLE);
+                    isClose = false;
+                }
+                isMenuTapped = !isMenuTapped;
             }
         });
 
@@ -102,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed()
     {
+        isMenuTapped = false;
         if (getSupportFragmentManager().getBackStackEntryCount() == 0)
         {
             backButton.setVisibility(View.INVISIBLE);

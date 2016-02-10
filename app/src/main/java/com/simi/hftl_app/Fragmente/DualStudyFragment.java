@@ -1,4 +1,4 @@
-package com.simi.hftl_app;
+package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.R;
+import com.simi.hftl_app.Model.StudyCourse;
+import com.simi.hftl_app.Listen.StudyListAdapter;
+import com.simi.hftl_app.Listen.StudyListItem;
 
 import java.util.ArrayList;
 

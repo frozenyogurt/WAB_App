@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="dark_grey">#999999</color>
+    <color name="transparent_grey">#aaaaaaaa</color>
     <color name="statusbar_color">#CA0069</color>
     <color name="study_color">#9f4c97</color>
     <color name="study_dual_color">#eda95a</color>

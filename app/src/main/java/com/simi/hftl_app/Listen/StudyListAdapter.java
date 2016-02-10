@@ -1,10 +1,13 @@
-package com.simi.hftl_app;
+package com.simi.hftl_app.Listen;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
 

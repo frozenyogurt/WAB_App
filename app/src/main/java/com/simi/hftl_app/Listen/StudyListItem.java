@@ -1,4 +1,9 @@
-package com.simi.hftl_app;
+package com.simi.hftl_app.Listen;
+
+import com.simi.hftl_app.Model.Category;
+import com.simi.hftl_app.Model.Degree;
+import com.simi.hftl_app.Model.StudyCourse;
+import com.simi.hftl_app.Model.StudyType;
 
 /**
  * Created by student on 10.02.2016.

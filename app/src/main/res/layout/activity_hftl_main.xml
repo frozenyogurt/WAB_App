@@ -7,30 +7,50 @@
     android:background="@android:color/white"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".Main.MainActivity">
 
     <android.support.v7.widget.Toolbar
+        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#e10075">
 
-        <ImageView
-            android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:visibility="invisible"
-            android:src="@drawable/back_button"/>
-
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="HFTL App"
-            android:gravity="center"
-            android:layout_marginRight="50dp"
-            android:textColor="@android:color/white"
-            android:textSize="30sp"
-            android:id="@+id/toolbar" />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_button"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HFTL App"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:id="@+id/toolbar"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:src="@drawable/menu"
+                android:layout_margin="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/toolbar"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
     </android.support.v7.widget.Toolbar>
 
     <RelativeLayout
