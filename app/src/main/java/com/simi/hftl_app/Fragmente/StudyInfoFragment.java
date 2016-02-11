@@ -59,7 +59,7 @@ public class StudyInfoFragment extends Fragment
 
         if (element.getCourse().equals(StudyCourse.ICT_MASTER)) //???????????????????????????????????
         {
-            beginning.setText("ICT Master beginning Text");
+            beginning.setText("ICTASDASDASDASDASD Master beginning Text");
             perspectives.setText("ICT Master perspective Text.");
             curriculumText.setText("ICT Master curriculum Text.");
         }
