@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="5dp"
     android:clickable="true"
     android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25sp"
@@ -16,7 +16,7 @@
         android:id="@+id/infoStudyTitle" />
 
     <LinearLayout
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:background="@android:color/black"
         android:id="@+id/TitleUndeline"
         android:orientation="horizontal"
@@ -24,6 +24,7 @@
         android:layout_height="2dp"/>
 
     <ScrollView
+        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
