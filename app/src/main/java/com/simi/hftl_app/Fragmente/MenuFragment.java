@@ -1,8 +1,11 @@
 package com.simi.hftl_app.Fragmente;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,6 +49,18 @@ public class MenuFragment extends Fragment
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (items.get(position).getOption().equals(Option.EXIT)) {
                     getActivity().finish();
+                } else if (items.get(position).getOption().equals(Option.WEBSITE)) {
+                    Intent intent = new Intent();
+                    intent.setAction(Intent.ACTION_VIEW);
+                    intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                    intent.setData(Uri.parse("http://www.hftl.de"));
+                    startActivity(intent);
+                } else if (items.get(position).getOption().equals(Option.ABOUTUS)) {
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                    ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+                    ft.replace(R.id.activityLayout, new AboutUsFragment());
+                    ft.addToBackStack(AboutUsFragment.class.getSimpleName());
+                    ft.commit();
                 } else {
                     Toast.makeText(getActivity().getApplicationContext(), items.get(position).getName(), Toast.LENGTH_SHORT).show();
                 }

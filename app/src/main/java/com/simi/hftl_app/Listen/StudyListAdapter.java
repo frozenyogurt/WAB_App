@@ -48,24 +48,4 @@ public class StudyListAdapter extends ArrayAdapter <StudyListItem>
     public StudyListItem getItem(int position) {
         return items.get(position);
     }
-
-    @Override
-    public void remove(StudyListItem object)
-    {
-        items.remove(object);
-        notifyDataSetChanged();
-    }
-
-    @Override
-    public void add(StudyListItem object)
-    {
-        items.add(object);
-        notifyDataSetChanged();
-    }
-
-    @Override
-    public int getCount() {
-        return items == null ? 0 : items.size();
-    }
-
 }
