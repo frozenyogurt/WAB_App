@@ -58,7 +58,7 @@ public class MenuFragment extends Fragment
                 } else if (items.get(position).getOption().equals(Option.ABOUTUS)) {
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                     ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                    ft.replace(R.id.activityLayout, new AboutUsFragment());
+                    ft.add(R.id.activityLayout, new AboutUsFragment());
                     ft.addToBackStack(AboutUsFragment.class.getSimpleName());
                     ft.commit();
                 } else {
