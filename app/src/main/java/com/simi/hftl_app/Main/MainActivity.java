@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
 //TODO Funktionen der Optionen im Menü implemetieren
 //TODO Links auf die Website einbinden
 //TODO Inhalte der Studiengänge eintragen
-//TODO Navigation zur Hichschule anbieten
+//TODO Navigation zur Hochschule anbieten
+//TODO HFTL Info Fragment
 //TODO Weiterbildung einbinden!?
 //TODO 2 Designs anbieten (vielleicht nur die Hauptseite oder die Farben der Boxen verändern lassen)
 //TODO Feste Strings(auch andere Werte) in xml File auslagern
