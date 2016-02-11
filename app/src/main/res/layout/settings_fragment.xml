@@ -2,7 +2,7 @@
     android:orientation="vertical"
     android:background="@android:color/white"
     android:clickable="true"
-    android:layout_margin="5dp"
+    android:padding="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -20,7 +20,9 @@
         android:layout_height="2dp"/>
 
     <CheckBox
+        android:id="@+id/language_german"
         android:clickable="true"
+        android:checked="true"
         android:textSize="20sp"
         android:layout_margin="10dp"
         android:text="Deutsch"
@@ -28,6 +30,7 @@
         android:layout_height="wrap_content" />
 
     <CheckBox
+        android:id="@+id/language_english"
         android:clickable="true"
         android:textSize="20sp"
         android:layout_margin="10dp"
@@ -49,8 +52,9 @@
         android:layout_height="2dp"/>
 
     <EditText
+        android:id="@+id/hex_value"
         android:layout_margin="10dp"
-        android:hint="Gib einen Hex Wert ein!"
+        android:hint="hexadezimalen Wert eingeben"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -69,17 +73,23 @@
         android:layout_height="match_parent">
 
         <Button
+            android:id="@+id/button_reset"
+            android:textColor="@android:color/white"
             android:layout_margin="5dp"
             android:layout_gravity="bottom"
-            android:text="Speichern"
+            android:text="Zurücksetzen"
+            android:background="@drawable/round_button_grey"
             android:layout_weight="1"
             android:layout_width="0dip"
             android:layout_height="wrap_content" />
 
         <Button
+            android:id="@+id/button_save"
+            android:textColor="@android:color/white"
             android:layout_margin="5dp"
             android:layout_gravity="bottom"
-            android:text="Zurücksetzen"
+            android:background="@drawable/round_button_magenta"
+            android:text="Speichern"
             android:layout_weight="1"
             android:layout_width="0dip"
             android:layout_height="wrap_content" />

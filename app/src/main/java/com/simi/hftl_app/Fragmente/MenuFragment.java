@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.simi.hftl_app.Listen.OptionListAdapter;
 import com.simi.hftl_app.Listen.OptionListItem;
@@ -62,7 +61,11 @@ public class MenuFragment extends Fragment
                     ft.addToBackStack(AboutUsFragment.class.getSimpleName());
                     ft.commit();
                 } else {
-                    Toast.makeText(getActivity().getApplicationContext(), items.get(position).getName(), Toast.LENGTH_SHORT).show();
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                    ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+                    ft.add(R.id.activityLayout, new SettingsFragment());
+                    ft.addToBackStack(SettingsFragment.class.getSimpleName());
+                    ft.commit();
                 }
             }
         });
