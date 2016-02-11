@@ -40,13 +40,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
                 android:layout_marginTop="5dp"
-                android:background="@color/statusbar_color"/>
+                android:background="@color/magenta"/>
 
             <ListView
                 android:id="@+id/options_list"
                 android:padding="5dp"
                 android:dividerHeight="1dp"
-                android:divider="@color/statusbar_color"
+                android:divider="@color/magenta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/titleOptions"

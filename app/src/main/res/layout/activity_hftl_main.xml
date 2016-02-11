@@ -13,14 +13,14 @@
         android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#e10075">
+        android:background="@color/magenta">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_margin="10dp"
+                android:padding="10dp"
                 android:id="@+id/back_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -30,11 +30,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="HFTL App"
+                android:text="HFTL"
                 android:gravity="center"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbarTitle"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
@@ -42,10 +42,10 @@
             <ImageView
                 android:id="@+id/menu_icon"
                 android:src="@drawable/menu"
-                android:layout_margin="10dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignTop="@+id/toolbar"
+                android:padding="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/toolbarTitle"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
@@ -53,76 +53,148 @@
 
     </android.support.v7.widget.Toolbar>
 
+
     <RelativeLayout
+        android:id="@+id/activityLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/activityLayout">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="200dip"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_gravity="center"
-            android:id="@+id/linearLayout">
+            android:layout_height="wrap_content">
 
-            <Button
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="3px"
-                android:text="Direktstudium"
-                android:textColor="#FFFFFF"
-                android:textSize="17sp"
-                android:background="#9f4c97"
-                android:id="@+id/button_study" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <Button
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="3px"
-                android:text="duales Studium"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:background="#eda95a"
-                android:id="@+id/button_study_dual" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="center"
+                    android:id="@+id/linearLayout">
 
-        </LinearLayout>
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Direktstudium"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:background="@color/study_color"
+                        android:id="@+id/button_study" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dip"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_gravity="right|top"
-            android:layout_below="@+id/linearLayout"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="duales Studium"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/study_dual_color"
+                        android:id="@+id/button_study_dual" />
 
-            <Button
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="3px"
-                android:text="Berufsbegleitendes Studium"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:background="#64b9e4"
-                android:id="@+id/button_study_job" />
+                </LinearLayout>
 
-            <Button
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="3px"
-                android:text="Studiengangstest"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:background="#408f9a"
-                android:id="@+id/button_study_test" />
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="right|top"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
 
-        </LinearLayout>
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Berufsbegleitendes Studium"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/study_job_color"
+                        android:id="@+id/button_study_job" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Weiterbildung"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/education_color"
+                        android:id="@+id/button_education" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="right|top"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Auf zur Hochschule!"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/maps_color"
+                        android:id="@+id/button_maps" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Über die HFTL"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_hftl_info" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right|top"
+                    android:layout_below="@+id/linearLayout3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:text="Studiengangstest"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/study_test_color"
+                        android:id="@+id/button_study_test" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
 
     </RelativeLayout>
 

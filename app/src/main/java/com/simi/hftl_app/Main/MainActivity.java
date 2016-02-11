@@ -1,5 +1,7 @@
 package com.simi.hftl_app.Main;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
@@ -8,9 +10,12 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.simi.hftl_app.Fragmente.DualStudyFragment;
+import com.simi.hftl_app.Fragmente.EducationFragment;
+import com.simi.hftl_app.Fragmente.HFTLInfoFragment;
 import com.simi.hftl_app.Fragmente.JobStudyFragment;
 import com.simi.hftl_app.Fragmente.MenuFragment;
 import com.simi.hftl_app.Fragmente.StudyFragment;
@@ -18,12 +23,13 @@ import com.simi.hftl_app.Fragmente.TestStudyFragment;
 import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.R;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 //TODO Implementierung des Testfragments
 //TODO Funktionen der Optionen im Menü implemetieren
 //TODO Links auf die Website einbinden
 //TODO Inhalte der Studiengänge eintragen
-//TODO Navigation zur Hochschule anbieten
 //TODO HFTL Info Fragment
 //TODO Weiterbildung einbinden!?
 //TODO 2 Designs anbieten (vielleicht nur die Hauptseite oder die Farben der Boxen verändern lassen)
@@ -76,10 +82,55 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final Button study_button = (Button) findViewById(R.id.button_study);
+        Button study_button = (Button) findViewById(R.id.button_study);
         Button study__dual_button = (Button) findViewById(R.id.button_study_dual);
         Button study_job_button = (Button) findViewById(R.id.button_study_job);
         Button study_test_button = (Button) findViewById(R.id.button_study_test);
+        Button education_button = (Button) findViewById(R.id.button_education);
+        Button maps_button = (Button) findViewById(R.id.button_maps);
+        Button hftl_button= (Button) findViewById(R.id.button_hftl_info);
+
+        education_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+                ft.replace(R.id.activityLayout, new EducationFragment());
+                ft.addToBackStack(EducationFragment.class.getSimpleName());
+                ft.commit();
+                setToolbarTitle("Weiterbildung");
+                backButton.setVisibility(View.VISIBLE);
+                isClose = false;
+            }
+        });
+
+        hftl_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+                ft.replace(R.id.activityLayout, new HFTLInfoFragment());
+                ft.addToBackStack(HFTLInfoFragment.class.getSimpleName());
+                ft.commit();
+                setToolbarTitle("HFTL Übersicht");
+                backButton.setVisibility(View.VISIBLE);
+                isClose = false;
+            }
+        });
+
+        maps_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String uri = String.format(Locale.ENGLISH,
+                                           "http://maps.google.com/maps?daddr=%f,%f (%s)",
+                                           51.312870,
+                                           12.374920,
+                                           "Hochschule für Technik Leipzig");
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
+            }
+        });
 
         study_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,11 +140,11 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new StudyFragment());
                 ft.addToBackStack(StudyFragment.class.getSimpleName());
                 ft.commit();
+                setToolbarTitle("Direktstudium");
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
         });
-
 
         study__dual_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,11 +154,11 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new DualStudyFragment());
                 ft.addToBackStack(DualStudyFragment.class.getSimpleName());
                 ft.commit();
+                setToolbarTitle("Dualstudium");
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
         });
-
 
         study_job_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,11 +168,11 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new JobStudyFragment());
                 ft.addToBackStack(JobStudyFragment.class.getSimpleName());
                 ft.commit();
+                setToolbarTitle("Berufsbegleitend");
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
         });
-
 
         study_test_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new TestStudyFragment());
                 ft.addToBackStack(TestStudyFragment.class.getSimpleName());
                 ft.commit();
+                setToolbarTitle("Studientest");
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
@@ -143,11 +195,13 @@ public class MainActivity extends AppCompatActivity {
         isMenuTapped = false;
         if (getSupportFragmentManager().getBackStackEntryCount() == 0)
         {
+            setToolbarTitle("HFTL");
             backButton.setVisibility(View.INVISIBLE);
             closeActivity();
         }
         else if (getSupportFragmentManager().getBackStackEntryCount() == 1)
         {
+            setToolbarTitle("HFTL");
             backButton.setVisibility(View.INVISIBLE);
             super.onBackPressed();
         }
@@ -176,5 +230,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void setClickedElement(StudyListItem clickedElement) {
         this.clickedElement = clickedElement;
+    }
+
+    public void setToolbarTitle(String title)
+    {
+        TextView toolbarTitle = (TextView) this.findViewById(R.id.toolbarTitle);
+        toolbarTitle.setText(title);
     }
 }

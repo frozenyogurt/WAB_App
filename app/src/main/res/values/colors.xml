@@ -3,8 +3,12 @@
     <color name="dark_grey">#999999</color>
     <color name="transparent_grey">#aaaaaaaa</color>
     <color name="statusbar_color">#CA0069</color>
+    <color name="magenta">#e10075</color>
     <color name="study_color">#9f4c97</color>
     <color name="study_dual_color">#eda95a</color>
     <color name="study_job_color">#64b9e4</color>
-    <color name="study_test_color">#408f9a</color>
+    <color name="education_color">#408f9a</color>
+    <color name="study_test_color">#1aad1b</color>
+    <color name="maps_color">#922e2e</color>
+    <color name="hftl_info_color">#f0e601</color>
 </resources>

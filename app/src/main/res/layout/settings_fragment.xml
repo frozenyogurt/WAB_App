@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sprache"
+        android:layout_margin="5dp"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:background="@color/magenta"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <CheckBox
+        android:clickable="true"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:text="Deutsch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:clickable="true"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:text="Englisch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Design der Boxen"
+        android:layout_margin="5dp"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:background="@color/magenta"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:hint="Gib einen Hex Wert ein!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Der hier eingegebene Wert wird auf alle Boxen angewandt."
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom"
+            android:text="Speichern"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom"
+            android:text="Zurücksetzen"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

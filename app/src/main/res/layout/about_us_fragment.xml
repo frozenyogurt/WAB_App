@@ -17,13 +17,13 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:background="@color/statusbar_color"
+        android:background="@color/magenta"
         android:layout_width="match_parent"
         android:layout_height="3dp"/>
 
     <ListView
         android:id="@+id/about_us_list"
-        android:divider="@color/statusbar_color"
+        android:divider="@color/magenta"
         android:dividerHeight="1dp"
         android:layout_margin="5dp"
         android:layout_width="match_parent"
