@@ -20,6 +20,7 @@ import com.simi.hftl_app.Fragmente.JobStudyFragment;
 import com.simi.hftl_app.Fragmente.MenuFragment;
 import com.simi.hftl_app.Fragmente.StudyFragment;
 import com.simi.hftl_app.Fragmente.TestStudyFragment;
+import com.simi.hftl_app.Listen.EducationListItem;
 import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.R;
 
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean isClose;
     private boolean isMenuTapped = false;
     private StudyListItem clickedElement;
+    private EducationListItem clickedEductaion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -230,6 +232,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void setClickedElement(StudyListItem clickedElement) {
         this.clickedElement = clickedElement;
+    }
+
+    public EducationListItem getClickedEductaion() {
+        return clickedEductaion;
+    }
+
+    public void setClickedEductaion(EducationListItem clickedElement) {
+        this.clickedEductaion = clickedElement;
     }
 
     public void setToolbarTitle(String title)

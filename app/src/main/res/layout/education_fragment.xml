@@ -6,11 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Weiterbildung"
-        android:textSize="40sp"
-        android:gravity="center"/>
+        android:id="@+id/listViewEducation"
+        android:dividerHeight="2dp"
+        android:padding="10dp"
+        android:divider="@color/education_color"/>
 
 </LinearLayout>
