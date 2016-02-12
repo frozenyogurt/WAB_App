@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.R;
 
 /**
@@ -16,7 +17,30 @@ import com.simi.hftl_app.R;
  */
 public class HFTLInfoFragment extends Fragment
 {
+    private Button news;
+    private Button employee;
+    private Button contact;
+    private Button faq;
+    private Button imprint;
+    private Button services;
+    private Button whyHFTL;
+    private Button portrait;
+
     public HFTLInfoFragment(){}
+
+    @Override
+    public void onResume()
+    {
+        if (((MainActivity) getActivity()).convertColorString(true) != 0)
+        {
+            setColors();
+        }
+        else
+        {
+            setDefaultColor();
+        }
+        super.onResume();
+    }
 
     @Nullable
     @Override
@@ -24,14 +48,14 @@ public class HFTLInfoFragment extends Fragment
     {
         View view = inflater.inflate(R.layout.hftl_info_fragment,container,false);
 
-        Button portrait = (Button) view.findViewById(R.id.button_portrait);
-        Button employee = (Button) view.findViewById(R.id.button_employee);
-        Button contact = (Button) view.findViewById(R.id.button_contact);
-        Button faq = (Button) view.findViewById(R.id.button_faq);
-        Button imprint = (Button) view.findViewById(R.id.button_imprint);
-        Button services = (Button) view.findViewById(R.id.button_services);
-        Button whyHFTL = (Button) view.findViewById(R.id.button_why_hftl);
-        Button news = (Button) view.findViewById(R.id.button_news);
+        portrait = (Button) view.findViewById(R.id.button_portrait);
+        employee = (Button) view.findViewById(R.id.button_employee);
+        contact = (Button) view.findViewById(R.id.button_contact);
+        faq = (Button) view.findViewById(R.id.button_faq);
+        imprint = (Button) view.findViewById(R.id.button_imprint);
+        services = (Button) view.findViewById(R.id.button_services);
+        whyHFTL = (Button) view.findViewById(R.id.button_why_hftl);
+        news = (Button) view.findViewById(R.id.button_news);
 
         portrait.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +138,37 @@ public class HFTLInfoFragment extends Fragment
             }
         });
 
+        if (((MainActivity) getActivity()).convertColorString(true) != 0)
+        {
+            setColors();
+        }
+
         return view;
+    }
+
+    public void setDefaultColor()
+    {
+        MainActivity activity = ((MainActivity) getActivity());
+        news.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        faq.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        imprint.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        portrait.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        whyHFTL.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        employee.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        contact.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        services.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+    }
+
+    public void setColors()
+    {
+        MainActivity activity = ((MainActivity) getActivity());
+        news.setBackgroundColor(activity.convertColorString(true));
+        faq.setBackgroundColor(activity.convertColorString(true));
+        imprint.setBackgroundColor(activity.convertColorString(true));
+        portrait.setBackgroundColor(activity.convertColorString(true));
+        whyHFTL.setBackgroundColor(activity.convertColorString(true));
+        employee.setBackgroundColor(activity.convertColorString(true));
+        contact.setBackgroundColor(activity.convertColorString(true));
+        services.setBackgroundColor(activity.convertColorString(true));
     }
 }

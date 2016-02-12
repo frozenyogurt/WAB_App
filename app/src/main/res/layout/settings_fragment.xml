@@ -61,7 +61,7 @@
     <TextView
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
-        android:text="Der hier eingegebene Wert wird auf alle Boxen angewandt."
+        android:text="Der hier eingegebene Wert wird auf alle Boxen angewandt und muss das Format #RRGGBB oder #AARRGGBB haben."
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

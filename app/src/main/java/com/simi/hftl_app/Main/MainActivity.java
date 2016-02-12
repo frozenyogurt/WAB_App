@@ -1,9 +1,11 @@
 package com.simi.hftl_app.Main;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -41,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
     private boolean isMenuTapped = false;
     private StudyListItem clickedElement;
     private EducationListItem clickedEductaion;
+    private String color = null;
+    private Button study_button;
+    private Button study_dual_button;
+    private Button study_job_button;
+    private Button study_test_button;
+    private Button education_button;
+    private Button maps_button;
+    private Button hftl_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,13 +94,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button study_button = (Button) findViewById(R.id.button_study);
-        Button study__dual_button = (Button) findViewById(R.id.button_study_dual);
-        Button study_job_button = (Button) findViewById(R.id.button_study_job);
-        Button study_test_button = (Button) findViewById(R.id.button_study_test);
-        Button education_button = (Button) findViewById(R.id.button_education);
-        Button maps_button = (Button) findViewById(R.id.button_maps);
-        Button hftl_button= (Button) findViewById(R.id.button_hftl_info);
+        study_button = (Button) findViewById(R.id.button_study);
+        study_dual_button = (Button) findViewById(R.id.button_study_dual);
+        study_job_button = (Button) findViewById(R.id.button_study_job);
+        study_test_button = (Button) findViewById(R.id.button_study_test);
+        education_button = (Button) findViewById(R.id.button_education);
+        maps_button = (Button) findViewById(R.id.button_maps);
+        hftl_button = (Button) findViewById(R.id.button_hftl_info);
 
         education_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.replace(R.id.activityLayout, new HFTLInfoFragment());
+                ft.replace(R.id.activityLayout, new HFTLInfoFragment(), "HFTLInfoFragment");
                 ft.addToBackStack(HFTLInfoFragment.class.getSimpleName());
                 ft.commit();
                 setToolbarTitle("HFTL Übersicht");
@@ -148,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        study__dual_button.setOnClickListener(new View.OnClickListener() {
+        study_dual_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
@@ -246,5 +256,58 @@ public class MainActivity extends AppCompatActivity {
     {
         TextView toolbarTitle = (TextView) this.findViewById(R.id.toolbarTitle);
         toolbarTitle.setText(title);
+    }
+
+    public int convertColorString(boolean isFragment)
+    {
+        int color = 0;
+        if(getColor() != null)
+        {
+            try{
+                color = Color.parseColor(getColor());
+                study_button.setBackgroundColor(color);
+                hftl_button.setBackgroundColor(color);
+                education_button.setBackgroundColor(color);
+                maps_button.setBackgroundColor(color);
+                study_dual_button.setBackgroundColor(color);
+                study_job_button.setBackgroundColor(color);
+                study_test_button.setBackgroundColor(color);
+                Fragment fragment = getSupportFragmentManager().findFragmentByTag("HFTLInfoFragment");
+                if (fragment != null && !isFragment)
+                {
+                    fragment.onResume();
+                }
+                return color;
+            }
+            catch (Exception e)
+            {
+                return 0;
+            }
+        }
+        return 0;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color)
+    {
+        this.color = color;
+        if (color == null)
+        {
+            study_button.setBackgroundColor(getResources().getColor(R.color.study_color));
+            hftl_button.setBackgroundColor(getResources().getColor(R.color.hftl_info_color));
+            education_button.setBackgroundColor(getResources().getColor(R.color.education_color));
+            maps_button.setBackgroundColor(getResources().getColor(R.color.maps_color));
+            study_dual_button.setBackgroundColor(getResources().getColor(R.color.study_dual_color));
+            study_job_button.setBackgroundColor(getResources().getColor(R.color.study_job_color));
+            study_test_button.setBackgroundColor(getResources().getColor(R.color.study_test_color));
+        }
+        Fragment fragment = getSupportFragmentManager().findFragmentByTag("HFTLInfoFragment");
+        if (fragment != null)
+        {
+            fragment.onResume();
+        }
     }
 }

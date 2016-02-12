@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.R;
 
 /**
@@ -35,7 +36,16 @@ public class SettingsFragment extends Fragment
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity().getApplicationContext(), "Der Wert " + hex_value.getText().toString() + " wurde erfolgreich gespeichert.", Toast.LENGTH_SHORT).show();
+                MainActivity activity = ((MainActivity)getActivity());
+                activity.setColor(hex_value.getText().toString());
+                if (activity.convertColorString(false) != 0)
+                {
+                    Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert " + hex_value.getText().toString() + " wurde erfolgreich gespeichert.", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert war ungültig!", Toast.LENGTH_LONG).show();
+                }
                 hex_value.setText("");
             }
         });
@@ -43,9 +53,11 @@ public class SettingsFragment extends Fragment
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((MainActivity)getActivity()).setColor(null);
                 german.setChecked(true);
                 english.setChecked(false);
                 hex_value.setText("");
+                Toast.makeText(getActivity().getApplicationContext(), "Alle Werte wurden erfolgreich zurückgesetzt.", Toast.LENGTH_LONG).show();
             }
         });
 
