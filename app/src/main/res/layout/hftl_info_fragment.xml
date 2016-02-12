@@ -6,11 +6,156 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="HFTL Übersicht"
-        android:textSize="40sp"
-        android:gravity="center"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="center"
+                    android:id="@+id/linearLayout">
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Warum HFTL?"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_why_hftl" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Portrait"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_portrait" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="right|top"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Aktuelles"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_news" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Services"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_services" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="right|top"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Mitarbeiter"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_employee" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="FAQ"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_faq" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="right|top"
+                    android:layout_below="@+id/linearLayout3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Kontakt"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_contact" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:text="Impressum"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/hftl_info_color"
+                        android:id="@+id/button_imprint" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
 
 </LinearLayout>
