@@ -10,9 +10,11 @@ public class PersonListItem
     private String name;
     private Person person;
     private String description;
+    private String mail;
 
-    public PersonListItem(String name, Person person, String description)
+    public PersonListItem(String name, Person person, String description, String mail)
     {
+        this.mail = mail;
         this.name = name;
         this.description = description;
         this.person = person;
@@ -40,5 +42,13 @@ public class PersonListItem
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 }

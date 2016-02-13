@@ -23,6 +23,7 @@ import com.simi.hftl_app.Fragmente.MenuFragment;
 import com.simi.hftl_app.Fragmente.StudyFragment;
 import com.simi.hftl_app.Fragmente.TestStudyFragment;
 import com.simi.hftl_app.Listen.EducationListItem;
+import com.simi.hftl_app.Listen.PersonListItem;
 import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.R;
 
@@ -310,4 +311,25 @@ public class MainActivity extends AppCompatActivity {
             fragment.onResume();
         }
     }
+
+    public void sendMail(PersonListItem person)
+    {
+        final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+
+        emailIntent.setType("plain/text");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{person.getMail()});
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, new String[] {"Frage"});
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Hallo " + person.getName() + ",");
+
+        startActivity(Intent.createChooser(emailIntent, "Mail senden..."));
+    }
+
+    /*public void openImage(int id)
+    {
+        Uri path = Uri.parse("" + id);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setDataAndType(path, "image/png");
+        startActivity(intent);
+    }**/
 }

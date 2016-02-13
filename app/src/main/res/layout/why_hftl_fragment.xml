@@ -3,14 +3,31 @@
     android:orientation="vertical"
     android:background="@android:color/white"
     android:clickable="true"
+    android:padding="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:text="Warum HfTL?"
+        android:gravity="center"
+        android:textSize="25sp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Warum HFTL?"
-        android:textSize="40sp"
-        android:gravity="center"/>
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/hftl_info_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/why_hftl_text"
+        android:textSize="20sp"
+        android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

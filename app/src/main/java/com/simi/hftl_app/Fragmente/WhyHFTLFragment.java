@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.simi.hftl_app.R;
 
@@ -21,6 +22,10 @@ public class WhyHFTLFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.why_hftl_fragment,container,false);
+
+        TextView text = (TextView) view.findViewById(R.id.why_hftl_text);
+        text.setText("Warum HFTL Text");
+
         return view;
     }
 }

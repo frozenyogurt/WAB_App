@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
@@ -33,9 +34,9 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent)
+    public View getView(final int position, View convertView, ViewGroup parent)
     {
-        View view = inflater.inflate(R.layout.about_us_list_item, parent, false);
+        View view = inflater.inflate(R.layout.person_list_item, parent, false);
         PersonListItem listItem = items.get(position);
 
         TextView name = (TextView) view.findViewById(R.id.person_name);
@@ -44,7 +45,7 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
         TextView description = (TextView) view.findViewById(R.id.person_description);
         description.setText(listItem.getDescription());
 
-        ImageView image = (ImageView) view.findViewById(R.id.person_image);
+        final ImageView image = (ImageView) view.findViewById(R.id.person_image);
         if (listItem.getPerson().equals(Person.STEPHAN))
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.stephan));
@@ -57,6 +58,21 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.florian));
         }
+
+        /*image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.openImage(R.drawable.stephan);
+            }
+        });**/
+
+        LinearLayout send_mail = (LinearLayout) view.findViewById(R.id.send_mail);
+        send_mail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.sendMail(items.get(position));
+            }
+        });
 
         return view;
     }

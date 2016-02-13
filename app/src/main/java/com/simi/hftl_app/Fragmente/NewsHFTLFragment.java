@@ -6,8 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
+import com.simi.hftl_app.Listen.NewsListAdapter;
+import com.simi.hftl_app.Listen.NewsListItem;
+import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.R;
+
+import java.util.ArrayList;
 
 /**
  * Created by student on 12.02.2016.
@@ -21,6 +27,24 @@ public class NewsHFTLFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.news_hftl_fragment,container,false);
+
+        ListView list = (ListView) view.findViewById(R.id.news_list);
+        ArrayList<NewsListItem> news = new ArrayList<>();
+        news.add(new NewsListItem("Stephan Wagener",
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                R.drawable.www));
+        news.add(new NewsListItem("Björn Simion Beuran",
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                R.drawable.stephan));
+        news.add(new NewsListItem("Florian Hollas",
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                R.drawable.florian));
+        NewsListAdapter adapter = new NewsListAdapter((MainActivity)getActivity(),R.layout.news_list_item,news);
+        list.setAdapter(adapter);
+
         return view;
     }
 }
