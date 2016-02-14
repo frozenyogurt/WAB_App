@@ -30,18 +30,15 @@ public class NewsHFTLFragment extends Fragment
 
         ListView list = (ListView) view.findViewById(R.id.news_list);
         ArrayList<NewsListItem> news = new ArrayList<>();
-        news.add(new NewsListItem("Stephan Wagener",
+        news.add(new NewsListItem("News Titel",
                 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                R.drawable.news_pic_test));
+        news.add(new NewsListItem("News Titel",
                 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                R.drawable.www));
-        news.add(new NewsListItem("Björn Simion Beuran",
+                R.drawable.news_pic_test));
+        news.add(new NewsListItem("News Titel",
                 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                R.drawable.stephan));
-        news.add(new NewsListItem("Florian Hollas",
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                R.drawable.florian));
+                R.drawable.news_pic_test));
         NewsListAdapter adapter = new NewsListAdapter((MainActivity)getActivity(),R.layout.news_list_item,news);
         list.setAdapter(adapter);
 

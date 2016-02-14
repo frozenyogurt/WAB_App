@@ -12,6 +12,12 @@ public class PersonListItem
     private String description;
     private String mail;
 
+    public PersonListItem(String name, String mail)
+    {
+        this.mail = mail;
+        this.name = name;
+    }
+
     public PersonListItem(String name, Person person, String description, String mail)
     {
         this.mail = mail;

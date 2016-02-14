@@ -40,11 +40,8 @@ public class NewsListAdapter extends ArrayAdapter<NewsListItem>
         ImageView picture = (ImageView) view.findViewById(R.id.news_image);
         picture.setImageDrawable(activity.getResources().getDrawable(listItem.getPictureID()));
 
-        TextView messageRight = (TextView) view.findViewById(R.id.news_message_right);
-        messageRight.setText(listItem.getMessageRight());
-
-        TextView messageUnder = (TextView) view.findViewById(R.id.news_massage_under);
-        messageUnder.setText(listItem.getMessageUnder());
+        TextView message = (TextView) view.findViewById(R.id.news_massage);
+        message.setText(listItem.getMessage());
 
         TextView title = (TextView) view.findViewById(R.id.news_title);
         title.setText(listItem.getTitle());

@@ -6,14 +6,12 @@ package com.simi.hftl_app.Listen;
 public class NewsListItem
 {
     private String title;
-    private String messageRight;
-    private String messageUnder;
+    private String message;
     private int pictureID;
 
-    public NewsListItem(String title, String messageRight, String messageUnder, int id)
+    public NewsListItem(String title, String message, int id)
     {
-        this.messageRight = messageRight;
-        this.messageUnder = messageUnder;
+        this.message = message;
         this.pictureID = id;
         this.title = title;
     }
@@ -26,20 +24,12 @@ public class NewsListItem
         this.title = title;
     }
 
-    public String getMessageRight() {
-        return messageRight;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMessageRight(String messageRight) {
-        this.messageRight = messageRight;
-    }
-
-    public String getMessageUnder() {
-        return messageUnder;
-    }
-
-    public void setMessageUnder(String messageUnder) {
-        this.messageUnder = messageUnder;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public int getPictureID() {

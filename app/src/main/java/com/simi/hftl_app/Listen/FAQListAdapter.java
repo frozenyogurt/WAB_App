@@ -14,36 +14,28 @@ import java.util.ArrayList;
 import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
 /**
- * Created by student on 10.02.2016.
+ * Created by student on 14.02.2016.
  */
-public class StudyListAdapter extends ArrayAdapter <StudyListItem>
+public class FAQListAdapter extends ArrayAdapter<FAQListItem>
 {
-
     private final LayoutInflater inflater;
-    private final ArrayList<StudyListItem> items;
+    private final ArrayList<FAQListItem> items;
 
-    public StudyListAdapter(MainActivity activity, int resource, ArrayList<StudyListItem> items)
+    public FAQListAdapter (MainActivity activity, int resource, ArrayList<FAQListItem> items)
     {
         super(activity.getApplicationContext(), resource, items);
         this.inflater = (LayoutInflater) activity.getSystemService(LAYOUT_INFLATER_SERVICE);
         this.items = items;
     }
 
-    @Override
     public View getView(int position, View convertView, ViewGroup parent)
     {
-        View view = inflater.inflate(R.layout.study_list_item, parent, false);
+        View view = inflater.inflate(R.layout.faq_list_item, parent, false);
+        FAQListItem listItem = items.get(position);
 
-        StudyListItem listItem = items.get(position);
-
-        TextView name = (TextView) view.findViewById(R.id.item_name);
+        TextView name = (TextView) view.findViewById(R.id.faq_item_name);
         name.setText(listItem.getName());
 
         return view;
-    }
-
-    @Override
-    public StudyListItem getItem(int position) {
-        return items.get(position);
     }
 }

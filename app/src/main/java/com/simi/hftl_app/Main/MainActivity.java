@@ -23,6 +23,7 @@ import com.simi.hftl_app.Fragmente.MenuFragment;
 import com.simi.hftl_app.Fragmente.StudyFragment;
 import com.simi.hftl_app.Fragmente.TestStudyFragment;
 import com.simi.hftl_app.Listen.EducationListItem;
+import com.simi.hftl_app.Listen.FAQListItem;
 import com.simi.hftl_app.Listen.PersonListItem;
 import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.R;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private Button education_button;
     private Button maps_button;
     private Button hftl_button;
+    private FAQListItem clickedFAQ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -245,6 +247,14 @@ public class MainActivity extends AppCompatActivity {
         this.clickedElement = clickedElement;
     }
 
+    public FAQListItem getClickedFAQ() {
+        return clickedFAQ;
+    }
+
+    public void setClickedFAQ(FAQListItem clickedElement) {
+        this.clickedFAQ = clickedElement;
+    }
+
     public EducationListItem getClickedEductaion() {
         return clickedEductaion;
     }
@@ -322,6 +332,13 @@ public class MainActivity extends AppCompatActivity {
         emailIntent.putExtra(Intent.EXTRA_TEXT, "Hallo " + person.getName() + ",");
 
         startActivity(Intent.createChooser(emailIntent, "Mail senden..."));
+    }
+
+    public void callPerson(String number)
+    {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + number));
+        startActivity(intent);
     }
 
     /*public void openImage(int id)
