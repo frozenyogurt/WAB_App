@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="ICT_MASTER_BEGINNING_TEXT">ANUS</string>
+    <string name="ICT_MASTER_PERSPECTIVES_TEXT">deutscher Text von Simi</string>
+    <string name="ICT_MASTER_CURRICULUM_TEXT">wieder Text</string>
+</resources>

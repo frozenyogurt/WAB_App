@@ -59,9 +59,10 @@ public class StudyInfoFragment extends Fragment
 
         if (element.getCourse().equals(StudyCourse.ICT_MASTER)) //???????????????????????????????????
         {
-            beginning.setText("ICT Master beginning Text");
-            perspectives.setText("ICT Master perspective Text.");
-            curriculumText.setText("ICT Master curriculum Text.");
+            beginning.setText(getActivity().getResources().getString(R.string.ICT_MASTER_BEGINNING_TEXT));
+            perspectives.setText(getActivity().getResources().getString(R.string.ICT_MASTER_PERSPECTIVES_TEXT));
+            curriculumText.setText(getActivity().getResources().getString(R.string.ICT_MASTER_CURRICULUM_TEXT));
+            getActivity().getResources().getDrawable(R.drawable.pbh_saupe); //Test aber noch entfernen
         }
         else if (element.getCourse().equals(StudyCourse.KMI_BACHELOR))
         {

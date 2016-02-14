@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">HFTL_App</string>
     <string name="action_settings">Settings</string>
+    <string name="ICT_MASTER_PERSPECTIVES_TEXT">englischer Text von Hollas</string>
+    <string name="ICT_MASTER_CURRICULUM_TEXT">wieder Text</string>
 </resources>
