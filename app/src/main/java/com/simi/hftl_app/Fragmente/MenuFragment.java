@@ -34,9 +34,9 @@ public class MenuFragment extends Fragment
         View view = inflater.inflate(R.layout.study_menu,container,false);
 
         final ArrayList<OptionListItem> items = new ArrayList<>();
-        items.add(new OptionListItem("Über uns", Option.ABOUTUS));
         items.add(new OptionListItem("Einstellunegn", Option.SETTINGS));
         items.add(new OptionListItem("Zur Webseite", Option.WEBSITE));
+        items.add(new OptionListItem("Über uns", Option.ABOUTUS));
         items.add(new OptionListItem("Beenden", Option.EXIT));
 
         ListView list = (ListView) view.findViewById(R.id.options_list);

@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     private Button hftl_button;
     private FAQListItem clickedFAQ;
     private String language = "de";
+    public boolean isCloseMenu = false;
+    private boolean isGoBack = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                if (isMenuTapped)
+                if (isMenuTapped || isGoBack)
                 {
                     onBackPressed();
                     isMenuTapped = true;
@@ -94,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                     ft.commit();
                     backButton.setVisibility(View.VISIBLE);
                     isClose = false;
+                    isGoBack = true;
                 }
                 isMenuTapped = !isMenuTapped;
             }
@@ -212,12 +215,14 @@ public class MainActivity extends AppCompatActivity {
         isMenuTapped = false;
         if (getSupportFragmentManager().getBackStackEntryCount() == 0)
         {
+            isGoBack = false;
             setToolbarTitle("HFTL");
             backButton.setVisibility(View.INVISIBLE);
             closeActivity();
         }
         else if (getSupportFragmentManager().getBackStackEntryCount() == 1)
         {
+            isGoBack = false;
             setToolbarTitle("HFTL");
             backButton.setVisibility(View.INVISIBLE);
             super.onBackPressed();
