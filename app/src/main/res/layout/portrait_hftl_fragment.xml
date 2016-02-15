@@ -1,16 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@android:color/white"
     android:clickable="true"
+    android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
         android:text="Portrait"
-        android:textSize="40sp"
-        android:gravity="center"/>
+        android:id="@+id/infoStudyTitle" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@color/hftl_info_color"
+        android:id="@+id/TitleUndeline"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <ScrollView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/portrait_image_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/portrait_text_one"
+                android:text="Text 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/portrait_image_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/portrait_text_two"
+                android:text="Text 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/portrait_image_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

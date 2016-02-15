@@ -38,43 +38,65 @@ public class SettingsFragment extends Fragment
             public void onClick(View v) {
                 MainActivity activity = ((MainActivity)getActivity());
                 activity.setColor(hex_value.getText().toString());
-                if (activity.convertColorString(false) != 0)
+                if (!hex_value.getText().toString().equals(""))
                 {
-                    Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert " + hex_value.getText().toString() + " wurde erfolgreich gespeichert.", Toast.LENGTH_SHORT).show();
+                    if (activity.convertColorString(false) != 0)
+                    {
+                        Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert " + hex_value.getText().toString() + " wurde erfolgreich gespeichert.", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert war ungültig!", Toast.LENGTH_LONG).show();
+                    }
+                }
+                if (german.isChecked())
+                {
+                    if (((MainActivity)getActivity()).getLanguage().equals("en"))
+                    {
+                        Toast.makeText(getActivity().getApplicationContext(), "Die Sprache wurde auf Deutsch geändert.", Toast.LENGTH_LONG).show();
+                    }
+                    activity.setLocale("de");
                 }
                 else
                 {
-                    Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert war ungültig!", Toast.LENGTH_LONG).show();
+                    if (((MainActivity)getActivity()).getLanguage().equals("de"))
+                    {
+                        Toast.makeText(getActivity().getApplicationContext(), "Die Sprache wurde auf Englisch geändert.", Toast.LENGTH_LONG).show();
+                    }
+                    activity.setLocale("en");
                 }
+
                 hex_value.setText("");
             }
         });
 
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 ((MainActivity)getActivity()).setColor(null);
                 german.setChecked(true);
                 english.setChecked(false);
                 hex_value.setText("");
+                ((MainActivity)getActivity()).setLocale("de_DE");
                 Toast.makeText(getActivity().getApplicationContext(), "Alle Werte wurden erfolgreich zurückgesetzt.", Toast.LENGTH_LONG).show();
             }
         });
 
+        german.setChecked(((MainActivity) getActivity()).getLanguage().equals("de"));
         german.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (english.isChecked())
-                {
+                if (english.isChecked()) {
                     english.setChecked(false);
                 }
-                if (!german.isChecked())
-                {
+                if (!german.isChecked()) {
                     english.setChecked(true);
                 }
             }
         });
 
+        english.setChecked(((MainActivity) getActivity()).getLanguage().equals("en"));
         english.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -62,7 +62,7 @@ public class StudyInfoFragment extends Fragment
             beginning.setText(getActivity().getResources().getString(R.string.ICT_MASTER_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.ICT_MASTER_PERSPECTIVES_TEXT));
             curriculumText.setText(getActivity().getResources().getString(R.string.ICT_MASTER_CURRICULUM_TEXT));
-            getActivity().getResources().getDrawable(R.drawable.pbh_saupe); //Test aber noch entfernen
+            //getActivity().getResources().getDrawable(R.drawable.pbh_saupe); //Test aber noch entfernen
         }
         else if (element.getCourse().equals(StudyCourse.KMI_BACHELOR))
         {

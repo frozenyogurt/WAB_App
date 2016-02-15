@@ -1,6 +1,7 @@
 package com.simi.hftl_app.Main;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private Button maps_button;
     private Button hftl_button;
     private FAQListItem clickedFAQ;
+    private String language = "de";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -339,6 +341,21 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + number));
         startActivity(intent);
+    }
+
+    public void setLocale(String language)
+    {
+        this.language = language;
+        Locale locale = new Locale(this.language);
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getApplicationContext().getResources().updateConfiguration(config, null);
+    }
+
+    public String getLanguage()
+    {
+        return this.language;
     }
 
     /*public void openImage(int id)

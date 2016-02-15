@@ -1,11 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">HFTL_App</string>
-    <string name="action_settings">Settings</string>
-
-
-    <string name="ICT_MASTER_BEGINNING_TEXT">The Hochschule für Telekommunikation Leipzig(HfTL) starts with an international research and project oriented master's degree program in summer semester 2016 .  Information and Communication Technology Master´s degree programme is a full time Master course. \n
-The Information and Communication Technology programme completes the HfTL’s set of full time study options. This programme allows you to gain further qualifications and to receive training for special jobs in the ICT sector and management skills. </string>
-    <string name="ICT_MASTER_PERSPECTIVES_TEXT">Graduates will be able to assess future developments in communication and computer networks. They will be able to apply the latest developments in these subjects. They will gain expertise and skills for signal description, analysis and the most common methods for generation, transmission and reception in optical transmission systems with highest data rates. Graduates of the study program will be able to evaluate the complexity and performance of modern transmission methods./n
+    <string name="ICT_MASTER_BEGINNING_TEXT">"The Hochschule für Telekommunikation Leipzig(HfTL) starts with an international research and project oriented master's degree program in summer semester 2016 .  Information and Communication Technology Master´s degree programme is a full time Master course. \n
+The Information and Communication Technology programme completes the HfTL’s set of full time study options. This programme allows you to gain further qualifications and to receive training for special jobs in the ICT sector and management skills."</string>
+    <string name="ICT_MASTER_PERSPECTIVES_TEXT">Graduates will be able to assess future developments in communication and computer networks. They will be able to apply the latest developments in these subjects. They will gain expertise and skills for signal description, analysis and the most common methods for generation, transmission and reception in optical transmission systems with highest data rates. Graduates of the study program will be able to evaluate the complexity and performance of modern transmission methods. /n
 They will know the basics of calculation of the mobile multipath channel for wireless communication and various communication protocols. They will have knowledge and skills to evaluate and apply IT-security systems. They will be able to plan and implement it-security systems. Project management and scientific methods will reinforce at this study program. </string>
     <string name="ICT_MASTER_CURRICULUM_TEXT">Compulsory modules: /n
  Applied Mathematics /n
@@ -17,7 +14,8 @@ They will know the basics of calculation of the mobile multipath channel for wir
 Specialisation 10 modules for specialisation in communication technology or information technology /n
 Please refer to the curriculum to find courses currently available.</string>
     <!-- Trennzeichen -->
-    <string name="KMI_BACHELOR_BEGINNING_TEXT">text</string>
+        <string name="KMI_BACHELOR_BEGINNING_TEXT">Ohne Fachexperten wäre das Smartphone nur ein Stück Plastik. Doch auch jenseits der Entwicklung von Apps für Spiele und Informationen hat der Studiengang eine Menge zu bieten. An der HfTL lernst du als Telekommunikationsinformatiker alles über die Speicherung und Übertragung von Informationen in der Telekommunikation und wirst so fit für modernste Kommunikationseinrichtungen und -prozesse. \n
+                    "Wenn Du immer auf dem neuesten Stand bist und wissen willst, was die sozialen Medien am Leben erhält, wie Apps entstehen und wie moderne Datenströme fließen, ist Kommunikations- und Medieninformatik Dein Fach. Im Fokus des Studienganges stehen Medien und ihre Technologie: Du lernst, welche Übertragungseigenschaften verschiedene Medien haben und wie diese kommunizieren. Der Aufbau von Netzwerken, die Nutzung von verteilten Anwendungen und die Architektur des Internets gehören zu Deinen Studieninhalten.</string>
     <string name="KMI_BACHELOR_PERSPECTIVES_TEXT">text</string>
     <string name="KMI_BACHELOR_CURRICULUM_TEXT">text</string>
     <!-- Trennzeichen -->
@@ -85,5 +83,4 @@ Please refer to the curriculum to find courses currently available.</string>
     <string name="DUAL_AI_BACHELOR_BEGINNING_TEXT">text</string>
     <string name="DUAL_AI_BACHELOR_PERSPECTIVES_TEXT">text</string>
     <string name="DUAL_AI_BACHELOR_CURRICULUM_TEXT">text</string>
-    <!-- Trennzeichen -->
 </resources>
