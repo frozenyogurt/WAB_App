@@ -66,8 +66,13 @@ public class StudyInfoFragment extends Fragment
         }
         else if (element.getCourse().equals(StudyCourse.KMI_BACHELOR))
         {
-            beginning.setText("Ohne Fachexperten wäre das Smartphone nur ein Stück Plastik. Doch auch jenseits der Entwicklung von Apps für Spiele und Informationen hat der Studiengang eine Menge zu bieten. An der HfTL lernst du als Telekommunikationsinformatiker alles über die Speicherung und Übertragung von Informationen in der Telekommunikation und wirst so fit für modernste Kommunikationseinrichtungen und -prozesse. \n" +
-                    "Wenn Du immer auf dem neuesten Stand bist und wissen willst, was die sozialen Medien am Leben erhält, wie Apps entstehen und wie moderne Datenströme fließen, ist Kommunikations- und Medieninformatik Dein Fach. Im Fokus des Studienganges stehen Medien und ihre Technologie: Du lernst, welche Übertragungseigenschaften verschiedene Medien haben und wie diese kommunizieren. Der Aufbau von Netzwerken, die Nutzung von verteilten Anwendungen und die Architektur des Internets gehören zu Deinen Studieninhalten. ");
+
+            beginning.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_BEGINNING_TEXT));
+            perspectives.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_PERSPECTIVES_TEXT));
+            curriculumText.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_CURRICULUM_TEXT));
+
+
+            beginning.setText();
             perspectives.setText("Unternehmen organisieren sich immer stärker in Netzwerken: Zulieferer, Partner und Kunden werden in großen Systemen organisiert. Hierfür braucht man Softwareentwickler und Systembetreuer – und damit Dich. Du lernst, wie man sichere Netze konzipiert, entwickelt und einführt. Auch im Projektmanagement kannst Du als SystemarchitektIn oder SystemdesignerIn arbeiten – nicht nur bei der Telekom: Auch andere Informations- und Telekommunikationsunternehmen melden einen hohen Fachkräftebedarf für Leute mit Deiner Ausbildung an. Zudem stellen Automobilhersteller, Hard- und Softwarefirmen, der Energiesektor und Behörden Kommunikations- und MedieninformatikerInnen gerne ein. ");
             curriculumText.setText("\tallgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch) \n" +
                     "Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) \n" +
