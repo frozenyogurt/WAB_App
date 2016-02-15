@@ -103,7 +103,7 @@ public class ServicesHFTLFragment extends Fragment
         textTwo.setText("Sport");
         textThree.setText("Anfahrt");
         textFour.setText("Links");
-        textFive.setText("Räume");
+        textFive.setText("Labore");
 
         imageOne.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.libary));
         imageTwo.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.sport));

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import com.simi.hftl_app.Listen.OptionListAdapter;
 import com.simi.hftl_app.Listen.OptionListItem;
@@ -57,16 +58,24 @@ public class MenuFragment extends Fragment
                 } else if (items.get(position).getOption().equals(Option.ABOUTUS)) {
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                     ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                    ft.add(R.id.activityLayout, new AboutUsFragment());
+                    ft.add(R.id.activityLayout, new AboutUsFragment(), "AboutUsFragment");
                     ft.addToBackStack(AboutUsFragment.class.getSimpleName());
                     ft.commit();
                 } else {
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                     ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                    ft.add(R.id.activityLayout, new SettingsFragment());
+                    ft.add(R.id.activityLayout, new SettingsFragment(), "SettingsFragment");
                     ft.addToBackStack(SettingsFragment.class.getSimpleName());
                     ft.commit();
                 }
+            }
+        });
+
+        RelativeLayout tabToClose = (RelativeLayout) view.findViewById(R.id.menu_container);
+        tabToClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)getActivity()).handleMenuClick();
             }
         });
 

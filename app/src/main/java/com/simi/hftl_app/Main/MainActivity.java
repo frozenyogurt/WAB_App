@@ -82,23 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                if (isMenuTapped || isGoBack)
-                {
-                    onBackPressed();
-                    isMenuTapped = true;
-                }
-                else
-                {
-                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                    ft.add(R.id.activityLayout, new MenuFragment());
-                    ft.addToBackStack(MenuFragment.class.getSimpleName());
-                    ft.commit();
-                    backButton.setVisibility(View.VISIBLE);
-                    isClose = false;
-                    isGoBack = true;
-                }
-                isMenuTapped = !isMenuTapped;
+                handleMenuClick();
             }
         });
 
@@ -213,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed()
     {
         isMenuTapped = false;
+        String lastFragmentName = getSupportFragmentManager().getBackStackEntryAt(getSupportFragmentManager().getBackStackEntryCount() - 1).getName();
         if (getSupportFragmentManager().getBackStackEntryCount() == 0)
         {
             isGoBack = false;
@@ -225,6 +210,14 @@ public class MainActivity extends AppCompatActivity {
             isGoBack = false;
             setToolbarTitle("HFTL");
             backButton.setVisibility(View.INVISIBLE);
+            super.onBackPressed();
+        }
+        else if (lastFragmentName != null)
+        {
+            if (!(lastFragmentName.equals("SettingsFragment") || lastFragmentName.equals("AboutUsFragment")))
+            {
+                isGoBack = false;
+            }
             super.onBackPressed();
         }
         else
@@ -361,6 +354,27 @@ public class MainActivity extends AppCompatActivity {
     public String getLanguage()
     {
         return this.language;
+    }
+
+    public void handleMenuClick()
+    {
+        if (isMenuTapped || isGoBack)
+        {
+            onBackPressed();
+            isMenuTapped = true;
+        }
+        else
+        {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+            ft.add(R.id.activityLayout, new MenuFragment());
+            ft.addToBackStack(MenuFragment.class.getSimpleName());
+            ft.commit();
+            backButton.setVisibility(View.VISIBLE);
+            isClose = false;
+            isGoBack = true;
+        }
+        isMenuTapped = !isMenuTapped;
     }
 
     /*public void openImage(int id)
