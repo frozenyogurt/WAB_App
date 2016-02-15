@@ -72,7 +72,6 @@ public class StudyInfoFragment extends Fragment
             curriculumText.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_CURRICULUM_TEXT));
 
 
-            beginning.setText();
             perspectives.setText("Unternehmen organisieren sich immer stärker in Netzwerken: Zulieferer, Partner und Kunden werden in großen Systemen organisiert. Hierfür braucht man Softwareentwickler und Systembetreuer – und damit Dich. Du lernst, wie man sichere Netze konzipiert, entwickelt und einführt. Auch im Projektmanagement kannst Du als SystemarchitektIn oder SystemdesignerIn arbeiten – nicht nur bei der Telekom: Auch andere Informations- und Telekommunikationsunternehmen melden einen hohen Fachkräftebedarf für Leute mit Deiner Ausbildung an. Zudem stellen Automobilhersteller, Hard- und Softwarefirmen, der Energiesektor und Behörden Kommunikations- und MedieninformatikerInnen gerne ein. ");
             curriculumText.setText("\tallgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch) \n" +
                     "Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) \n" +
