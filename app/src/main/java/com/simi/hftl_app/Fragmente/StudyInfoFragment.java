@@ -70,83 +70,30 @@ public class StudyInfoFragment extends Fragment
             beginning.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_PERSPECTIVES_TEXT));
             curriculumText.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_CURRICULUM_TEXT));
-
-
-            perspectives.setText("Unternehmen organisieren sich immer stärker in Netzwerken: Zulieferer, Partner und Kunden werden in großen Systemen organisiert. Hierfür braucht man Softwareentwickler und Systembetreuer – und damit Dich. Du lernst, wie man sichere Netze konzipiert, entwickelt und einführt. Auch im Projektmanagement kannst Du als SystemarchitektIn oder SystemdesignerIn arbeiten – nicht nur bei der Telekom: Auch andere Informations- und Telekommunikationsunternehmen melden einen hohen Fachkräftebedarf für Leute mit Deiner Ausbildung an. Zudem stellen Automobilhersteller, Hard- und Softwarefirmen, der Energiesektor und Behörden Kommunikations- und MedieninformatikerInnen gerne ein. ");
-            curriculumText.setText("\tallgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch) \n" +
-                    "Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) \n" +
-                    "Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) \n" +
-                    "Verteilte Anwendungen \n" +
-                    "Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)");
-        }
+    }
         else if (element.getCourse().equals(StudyCourse.DUAL_KMI_BACHELOR))
         {
-            beginning.setText("Im dualen Studiengang Kommunikations- und Medieninformatik, erhältst Du eine Erstausbildung und den Einstieg in das Unternehmen Deutsche Telekom. Du studierst mit einem Vertrag der Deutschen Telekom AG in enger Verzahnung zwischen Studium und Beruf. So kannst Du sowohl in der Hochschule, als auch im Unternehmen das Wissen für Deinen späteren Beruf erwerben. Präsenzphasen an der HfTL kombinieren sich im Studienverlauf mit Selbstlernphasen von Zuhause aus. Deine erworbenen Kenntnisse in Mathematik, Physik, Elektrotechnik, Informatik und Telekommunikation kannst Du in Projekten der Telekom direkt in betrieblichen Aufgabenstellungen anwenden.");
-            perspectives.setText("Nach dem Erwerb deines Bachelor of Engineering kannst Du viele Wege einschlagen. Besonders weil der Kommunikationsbedarf der ganzen Welt rasant ansteigt. Ein konkretes Beispiel ist das Qualitätsmanagement: Du koordinierst und überwachst alle Prozesse, so dass am Ende ein gutes Produkt entsteht. Netzbetreiber wie die Telekom verlassen sich auf dein analytisches Können: In Kapazitätsplanung- und Management entwickelst Du die Netze von Morgen. Außerdem kriegst Du durch deine duale Studienform in deinem Betrieb viel Erfahrung, wodurch dir eine Übernahme im Konzern fast garantiert ist.");
-            curriculumText.setText("allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch) \n" +
-                    "mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) \n" +
-                    "Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) \n" +
-                    "Verteilte Anwendungen \n" +
-                    "Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)");
+            beginning.setText(getActivity().getResources().getString(R.string.DUAL_KMI_BACHELOR_BEGINNING_TEXT));
+            perspectives.setText(getActivity().getResources().getString(R.string.DUAL_KMI_BACHELOR_PERSPECTIVES_TEXT));
+            curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_KMI_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.JOB_KMI_BACHELOR))
         {
-            beginning.setText("Der Bachelor-Studiengang Kommunikations- und Medieninformatik ermöglicht Dir eine Weiterbildung parallel zum Beruf. Da Du den Großteil der Qualifizierung zeitlich und örtlich flexibel über eine Online-Lernplattform absolvierst, kannst Du das Studium optimal mit Deinem Beruf vereinbaren. \n" +
-                    "\n" +
-                    "Kommunikations- und Medieninformatik vermittelt Kenntnisse aus den Bereichen Physik, Elektrotechnik, Informatik und Telekommunikation. Du lernst, die neuen Medien ganzheitlich zu begreifen. Auf welche informationstechnischen Prinzipien und Technologien basiert das Web 2.0? Wie funktionieren soziale Netzwerke und Applikationen? Das und mehr vermitteln wir Dir an der HfTL.");
-            perspectives.setText("Die Nachfrage nach IT-Fachkräften ist groß, deren Einsatzpalette bunt. Hier nur einige Beispiele für mögliche Berufsfelder: Weil sich Unternehmen zunehmend mit ihren Zulieferern, Kunden und Partnern vernetzen, entstehen immer komplexere IT-Landschaften. Deren Planung und Betrieb verantworten System- und Netzwerkspezialisten. Sie sorgen dafür, dass die internetbasierten Dienste der Kunden – wie beispielsweise deren Webportale – jederzeit verfügbar sind. \n" +
-                    "\n" +
-                    "Kommunikations- und Medieninformatiker sind zudem als Software-Entwickler tätig. Sie schaffen unter anderem Applikationen für Desktop PCs oder Smartphones und behalten dabei immer die Sicherheits- und Qualitätsstandards im Blick. Systemarchitekten entwickeln und verwalten internetbasierte Anwendungen und Webportale. Um komplette Firmennetzwerke und um den weltweiten Breitbandausbau kümmern sich Netzarchitekten. Und Consultants beraten die Kunden bei IT-Projekten.");
-            curriculumText.setText("allgemeine Grundlagen: \n" +
-                    "Projektmanagement, Wirtschaft und Recht, technisches Englisch \n" +
-                    "\n" +
-                    "Mathematisch-naturwissenschaftliche Grundlagen: \n" +
-                    "Mathematik, Physik, Elektrotechnik/Elektronik \n" +
-                    "\n" +
-                    "Informatik: \n" +
-                    "Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle  \n" +
-                    "\n" +
-                    "Verteilte Anwendungen, Telekommunikation: \n" +
-                    "Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk  ");
+            beginning.setText(getActivity().getResources().getString(R.string.JOB_KMI_BACHELOR_BEGINNING_TEXT));
+            perspectives.setText(getActivity().getResources().getString(R.string.JOB_KMI_BACHELOR_PERSPECTIVES_TEXT));
+            curriculumText.setText(getActivity().getResources().getString(R.string.JOB_KMI_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.IKT_BACHELOR))
         {
-            beginning.setText("Für Nachrichten benötigt man Signale – egal, ob es um das Verschicken einer SMS geht oder um das Produktionsband in einem Fahrzeugwerk. Dafür, dass diese Signale und die von ihnen transportierten Informationen ihren Weg zum richtigen Empfänger finden, sorgen NachrichtentechnikerInnen. \n" +
-                    "Die Informations- und Kommunikationstechnik ist als ein Zusammenspiel von Mathematik, Physik, Informatik und Elektrotechnik zu verstehen – jede Teildisziplin trägt zur gemeinsamen Aufgabe entscheidend bei. So lassen sich Systeme gestalten, mit denen Informationen über die unterschiedlichsten Medien übertragen werden können. Dabei geht es im Kern um Übertragungsmedien, um Signalaufbereitung und -verarbeitung sowie um Verfahren und Methoden der Nachrichtenübermittlung an den Empfänger.");
-            perspectives.setText("Der Kommunikationsbedarf der Menschen steigt rasant – die Welt wird digital. Daher stehen Dir als KommunikationstechnikerIn sehr viele Chancen in den unterschiedlichsten Unternehmen und Tätigkeitsfeldern offen. \n" +
-                    "\n" +
-                    "Ein konkretes Beispiel ist das Fertigungs- und Qualitätsmanagement: Du koordinierst und überwachst die Tätigkeiten Deiner Kollegen, damit am Ende ein gutes Produkt entsteht. Netzbetreiber hingegen verlassen sich auf Dein analytisches Können und Deine vorausschauenden Fähigkeiten: In Kapazitätsplanung und -management legst Du die Grundlagen für das Netz von morgen. Auch in Einkauf und Logistik, im Dienstleistungsbereich, im Marketing, im Vertrieb, in der Automobilindustrie, in der Medizintechnik, in der Steuerungs- und Regeltechnik, in Schulung und Weiterbildung... Nachrichtentechnik ist einfach überall.");
-            curriculumText.setText("allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch) \n" +
-                    " Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik) \n" +
-                    " Grundlagen der Elektrotechnik und Informationstechnik (Informatik, Elektrotechnik) \n" +
-                    " Signale & Systeme \n" +
-                    " Photonik \n" +
-                    " Felder & Wellen \n" +
-                    " Netze \n" +
-                    " Funk \n" +
-                    " Hard- und Softwarearchitektur");
+            beginning.setText(getActivity().getResources().getString(R.string.IKT_BACHELOR_BEGINNING_TEXT));
+            perspectives.setText(getActivity().getResources().getString(R.string.IKT_BACHELOR_PERSPECTIVES_TEXT));
+            curriculumText.setText(getActivity().getResources().getString(R.string.IKT_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.IKT_MASTER))
         {
-            beginning.setText("Mit einem Master in Informations- und Kommunikationstechnik legst Du einen wichtigen Grundstein für Deine Karriere in der Telekommunikationsbranche. Der Abschluss eröffnet Dir aber noch ganz andere Möglichkeiten: Vertiefte Fachkenntnisse in Telekommunikation, Informatik und Schlüsselqualifikationen aus BWL, Recht und Projektmanagement machen Dich bereit für leitende Positionen ganz weit oben auf der Karriereleiter. Mit dem Master erhältst Du alle Voraussetzungen, um komplexe Telekommunikationssysteme verantwortlich zu entwickeln und Führungsverantwortung zu übernehmen.");
-            perspectives.setText("Informations- und KommunikationstechnikerInnen arbeiten in nahezu allen Branchen und in den unterschiedlichsten Bereichen. Ihr Fachwissen sowie ihre Management- und Methodenkompetenz werden von Unternehmen wie der Deutschen Telekom, SAP, Siemens oder IBM weltweit geschätzt. Als Master-AbsolventIn der Informations- und Kommunikationstechnik kannst Du Projekte managen und effizient führen – schließlich durchschaust Du auch die ökonomischen Zusammenhänge. \n" +
-                    "\n" +
-                    "Die Einsatzgebiete für den „Master of Engineering“ sind weit gesteckt: Konzeption von Netzen und Übertragungsstrecken, Entwicklung von IT-Systemen, Forschung und Entwicklung in den unterschiedlichsten Bereichen gehören zu den klassischen Aufgaben. Aber auch im Marketing und im Vertrieb kannst Du Deinen ökonomischen Sachverstand mit deinem technischen Fachwissen effizient kombinieren. ");
-            curriculumText.setText("\tDas Studium gliedert sich in einen Kernbereich und 2 Profilierungsmodule.\n" +
-                    "Kernbereich: \n" +
-                    " Angewandte Mathematik \n" +
-                    " Systemtheorie \n" +
-                    " Software-Technologie \n" +
-                    " Photonik \n" +
-                    " Systeme der Funktechnik \n" +
-                    " Networking \n" +
-                    " BWL \n" +
-                    " Recht \n" +
-                    " Projektmanagement \n" +
-                    " \n" +
-                    "Profilierungsmodule Kommunikationstechnik \n" +
-                    " \n" +
-                    "Profilierungsmodule Informationstechnologie ");
+            beginning.setText(getActivity().getResources().getString(R.string.IKT_MASTER_BEGINNING_TEXT));
+            perspectives.setText(getActivity().getResources().getString(R.string.IKT_MASTER_PERSPECTIVES_TEXT));
+            curriculumText.setText(getActivity().getResources().getString(R.string.IKT_MASTER_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.IKT_MASTER_ENGLISH)) //Passt hier nicht rein!
         {
@@ -154,7 +101,7 @@ public class StudyInfoFragment extends Fragment
             perspectives.setText("");
             curriculumText.setText("");
         }
-        else if (element.getCourse().equals(StudyCourse.JOB_IKT_BACHELOR))  //Verlinkung auf HFTL Seite geht nicht.
+        else if (element.getCourse().equals(StudyCourse.JOB_IKT_BACHELOR))
         {
             beginning.setText("Der Bachelor-Studiengang Informations- und Kommunikationstechnik ist eine berufsbegleitende Weiterqualifizierung, die Dir Kenntnisse zu den Anforderungen moderner Telekommunikation vermittelt. Damit Du immer die Balance zwischen Beruf und Studium hältst, bietet Dir die HfTL moderne IT-gestützte Bildungstechnologien sowie Lehr- und Lernszenarien auf der Basis des Web 2.0. \n" +
                     "\n" +

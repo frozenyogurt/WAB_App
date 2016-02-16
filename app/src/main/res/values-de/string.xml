@@ -14,30 +14,101 @@ They will know the basics of calculation of the mobile multipath channel for wir
 Specialisation 10 modules for specialisation in communication technology or information technology /n
 Please refer to the curriculum to find courses currently available.</string>
     <!-- Trennzeichen -->
-        <string name="KMI_BACHELOR_BEGINNING_TEXT">Ohne Fachexperten wäre das Smartphone nur ein Stück Plastik. Doch auch jenseits der Entwicklung von Apps für Spiele und Informationen hat der Studiengang eine Menge zu bieten. An der HfTL lernst du als Telekommunikationsinformatiker alles über die Speicherung und Übertragung von Informationen in der Telekommunikation und wirst so fit für modernste Kommunikationseinrichtungen und -prozesse. \n
-                    "Wenn Du immer auf dem neuesten Stand bist und wissen willst, was die sozialen Medien am Leben erhält, wie Apps entstehen und wie moderne Datenströme fließen, ist Kommunikations- und Medieninformatik Dein Fach. Im Fokus des Studienganges stehen Medien und ihre Technologie: Du lernst, welche Übertragungseigenschaften verschiedene Medien haben und wie diese kommunizieren. Der Aufbau von Netzwerken, die Nutzung von verteilten Anwendungen und die Architektur des Internets gehören zu Deinen Studieninhalten.</string>
-    <string name="KMI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="KMI_BACHELOR_CURRICULUM_TEXT">text</string>
+        <string name="KMI_BACHELOR_BEGINNING_TEXT">Ohne Fachexperten wäre das Smartphone nur ein Stück Plastik.
+            Doch auch jenseits der Entwicklung von Apps für Spiele und Informationen hat der Studiengang eine Menge zu bieten.
+            An der HfTL lernst du als Telekommunikationsinformatiker alles über die Speicherung und Übertragung von Informationen in der Telekommunikation und wirst so fit für modernste Kommunikationseinrichtungen und -prozesse. \n
+            Wenn Du immer auf dem neuesten Stand bist und wissen willst, was die sozialen Medien am Leben erhält, wie Apps entstehen und wie moderne Datenströme fließen, ist Kommunikations- und Medieninformatik Dein Fach.
+            Im Fokus des Studienganges stehen Medien und ihre Technologie</string>
+    <string name="KMI_BACHELOR_PERSPECTIVES_TEXT">Unternehmen organisieren sich immer stärker in Netzwerken: Zulieferer, Partner und Kunden werden in großen Systemen organisiert.
+        Hierfür braucht man Softwareentwickler und Systembetreuer – und damit Dich. Du lernst, wie man sichere Netze konzipiert, entwickelt und einführt. /n
+        Auch im Projektmanagement kannst Du als SystemarchitektIn oder SystemdesignerIn arbeiten – nicht nur bei der Telekom: Auch andere Informations- und Telekommunikationsunternehmen melden einen hohen Fachkräftebedarf für Leute mit Deiner Ausbildung an.</string>
+    <string name="KMI_BACHELOR_CURRICULUM_TEXT">- allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch) \n
+                - Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) \n
+                - Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) \n
+                - Verteilte Anwendungen \n
+                - Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="DUAL_KMI_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="DUAL_KMI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="DUAL_KMI_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="DUAL_KMI_BACHELOR_BEGINNING_TEXT">Im dualen Studiengang Kommunikations- und Medieninformatik, erhältst Du eine Erstausbildung und den Einstieg in das Unternehmen Deutsche Telekom.
+        Du studierst mit einem Vertrag der Deutschen Telekom AG in enger Verzahnung zwischen Studium und Beruf.
+        So kannst Du sowohl in der Hochschule, als auch im Unternehmen das Wissen für Deinen späteren Beruf erwerben. \n
+        Präsenzphasen an der HfTL kombinieren sich im Studienverlauf mit Selbstlernphasen von Zuhause aus.
+        Deine erworbenen Kenntnisse in Mathematik, Physik, Elektrotechnik, Informatik und Telekommunikation kannst Du in Projekten der Telekom direkt in betrieblichen Aufgabenstellungen anwenden.</string>
+    <string name="DUAL_KMI_BACHELOR_PERSPECTIVES_TEXT">Nach dem Erwerb deines Bachelor of Engineering kannst Du viele Wege einschlagen.
+        Besonders weil der Kommunikationsbedarf der ganzen Welt rasant ansteigt. \n
+        Ein konkretes Beispiel ist das Qualitätsmanagement: Du koordinierst und überwachst alle Prozesse, so dass am Ende ein gutes Produkt entsteht.
+        Netzbetreiber wie die Telekom verlassen sich auf dein analytisches Können: In Kapazitätsplanung- und Management entwickelst Du die Netze von Morgen.</string>
+    <string name="DUAL_KMI_BACHELOR_CURRICULUM_TEXT">- allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch) \n
+                    - mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) \n
+                    - Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) \n
+                    - Verteilte Anwendungen \n
+                    - Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="JOB_KMI_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="JOB_KMI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="JOB_KMI_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="JOB_KMI_BACHELOR_BEGINNING_TEXT">Der Bachelor-Studiengang Kommunikations- und Medieninformatik ermöglicht Dir eine Weiterbildung parallel zum Beruf.
+        Da Du den Großteil der Qualifizierung zeitlich und örtlich flexibel über eine Online-Lernplattform absolvierst, kannst Du das Studium optimal mit Deinem Beruf vereinbaren.\n
+Kommunikations- und Medieninformatik vermittelt Kenntnisse aus den Bereichen Physik, Elektrotechnik, Informatik und Telekommunikation. Du lernst, die neuen Medien ganzheitlich zu begreifen. \n
+        Auf welche informationstechnischen Prinzipien und Technologien basiert das Web 2.0? Wie funktionieren soziale Netzwerke und Applikationen? Das und mehr vermitteln wir Dir an der HfTL.</string>
+    <string name="JOB_KMI_BACHELOR_PERSPECTIVES_TEXT">Die Nachfrage nach IT-Fachkräften ist groß, deren Einsatzpalette bunt.
+        Hier nur einige Beispiele für mögliche Berufsfelder: Weil sich Unternehmen zunehmend mit ihren Zulieferern, Kunden und Partnern vernetzen, entstehen immer komplexere IT-Landschaften.
+        Deren Planung und Betrieb verantworten System- und Netzwerkspezialisten.\n
+        Sie sorgen dafür, dass die internetbasierten Dienste der Kunden – wie beispielsweise deren Webportale – jederzeit verfügbar sind.\n
+        Kommunikations- und Medieninformatiker sind zudem als Software-Entwickler tätig.
+        Sie schaffen unter anderem Applikationen für Desktop PCs oder Smartphones und behalten dabei immer die Sicherheits- und Qualitätsstandards im Blick.
+        Systemarchitekten entwickeln und verwalten internetbasierte Anwendungen und Webportale.
+        Um komplette Firmennetzwerke und um den weltweiten Breitbandausbau kümmern sich Netzarchitekten.</string>
+    <string name="JOB_KMI_BACHELOR_CURRICULUM_TEXT">allgemeine Grundlagen:\n
+                    - Projektmanagement, Wirtschaft und Recht, technisches Englisch \n
+                    - Mathematisch-naturwissenschaftliche Grundlagen: \n
+                    - Mathematik, Physik, Elektrotechnik/Elektronik \n
+                    - Informatik: \n
+                    - Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle  \n
+                    - Verteilte Anwendungen, Telekommunikation: \n
+                    - Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk  </string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="IKT_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="IKT_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="IKT_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="IKT_BACHELOR_BEGINNING_TEXT">Für Nachrichten benötigt man Signale – egal, ob es um das Verschicken einer SMS geht oder um das Produktionsband in einem Fahrzeugwerk.
+        Dafür, dass diese Signale und die von ihnen transportierten Informationen ihren Weg zum richtigen Empfänger finden, sorgen NachrichtentechnikerInnen.\n
+        Die Informations- und Kommunikationstechnik ist als ein Zusammenspiel von Mathematik, Physik, Informatik und Elektrotechnik zu verstehen – jede Teildisziplin trägt zur gemeinsamen Aufgabe entscheidend bei.
+        So lassen sich Systeme gestalten, mit denen Informationen über die unterschiedlichsten Medien übertragen werden können.
+        Dabei geht es im Kern um Übertragungsmedien, um Signalaufbereitung und -verarbeitung sowie um Verfahren und Methoden der Nachrichtenübermittlung an den Empfänger.</string>
+    <string name="IKT_BACHELOR_PERSPECTIVES_TEXT">Der Kommunikationsbedarf der Menschen steigt rasant – die Welt wird digital.
+        Daher stehen Dir als KommunikationstechnikerIn sehr viele Chancen in den unterschiedlichsten Unternehmen und Tätigkeitsfeldern offen.\n
+        Ein konkretes Beispiel ist das Fertigungs- und Qualitätsmanagement: Du koordinierst und überwachst die Tätigkeiten Deiner Kollegen, damit am Ende ein gutes Produkt entsteht.
+        Netzbetreiber hingegen verlassen sich auf Dein analytisches Können und Deine vorausschauenden Fähigkeiten: In Kapazitätsplanung und -management legst Du die Grundlagen für das Netz von morgen.\n
+        Auch in Einkauf und Logistik, im Dienstleistungsbereich, im Marketing, im Vertrieb, in der Automobilindustrie, in der Medizintechnik, in der Steuerungs- und Regeltechnik, in Schulung und Weiterbildung... Nachrichtentechnik ist einfach überall.</string>
+    <string name="IKT_BACHELOR_CURRICULUM_TEXT">- allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch)\n
+                    - Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik) \n
+                    - Grundlagen der Elektrotechnik und Informationstechnik (Informatik, Elektrotechnik) \n
+                    - Signale und Systeme \n
+                    - Photonik \n
+                    - Felder und Wellen \n
+                    - Netze \n
+                    - Funk \n
+                    - Hard- und Softwarearchitektur</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="IKT_MASTER_BEGINNING_TEXT">text</string>
-    <string name="IKT_MASTER_PERSPECTIVES_TEXT">text</string>
-    <string name="IKT_MASTER_CURRICULUM_TEXT">text</string>
+    <string name="IKT_MASTER_BEGINNING_TEXT">Mit einem Master in Informations- und Kommunikationstechnik legst Du einen wichtigen Grundstein für Deine Karriere in der Telekommunikationsbranche.
+        Der Abschluss eröffnet Dir aber noch ganz andere Möglichkeiten: Vertiefte Fachkenntnisse in Telekommunikation, Informatik und Schlüsselqualifikationen aus BWL, Recht und Projektmanagement machen Dich bereit für leitende Positionen ganz weit oben auf der Karriereleiter.\n
+        Mit dem Master erhältst Du alle Voraussetzungen, um komplexe Telekommunikationssysteme verantwortlich zu entwickeln und Führungsverantwortung zu übernehmen.</string>
+    <string name="IKT_MASTER_PERSPECTIVES_TEXT">Informations- und KommunikationstechnikerInnen arbeiten in nahezu allen Branchen und in den unterschiedlichsten Bereichen.
+        Ihr Fachwissen sowie ihre Management- und Methodenkompetenz werden von Unternehmen wie der Deutschen Telekom, SAP, Siemens oder IBM weltweit geschätzt.
+        Als Master-AbsolventIn der Informations- und Kommunikationstechnik kannst Du Projekte managen und effizient führen – schließlich durchschaust Du auch die ökonomischen Zusammenhänge.\n
+        Die Einsatzgebiete für den „Master of Engineering“ sind weit gesteckt: Konzeption von Netzen und Übertragungsstrecken, Entwicklung von IT-Systemen, Forschung und Entwicklung in den unterschiedlichsten Bereichen gehören zu den klassischen Aufgaben.
+        Aber auch im Marketing und im Vertrieb kannst Du Deinen ökonomischen Sachverstand mit deinem technischen Fachwissen effizient kombinieren.</string>
+    <string name="IKT_MASTER_CURRICULUM_TEXT">Das Studium gliedert sich in einen Kernbereich und 2 Profilierungsmodule. \n
+                    Kernbereich: \n
+                     - Angewandte Mathematik \n
+                     - Systemtheorie \n
+                     - Software-Technologie \n
+                     - Photonik \n
+                     - Systeme der Funktechnik \n
+                     - Networking \n
+                     - BWL \n
+                     - Recht \n
+                     - Projektmanagement \n
+                    Profilierungsmodule Kommunikationstechnik \n
+                    Profilierungsmodule Informationstechnologie</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <string name="IKT_MASTER_ENGLISH_BEGINNING_TEXT">text</string>
