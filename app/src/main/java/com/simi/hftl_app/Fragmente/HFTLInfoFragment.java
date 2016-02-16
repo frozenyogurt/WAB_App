@@ -2,7 +2,6 @@ package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +14,7 @@ import com.simi.hftl_app.R;
 /**
  * Created by student on 11.02.2016.
  */
-public class HFTLInfoFragment extends Fragment
+public class HFTLInfoFragment extends MyRefreshFragment
 {
     private Button news;
     private Button employee;
@@ -62,7 +61,7 @@ public class HFTLInfoFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new PortraitHFTLFragment());
+                ft.add(R.id.activityLayout, new PortraitHFTLFragment(), "PortraitHFTLFragment");
                 ft.addToBackStack(PortraitHFTLFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -72,7 +71,7 @@ public class HFTLInfoFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new EmployeeHFTLFragment());
+                ft.add(R.id.activityLayout, new EmployeeHFTLFragment(), "EmployeeHFTLFragment");
                 ft.addToBackStack(EmployeeHFTLFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -82,7 +81,7 @@ public class HFTLInfoFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ServicesHFTLFragment());
+                ft.add(R.id.activityLayout, new ServicesHFTLFragment(), "ServicesHFTLFragment");
                 ft.addToBackStack(ServicesHFTLFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -92,7 +91,7 @@ public class HFTLInfoFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new WhyHFTLFragment());
+                ft.add(R.id.activityLayout, new WhyHFTLFragment(), "WhyHFTLFragment");
                 ft.addToBackStack(WhyHFTLFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -102,7 +101,7 @@ public class HFTLInfoFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ContactHFTLFragment());
+                ft.add(R.id.activityLayout, new ContactHFTLFragment(), "ContactHFTLFragment");
                 ft.addToBackStack(ContactHFTLFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -112,7 +111,7 @@ public class HFTLInfoFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new NewsHFTLFragment());
+                ft.add(R.id.activityLayout, new NewsHFTLFragment(), "NewsHFTLFragment");
                 ft.addToBackStack(NewsHFTLFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -122,7 +121,7 @@ public class HFTLInfoFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new FAQFragment());
+                ft.add(R.id.activityLayout, new FAQFragment(), "FAQFragment");
                 ft.addToBackStack(FAQFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -132,7 +131,7 @@ public class HFTLInfoFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ImprintFragment());
+                ft.add(R.id.activityLayout, new ImprintFragment(), "ImprintFragment");
                 ft.addToBackStack(ImprintFragment.class.getSimpleName());
                 ft.commit();
             }

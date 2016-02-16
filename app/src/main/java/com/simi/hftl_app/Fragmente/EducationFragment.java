@@ -2,7 +2,6 @@ package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +20,7 @@ import java.util.ArrayList;
 /**
  * Created by student on 11.02.2016.
  */
-public class EducationFragment extends Fragment
+public class EducationFragment extends MyRefreshFragment
 {
     public EducationFragment(){}
 
@@ -49,7 +48,7 @@ public class EducationFragment extends Fragment
                 ((MainActivity)getActivity()).setClickedEductaion(items.get(position));
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new EducationInfoFragment());
+                ft.add(R.id.activityLayout, new EducationInfoFragment(), "EducationInfoFragment");
                 ft.addToBackStack(EducationInfoFragment.class.getSimpleName());
                 ft.commit();
             }

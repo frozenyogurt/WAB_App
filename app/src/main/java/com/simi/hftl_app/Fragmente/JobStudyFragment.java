@@ -2,7 +2,6 @@ package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,18 +9,18 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.simi.hftl_app.Main.MainActivity;
-import com.simi.hftl_app.R;
-import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.Listen.StudyListAdapter;
 import com.simi.hftl_app.Listen.StudyListItem;
+import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.StudyCourse;
+import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
 
 /**
  * Created by student on 09.02.2016.
  */
-public class JobStudyFragment extends Fragment
+public class JobStudyFragment extends MyRefreshFragment
 {
     public JobStudyFragment(){}
 
@@ -49,7 +48,7 @@ public class JobStudyFragment extends Fragment
                 ((MainActivity)getActivity()).setClickedElement(items.get(position));
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new StudyInfoFragment());
+                ft.add(R.id.activityLayout, new StudyInfoFragment(), "StudyInfoFragment");
                 ft.addToBackStack(StudyInfoFragment.class.getSimpleName());
                 ft.commit();
             }

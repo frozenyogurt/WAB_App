@@ -21,6 +21,7 @@ import com.simi.hftl_app.Fragmente.EducationFragment;
 import com.simi.hftl_app.Fragmente.HFTLInfoFragment;
 import com.simi.hftl_app.Fragmente.JobStudyFragment;
 import com.simi.hftl_app.Fragmente.MenuFragment;
+import com.simi.hftl_app.Fragmente.MyRefreshFragment;
 import com.simi.hftl_app.Fragmente.StudyFragment;
 import com.simi.hftl_app.Fragmente.TestStudyFragment;
 import com.simi.hftl_app.Listen.EducationListItem;
@@ -56,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
     private Button hftl_button;
     private FAQListItem clickedFAQ;
     private String language = "de";
-    public boolean isCloseMenu = false;
     private boolean isGoBack = false;
 
     @Override
@@ -93,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
         education_button = (Button) findViewById(R.id.button_education);
         maps_button = (Button) findViewById(R.id.button_maps);
         hftl_button = (Button) findViewById(R.id.button_hftl_info);
+
+        setLocale(language);
 
         education_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -367,7 +369,7 @@ public class MainActivity extends AppCompatActivity {
         {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-            ft.add(R.id.activityLayout, new MenuFragment());
+            ft.add(R.id.activityLayout, new MenuFragment(), "MenuFragment");
             ft.addToBackStack(MenuFragment.class.getSimpleName());
             ft.commit();
             backButton.setVisibility(View.VISIBLE);
@@ -375,6 +377,19 @@ public class MainActivity extends AppCompatActivity {
             isGoBack = true;
         }
         isMenuTapped = !isMenuTapped;
+    }
+
+    public void refreshFragments()
+    {
+        for (int entry = 0; entry < getSupportFragmentManager().getBackStackEntryCount(); entry++)
+        {
+            String name = getSupportFragmentManager().getBackStackEntryAt(entry).getName();
+            MyRefreshFragment fragment = (MyRefreshFragment) getSupportFragmentManager().findFragmentByTag(name);
+            if (fragment != null)
+            {
+                fragment.refresh();
+            }
+        }
     }
 
     /*public void openImage(int id)

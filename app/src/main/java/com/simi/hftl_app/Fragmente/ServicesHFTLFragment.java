@@ -2,7 +2,6 @@ package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +15,7 @@ import com.simi.hftl_app.R;
 /**
  * Created by student on 12.02.2016.
  */
-public class ServicesHFTLFragment extends Fragment
+public class ServicesHFTLFragment extends MyRefreshFragment
 {
     public ServicesHFTLFragment() {}
 
@@ -49,7 +48,7 @@ public class ServicesHFTLFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ServicesLibaryFragment());
+                ft.add(R.id.activityLayout, new ServicesLibaryFragment(), "ServicesLibaryFragment");
                 ft.addToBackStack(ServicesLibaryFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -60,7 +59,7 @@ public class ServicesHFTLFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ServicesSportFragment());
+                ft.add(R.id.activityLayout, new ServicesSportFragment(), "ServicesSportFragment");
                 ft.addToBackStack(ServicesSportFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -71,7 +70,7 @@ public class ServicesHFTLFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ServicesWayToFragment());
+                ft.add(R.id.activityLayout, new ServicesWayToFragment(), "ServicesWayToFragment");
                 ft.addToBackStack(ServicesWayToFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -82,7 +81,7 @@ public class ServicesHFTLFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ServicesLinksFragment());
+                ft.add(R.id.activityLayout, new ServicesLinksFragment(), "ServicesLinksFragment");
                 ft.addToBackStack(ServicesLinksFragment.class.getSimpleName());
                 ft.commit();
             }
@@ -93,7 +92,7 @@ public class ServicesHFTLFragment extends Fragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ServicesRoomsFragment());
+                ft.add(R.id.activityLayout, new ServicesRoomsFragment(), "ServicesRoomsFragment");
                 ft.addToBackStack(ServicesRoomsFragment.class.getSimpleName());
                 ft.commit();
             }

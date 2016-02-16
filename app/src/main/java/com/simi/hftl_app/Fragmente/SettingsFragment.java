@@ -2,7 +2,6 @@ package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +16,7 @@ import com.simi.hftl_app.R;
 /**
  * Created by student on 11.02.2016.
  */
-public class SettingsFragment extends Fragment
+public class SettingsFragment extends MyRefreshFragment
 {
     public SettingsFragment () {}
 
@@ -54,6 +53,7 @@ public class SettingsFragment extends Fragment
                     if (((MainActivity)getActivity()).getLanguage().equals("en"))
                     {
                         Toast.makeText(getActivity().getApplicationContext(), "Die Sprache wurde auf Deutsch geändert.", Toast.LENGTH_LONG).show();
+                        ((MainActivity)getActivity()).refreshFragments();
                     }
                     activity.setLocale("de");
                 }
@@ -62,6 +62,7 @@ public class SettingsFragment extends Fragment
                     if (((MainActivity)getActivity()).getLanguage().equals("de"))
                     {
                         Toast.makeText(getActivity().getApplicationContext(), "Die Sprache wurde auf Englisch geändert.", Toast.LENGTH_LONG).show();
+                        ((MainActivity)getActivity()).refreshFragments();
                     }
                     activity.setLocale("en");
                 }

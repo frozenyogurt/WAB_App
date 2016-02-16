@@ -2,7 +2,6 @@ package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +17,7 @@ import com.simi.hftl_app.R;
 /**
  * Created by student on 12.02.2016.
  */
-public class EducationInfoFragment extends Fragment
+public class EducationInfoFragment extends MyRefreshFragment
 {
     public EducationInfoFragment() {}
 
