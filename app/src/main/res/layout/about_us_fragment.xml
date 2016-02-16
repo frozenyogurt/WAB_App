@@ -23,6 +23,7 @@
         android:layout_height="3dp"/>
 
     <ListView
+        android:scrollbars="none"
         android:id="@+id/about_us_list"
         android:divider="@color/magenta"
         android:dividerHeight="1dp"

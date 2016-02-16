@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.R;
 
 /**
@@ -48,8 +49,8 @@ public class ServicesHFTLFragment extends MyRefreshFragment
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                ft.add(R.id.activityLayout, new ServicesLibaryFragment(), "ServicesLibaryFragment");
-                ft.addToBackStack(ServicesLibaryFragment.class.getSimpleName());
+                ft.add(R.id.activityLayout, new ServicesLibraryFragment(), "ServicesLibaryFragment");
+                ft.addToBackStack(ServicesLibraryFragment.class.getSimpleName());
                 ft.commit();
             }
         });
@@ -109,6 +110,14 @@ public class ServicesHFTLFragment extends MyRefreshFragment
         imageThree.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.maps));
         imageFour.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.link));
         imageFive.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.lab));
+
+        LinearLayout goToWebsiteRooms = (LinearLayout) view.findViewById(R.id.services_website_link);
+        goToWebsiteRooms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity) getActivity()).goToWebsite("https://www.hft-leipzig.de/de/hochschule/service-an-der-hftl.html");
+            }
+        });
 
         return view;
     }

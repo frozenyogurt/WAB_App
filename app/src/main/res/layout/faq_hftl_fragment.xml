@@ -22,6 +22,7 @@
         android:layout_height="3dp"/>
 
     <ListView
+        android:scrollbars="none"
         android:id="@+id/faq_list"
         android:divider="@color/hftl_info_color"
         android:dividerHeight="1dp"

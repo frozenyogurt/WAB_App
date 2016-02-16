@@ -34,11 +34,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 //TODO Implementierung des Testfragments
-//TODO Funktionen der Optionen im Menü implemetieren
 //TODO Links auf die Website einbinden
-//TODO Inhalte der Studiengänge eintragen
-//TODO HFTL Info Fragment
-//TODO Weiterbildung einbinden!?
 //TODO 2 Designs anbieten (vielleicht nur die Hauptseite oder die Farben der Boxen verändern lassen)
 //TODO Feste Strings(auch andere Werte) in xml File auslagern
 
@@ -127,14 +123,7 @@ public class MainActivity extends AppCompatActivity {
         maps_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uri = String.format(Locale.ENGLISH,
-                                           "http://maps.google.com/maps?daddr=%f,%f (%s)",
-                                           51.312870,
-                                           12.374920,
-                                           "Hochschule für Technik Leipzig");
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
-                startActivity(intent);
+                navigateToHFTL();
             }
         });
 
@@ -390,6 +379,27 @@ public class MainActivity extends AppCompatActivity {
                 fragment.refresh();
             }
         }
+    }
+
+    public void goToWebsite(String website)
+    {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse(website));
+        startActivity(intent);
+    }
+
+    public void navigateToHFTL()
+    {
+        String uri = String.format(Locale.ENGLISH,
+                "http://maps.google.com/maps?daddr=%f,%f (%s)",
+                51.312870,
+                12.374920,
+                "Hochschule für Telekommunikation Leipzig");
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+        startActivity(intent);
     }
 
     /*public void openImage(int id)

@@ -24,147 +24,184 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"/>
 
-    <LinearLayout
-        android:weightSum="3"
-        android:orientation="horizontal"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="5dp"
-                android:id="@+id/item_services_one">
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
 
-                <com.simi.hftl_app.Main.RoundedImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:id="@+id/item_image_one" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Name"
-                    android:id="@+id/item_one_name"
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
                     android:gravity="center"
-                    android:textSize="20sp"
-                    android:padding="10dp" />
+                    android:padding="5dp"
+                    android:id="@+id/item_services_one">
+
+                    <com.simi.hftl_app.Main.RoundedImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/item_image_one" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:id="@+id/item_one_name"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:id="@+id/item_services_two">
+
+                    <com.simi.hftl_app.Main.RoundedImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/item_image_two" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:id="@+id/item_two_name"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:id="@+id/item_services_three">
+
+                    <com.simi.hftl_app.Main.RoundedImageView
+                        android:id="@+id/item_image_three"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:id="@+id/item_three_name"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="10dp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="5dp"
-                android:id="@+id/item_services_two">
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
 
-                <com.simi.hftl_app.Main.RoundedImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:id="@+id/item_image_two" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Name"
-                    android:id="@+id/item_two_name"
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
                     android:gravity="center"
-                    android:textSize="20sp"
-                    android:padding="10dp" />
+                    android:padding="5dp"
+                    android:id="@+id/item_services_four">
 
-            </LinearLayout>
+                    <com.simi.hftl_app.Main.RoundedImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/item_image_four" />
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="5dp"
-                android:id="@+id/item_services_three">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:id="@+id/item_four_name"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="10dp" />
 
-                <com.simi.hftl_app.Main.RoundedImageView
-                    android:id="@+id/item_image_three"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp" />
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Name"
-                    android:id="@+id/item_three_name"
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
                     android:gravity="center"
-                    android:textSize="20sp"
-                    android:padding="10dp" />
+                    android:padding="5dp"
+                    android:id="@+id/item_services_five">
+
+                    <com.simi.hftl_app.Main.RoundedImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/item_image_five" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:id="@+id/item_five_name"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="10dp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:weightSum="3"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/services_website_link"
+            android:padding="20dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="5dp"
-                android:id="@+id/item_services_four">
+            <ImageView
+                android:src="@drawable/www"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
 
-                <com.simi.hftl_app.Main.RoundedImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:id="@+id/item_image_four" />
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Alle Informationen anschauen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Name"
-                    android:id="@+id/item_four_name"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:padding="10dp" />
+        </LinearLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="5dp"
-                android:id="@+id/item_services_five">
-
-                <com.simi.hftl_app.Main.RoundedImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:id="@+id/item_image_five" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Name"
-                    android:id="@+id/item_five_name"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:padding="10dp" />
-
-            </LinearLayout>
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

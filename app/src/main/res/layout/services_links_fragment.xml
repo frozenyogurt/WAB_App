@@ -3,14 +3,33 @@
     android:orientation="vertical"
     android:background="@android:color/white"
     android:clickable="true"
+    android:padding="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
         android:text="Links"
-        android:textSize="40sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/hftl_info_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <ListView
+        android:scrollbars="none"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:dividerHeight="1dp"
+        android:divider="@color/hftl_info_color"
+        android:id="@+id/services_links_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
 
 </LinearLayout>

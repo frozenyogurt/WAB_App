@@ -1,7 +1,5 @@
 package com.simi.hftl_app.Fragmente;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -10,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.R;
 
 /**
@@ -33,11 +32,7 @@ public class ContactHFTLFragment extends MyRefreshFragment
         sendForm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://www.hft-leipzig.de/de/kontakt/kontakt.html"));
-                startActivity(intent);
+                ((MainActivity)getActivity()).goToWebsite("https://www.hft-leipzig.de/de/kontakt/kontakt.html");
             }
         });
 
