@@ -61,7 +61,6 @@ public class StudyInfoFragment extends MyRefreshFragment
             beginning.setText(getActivity().getResources().getString(R.string.ICT_MASTER_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.ICT_MASTER_PERSPECTIVES_TEXT));
             curriculumText.setText(getActivity().getResources().getString(R.string.ICT_MASTER_CURRICULUM_TEXT));
-            //getActivity().getResources().getDrawable(R.drawable.pbh_saupe); //Test aber noch entfernen
         }
         else if (element.getCourse().equals(StudyCourse.KMI_BACHELOR))
         {
@@ -102,31 +101,9 @@ public class StudyInfoFragment extends MyRefreshFragment
         }
         else if (element.getCourse().equals(StudyCourse.JOB_IKT_BACHELOR))
         {
-            beginning.setText("Der Bachelor-Studiengang Informations- und Kommunikationstechnik ist eine berufsbegleitende Weiterqualifizierung, die Dir Kenntnisse zu den Anforderungen moderner Telekommunikation vermittelt. Damit Du immer die Balance zwischen Beruf und Studium hältst, bietet Dir die HfTL moderne IT-gestützte Bildungstechnologien sowie Lehr- und Lernszenarien auf der Basis des Web 2.0. \n" +
-                    "\n" +
-                    "Der Studiengang ist speziell auf die Anforderungen der Deutschen Telekom zugeschnitten. Zu den Inhalten gehören Mathematik, Physik, Informatik und Elektrotechnik. Du lernst das Wichtigste zu Übertragungsmedien, Signalaufbereitung und -verarbeitung sowie zu Verfahren und Methoden der Nachrichtenübermittlung.");
-            perspectives.setText("Als Informations- und Kommunikationstechniker hast Du zahlreiche Berufsmöglichkeiten: Entwicklungsingenieure sind immer dann gefragt, wenn es um technische Problemstellungen geht. Sie entwickeln wirtschaftlich arbeitende IT-Lösungen und optimieren diese laufend. Projektingenieure planen und betreiben Geräte und Anlagen der Nachrichtentechnik. Sie übernehmen die Projektleitung und haben dabei immer die Wünsche der Kunden im Blick. Vertriebsingenieure planen und steuern komplexe Marketing- und Vertriebsprozesse im nachrichtentechnischen Umfeld. Zu ihren Tätigkeiten gehören auch Marktforschung und Konkurrenzanalyse. \n" +
-                    "\n" +
-                    "Ein wichtiger Trend auf dem Telekommunikationsmarkt ist die Konvergenz – das Zusammenwachsen von Sprach- und Datendiensten sowie Mobil- und Festnetz. Um diese Entwicklung zu gestalten, brauchen Unternehmen Informations- und Kommunikationstechniker, die sich vor allem um die Kapazitätsplanung und das Management kümmern. Schließlich sollten Netze so konzipiert sein, dass sie den Ansprüchen von morgen gerecht werden. ");
-            curriculumText.setText("Grundlagen:\n" +
-                    "Projektmanagement, Technisches Englisch, Wirtschaft, Recht,\n" +
-                    "Wissenschaftlich Angeleitete Berufspraxis, Studienbegleitung zur Vertiefung von Soft- und Management Skills, Projektarbeit (innovative Projekte aus dem Unternehmen DTAG und Forschungsarbeiten an der Hochschule)\n" +
-                    "\n" +
-                    "Mathematisch-naturwissenschaftliche Grundlagen:\n" +
-                    "Mathematik, Physik, Messtechnik, Elektrotechnik, Schaltungstechnik,\n" +
-                    "Telekommunikationstechnik und Telekommunikationsnetze\n" +
-                    "Signalverarbeitung, Grundprinzipien der Datenkompression, Methoden\n" +
-                    "zum Schutz von Signalen vor Übertragungsfehlern, Übertragungsverfahren, optische Übertragungssysteme und -technologien (vom Weitverkehr bis in das\n" +
-                    "Zugangsnetz), Hochfrequenztechnik, mobile Datenkommunikation\n" +
-                    "Qualitätsanalyse und Qualitätssicherungsverfahren in\n" +
-                    "Telekommunikationsnetzen im Rahmen des Netzmanagements, verkehrstheoretische Informationsflussanalysen, Planung von Netzen\n" +
-                    "\n" +
-                    "Informatik:\n" +
-                    "Grundlagen der Informatik, Programmierung und technische Informatik\n" +
-                    "\n" +
-                    "Betriebswirtschaft:\n" +
-                    "Kostenmanagement, Kunden- und Preismanagement, Rechnungswesen,\n" +
-                    "Controlling, Marketing ");
+            beginning.setText(getActivity().getResources().getString(R.string.JOB_IKT_BACHELOR_BEGINNING_TEXT));
+            perspectives.setText(getActivity().getResources().getString(R.string.JOB_IKT_BACHELOR_PERSPECTIVES_TEXT));
+            curriculumText.setText(getActivity().getResources().getString(R.string.JOB_IKT_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.JOB_IKT_MASTER))
         {

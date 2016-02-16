@@ -116,9 +116,34 @@ Kommunikations- und Medieninformatik vermittelt Kenntnisse aus den Bereichen Phy
     <string name="IKT_MASTER_ENGLISH_CURRICULUM_TEXT">text</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="JOB_IKT_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="JOB_IKT_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="JOB_IKT_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="JOB_IKT_BACHELOR_BEGINNING_TEXT">Der Bachelor-Studiengang Informations- und Kommunikationstechnik ist eine berufsbegleitende Weiterqualifizierung, die Dir Kenntnisse zu den Anforderungen moderner Telekommunikation vermittelt.
+        Damit Du immer die Balance zwischen Beruf und Studium hältst, bietet Dir die HfTL moderne IT-gestützte Bildungstechnologien sowie Lehr- und Lernszenarien auf der Basis des Web 2.0.\n
+        Der Studiengang ist speziell auf die Anforderungen der Deutschen Telekom zugeschnitten.
+        Zu den Inhalten gehören Mathematik, Physik, Informatik und Elektrotechnik.
+        Du lernst das Wichtigste zu Übertragungsmedien, Signalaufbereitung und -verarbeitung sowie zu Verfahren und Methoden der Nachrichtenübermittlung.</string>
+    <string name="JOB_IKT_BACHELOR_PERSPECTIVES_TEXT">Als Informations- und Kommunikationstechniker hast Du zahlreiche Berufsmöglichkeiten: Entwicklungsingenieure sind immer dann gefragt, wenn es um technische Problemstellungen geht.
+        Sie entwickeln wirtschaftlich arbeitende IT-Lösungen und optimieren diese laufend.\n
+        Projektingenieure planen und betreiben Geräte und Anlagen der Nachrichtentechnik.
+        Sie übernehmen die Projektleitung und haben dabei immer die Wünsche der Kunden im Blick.\n
+        Vertriebsingenieure planen und steuern komplexe Marketing- und Vertriebsprozesse im nachrichtentechnischen Umfeld.
+        Zu ihren Tätigkeiten gehören auch Marktforschung und Konkurrenzanalyse.
+        Ein wichtiger Trend auf dem Telekommunikationsmarkt ist die Konvergenz – das Zusammenwachsen von Sprach- und Datendiensten sowie Mobil- und Festnetz.
+        Um diese Entwicklung zu gestalten, brauchen Unternehmen Informations- und Kommunikationstechniker, die sich vor allem um die Kapazitätsplanung und das Management kümmern.
+        Schließlich sollten Netze so konzipiert sein, dass sie den Ansprüchen von morgen gerecht werden. </string>
+    <string name="JOB_IKT_BACHELOR_CURRICULUM_TEXT">Grundlagen:\n
+                    - Projektmanagement, Technisches Englisch, Wirtschaft, Recht,\n
+                    - Wissenschaftlich Angeleitete Berufspraxis, Studienbegleitung zur Vertiefung von Soft- und Management Skills, Projektarbeit (innovative Projekte aus dem Unternehmen DTAG und Forschungsarbeiten an der Hochschule)\n
+                    - Mathematisch-naturwissenschaftliche Grundlagen:\n
+                    - Mathematik, Physik, Messtechnik, Elektrotechnik, Schaltungstechnik,\n
+                    - Telekommunikationstechnik und Telekommunikationsnetze\n
+                    - Signalverarbeitung, Grundprinzipien der Datenkompression, Methoden\n
+                    - zum Schutz von Signalen vor Übertragungsfehlern, Übertragungsverfahren, optische Übertragungssysteme und -technologien (vom Weitverkehr bis in das Zugangsnetz), Hochfrequenztechnik, mobile Datenkommunikation\n
+                    - Qualitätsanalyse und Qualitätssicherungsverfahren in Telekommunikationsnetzen\n
+                    Informatik:\n
+                    - Grundlagen der Informatik, Programmierung und technische Informatik\n
+                    Betriebswirtschaft:\n
+                    - Kostenmanagement, Kunden- und Preismanagement, Rechnungswesen,\n
+                    - Controlling, Marketing </string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <string name="JOB_IKT_MASTER_BEGINNING_TEXT">text</string>
