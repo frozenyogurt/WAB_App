@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.simi.hftl_app.Listen.FAQListItem;
 import com.simi.hftl_app.Main.MainActivity;
-import com.simi.hftl_app.Model.Question;
+import com.simi.hftl_app.Model.QuestionType;
 import com.simi.hftl_app.R;
 
 /**
@@ -30,39 +30,39 @@ public class FAQInfoFragment extends MyRefreshFragment
         FAQListItem clickedItem = ((MainActivity) getActivity()).getClickedFAQ();
 
         title.setText(clickedItem.getName());
-        if(clickedItem.getQuestion().equals(Question.ACCEPTED))
+        if(clickedItem.getQuestionType().equals(QuestionType.ACCEPTED))
         {
             text.setText("Anwort zur Frage");
         }
-        if(clickedItem.getQuestion().equals(Question.APARTMENTS))
+        if(clickedItem.getQuestionType().equals(QuestionType.APARTMENTS))
         {
             text.setText("Anwort zur Frage");
         }
-        if(clickedItem.getQuestion().equals(Question.INTERNSHIP))
+        if(clickedItem.getQuestionType().equals(QuestionType.INTERNSHIP))
         {
             text.setText("Anwort zur Frage");
         }
-        if(clickedItem.getQuestion().equals(Question.MEANING_ACCREDITATION))
+        if(clickedItem.getQuestionType().equals(QuestionType.MEANING_ACCREDITATION))
         {
             text.setText("Anwort zur Frage");
         }
-        if(clickedItem.getQuestion().equals(Question.STUDY_CATEGORY_DIFFERENCE))
+        if(clickedItem.getQuestionType().equals(QuestionType.STUDY_CATEGORY_DIFFERENCE))
         {
             text.setText("Anwort zur Frage");
         }
-        if(clickedItem.getQuestion().equals(Question.STUDY_COSTS))
+        if(clickedItem.getQuestionType().equals(QuestionType.STUDY_COSTS))
         {
             text.setText("Anwort zur Frage");
         }
-        if(clickedItem.getQuestion().equals(Question.STUDY_COSTS_SEMESTER))
+        if(clickedItem.getQuestionType().equals(QuestionType.STUDY_COSTS_SEMESTER))
         {
             text.setText("Anwort zur Frage");
         }
-        if(clickedItem.getQuestion().equals(Question.STUDY_FAR_AWAY))
+        if(clickedItem.getQuestionType().equals(QuestionType.STUDY_FAR_AWAY))
         {
             text.setText("Anwort zur Frage");
         }
-        if(clickedItem.getQuestion().equals(Question.WHICH_STUDY_COURSE))
+        if(clickedItem.getQuestionType().equals(QuestionType.WHICH_STUDY_COURSE))
         {
             text.setText("Anwort zur Frage");
         }

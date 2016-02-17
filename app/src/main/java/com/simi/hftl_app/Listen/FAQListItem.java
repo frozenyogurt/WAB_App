@@ -1,6 +1,6 @@
 package com.simi.hftl_app.Listen;
 
-import com.simi.hftl_app.Model.Question;
+import com.simi.hftl_app.Model.QuestionType;
 
 /**
  * Created by student on 14.02.2016.
@@ -8,12 +8,12 @@ import com.simi.hftl_app.Model.Question;
 public class FAQListItem
 {
     private String name;
-    private Question question;
+    private QuestionType questionType;
 
-    public FAQListItem (String name, Question question)
+    public FAQListItem (String name, QuestionType questionType)
     {
         this.name = name;
-        this.question = question;
+        this.questionType = questionType;
     }
 
     public String getName() {
@@ -24,11 +24,11 @@ public class FAQListItem
         this.name = name;
     }
 
-    public Question getQuestion() {
-        return question;
+    public QuestionType getQuestionType() {
+        return questionType;
     }
 
-    public void setQuestion(Question question) {
-        this.question = question;
+    public void setQuestionType(QuestionType questionType) {
+        this.questionType = questionType;
     }
 }

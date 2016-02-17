@@ -12,7 +12,7 @@ import android.widget.ListView;
 import com.simi.hftl_app.Listen.FAQListAdapter;
 import com.simi.hftl_app.Listen.FAQListItem;
 import com.simi.hftl_app.Main.MainActivity;
-import com.simi.hftl_app.Model.Question;
+import com.simi.hftl_app.Model.QuestionType;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -32,15 +32,15 @@ public class FAQFragment extends MyRefreshFragment
 
         ListView list = (ListView) view.findViewById(R.id.faq_list);
         final ArrayList<FAQListItem> persons = new ArrayList<>();
-        persons.add(new FAQListItem("Die HfTL ist eine private Hochschule. Wie hoch sind die Studiengebühren?", Question.STUDY_COSTS));
-        persons.add(new FAQListItem("Wie hoch ist der Semesterbeitrag des Studentenwerkes?", Question.STUDY_COSTS_SEMESTER));
-        persons.add(new FAQListItem("An der HfTL werden sowohl berufsbegleitende als auch duale Studiengänge angeboten. Wo ist der Unterschied?", Question.STUDY_CATEGORY_DIFFERENCE));
-        persons.add(new FAQListItem("Woher weiß ich, ob ein Studium an der HfTL das richtige für mich ist?", Question.WHICH_STUDY_COURSE));
-        persons.add(new FAQListItem("Die Studiengänge an der HfTL verfügen über eine Akkreditierung. Was bedeutet das?", Question.MEANING_ACCREDITATION));
-        persons.add(new FAQListItem("Wann erfahre ich nach meiner Bewerbung, ob ich für ein Studium an der HfTL zugelassen bin?", Question.ACCEPTED));
-        persons.add(new FAQListItem("Vermittelt die HfTL Wohnheimplätze?", Question.APARTMENTS));
-        persons.add(new FAQListItem("Brauche ich ein Vorpraktikum, um ein Studium an der HfTL aufzunehmen?", Question.INTERNSHIP));
-        persons.add(new FAQListItem("Werden mir die Studienleistungen aus einem Auslandssemester an der HfTL anerkannt?", Question.STUDY_FAR_AWAY));
+        persons.add(new FAQListItem("Die HfTL ist eine private Hochschule. Wie hoch sind die Studiengebühren?", QuestionType.STUDY_COSTS));
+        persons.add(new FAQListItem("Wie hoch ist der Semesterbeitrag des Studentenwerkes?", QuestionType.STUDY_COSTS_SEMESTER));
+        persons.add(new FAQListItem("An der HfTL werden sowohl berufsbegleitende als auch duale Studiengänge angeboten. Wo ist der Unterschied?", QuestionType.STUDY_CATEGORY_DIFFERENCE));
+        persons.add(new FAQListItem("Woher weiß ich, ob ein Studium an der HfTL das richtige für mich ist?", QuestionType.WHICH_STUDY_COURSE));
+        persons.add(new FAQListItem("Die Studiengänge an der HfTL verfügen über eine Akkreditierung. Was bedeutet das?", QuestionType.MEANING_ACCREDITATION));
+        persons.add(new FAQListItem("Wann erfahre ich nach meiner Bewerbung, ob ich für ein Studium an der HfTL zugelassen bin?", QuestionType.ACCEPTED));
+        persons.add(new FAQListItem("Vermittelt die HfTL Wohnheimplätze?", QuestionType.APARTMENTS));
+        persons.add(new FAQListItem("Brauche ich ein Vorpraktikum, um ein Studium an der HfTL aufzunehmen?", QuestionType.INTERNSHIP));
+        persons.add(new FAQListItem("Werden mir die Studienleistungen aus einem Auslandssemester an der HfTL anerkannt?", QuestionType.STUDY_FAR_AWAY));
         FAQListAdapter adapter = new FAQListAdapter((MainActivity)getActivity(),R.layout.faq_list_item,persons);
         list.setAdapter(adapter);
 
