@@ -18,55 +18,45 @@
         android:layout_height="wrap_content" />
 
     <CheckBox
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
         android:id="@+id/answer_one"
         android:clickable="true"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <CheckBox
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
         android:id="@+id/answer_two"
         android:clickable="true"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <CheckBox
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
         android:id="@+id/answer_three"
         android:clickable="true"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <CheckBox
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
         android:id="@+id/answer_four"
         android:clickable="true"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <CheckBox
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
         android:id="@+id/answer_five"
         android:clickable="true"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 5"
         android:layout_width="match_parent"

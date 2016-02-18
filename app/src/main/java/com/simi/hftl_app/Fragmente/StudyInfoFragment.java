@@ -56,13 +56,13 @@ public class StudyInfoFragment extends MyRefreshFragment
         TextView perspectives = (TextView) view.findViewById(R.id.jobPerspectivesText);
         TextView curriculumText = (TextView) view.findViewById(R.id.curriculumText);
 
-        if (element.getCourse().equals(StudyCourse.ICT_MASTER)) //???????????????????????????????????
+        /*if (element.getCourse().equals(StudyCourse.ICT_MASTER)) //???????????????????????????????????
         {
             beginning.setText(getActivity().getResources().getString(R.string.ICT_MASTER_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.ICT_MASTER_PERSPECTIVES_TEXT));
             curriculumText.setText(getActivity().getResources().getString(R.string.ICT_MASTER_CURRICULUM_TEXT));
-        }
-        else if (element.getCourse().equals(StudyCourse.KMI_BACHELOR))
+        }**/
+        if (element.getCourse().equals(StudyCourse.KMI_BACHELOR))
         {
 
             beginning.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_BEGINNING_TEXT));

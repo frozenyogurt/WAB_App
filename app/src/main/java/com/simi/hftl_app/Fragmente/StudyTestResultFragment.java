@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
-import com.simi.hftl_app.Model.Rating;
+import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.R;
 
 /**
@@ -36,8 +36,20 @@ public class StudyTestResultFragment extends Fragment
             }
         });
 
+        MainActivity activity = ((MainActivity)getActivity());
         TextView solutionText = (TextView) view.findViewById(R.id.solution_text_test);
-        solutionText.setText("Du solltest dich für folgenden Studiengang entscheiden:");
+        if (activity.getWinner() != null)
+        {
+            solutionText.setText("Der folgende Studiengang passt perfekt zu dir:");
+        }
+        else if (activity.getAlternative() != null)
+        {
+            solutionText.setText("Der folgende Studiengang kommt deinen Anforderungen am Nähesten:");
+        }
+        else
+        {
+            solutionText.setText("Lieder haben wir keinen Studiengang an der HfTL für dich ausfindig machen können.");
+        }
 
         TextView result = (TextView) view.findViewById(R.id.result_test);
         result.setText(getWinner());
@@ -47,7 +59,68 @@ public class StudyTestResultFragment extends Fragment
 
     public String getWinner()
     {
-        Rating rating = new Rating();
-        return "keinen";
+        MainActivity activity = ((MainActivity)getActivity());
+        String solution = "";
+        if (activity.getWinner() != null)
+        {
+            solution = getSolution(activity.getWinner());
+        }
+        else if (activity.getAlternative() != null)
+        {
+            solution = getSolution(activity.getAlternative());
+        }
+        else
+        {
+            solution = "Keinen";
+        }
+        return solution;
+    }
+
+    public String getSolution(StudyCourse course)
+    {
+        String solution = "";
+        switch (course)
+        {
+            case KMI_BACHELOR:
+                solution = "KMI Bachelor";
+                break;
+            case IKT_MASTER:
+                solution = "IKT Master oder IKT Master Englisch";
+                break;
+            case WI_BACHELOR:
+                solution = "WI Bachelor";
+                break;
+            case DUAL_KMI_BACHELOR:
+                solution = "Dualer KMI Bachelor";
+                break;
+            case JOB_KMI_BACHELOR:
+                solution = "Berufsbegleitender KMI Bachelor";
+                break;
+            case DUAL_WI_BACHELOR:
+                solution = "Dualer WI Bachelor";
+                break;
+            case DUAL_WI_MASTER:
+                solution = "Dualer WI Master";
+                break;
+            case JOB_WI_BACHELOR:
+                solution = "Berufsbegleitender WI Bachelor";
+                break;
+            case JOB_WI_MASTER:
+                solution = "Berufsbegleitender WI Master";
+                break;
+            case IKT_BACHELOR:
+                solution = "IKT Bachelor";
+                break;
+            case JOB_IKT_BACHELOR:
+                solution = "Berufsbegleitender IKT Bachelor";
+                break;
+            case JOB_IKT_MASTER:
+                solution = "Berufsbegleitender IKT Master";
+                break;
+            case DUAL_AI_BACHELOR:
+                solution = "Dualer AI Bachelor";
+                break;
+        }
+        return solution;
     }
 }

@@ -30,6 +30,8 @@ import com.simi.hftl_app.Listen.PersonListItem;
 import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.Model.Answer;
 import com.simi.hftl_app.Model.Question;
+import com.simi.hftl_app.Model.Rating;
+import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -60,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean isGoBack = false;
     private ArrayList<Question> questionsList = new ArrayList<>();
     private int currentPage;
-    private boolean isFirstElement = false;
+    private StudyCourse winner;
+    private StudyCourse alternative;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -327,7 +330,7 @@ public class MainActivity extends AppCompatActivity {
 
         emailIntent.setType("plain/text");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{person.getMail()});
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, new String[] {"Frage"});
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, new String[]{"Frage"});
         emailIntent.putExtra(Intent.EXTRA_TEXT, "Hallo " + person.getName() + ",");
 
         startActivity(Intent.createChooser(emailIntent, "Mail senden..."));
@@ -423,9 +426,18 @@ public class MainActivity extends AppCompatActivity {
             {
                 questionsList.get(i).getAnswers().get(0).setIsSet(answer == 1 && isActive);
                 questionsList.get(i).getAnswers().get(1).setIsSet(answer == 2 && isActive);
-                questionsList.get(i).getAnswers().get(2).setIsSet(answer == 3 && isActive);
-                questionsList.get(i).getAnswers().get(3).setIsSet(answer == 4 && isActive);
-                questionsList.get(i).getAnswers().get(4).setIsSet(answer == 5 && isActive);
+                if (questionsList.get(i).getAnswers().size() > 2)
+                {
+                    questionsList.get(i).getAnswers().get(2).setIsSet(answer == 3 && isActive);
+                    if (questionsList.get(i).getAnswers().size() > 3)
+                    {
+                        questionsList.get(i).getAnswers().get(3).setIsSet(answer == 4 && isActive);
+                        if (questionsList.get(i).getAnswers().size() > 4)
+                        {
+                            questionsList.get(i).getAnswers().get(4).setIsSet(answer == 5 && isActive);
+                        }
+                    }
+                }
             }
         }
     }
@@ -433,53 +445,100 @@ public class MainActivity extends AppCompatActivity {
     public void initQuestionList()
     {
         ArrayList<Answer> answers1 = new ArrayList<>();
-        answers1.add(new Answer("Antwort 1"));
-        answers1.add(new Answer("Antwort 2"));
-        answers1.add(new Answer("Antwort 3"));
-        answers1.add(new Answer("Antwort 4"));
-        answers1.add(new Answer("Antwort 5"));
-
-        questionsList.add(new Question("Frage 1", answers1));
+        answers1.add(new Answer("Sehr gut", Rating.getInitializedRatingMap(0,0,0,6,6,6,6,0,0)));
+        answers1.add(new Answer("Gut", Rating.getInitializedRatingMap(0,0,0,4,6,4,4,0,0)));
+        answers1.add(new Answer("Geht so", Rating.getInitializedRatingMap(0,0,0,2,6,2,2,0,0)));
+        answers1.add(new Answer("Nicht so gut", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
+        questionsList.add(new Question("Wie schätzt du dein math.-naturwissenschaftliches Vorwissen ein?", answers1));
 
         ArrayList<Answer> answers2 = new ArrayList<>();
-        answers2.add(new Answer("Antwort 1"));
-        answers2.add(new Answer("Antwort 2"));
-        answers2.add(new Answer("Antwort 3"));
-        answers2.add(new Answer("Antwort 4"));
-        answers2.add(new Answer("Antwort 5"));
-        questionsList.add(new Question("Frage 2", answers2));
+        answers2.add(new Answer("Ja, so viele wie möglich", Rating.getInitializedRatingMap(0,0,0,6,0,6,6,0,0)));
+        answers2.add(new Answer("Ja, einige sind gut", Rating.getInitializedRatingMap(0,0,0,4,2,4,4,0,0)));
+        answers2.add(new Answer("Nur wenn es sein muss", Rating.getInitializedRatingMap(0,0,0,2,4,2,2,0,0)));
+        answers2.add(new Answer("Auf keinen Fall", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
+        questionsList.add(new Question("Bist du an den math.-naturwissenschaftlichen Grundlagen der Informatik interessiert?", answers2));
 
         ArrayList<Answer> answers3 = new ArrayList<>();
-        answers3.add(new Answer("Antwort 1"));
-        answers3.add(new Answer("Antwort 2"));
-        answers3.add(new Answer("Antwort 3"));
-        answers3.add(new Answer("Antwort 4"));
-        answers3.add(new Answer("Antwort 5"));
-        questionsList.add(new Question("Frage 3", answers3));
+        answers3.add(new Answer("Ja, sie sind sehr wichtig", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
+        answers3.add(new Answer("Ja, sie sind wichtig", Rating.getInitializedRatingMap(0,0,0,2,4,2,2,0,0)));
+        answers3.add(new Answer("Geht so", Rating.getInitializedRatingMap(0,0,0,4,2,4,4,0,0)));
+        answers3.add(new Answer("Gar nicht wichtig", Rating.getInitializedRatingMap(0,0,0,6,0,6,6,0,0)));
+        questionsList.add(new Question("Sind Dir wirtschaftliche Module wie Allgemeine Betriebswirtschaftslehre, Marketing & CRM und Volks\u00ADwirtschaftslehre wichtig?", answers3));
 
         ArrayList<Answer> answers4 = new ArrayList<>();
-        answers4.add(new Answer("Antwort 1"));
-        answers4.add(new Answer("Antwort 2"));
-        answers4.add(new Answer("Antwort 3"));
-        answers4.add(new Answer("Antwort 4"));
-        answers4.add(new Answer("Antwort 5"));
-        questionsList.add(new Question("Frage 4", answers4));
+        answers4.add(new Answer("Rechnungswesen & Controlling", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
+        answers4.add(new Answer("Programmierung", Rating.getInitializedRatingMap(0,0,0,6,6,0,6,0,0)));
+        answers4.add(new Answer("Social Media Communication", Rating.getInitializedRatingMap(0,0,0,0,0,0,6,0,0)));
+        questionsList.add(new Question("Welches dieser Themengebiete sagt Dir am meisten zu?", answers4));
 
         ArrayList<Answer> answers5 = new ArrayList<>();
-        answers5.add(new Answer("Antwort 1"));
-        answers5.add(new Answer("Antwort 2"));
-        answers5.add(new Answer("Antwort 3"));
-        answers5.add(new Answer("Antwort 4"));
-        answers5.add(new Answer("Antwort 5"));
-        questionsList.add(new Question("Frage 5", answers5));
+        answers5.add(new Answer("ProjektmanagerIn in Themen wie Cloud Computing, Smart Home, Visualisierung, Datensicherheit und Automotive", Rating.getInitializedRatingMap(0,0,0,0,0,0,6,0,0)));
+        answers5.add(new Answer("In Kapazitätsplanung und -management legst Du die Grundlagen für das Netz von morgen.", Rating.getInitializedRatingMap(0,0,0,0,0,6,0,0,0)));
+        answers5.add(new Answer("SoftwareentwicklerIn und SystembetreuerIn großer Systeme oder  SystemdesignerIn in Informations- und Telekommunikationsunternehmen", Rating.getInitializedRatingMap(0,0,0,6,0,0,0,0,0)));
+        answers5.add(new Answer("überall, wo es eine IT gibt, die im weitesten Sinne betriebswirtschaftliche Funktionen hat", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
+        questionsList.add(new Question("In welchem dieser Tätigkeitsbereiche würdest Du am liebsten arbeiten?", answers5));
 
         ArrayList<Answer> answers6 = new ArrayList<>();
-        answers6.add(new Answer("Antwort 1"));
-        answers6.add(new Answer("Antwort 2"));
-        answers6.add(new Answer("Antwort 3"));
-        answers6.add(new Answer("Antwort 4"));
-        answers6.add(new Answer("Antwort 5"));
-        questionsList.add(new Question("Frage 6", answers6));
+        answers6.add(new Answer("Netztopologie", Rating.getInitializedRatingMap(0,0,0,6,0,0,0,0,0)));
+        answers6.add(new Answer("Signalverarbeitung", Rating.getInitializedRatingMap(0,0,0,0,0,6,0,0,0)));
+        answers6.add(new Answer("Datensicherheit/Datenkompression", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
+        answers6.add(new Answer("Datenanalyse", Rating.getInitializedRatingMap(0,0,0,0,0,0,6,0,0)));
+        questionsList.add(new Question("Welches dieser Stichworte interessiert dich bei der Datenübertragung am meisten?", answers6));
+
+        ArrayList<Answer> answers7 = new ArrayList<>();
+        answers7.add(new Answer("ja", Rating.getInitializedRatingMap(3,0,6,0,0,0,0,0,0)));
+        answers7.add(new Answer("nein", Rating.getInitializedRatingMap(6,6,-300,0,0,0,0,0,0)));
+        questionsList.add(new Question("Hast du bereits eine Ausbildung im IT-Bereich absolviert?", answers7));
+
+        ArrayList<Answer> answers8 = new ArrayList<>();
+        answers8.add(new Answer("Nein, unter keinen Umständen.", Rating.getInitializedRatingMap(6,0,0,0,0,0,0,0,0)));
+        answers8.add(new Answer("Ja, ich wäre bereit sie selbst zu zahlen.", Rating.getInitializedRatingMap(3,6,3,0,0,0,0,0,0)));
+        answers8.add(new Answer("Ja, wenn ich diese durch eine Anstellung bei der Telekom finanzieren kann.", Rating.getInitializedRatingMap(3,0,6,0,0,0,0,0,0)));
+        questionsList.add(new Question("Wärst Du bereit Studiengebühren in Höhe von 250 pro Monat zu zahlen?", answers8));
+
+        ArrayList<Answer> answers9 = new ArrayList<>();
+        answers9.add(new Answer("Ja, das ist mir wichtig und es sollte so viel sein, wie das einer ausgelernten IT Fachkraft.", Rating.getInitializedRatingMap(2,0,6,0,0,0,0,0,0)));
+        answers9.add(new Answer("Es ist mir zwar wichtig, jedoch soll es primär die Kosten decken, die mir entstehen.", Rating.getInitializedRatingMap(6,6,2,0,0,0,0,0,0)));
+        answers9.add(new Answer("Nein, ich will nicht nebenbei bei der Telekom arbeiten, um Geld zu verdienen.", Rating.getInitializedRatingMap(0,6,0,0,0,0,0,0,0)));
+        questionsList.add(new Question("Ist es dir wichtig neben dem Studium auch ein Gehalt von der Telekom zu beziehen - und wenn ja, wie viel?", answers9));
+
+        ArrayList<Answer> answers10 = new ArrayList<>();
+        answers10.add(new Answer("Ja, es ist mir sehr wichtig", Rating.getInitializedRatingMap(6,0,6,0,0,0,0,0,0)));
+        answers10.add(new Answer("Ja, es ist mir wichtig", Rating.getInitializedRatingMap(4,0,4,0,0,0,0,0,0)));
+        answers10.add(new Answer("Es ist mir nicht so wichtig", Rating.getInitializedRatingMap(2,3,2,0,0,0,0,0,0)));
+        answers10.add(new Answer("Nein, denn ich will mich nur auf das Studium konzentrieren", Rating.getInitializedRatingMap(0,6,0,0,0,0,0,0,0)));
+        questionsList.add(new Question("Ist es Dir wichtig auch Berufserfahrung während des Studiums zu gewinnen?", answers10));
+
+        ArrayList<Answer> answers11 = new ArrayList<>();
+        answers11.add(new Answer("Nein, ich will mir nach dem Studium meinen Arbeitgeber selbst aussuchen oder ohne Verzögerung einen Master machen.", Rating.getInitializedRatingMap(0,6,3,0,0,0,0,0,0)));
+        answers11.add(new Answer("Ja, für zwei Jahre ist das in Ordnung.", Rating.getInitializedRatingMap(4,0,3,0,0,0,0,0,0)));
+        answers11.add(new Answer("Ja, ich will ohnehin bei der Telekom bleiben.", Rating.getInitializedRatingMap(6,0,6,0,0,0,0,0,0)));
+        questionsList.add(new Question("Kannst Du dir vorstellen für mindestens zwei Jahre nach dem Studium bei der Telekom zu bleiben?", answers11));
+
+        ArrayList<Answer> answers12 = new ArrayList<>();
+        answers12.add(new Answer("Mir ist eine Übernahme komplett unwichtig.",Rating.getInitializedRatingMap(0,6,0,0,0,0,0,0,0)));
+        answers12.add(new Answer("Eine Übernahme wäre nicht schlecht, muss aber nicht sein.", Rating.getInitializedRatingMap(3,3,3,0,0,0,0,0,0)));
+        answers12.add(new Answer("Ich will mit hoher Wahrscheinlichkeit übernommen werden.", Rating.getInitializedRatingMap(6,0,6,0,0,0,0,0,0)));
+        questionsList.add(new Question("Wie wichtig ist Dir die Aussicht auf eine Übernahme bei der Telekom?", answers12));
+
+        ArrayList<Answer> answers13 = new ArrayList<>();
+        answers13.add(new Answer("Anhand von Skripten lernen ist für mich ideal.", Rating.getInitializedRatingMap(4,0,6,0,0,0,0,0,0)));
+        answers13.add(new Answer("Skripte sind gut, aber Vorlesungen sind auch wichtig.", Rating.getInitializedRatingMap(6,0,4,0,0,0,0,0,0)));
+        answers13.add(new Answer("Ich möchte lieber weniger anhand von Skripten lernen, sondern eher an Vorlesungen teilnehmen.", Rating.getInitializedRatingMap(2,6,0,0,0,0,0,0,0)));
+        answers13.add(new Answer("Ich muss bei jeder Vorlesung dabei sein.", Rating.getInitializedRatingMap(0,6,0,0,0,0,0,0,0)));
+        questionsList.add(new Question("Bist Du gut darin Dir Inhalte selbst anhand von Skripten beizubringen? Oder bekommst du die Inhalte lieber in Vorlesungen vermittelt?", answers13));
+
+        ArrayList<Answer> answers14 = new ArrayList<>();
+        answers14.add(new Answer("Ja", Rating.getInitializedRatingMap(6,6,6,0,0,0,0,0,0)));
+        answers14.add(new Answer("Nein", Rating.getInitializedRatingMap(0,6,0,0,0,0,0,0,0)));
+        answers14.add(new Answer("Teilweise", Rating.getInitializedRatingMap(4,6,0,0,0,0,0,0,0)));
+        questionsList.add(new Question("Bist du bereit auf Freizeit zu verzichten, um dein Studium mit einer Berufstätigkeit zu verbinden?", answers14));
+
+        ArrayList<Answer> answers15 = new ArrayList<>();
+        answers15.add(new Answer("Ja", Rating.getInitializedRatingMap(0,0,0,0,0,0,0,0,6)));
+        answers15.add(new Answer("Nein", Rating.getInitializedRatingMap(0,0,0,0,0,0,0,6,0)));
+        answers15.add(new Answer("Das weiß ich noch nicht.", Rating.getInitializedRatingMap(0,0,0,0,0,0,0,6,6)));
+        questionsList.add(new Question("Planst du nach deinem Bachelor einen Master Studiengang?", answers15));
     }
 
     public int getCurrentViewPagerItem()
@@ -514,15 +573,6 @@ public class MainActivity extends AppCompatActivity {
         return isValid;
     }
 
-    public boolean isFirstElement()
-    {
-        return isFirstElement;
-    }
-
-    public void setIsFirstElement(boolean isFirstElement) {
-        this.isFirstElement = isFirstElement;
-    }
-
     public void endTest()
     {
         onBackPressed();
@@ -530,6 +580,22 @@ public class MainActivity extends AppCompatActivity {
         onBackPressed();
         setCurrentPage(0);
         questionsList = new ArrayList<>();
+    }
+
+    public StudyCourse getWinner() {
+        return winner;
+    }
+
+    public void setWinner(StudyCourse winner) {
+        this.winner = winner;
+    }
+
+    public StudyCourse getAlternative() {
+        return alternative;
+    }
+
+    public void setAlternative(StudyCourse alternative) {
+        this.alternative = alternative;
     }
 
     /*public void openImage(int id)

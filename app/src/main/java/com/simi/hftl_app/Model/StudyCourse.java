@@ -8,7 +8,6 @@ public enum StudyCourse
     IKT_BACHELOR,
     KMI_BACHELOR,
     WI_BACHELOR,
-    ICT_MASTER,
     IKT_MASTER,
     DUAL_KMI_BACHELOR,
     DUAL_WI_BACHELOR,

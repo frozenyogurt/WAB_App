@@ -35,14 +35,7 @@ public class QuestionFragment extends MyRefreshFragment
         final CheckBox questionFive = (CheckBox) view.findViewById(R.id.answer_five);
 
         MainActivity activity = ((MainActivity)getActivity());
-        if (activity.isFirstElement())
-        {
-            currentQuestion = activity.getQuestions().get(0);
-        }
-        else
-        {
-            currentQuestion = activity.getQuestions().get(activity.getCurrentViewPagerItem());
-        }
+        currentQuestion = activity.getQuestions().get(activity.getCurrentViewPagerItem());
         questionName.setText(currentQuestion.getQuestionName());
         for (int i = 0; i < currentQuestion.getAnswers().size(); i++)
         {

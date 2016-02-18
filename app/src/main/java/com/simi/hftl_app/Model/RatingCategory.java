@@ -11,6 +11,7 @@ public enum RatingCategory
     KMI,
     WI,
     IKT,
-    ICT,
-    AI
+    AI,
+    BACHELOR,
+    MASTER
 }

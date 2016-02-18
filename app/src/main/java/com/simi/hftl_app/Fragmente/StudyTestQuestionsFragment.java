@@ -14,7 +14,12 @@ import android.widget.Toast;
 
 import com.simi.hftl_app.Listen.ScreenSliderPagerAdapter;
 import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.Rating;
+import com.simi.hftl_app.Model.RatingCategory;
+import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.R;
+
+import java.util.HashMap;
 
 /**
  * Created by student on 16.02.2016.
@@ -59,6 +64,11 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                 if (position < activity.getQuestions().size() - 1) {
                     forwardButton.setVisibility(View.VISIBLE);
                 }
+                if (position == activity.getQuestions().size() - 1)
+                {
+                    result.setBackgroundResource(R.drawable.round_button_test);
+                    result.setText("Auswertung");
+                }
                 title.setText(getTitleText());
             }
 
@@ -69,13 +79,17 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (((MainActivity) getActivity()).isTestValid()) {
+                if (((MainActivity) getActivity()).isTestValid())
+                {
+                    calculateResult();
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                     ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
                     ft.add(R.id.activityLayout, new StudyTestResultFragment(), "StudyTestResultFragment");
                     ft.addToBackStack(StudyTestResultFragment.class.getSimpleName());
                     ft.commit();
-                } else {
+                }
+                else if (result.getText().toString().equals("Auswertung"))
+                {
                     Toast.makeText(getActivity().getApplicationContext(), "Der Test wurde nicht vollständig ausgefüllt.", Toast.LENGTH_LONG).show();
                 }
             }
@@ -96,6 +110,41 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
         });
 
         return view;
+    }
+
+    private void calculateResult()
+    {
+        Rating rating = new Rating();
+        MainActivity activity = ((MainActivity) getActivity());
+        for (int i = 0; i < activity.getQuestions().size(); i++)
+        {
+            for (int j = 0; j < activity.getQuestions().get(i).getAnswers().size(); j++)
+            {
+                if (activity.getQuestions().get(i).getAnswers().get(j).isSet())
+                {
+                    HashMap map = activity.getQuestions().get(i).getAnswers().get(j).getRatingMap();
+                    rating.setAIPoints(rating.getAIPoints() + ((Integer)map.get(RatingCategory.AI)).intValue());
+                    rating.setBachelorPoints(rating.getBachelorPoints() + ((Integer) map.get(RatingCategory.BACHELOR)).intValue());
+                    rating.setMasterPoints(rating.getMasterPoints() + ((Integer) map.get(RatingCategory.MASTER)).intValue());
+                    rating.setKMIPoints(rating.getKMIPoints() + ((Integer) map.get(RatingCategory.KMI)).intValue());
+                    rating.setWIPoints(rating.getWIPoints() + ((Integer) map.get(RatingCategory.WI)).intValue());
+                    rating.setIKTPoints(rating.getIKTPoints() + ((Integer) map.get(RatingCategory.IKT)).intValue());
+                    rating.setDirectPoints(rating.getDirectPoints() + ((Integer) map.get(RatingCategory.DIRECT)).intValue());
+                    rating.setDualPoints(rating.getDualPoints() + ((Integer) map.get(RatingCategory.DUAL)).intValue());
+                    rating.setJobPoints(rating.getJobPoints() + ((Integer) map.get(RatingCategory.JOB)).intValue());
+
+                }
+            }
+        }
+        StudyCourse winner = rating.getWinner();
+        if (winner != null)
+        {
+            activity.setWinner(winner);
+        }
+        else
+        {
+            activity.setWinner(rating.getAlternative());
+        }
     }
 
     public String getTitleText()

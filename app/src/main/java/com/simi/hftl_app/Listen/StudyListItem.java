@@ -25,12 +25,12 @@ public class StudyListItem
 
     private void init()
     {
-        if (course.equals(StudyCourse.ICT_MASTER))
+        /*if (course.equals(StudyCourse.ICT_MASTER))
         {
             this.category = Category.NORMAL;
             this.studyDegree = Degree.MASTER;
             this.studyType = StudyType.ICT;
-        }
+        }**/
         if (course.equals(StudyCourse.KMI_BACHELOR))
         {
             this.category = Category.NORMAL;
