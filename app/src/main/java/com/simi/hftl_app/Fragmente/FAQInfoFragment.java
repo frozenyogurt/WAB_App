@@ -32,7 +32,7 @@ public class FAQInfoFragment extends MyRefreshFragment
         title.setText(clickedItem.getName());
         if(clickedItem.getQuestionType().equals(QuestionType.ACCEPTED))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.ACCEPTED));
         }
         if(clickedItem.getQuestionType().equals(QuestionType.APARTMENTS))
         {

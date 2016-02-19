@@ -7,5 +7,8 @@ public enum Person
 {
     STEPHAN,
     SIMION,
-    FLORIAN
+    FLORIAN,
+    SAUPE,
+    MUELLER,
+    BADERSCHNEIDER
 }

@@ -58,6 +58,18 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.florian));
         }
+        else if (listItem.getPerson().equals(Person.MUELLER))
+        {
+            image.setImageDrawable(activity.getResources().getDrawable(R.drawable.pbh_mueller_herr));
+        }
+        else if (listItem.getPerson().equals(Person.SAUPE))
+        {
+            image.setImageDrawable(activity.getResources().getDrawable(R.drawable.florian));
+        }
+        else if (listItem.getPerson().equals(Person.BADERSCHNEIDER))
+        {
+            image.setImageDrawable(activity.getResources().getDrawable(R.drawable.florian));
+        }
 
         /*image.setOnClickListener(new View.OnClickListener() {
             @Override
