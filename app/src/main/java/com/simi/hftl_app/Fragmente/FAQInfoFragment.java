@@ -36,35 +36,35 @@ public class FAQInfoFragment extends MyRefreshFragment
         }
         if(clickedItem.getQuestionType().equals(QuestionType.APARTMENTS))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.APARTMENTS));
         }
         if(clickedItem.getQuestionType().equals(QuestionType.INTERNSHIP))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.INTERNSHIP));
         }
         if(clickedItem.getQuestionType().equals(QuestionType.MEANING_ACCREDITATION))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.MEANING_ACCREDITATION));
         }
         if(clickedItem.getQuestionType().equals(QuestionType.STUDY_CATEGORY_DIFFERENCE))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.STUDY_CATEGORY_DIFFERENCE));
         }
         if(clickedItem.getQuestionType().equals(QuestionType.STUDY_COSTS))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.STUDY_COSTS));
         }
         if(clickedItem.getQuestionType().equals(QuestionType.STUDY_COSTS_SEMESTER))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.STUDY_COSTS_SEMESTER));
         }
         if(clickedItem.getQuestionType().equals(QuestionType.STUDY_FAR_AWAY))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.STUDY_FAR_AWAY));
         }
         if(clickedItem.getQuestionType().equals(QuestionType.WHICH_STUDY_COURSE))
         {
-            text.setText("Anwort zur Frage");
+            text.setText(getActivity().getResources().getString(R.string.WHICH_STUDY_COURSE));
         }
 
         return view;

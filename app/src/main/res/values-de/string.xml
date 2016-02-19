@@ -291,8 +291,19 @@ Kommunikations- und Medieninformatik vermittelt Kenntnisse aus den Bereichen Phy
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="ACCEPTED">ABC</string>
-
+    <string name="ACCEPTED">Nach der Tagung der Zulassungskommission Anfang August werden die Zulassungen oder Absagen umgehend an die Bewerber verschickt.</string>
+    <string name="APARTMENTS">Für Direktstudenten unterstützt das Studentenwerk Leipzig bei der Wohnungssuche, das eigene Unterkünfte zur Verfügung stellt. Die Hochschule selbst vermittelt keine Wohnheimplätze./n
+        In Leipzig gibt es ein großes Angebot an bezahlbarem Wohnraum; gerade für Studenten bieten Leipziger Wohnungsunternehmen viele Alternativen an. </string>
+    <string name="INTERNSHIP">Nein, für ein Studium an der HfTL benötigst Du kein Vorpraktikum als Zugangsvoraussetzung.</string>
+    <string name="MEANING_ACCREDITATION">Im Rahmen des Bologna-Prozesses und der Vereinheitlichung der zu erwerbenden Abschlüsse sind die Hochschulen und Universitäten angehalten, Ihre Studiengänge und Studieninhalte durch Akkreditierungsgesellschaften hinsichtlich der Qualität kontinuierlich überprüfen zu lassen. /n
+Die Hochschule für Telekommunikation Leipzig hat für alle angebotenen Studiengänge eine Akkreditierung. Damit bestätigt die Agenturen, die hohe Qualität der Ausbildung und die erfolgreiche Umsetzung und Fortführung des Bologna-Prozesses an der HfTL.</string>
+    <string name="STUDY_CATEGORY_DIFFERENCE">Ein kooperativer Studiengang wird kombiniert mit einem Ausbildungsvertrag bei der Deutschen Telekom und dient der beruflichen Erstausbildung./n
+        Das berufsbegleitende Studium stellt eine Weiterbildungsmöglichkeit für bereits ausgebildete Berufstätige, nicht nur der Deutschen Telekom AG, dar.</string>
+    <string name="STUDY_COSTS">Die Gebühren belaufen sich auf 250 Euro pro Monat.</string>
+    <string name="STUDY_COSTS_SEMESTER">Der Semesterbeitrag beträgt 184,50 Euro.</string>
+    <string name="STUDY_FAR_AWAY">Da die HfTL über ein weites Netz an Partnerhochschule auf der ganzen Welt verfügt, an denen Auslandsemester absolviert werden können, ist die Anrechnung von im Ausland erbrachten Studienleistungen gewährleistet.</string>
+    <string name="WHICH_STUDY_COURSE">Um das zu erfahren, haben wir für Dich einen Studiengangtest gefunden, den du im Hauptmenü findest und dich nach deinen Vorstellungen berät. /n
+Weitere Möglichkeiten sich vorab über die HfTL zu informieren, gibt es bei unserem Tag der offenen Hochschultür und dem jährlich statt findenden Schnupperstudium. Des Weiteren kannst Du problemlos über unsere Serviceline (0341 3062 123) einen Termin zum Kennenlernen vereinbaren - und wir zeigen Dir die Hochschule.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
@@ -306,9 +317,9 @@ Kommunikations- und Medieninformatik vermittelt Kenntnisse aus den Bereichen Phy
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="MUELLER">I BIN MÜLLER</string>
-
-
+    <string name="MUELLER">Prof. Dr. Jean-Alexander Müller ist als Prorektor für die Durchführung und die Qualität von Studium und Forschung an der HfTL verantwortlich.</string>
+    <string name="SAUPE">Prof. Dr.-Ing. habil. Volker Saupe ist als Rektor das akademische Oberhaupt der HfTL und verantwortet neben repräsentativen Aufgaben die Ausrichtung der Lehre und Forschung. </string>
+    <string name="BADERSCHNEIDER">Prof. Dr. Claus Baderschneider ist als Prorektor für Marketing und Internationales für die internationalen Hochschulkontakte und die Außendarstellung der Hochschule verantwortlich.</string>
 
 
 

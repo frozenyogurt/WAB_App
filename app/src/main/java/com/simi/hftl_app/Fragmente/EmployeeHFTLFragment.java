@@ -31,15 +31,15 @@ public class EmployeeHFTLFragment extends MyRefreshFragment
         ListView list = (ListView) view.findViewById(R.id.employee_list);
         ArrayList<PersonListItem> persons = new ArrayList<>();
 
+        persons.add(new PersonListItem("Rektor: Prof. Dr.-Ing. habil. Volker Saupe", Person.SAUPE,
+                (getActivity().getResources().getString(R.string.SAUPE)),
+                "saupe@hft-leipzig.de"));
         persons.add(new PersonListItem("Prorektor: Prof. Dr. Jean-Alexander Müller", Person.MUELLER,
                 (getActivity().getResources().getString(R.string.MUELLER)),
                 "mueller01@hft-leipzig.de"));
-        persons.add(new PersonListItem("Florian Hollas", Person.FLORIAN,
-                "Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast du hier die Möglichkeit: s133215@hftl.de",
-                "s133215@hftl.de"));
-        persons.add(new PersonListItem("Florian Hollas", Person.FLORIAN,
-                "Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast du hier die Möglichkeit: s133215@hftl.de",
-                "s133215@hftl.de"));
+        persons.add(new PersonListItem("Prorektor: Prof. Dr. Claus Baderschneider", Person.BADERSCHNEIDER,
+                (getActivity().getResources().getString(R.string.BADERSCHNEIDER)),
+                "claus.baderschneider@hft-leipzig.de"));
 
 
         PersonListAdapter adapter = new PersonListAdapter((MainActivity)getActivity(),R.layout.person_list_item,persons);
