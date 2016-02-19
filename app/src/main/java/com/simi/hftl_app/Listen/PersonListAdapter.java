@@ -64,11 +64,11 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
         }
         else if (listItem.getPerson().equals(Person.SAUPE))
         {
-            image.setImageDrawable(activity.getResources().getDrawable(R.drawable.florian));
+            image.setImageDrawable(activity.getResources().getDrawable(R.drawable.pbh_saupe));
         }
         else if (listItem.getPerson().equals(Person.BADERSCHNEIDER))
         {
-            image.setImageDrawable(activity.getResources().getDrawable(R.drawable.florian));
+            image.setImageDrawable(activity.getResources().getDrawable(R.drawable.pbh_baderschneider));
         }
 
         /*image.setOnClickListener(new View.OnClickListener() {
