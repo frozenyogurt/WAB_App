@@ -109,7 +109,7 @@ public class StudyListItem
             this.studyDegree = Degree.MASTER;
             this.studyType = StudyType.IKT;
         }
-        if (course.equals(StudyCourse.IKT_MASTER_ENGLISH))
+        if (course.equals(StudyCourse.ICT_MASTER))
         {
             this.category = Category.NORMAL;
             this.studyDegree = Degree.MASTER;

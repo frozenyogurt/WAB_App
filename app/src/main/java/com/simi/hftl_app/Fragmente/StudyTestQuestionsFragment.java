@@ -19,6 +19,7 @@ import com.simi.hftl_app.Model.RatingCategory;
 import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.R;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -136,14 +137,19 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                 }
             }
         }
-        StudyCourse winner = rating.getWinner();
+        ArrayList<StudyCourse> winner = rating.getWinner();
         if (winner != null)
         {
             activity.setWinner(winner);
         }
+        else if (rating.getAlternative() != null)
+        {
+            activity.setAlternative(rating.getAlternative());
+        }
         else
         {
-            activity.setWinner(rating.getAlternative());
+            activity.setWinner(null);
+            activity.setAlternative(null);
         }
     }
 

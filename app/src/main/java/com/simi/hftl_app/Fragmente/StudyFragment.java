@@ -36,7 +36,7 @@ public class StudyFragment extends MyRefreshFragment
         items.add(new StudyListItem("Kommunikations- und Medieninformatik (Bachelor)", StudyCourse.KMI_BACHELOR));
         items.add(new StudyListItem("Wirtschaftsinformatik (Bachelor)", StudyCourse.WI_BACHELOR));
         items.add(new StudyListItem("Informations- und Kommunikationstechnik (Master)", StudyCourse.IKT_MASTER));
-        items.add(new StudyListItem("Master Information and Communication Technology (Master - english)", StudyCourse.IKT_MASTER_ENGLISH));
+        items.add(new StudyListItem("Master Information and Communication Technology (Master - english)", StudyCourse.ICT_MASTER));
         StudyListAdapter adapter = new StudyListAdapter((MainActivity) getActivity(), R.layout.study_list_item, items);
         list.setAdapter(adapter);
 

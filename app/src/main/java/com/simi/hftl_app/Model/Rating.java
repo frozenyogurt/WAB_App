@@ -27,7 +27,7 @@ public class Rating
 
     public Rating() {}
 
-    public StudyCourse getWinner()
+    public ArrayList<StudyCourse> getWinner()
     {
         LinkedHashMap<RatingCategory, Integer> sortedCategoryPoints = sortByValue(getCategoryRatingMap());
         LinkedHashMap<RatingCategory, Integer> sortedDegreePoints = sortByValue(getDregreeRatingMap());
@@ -36,6 +36,13 @@ public class Rating
         winners.add((RatingCategory) sortedCategoryPoints.keySet().toArray()[0]);
         winners.add((RatingCategory) sortedDegreePoints.keySet().toArray()[0]);
         winners.add((RatingCategory) sortedStudyPoints.keySet().toArray()[0]);
+        if (sortedDegreePoints.get(RatingCategory.BACHELOR).equals(sortedDegreePoints.get(RatingCategory.MASTER)))
+        {
+            if (getDegreeStudyCourses().size() != 0)
+            {
+                return getDegreeStudyCourses();
+            }
+        }
 
         return getWinnerStudyCourse(winners);
     }
@@ -98,7 +105,7 @@ public class Rating
             {
                 if (winners.get(2).equals(RatingCategory.AI))
                 {
-                    return StudyCourse.JOB_KMI_BACHELOR;
+                    return StudyCourse.DUAL_AI_BACHELOR;
                 }
             }
             else if (winners.get(1).equals(RatingCategory.MASTER))
@@ -116,30 +123,67 @@ public class Rating
         return null;
     }
 
-    private StudyCourse getWinnerStudyCourse(ArrayList<RatingCategory> winners)
+    private ArrayList<StudyCourse> getDegreeStudyCourses()
     {
+        ArrayList<StudyCourse> courses = new ArrayList<>();
+        if (winners.get(0).equals(RatingCategory.DUAL))
+        {
+            if (winners.get(2).equals(RatingCategory.WI))
+            {
+                courses.add(StudyCourse.DUAL_WI_BACHELOR);
+                courses.add(StudyCourse.DUAL_WI_MASTER);
+            }
+        }
+        else if (winners.get(0).equals(RatingCategory.DIRECT))
+        {
+            if (winners.get(2).equals(RatingCategory.IKT))
+            {
+                courses.add(StudyCourse.IKT_BACHELOR);
+                courses.add(StudyCourse.IKT_MASTER);
+            }
+        }
+        else if (winners.get(0).equals(RatingCategory.JOB))
+        {
+            if (winners.get(2).equals(RatingCategory.IKT))
+            {
+                courses.add(StudyCourse.JOB_IKT_BACHELOR);
+                courses.add(StudyCourse.JOB_IKT_MASTER);
+            }
+            else if (winners.get(2).equals(RatingCategory.WI))
+            {
+                courses.add(StudyCourse.JOB_WI_BACHELOR);
+                courses.add(StudyCourse.JOB_WI_MASTER);
+            }
+        }
+        return courses;
+    }
+
+    private ArrayList<StudyCourse> getWinnerStudyCourse(ArrayList<RatingCategory> winners)
+    {
+        ArrayList<StudyCourse> courses = new ArrayList<>();
+
         if (winners.get(0).equals(RatingCategory.DUAL))
         {
             if (winners.get(1).equals(RatingCategory.BACHELOR))
             {
                 if (winners.get(2).equals(RatingCategory.KMI))
                 {
-                    return StudyCourse.DUAL_KMI_BACHELOR;
+                    courses.add(StudyCourse.DUAL_KMI_BACHELOR);
                 }
                 else if (winners.get(2).equals(RatingCategory.WI))
                 {
-                    return StudyCourse.DUAL_WI_BACHELOR;
+                    courses.add(StudyCourse.DUAL_WI_BACHELOR);
                 }
                 else if (winners.get(2).equals(RatingCategory.AI))
                 {
-                    return StudyCourse.DUAL_AI_BACHELOR;
+                    courses.add(StudyCourse.DUAL_AI_BACHELOR);
                 }
             }
             else if (winners.get(1).equals(RatingCategory.MASTER))
             {
                 if (winners.get(2).equals(RatingCategory.WI))
                 {
-                    return StudyCourse.DUAL_WI_MASTER;
+                    courses.add(StudyCourse.DUAL_WI_MASTER);
                 }
             }
         }
@@ -149,26 +193,26 @@ public class Rating
             {
                 if (winners.get(2).equals(RatingCategory.IKT))
                 {
-                    return StudyCourse.JOB_IKT_BACHELOR;
+                    courses.add(StudyCourse.JOB_IKT_BACHELOR);
                 }
                 else if (winners.get(2).equals(RatingCategory.KMI))
                 {
-                    return StudyCourse.JOB_KMI_BACHELOR;
+                    courses.add(StudyCourse.JOB_KMI_BACHELOR);
                 }
                 else if (winners.get(2).equals(RatingCategory.WI))
                 {
-                    return StudyCourse.JOB_WI_BACHELOR;
+                    courses.add(StudyCourse.JOB_WI_BACHELOR);
                 }
             }
             else if (winners.get(1).equals(RatingCategory.MASTER))
             {
                 if (winners.get(2).equals(RatingCategory.IKT))
                 {
-                    return StudyCourse.JOB_IKT_MASTER;
+                    courses.add(StudyCourse.JOB_IKT_MASTER);
                 }
                 else if (winners.get(2).equals(RatingCategory.WI))
                 {
-                    return StudyCourse.JOB_WI_MASTER;
+                    courses.add(StudyCourse.JOB_WI_MASTER);
                 }
             }
         }
@@ -178,22 +222,22 @@ public class Rating
             {
                 if (winners.get(2).equals(RatingCategory.KMI))
                 {
-                    return StudyCourse.KMI_BACHELOR;
+                    courses.add(StudyCourse.KMI_BACHELOR);
                 }
                 else if (winners.get(2).equals(RatingCategory.WI))
                 {
-                    return StudyCourse.WI_BACHELOR;
+                    courses.add(StudyCourse.WI_BACHELOR);
                 }
                 else if (winners.get(2).equals(RatingCategory.IKT))
                 {
-                    return StudyCourse.IKT_BACHELOR;
+                    courses.add(StudyCourse.IKT_BACHELOR);
                 }
             }
             else if (winners.get(1).equals(RatingCategory.MASTER))
             {
                 if (winners.get(2).equals(RatingCategory.IKT))
                 {
-                    return StudyCourse.IKT_MASTER;
+                    courses.add(StudyCourse.IKT_MASTER);
                 }
             }
         }
@@ -207,7 +251,7 @@ public class Rating
         {
             public int compare( Map.Entry<K, V> o1, Map.Entry<K, V> o2 )
             {
-                return (o1.getValue()).compareTo(o2.getValue());
+                return (o2.getValue()).compareTo(o1.getValue());
             }
         } );
 

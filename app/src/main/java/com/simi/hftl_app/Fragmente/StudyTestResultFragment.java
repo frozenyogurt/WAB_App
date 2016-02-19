@@ -13,6 +13,8 @@ import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.R;
 
+import java.util.ArrayList;
+
 /**
  * Created by student on 17.02.2016.
  */
@@ -63,7 +65,15 @@ public class StudyTestResultFragment extends Fragment
         String solution = "";
         if (activity.getWinner() != null)
         {
-            solution = getSolution(activity.getWinner());
+            ArrayList<StudyCourse> winner = activity.getWinner();
+            if (winner.size() == 1)
+            {
+                solution = getSolution(winner.get(0));
+            }
+            else
+            {
+                solution = getSolution(winner.get(0)) + " oder " + getSolution(winner.get(1));
+            }
         }
         else if (activity.getAlternative() != null)
         {

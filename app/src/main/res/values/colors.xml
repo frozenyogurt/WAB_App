@@ -8,7 +8,7 @@
     <color name="study_dual_color">#eda95a</color>
     <color name="study_job_color">#64b9e4</color>
     <color name="education_color">#408f9a</color>
-    <color name="study_test_color">#1aad1b</color>
-    <color name="maps_color">#922e2e</color>
-    <color name="hftl_info_color">#f0e601</color>
+    <color name="study_test_color">#008000</color>
+    <color name="maps_color">#DD4040</color>
+    <color name="hftl_info_color">#ffd700</color>
 </resources>

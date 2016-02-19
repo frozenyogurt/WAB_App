@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean isGoBack = false;
     private ArrayList<Question> questionsList = new ArrayList<>();
     private int currentPage;
-    private StudyCourse winner;
+    private ArrayList<StudyCourse> winner;
     private StudyCourse alternative;
 
     @Override
@@ -472,10 +472,10 @@ public class MainActivity extends AppCompatActivity {
         questionsList.add(new Question("Welches dieser Themengebiete sagt Dir am meisten zu?", answers4));
 
         ArrayList<Answer> answers5 = new ArrayList<>();
-        answers5.add(new Answer("ProjektmanagerIn in Themen wie Cloud Computing, Smart Home, Visualisierung, Datensicherheit und Automotive", Rating.getInitializedRatingMap(0,0,0,0,0,0,6,0,0)));
-        answers5.add(new Answer("In Kapazitätsplanung und -management legst Du die Grundlagen für das Netz von morgen.", Rating.getInitializedRatingMap(0,0,0,0,0,6,0,0,0)));
-        answers5.add(new Answer("SoftwareentwicklerIn und SystembetreuerIn großer Systeme oder  SystemdesignerIn in Informations- und Telekommunikationsunternehmen", Rating.getInitializedRatingMap(0,0,0,6,0,0,0,0,0)));
-        answers5.add(new Answer("überall, wo es eine IT gibt, die im weitesten Sinne betriebswirtschaftliche Funktionen hat", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
+        answers5.add(new Answer("ProjektmanagerIn in Themen wie Cloud Computingoder  Datensicherheit", Rating.getInitializedRatingMap(0,0,0,0,0,0,6,0,0)));
+        answers5.add(new Answer("In Kapazitätsplanung und -management", Rating.getInitializedRatingMap(0,0,0,0,0,6,0,0,0)));
+        answers5.add(new Answer("SoftwareentwicklerIn, SystembetreuerIn oder SystemdesignerIn großer Systeme", Rating.getInitializedRatingMap(0,0,0,6,0,0,0,0,0)));
+        answers5.add(new Answer("überall, wo IT auf betriebswirtschaftliche Funktionen trifft", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
         questionsList.add(new Question("In welchem dieser Tätigkeitsbereiche würdest Du am liebsten arbeiten?", answers5));
 
         ArrayList<Answer> answers6 = new ArrayList<>();
@@ -497,8 +497,8 @@ public class MainActivity extends AppCompatActivity {
         questionsList.add(new Question("Wärst Du bereit Studiengebühren in Höhe von 250 pro Monat zu zahlen?", answers8));
 
         ArrayList<Answer> answers9 = new ArrayList<>();
-        answers9.add(new Answer("Ja, das ist mir wichtig und es sollte so viel sein, wie das einer ausgelernten IT Fachkraft.", Rating.getInitializedRatingMap(2,0,6,0,0,0,0,0,0)));
-        answers9.add(new Answer("Es ist mir zwar wichtig, jedoch soll es primär die Kosten decken, die mir entstehen.", Rating.getInitializedRatingMap(6,6,2,0,0,0,0,0,0)));
+        answers9.add(new Answer("Ja, sehr wichtig, am besten das einer ausgelernten IT Fachkraft.", Rating.getInitializedRatingMap(2,0,6,0,0,0,0,0,0)));
+        answers9.add(new Answer("Ja, es soll primär die Kosten decken, die mir entstehen.", Rating.getInitializedRatingMap(6,6,2,0,0,0,0,0,0)));
         answers9.add(new Answer("Nein, ich will nicht nebenbei bei der Telekom arbeiten, um Geld zu verdienen.", Rating.getInitializedRatingMap(0,6,0,0,0,0,0,0,0)));
         questionsList.add(new Question("Ist es dir wichtig neben dem Studium auch ein Gehalt von der Telekom zu beziehen - und wenn ja, wie viel?", answers9));
 
@@ -526,7 +526,7 @@ public class MainActivity extends AppCompatActivity {
         answers13.add(new Answer("Skripte sind gut, aber Vorlesungen sind auch wichtig.", Rating.getInitializedRatingMap(6,0,4,0,0,0,0,0,0)));
         answers13.add(new Answer("Ich möchte lieber weniger anhand von Skripten lernen, sondern eher an Vorlesungen teilnehmen.", Rating.getInitializedRatingMap(2,6,0,0,0,0,0,0,0)));
         answers13.add(new Answer("Ich muss bei jeder Vorlesung dabei sein.", Rating.getInitializedRatingMap(0,6,0,0,0,0,0,0,0)));
-        questionsList.add(new Question("Bist Du gut darin Dir Inhalte selbst anhand von Skripten beizubringen? Oder bekommst du die Inhalte lieber in Vorlesungen vermittelt?", answers13));
+        questionsList.add(new Question("Vermittelst du dir eher über Skripte oder Vorlesungen die Lerninhalte?", answers13));
 
         ArrayList<Answer> answers14 = new ArrayList<>();
         answers14.add(new Answer("Ja", Rating.getInitializedRatingMap(6,6,6,0,0,0,0,0,0)));
@@ -582,11 +582,11 @@ public class MainActivity extends AppCompatActivity {
         questionsList = new ArrayList<>();
     }
 
-    public StudyCourse getWinner() {
+    public ArrayList<StudyCourse> getWinner() {
         return winner;
     }
 
-    public void setWinner(StudyCourse winner) {
+    public void setWinner(ArrayList<StudyCourse> winner) {
         this.winner = winner;
     }
 
