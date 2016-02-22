@@ -47,20 +47,20 @@ public class EducationInfoFragment extends MyRefreshFragment
             beginning.setText(getActivity().getResources().getString(R.string.TOEIC_BEGINNING_TEXT));
 
             titleOne.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleOne.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_COMPLETE_PACKAGE_TEXT));
+            titleOne.setText(getActivity().getResources().getString(R.string.TOEIC_COMPLETE_PACKAGE_TEXT));
             titleOne.setVisibility(View.VISIBLE);
             titleTwo.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleTwo.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_LISTENING_AND_READING_TEXT));
+            titleTwo.setText(getActivity().getResources().getString(R.string.TOEIC_LISTENING_AND_READING_TEXT));
             titleTwo.setVisibility(View.VISIBLE);
             titleThree.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleThree.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_CLASSES_TEXT));
+            titleThree.setText(getActivity().getResources().getString(R.string.TOEIC_CLASSES_TEXT));
             titleThree.setVisibility(View.VISIBLE);
 
-            textOne.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_ONE));
+            textOne.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_ONE));
             textOne.setVisibility(View.VISIBLE);
-            textTwo.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_TWO));
+            textTwo.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_TWO));
             textTwo.setVisibility(View.VISIBLE);
-            textThree.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_THREE));
+            textThree.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_THREE));
             textThree.setVisibility(View.VISIBLE);
         }
         if (element.getEducation().equals(Education.BEC))

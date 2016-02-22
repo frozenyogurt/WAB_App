@@ -23,7 +23,7 @@ public class WhyHFTLFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.why_hftl_fragment,container,false);
 
         TextView text = (TextView) view.findViewById(R.id.why_hftl_text);
-        text.setText("Warum HFTL Text");
+        text.setText(getActivity().getResources().getString(R.string.why_hftl_text));
 
         return view;
     }

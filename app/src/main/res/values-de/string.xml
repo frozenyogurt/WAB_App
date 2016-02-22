@@ -333,9 +333,7 @@ Die HfTL ist seit 2010 ein zertifiziertes TOEIC Testzentrum.
         Das Zertifikat ist die perfekte Ergänzung deiner zukünftigen Bewerbungen.
         \n
         \n
-        \n
-        Du im Folgenden kannst aus drei Varianten wählen:
-    </string>
+Im Folgenden kannst du aus drei Varianten wählen:</string>
     <string name="TOEIC_COMPLETE_PACKAGE_TEXT">Beinhaltet die Teilnahme an der Lehrveranstaltung mit 14 Unterrichtseinheiten zur Vorbereitung auf den TOEIC Test Listening &amp; Reading und die Teilnahme am TOEIC Test inklusive das Ausstellen eines Ergebniszertifikats.
 Kosten: 160,00 Euro inkl. MwSt</string>
     <string name="TOEIC_LISTENING_AND_READING_TEXT">Beinhaltet die Teilnahme am TOEIC Test Listening &amp; Reading inklusive das Ausstellen eines Ergebniszertifikats.
@@ -381,11 +379,23 @@ Herzlich Willkommen.
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <!-- AB HIER Weiterbildung -->
+    <!-- AB HIER WARUM HFTL -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
+    <string name="why_hftl_text">Du interessierst Dich für ein Studium an der HfTL? /n
+    Dann können wir Dich an dieser Stelle bereits herzlich beglückwünschen.
+        An der Hochschule für Telekommunikation Leipzig erhältst Du eine individuelle und nachhaltige Ausbildung, die Dich perfekt auf den Einstieg in die faszinierende, internationale Telekommunikationsbranche vorbereitet.
+        Deine Ideen sind von Anfang an gefragt: Aus unserem Studienangebot kannst Du Dir die Studienart und den Studiengang auswählen, der am besten zu Deinen persönlichen Bedürfnissen passt./n
+        /n
+        Ein hoher Praxisanteil und Übungen in modern ausgestatteten Laboratorien sowie vielfältige Unternehmenseinblicke machen Dein Studium abwechslungsreich.
+        Dazu sorgt die Deutsche Telekom als Träger der HfTL und weltweiter Innovationsführer der Telekommunikationsbranche dafür, dass Inhalte und Ausstattung unserer Hochschule immer up-to-date sind. /n
+        /n
+        7 Weitere Gründe, die Dir Deine Entscheidung für die HfTL leicht machen werden, sind:/n
+        1.
+    </string>
+
     </resources>
