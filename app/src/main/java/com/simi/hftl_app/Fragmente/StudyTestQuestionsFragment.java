@@ -31,7 +31,7 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, final Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.study_test_questions_fragment,container,false);
 
@@ -39,12 +39,12 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
         final ImageView forwardButton = (ImageView) view.findViewById(R.id.forward_button_questions);
         final Button result = (Button) view.findViewById(R.id.calculate_answers);
         final TextView title = (TextView) view.findViewById(R.id.test_question_title);
-        title.setText(getTitleText());
 
         final ViewPager pager = (ViewPager) view.findViewById(R.id.question_slider);
         ScreenSliderPagerAdapter adapter = new ScreenSliderPagerAdapter(getFragmentManager(), (MainActivity) getActivity());
         pager.setAdapter(adapter);
         ((MainActivity)getActivity()).setCurrentPage(0);
+        title.setText(getTitleText());
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
@@ -67,6 +67,7 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                 }
                 if (position == activity.getQuestions().size() - 1)
                 {
+                    result.setVisibility(View.VISIBLE);
                     result.setBackgroundResource(R.drawable.round_button_test);
                     result.setText("Auswertung");
                 }
@@ -80,7 +81,8 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (((MainActivity) getActivity()).isTestValid())
+                ArrayList<Integer> questions = ((MainActivity) getActivity()).getNotAnsweredQuestions();
+                if (questions.size() == 0)
                 {
                     calculateResult();
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
@@ -91,7 +93,30 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                 }
                 else if (result.getText().toString().equals("Auswertung"))
                 {
-                    Toast.makeText(getActivity().getApplicationContext(), "Der Test wurde nicht vollständig ausgefüllt.", Toast.LENGTH_LONG).show();
+                    StringBuilder string = new StringBuilder();
+                    if (questions.size() == 1)
+                    {
+                        Toast.makeText(getActivity().getApplicationContext(), "Die Frage " + questions.get(0) + " wurde nicht beantwortet.", Toast.LENGTH_LONG).show();
+                    }
+                    else
+                    {
+                        string.append("Die Fragen ");
+                        for (int i = 0; i < questions.size(); i++)
+                        {
+                            string.append(questions.get(i));
+                            if (i == questions.size() - 2)
+                            {
+                                string.append(" und ");
+                            }
+                            else if (i != questions.size() - 1)
+                            {
+                                string.append(", ");
+                            }
+                        }
+                        string.append(" wurden nicht beantwortet.");
+                        Toast.makeText(getActivity().getApplicationContext(), string.toString(), Toast.LENGTH_LONG).show();
+                    }
+
                 }
             }
         });

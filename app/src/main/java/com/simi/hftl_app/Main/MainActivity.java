@@ -38,11 +38,6 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-//TODO Implementierung des Testfragments
-//TODO Links auf die Website einbinden
-//TODO 2 Designs anbieten (vielleicht nur die Hauptseite oder die Farben der Boxen verändern lassen)
-//TODO Feste Strings(auch andere Werte) in xml File auslagern
-//TODO Answers der Question vereinfachen mit einer Liste
 
     private ImageView backButton;
     private boolean isClose;
@@ -219,6 +214,10 @@ public class MainActivity extends AppCompatActivity {
             if (!(lastFragmentName.equals("SettingsFragment") || lastFragmentName.equals("AboutUsFragment")))
             {
                 isGoBack = false;
+            }
+            if (lastFragmentName.equals("StudyTestResultFragment"))
+            {
+                refreshFragments();
             }
             super.onBackPressed();
         }
@@ -550,27 +549,28 @@ public class MainActivity extends AppCompatActivity {
         this.currentPage = currentPage;
     }
 
-    public boolean isTestValid()
+    public ArrayList<Integer> getNotAnsweredQuestions()
     {
-        boolean isValid = true;
+        ArrayList<Integer> notAnsweredQuestion = new ArrayList<>();
         boolean isAnswered = false;
-        for (Question question : questionsList)
+        int i;
+        for (i = 0; i < questionsList.size(); i++)
         {
-            for (int i = 0; i < question.getAnswers().size(); i++)
+            for (int j = 0; j < questionsList.get(i).getAnswers().size(); j++)
             {
-                if (question.getAnswers().get(i).isSet())
+                if (questionsList.get(i).getAnswers().get(j).isSet())
                 {
                     isAnswered = true;
+                    break;
                 }
             }
             if (!isAnswered)
             {
-                isValid = false;
-                break;
+                notAnsweredQuestion.add(i+1);
             }
             isAnswered = false;
         }
-        return isValid;
+        return notAnsweredQuestion;
     }
 
     public void endTest()

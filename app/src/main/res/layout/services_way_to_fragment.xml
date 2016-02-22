@@ -23,6 +23,7 @@
         android:layout_height="3dp"/>
 
     <ScrollView
+        android:overScrollMode="never"
         android:layout_margin="5dp"
         android:scrollbars="none"
         android:layout_width="match_parent"

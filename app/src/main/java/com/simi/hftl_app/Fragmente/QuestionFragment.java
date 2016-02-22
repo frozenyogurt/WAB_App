@@ -28,11 +28,11 @@ public class QuestionFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.question_fragment, container, false);
 
         TextView questionName = (TextView) view.findViewById(R.id.question_name);
-        final CheckBox questionOne = (CheckBox) view.findViewById(R.id.answer_one);
-        final CheckBox questionTwo = (CheckBox) view.findViewById(R.id.answer_two);
-        final CheckBox questionThree = (CheckBox) view.findViewById(R.id.answer_three);
-        final CheckBox questionFour = (CheckBox) view.findViewById(R.id.answer_four);
-        final CheckBox questionFive = (CheckBox) view.findViewById(R.id.answer_five);
+        final CheckBox answerOne = (CheckBox) view.findViewById(R.id.answer_one);
+        final CheckBox answerTwo = (CheckBox) view.findViewById(R.id.answer_two);
+        final CheckBox answerThree = (CheckBox) view.findViewById(R.id.answer_three);
+        final CheckBox answerFour = (CheckBox) view.findViewById(R.id.answer_four);
+        final CheckBox answerFive = (CheckBox) view.findViewById(R.id.answer_five);
 
         MainActivity activity = ((MainActivity)getActivity());
         currentQuestion = activity.getQuestions().get(activity.getCurrentViewPagerItem());
@@ -41,129 +41,119 @@ public class QuestionFragment extends MyRefreshFragment
         {
             if (i == 0)
             {
-                questionOne.setText(currentQuestion.getAnswers().get(0).getAnswerName());
+                answerOne.setText(currentQuestion.getAnswers().get(0).getAnswerName());
+                answerOne.setChecked(currentQuestion.getAnswers().get(0).isSet());
             }
             if (i == 1)
             {
-                questionTwo.setText(currentQuestion.getAnswers().get(1).getAnswerName());
+                answerTwo.setText(currentQuestion.getAnswers().get(1).getAnswerName());
+                answerOne.setChecked(currentQuestion.getAnswers().get(1).isSet());
             }
             if (i == 2)
             {
-                questionThree.setText(currentQuestion.getAnswers().get(2).getAnswerName());
+                answerThree.setText(currentQuestion.getAnswers().get(2).getAnswerName());
+                answerOne.setChecked(currentQuestion.getAnswers().get(2).isSet());
             }
             if (i == 3)
             {
-                questionFour.setText(currentQuestion.getAnswers().get(3).getAnswerName());
+                answerFour.setText(currentQuestion.getAnswers().get(3).getAnswerName());
+                answerOne.setChecked(currentQuestion.getAnswers().get(3).isSet());
             }
             if (i == 4)
             {
-                questionFive.setText(currentQuestion.getAnswers().get(4).getAnswerName());
+                answerFive.setText(currentQuestion.getAnswers().get(4).getAnswerName());
+                answerOne.setChecked(currentQuestion.getAnswers().get(4).isSet());
             }
         }
 
         int length = currentQuestion.getAnswers().size();
         if (length == 4)
         {
-            questionFive.setVisibility(View.GONE);
+            answerFive.setVisibility(View.GONE);
         }
         else if (length == 3)
         {
-            questionFive.setVisibility(View.GONE);
-            questionFour.setVisibility(View.GONE);
+            answerFive.setVisibility(View.GONE);
+            answerFour.setVisibility(View.GONE);
         }
         else if (length == 2)
         {
-            questionFive.setVisibility(View.GONE);
-            questionFour.setVisibility(View.GONE);
-            questionThree.setVisibility(View.GONE);
+            answerFive.setVisibility(View.GONE);
+            answerFour.setVisibility(View.GONE);
+            answerThree.setVisibility(View.GONE);
         }
 
-        questionOne.setOnClickListener(new View.OnClickListener() {
+        answerOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (questionOne.isChecked())
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), true);
-                    questionTwo.setChecked(false);
-                    questionThree.setChecked(false);
-                    questionFour.setChecked(false);
-                    questionFive.setChecked(false);
-                }
-                else
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
+                if (answerOne.isChecked()) {
+                    ((MainActivity) getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), true);
+                    answerTwo.setChecked(false);
+                    answerThree.setChecked(false);
+                    answerFour.setChecked(false);
+                    answerFive.setChecked(false);
+                } else {
+                    ((MainActivity) getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
                 }
             }
         });
 
-        questionTwo.setOnClickListener(new View.OnClickListener() {
+        answerTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (questionTwo.isChecked())
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(2, currentQuestion.getQuestionName(), true);
-                    questionOne.setChecked(false);
-                    questionThree.setChecked(false);
-                    questionFour.setChecked(false);
-                    questionFive.setChecked(false);
-                }
-                else
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
+                if (answerTwo.isChecked()) {
+                    ((MainActivity) getActivity()).setAnswerActive(2, currentQuestion.getQuestionName(), true);
+                    answerOne.setChecked(false);
+                    answerThree.setChecked(false);
+                    answerFour.setChecked(false);
+                    answerFive.setChecked(false);
+                } else {
+                    ((MainActivity) getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
                 }
             }
         });
 
-        questionThree.setOnClickListener(new View.OnClickListener() {
+        answerThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (questionThree.isChecked())
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(3, currentQuestion.getQuestionName(), true);
-                    questionTwo.setChecked(false);
-                    questionOne.setChecked(false);
-                    questionFour.setChecked(false);
-                    questionFive.setChecked(false);
-                }
-                else
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
+                if (answerThree.isChecked()) {
+                    ((MainActivity) getActivity()).setAnswerActive(3, currentQuestion.getQuestionName(), true);
+                    answerTwo.setChecked(false);
+                    answerOne.setChecked(false);
+                    answerFour.setChecked(false);
+                    answerFive.setChecked(false);
+                } else {
+                    ((MainActivity) getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
                 }
             }
         });
 
-        questionFour.setOnClickListener(new View.OnClickListener() {
+        answerFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (questionFour.isChecked())
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(4, currentQuestion.getQuestionName(), true);
-                    questionTwo.setChecked(false);
-                    questionThree.setChecked(false);
-                    questionOne.setChecked(false);
-                    questionFive.setChecked(false);
-                }
-                else
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
+                if (answerFour.isChecked()) {
+                    ((MainActivity) getActivity()).setAnswerActive(4, currentQuestion.getQuestionName(), true);
+                    answerTwo.setChecked(false);
+                    answerThree.setChecked(false);
+                    answerOne.setChecked(false);
+                    answerFive.setChecked(false);
+                } else {
+                    ((MainActivity) getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
                 }
             }
         });
 
-        questionFive.setOnClickListener(new View.OnClickListener() {
+        answerFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (questionFive.isChecked())
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(5, currentQuestion.getQuestionName(), true);
-                    questionTwo.setChecked(false);
-                    questionThree.setChecked(false);
-                    questionOne.setChecked(false);
-                    questionFour.setChecked(false);
-                }
-                else
-                {
-                    ((MainActivity)getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
+                if (answerFive.isChecked()) {
+                    ((MainActivity) getActivity()).setAnswerActive(5, currentQuestion.getQuestionName(), true);
+                    answerTwo.setChecked(false);
+                    answerThree.setChecked(false);
+                    answerOne.setChecked(false);
+                    answerFour.setChecked(false);
+                } else {
+                    ((MainActivity) getActivity()).setAnswerActive(1, currentQuestion.getQuestionName(), false);
                 }
             }
         });
