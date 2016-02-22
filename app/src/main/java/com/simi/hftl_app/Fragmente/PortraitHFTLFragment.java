@@ -27,13 +27,11 @@ public class PortraitHFTLFragment extends MyRefreshFragment
         TextView textTwo = (TextView) view.findViewById(R.id.portrait_text_two);
         ImageView imageOne = (ImageView) view.findViewById(R.id.portrait_image_one);
         ImageView imageTwo = (ImageView) view.findViewById(R.id.portrait_image_two);
-        ImageView imageThree = (ImageView) view.findViewById(R.id.portrait_image_three);
 
         textOne.setText(getActivity().getResources().getString(R.string.action_settings));
         textTwo.setText(getActivity().getResources().getString(R.string.action_settings));
         imageOne.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.news_pic_test));
         imageTwo.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.news_pic_test));
-        imageThree.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.news_pic_test));
 
         return view;
     }

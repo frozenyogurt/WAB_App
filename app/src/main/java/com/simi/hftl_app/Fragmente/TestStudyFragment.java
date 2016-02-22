@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.R;
@@ -25,6 +26,17 @@ public class TestStudyFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.test_study_fragment,container,false);
 
         Button start = (Button) view.findViewById(R.id.start_test);
+
+        TextView titleFragment = (TextView) view.findViewById(R.id.titleFragment);
+        titleFragment.setText("Einführung");
+
+        TextView firstBeginningText = (TextView) view.findViewById(R.id.test_attention_text);
+        firstBeginningText.setText("Dein Achtung Achtung Text simmi");
+
+        TextView secondDescriptionText = (TextView) view.findViewById(R.id.test_info_text);
+        secondDescriptionText.setText("Bescgriebung des Testes");
+
+        start.setText("Test Starten");
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

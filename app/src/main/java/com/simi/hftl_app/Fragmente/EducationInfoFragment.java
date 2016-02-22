@@ -41,26 +41,26 @@ public class EducationInfoFragment extends MyRefreshFragment
 
         layout.setBackgroundColor(getActivity().getResources().getColor(R.color.education_color));
 
+        beginning.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         if (element.getEducation().equals(Education.TOEIC))
         {
-            beginning.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
             beginning.setText(getActivity().getResources().getString(R.string.TOEIC_BEGINNING_TEXT));
 
             titleOne.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleOne.setText(getActivity().getResources().getString(R.string.TOEIC_COMPLETE_PACKAGE_TEXT));
+            titleOne.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_ONE));
             titleOne.setVisibility(View.VISIBLE);
             titleTwo.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleTwo.setText(getActivity().getResources().getString(R.string.TOEIC_LISTENING_AND_READING_TEXT));
+            titleTwo.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_TWO));
             titleTwo.setVisibility(View.VISIBLE);
             titleThree.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleThree.setText(getActivity().getResources().getString(R.string.TOEIC_CLASSES_TEXT));
+            titleThree.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_THREE));
             titleThree.setVisibility(View.VISIBLE);
 
-            textOne.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_ONE));
+            textOne.setText(getActivity().getResources().getString(R.string.TOEIC_COMPLETE_PACKAGE_TEXT));
             textOne.setVisibility(View.VISIBLE);
-            textTwo.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_TWO));
+            textTwo.setText(getActivity().getResources().getString(R.string.TOEIC_LISTENING_AND_READING_TEXT));
             textTwo.setVisibility(View.VISIBLE);
-            textThree.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_THREE));
+            textThree.setText(getActivity().getResources().getString(R.string.TOEIC_CLASSES_TEXT));
             textThree.setVisibility(View.VISIBLE);
         }
         if (element.getEducation().equals(Education.BEC))

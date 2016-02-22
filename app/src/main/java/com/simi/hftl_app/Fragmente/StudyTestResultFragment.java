@@ -28,7 +28,11 @@ public class StudyTestResultFragment extends Fragment
     {
         View view = inflater.inflate(R.layout.study_test_result_fragment, container, false);
 
+        TextView titleFragment = (TextView) view.findViewById(R.id.test_question_title);
+        titleFragment.setText("Auswertung");
+
         Button end = (Button) view.findViewById(R.id.end_test);
+        end.setText("Test Beenden");
         end.setOnClickListener(new View.OnClickListener()
         {
             @Override
