@@ -7,27 +7,164 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:textColor="@android:color/black"
-        android:layout_margin="10dp"
-        android:text="Warum HfTL?"
-        android:gravity="center"
-        android:textSize="25sp"
+    <ScrollView
+        android:padding="5dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:background="@color/hftl_info_color"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/why_hftl_text"
-        android:textSize="20sp"
-        android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/title_fragment"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:text="Warum HfTL?"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/hftl_info_color"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/why_hftl_text"
+                android:textSize="20sp"
+                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/title_why_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/hftl_info_color"
+                android:text="Titel 1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Text 1"
+                android:id="@+id/text_why_one"/>
+
+            <TextView
+                android:id="@+id/title_why_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/hftl_info_color"
+                android:text="Titel 2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Text 2"
+                android:id="@+id/text_why_two"/>
+            <TextView
+                android:id="@+id/title_why_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/hftl_info_color"
+                android:text="Titel 3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Text 3"
+                android:id="@+id/text_why_three"/>
+            <TextView
+                android:id="@+id/title_why_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/hftl_info_color"
+                android:text="Titel 4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Text 4"
+                android:id="@+id/text_why_four"/>
+            <TextView
+                android:id="@+id/title_why_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/hftl_info_color"
+                android:text="Titel 5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Text 5"
+                android:id="@+id/text_why_five"/>
+            <TextView
+                android:id="@+id/title_why_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/hftl_info_color"
+                android:text="Titel 6"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Text 6"
+                android:id="@+id/text_why_six"/>
+            <TextView
+                android:id="@+id/title_why_seven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/hftl_info_color"
+                android:text="Titel 7"/>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Text 7"
+                android:id="@+id/text_why_seven"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

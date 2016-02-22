@@ -27,7 +27,7 @@ public class TestStudyFragment extends MyRefreshFragment
 
         Button start = (Button) view.findViewById(R.id.start_test);
 
-        TextView titleFragment = (TextView) view.findViewById(R.id.titleFragment);
+        TextView titleFragment = (TextView) view.findViewById(R.id.title_fragment);
         titleFragment.setText("Einführung");
 
         TextView firstBeginningText = (TextView) view.findViewById(R.id.test_attention_text);
