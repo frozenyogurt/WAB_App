@@ -95,8 +95,68 @@ Please refer to the curriculum to find courses currently available.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="ACCEPTED">ABC</string>
+    <string name="ACCEPTED">text</string>
+    <string name="APARTMENTS">text</string>
+    <string name="INTERNSHIP">text</string>
+    <string name="MEANING_ACCREDITATION">text</string>
+    <string name="STUDY_CATEGORY_DIFFERENCE">text</string>
+    <string name="STUDY_COSTS">text</string>
+    <string name="STUDY_COSTS_SEMESTER">text</string>
+    <string name="STUDY_FAR_AWAY">text</string>
+    <string name="WHICH_STUDY_COURSE">text</string>
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- AB HIER MITARBEITER -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <string name="MUELLER">text</string>
+    <string name="SAUPE">text</string>
+    <string name="BADERSCHNEIDER">text</string>
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- AB HIER Weiterbildung -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <string name="TOEIC_BEGINNING_TEXT">text</string>
+    <string name="TOEIC_COMPLETE_PACKAGE_TEXT">text</string>
+    <string name="TOEIC_LISTENING_AND_READING_TEXT">text</string>
+    <string name="TOEIC_CLASSES_TEXT">text</string>
+    <string name="TOEIC_TITLE_ONE">text</string>
+    <string name="TOEIC_TITLE_TWO">text</string>
+    <string name="TOEIC_TITLE_THREE">text</string>
 
-
+    <string name="BEC">text</string>
+    <string name="CAE">text</string>
+    <string name="IT">text</string>
+    <string name="ID">text</string>
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- AB HIER Weiterbildung -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
 
 </resources>

@@ -44,40 +44,40 @@ public class EducationInfoFragment extends MyRefreshFragment
         if (element.getEducation().equals(Education.TOEIC))
         {
             beginning.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
-            beginning.setText("Einleitung");
+            beginning.setText(getActivity().getResources().getString(R.string.TOEIC_BEGINNING_TEXT));
 
             titleOne.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleOne.setText("Komplettpaket");
+            titleOne.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_COMPLETE_PACKAGE_TEXT));
             titleOne.setVisibility(View.VISIBLE);
             titleTwo.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleTwo.setText("Test Listening & Reading inkl. Zertifikat");
+            titleTwo.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_LISTENING_AND_READING_TEXT));
             titleTwo.setVisibility(View.VISIBLE);
             titleThree.setTextColor(getActivity().getResources().getColor(R.color.education_color));
-            titleThree.setText("Lehrveranstaltungen");
+            titleThree.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_CLASSES_TEXT));
             titleThree.setVisibility(View.VISIBLE);
 
-            textOne.setText("Text zu Titel 1");
+            textOne.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_ONE));
             textOne.setVisibility(View.VISIBLE);
-            textTwo.setText("Text zu Titel 2");
+            textTwo.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_TWO));
             textTwo.setVisibility(View.VISIBLE);
-            textThree.setText("Text zu Titel 3");
+            textThree.setTextbeginning.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_THREE));
             textThree.setVisibility(View.VISIBLE);
         }
         if (element.getEducation().equals(Education.BEC))
         {
-            beginning.setText("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.");
+            beginning.setText(getActivity().getResources().getString(R.string.BEC));
         }
         if (element.getEducation().equals(Education.CAE))
         {
-            beginning.setText("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.");
+            beginning.setText(getActivity().getResources().getString(R.string.CAE));
         }
         if (element.getEducation().equals(Education.IT))
         {
-            beginning.setText("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.");
+            beginning.setText(getActivity().getResources().getString(R.string.IT));
         }
         if (element.getEducation().equals(Education.ID))
         {
-            beginning.setText("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.");
+            beginning.setText(getActivity().getResources().getString(R.string.ID));
         }
 
         return view;

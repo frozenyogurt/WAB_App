@@ -313,7 +313,79 @@ Weitere Möglichkeiten sich vorab über die HfTL zu informieren, gibt es bei uns
     <string name="MUELLER">Prof. Dr. Jean-Alexander Müller ist als Prorektor für die Durchführung und die Qualität von Studium und Forschung an der HfTL verantwortlich.</string>
     <string name="SAUPE">Prof. Dr.-Ing. habil. Volker Saupe ist als Rektor das akademische Oberhaupt der HfTL und verantwortet neben repräsentativen Aufgaben die Ausrichtung der Lehre und Forschung. </string>
     <string name="BADERSCHNEIDER">Prof. Dr. Claus Baderschneider ist als Prorektor für Marketing und Internationales für die internationalen Hochschulkontakte und die Außendarstellung der Hochschule verantwortlich.</string>
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- AB HIER Weiterbildung -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <string name="TOEIC_BEGINNING_TEXT">Der Test Of English for International Communication, kurz TOEIC, ist ein international anerkannter Sprachtest des Educational Testing Service.\n
+        Er beinhaltet 200 Multiple-Choice-Fragen zum Hör- und Leseverständnis.
+Die HfTL ist seit 2010 ein zertifiziertes TOEIC Testzentrum.
+        Wir bieten einen Sprachkurs und die Möglichkeit der Zertifikatsprüfung für berufsbezogenes Englisch an. Nutze deine Chance für diese wertvolle Zusatzqualifikation.\n
+        Das Zertifikat ist die perfekte Ergänzung deiner zukünftigen Bewerbungen.
+        \n
+        \n
+        \n
+        Du im Folgenden kannst aus drei Varianten wählen:
+    </string>
+    <string name="TOEIC_COMPLETE_PACKAGE_TEXT">Beinhaltet die Teilnahme an der Lehrveranstaltung mit 14 Unterrichtseinheiten zur Vorbereitung auf den TOEIC Test Listening &amp; Reading und die Teilnahme am TOEIC Test inklusive das Ausstellen eines Ergebniszertifikats.
+Kosten: 160,00 Euro inkl. MwSt</string>
+    <string name="TOEIC_LISTENING_AND_READING_TEXT">Beinhaltet die Teilnahme am TOEIC Test Listening &amp; Reading inklusive das Ausstellen eines Ergebniszertifikats.
+Kosten: 129,35 Euro inkl. MwSt</string>
+    <string name="TOEIC_CLASSES_TEXT">Beinhaltet die Teilnahme an der Lehrveranstaltung mit 14 Unterrichtseinheiten zur Vorbereitung auf den TOEIC Test Listening &amp; Reading.
+Kosten: 70,00 Euro inkl. MwSt</string>
+    <string name="TOEIC_TITLE_ONE">Komplettpaket</string>
+    <string name="TOEIC_TITLE_TWO">Test Listening &amp; Reading inkl. Zertifikat</string>
+    <string name="TOEIC_TITLE_THREE">Lehrveranstaltungen</string>
 
+    <string name="BEC">The Course is set at Levels C1/B2 of the Common European Framework of Reference for Languages (CEFR). C1/B2 is the level of English required for demanding professional and academic settings and shows employers you can: \n
+communicate effectively at managerial and professional level \n
+participate with confidence in workplace meetings and presentations \n
+express yourself with a high level of fluency \n
+react appropriately in different cultural and social situations. \n
+The course Business English Cambridge (BEC)  ultimately prepares for the Cambridge Business English exams. These are high-level exams, taken all over the world by people who need to prove that they have a professional level of English for business purposes.</string>
+    <string name="CAE">Preparatory Course for Certificate of Advanced English (CAE)\n
+– CEFR Level C1, Professional Development Seminar\n
+In a globally interconnected world, Cambridge English sets a standard for English as an international language including the world’s most varieties of English. It thus is based on the English spoken in the real world – not just the class room.
+Taught by very experienced, highly knowledgeable native speakers, this course prepares you ideally for the Cambridge Advanced English (CAE) exam. \n
+This course helps you to develop your already good English language skills to a very advanced level - in only 3 semesters.
+The proficiency level that will be achieved in this course will allow you to apply the English language confidently and highly accurate in every professional or social context. \n
+The course “Cambridge Advanced English” is an in-depth learning experience at Level C1 of the Common European Framework of Reference for Languages (CEFR) – the internationally accepted system for describing language ability.
+It provides you with the right knowledge and skill to prevail in demanding academic and professional settings.
+The course ultimately prepares you for “The Certificate in Advanced English (CAE)” also known as “Cambridge English Advanced”. \n
+It is the leading English exam for professional and academic success.</string>
+    <string name="IT">SHAARPEN YOUR PROFESSIONAL INTERCULTURAL COMPETENCES!
+You work in a connected and global organization and want to sharpen your competences in intercultural interaction and insight in combination with ICT specifi thems. \n
+The intercultural seminar provides you with an invaluable knowledge base that allows you to develop deep understanding of cultural differences and specialties. You obtain scientific insights and practice in lectures and workshops. \n
 
+In consequence, you will be more able to recognize and understand cultural specific behavior, and will be able to better accommodate to different cultural situations, especially also in an ICT industry setting.  Thus, communication and cooperation will be facilitated.</string>
+    <string name="ID">Besseres Deutsch für Studium und Beruf! Vertiefen sie mit uns ihre Kenntnisse der deutschen Sprache.
+        Lernen sie das Vokabular der Informationstechnik kennen. Sie wollen an unserer Hochschule studieren?
+        Sie arbeiten im Umfeld der ICT-Branche und möchten Ihre bereits vorhandenen Deutschkenntnisse vertiefen? \n \n
 
+Herzlich Willkommen.
+        Unser Intensivkurs Deutsch als Fremdsprache ist genau auf Ihre Bedürfnisse zugeschnitten.
+        Denn wir legen in unserem Kurs den Schwerpunkt auf die Kommunikation im ICT-Sektor und technische Begriffe der Informationstechnik und Telekommunikation auf akademischem Niveau.
+        In der Telekommunikation und in der IT hat sich ein ganz eigener Wortschatz entwickelt - den Sie in einem normalen Deutschkurs nicht lernen.</string>
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- AB HIER Weiterbildung -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
     </resources>
