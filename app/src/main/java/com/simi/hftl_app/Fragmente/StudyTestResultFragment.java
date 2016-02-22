@@ -96,43 +96,43 @@ public class StudyTestResultFragment extends Fragment
         switch (course)
         {
             case KMI_BACHELOR:
-                solution = "KMI Bachelor";
+                solution = "Direkter Bachelor of Enigeering: Kommunikations- und Medieninformatik";
                 break;
             case IKT_MASTER:
-                solution = "IKT Master oder IKT Master Englisch";
+                solution = "Erst den direkten Master of Engineering: Informations- und Kommunikationstechnik und dann den direkten Master of Engineering: Informations- und Kommunikationstechnik in Englisch oder Deutsch";
                 break;
             case WI_BACHELOR:
-                solution = "WI Bachelor";
+                solution = "Direkter Bachlor of Science: Wirtschaftsinformatik";
                 break;
             case DUAL_KMI_BACHELOR:
-                solution = "Dualer KMI Bachelor";
+                solution = "Dualer Bachelor of Enigeering: Kommunikations- und Medieninformatik";
                 break;
             case JOB_KMI_BACHELOR:
-                solution = "Berufsbegleitender KMI Bachelor";
+                solution = "Berufsbegleitender Bachelor of Enigeering: Kommunikations- und Medieninformatik";
                 break;
             case DUAL_WI_BACHELOR:
-                solution = "Dualer WI Bachelor";
+                solution = "Dualer Bachlor of Science: Wirtschaftsinformatik";
                 break;
             case DUAL_WI_MASTER:
-                solution = "Dualer WI Master";
+                solution = "Erst den dualen Bachlor of Science: Wirtschaftsinformatik und dann den dualen Master of Science: Wirtschaftsinformatik.";
                 break;
             case JOB_WI_BACHELOR:
-                solution = "Berufsbegleitender WI Bachelor";
+                solution = "Berufsbegleitender Bachlor of Science: Wirtschaftsinformatik";
                 break;
             case JOB_WI_MASTER:
-                solution = "Berufsbegleitender WI Master";
+                solution = "Erst den berufsbegleitenden Bachlor of Science: Wirtschaftsinformatik und dann den berufsbegleitenden Master of Science: Wirtschaftsinformatik";
                 break;
             case IKT_BACHELOR:
-                solution = "IKT Bachelor";
+                solution = "Direkter Bachelor of Engineering: Informations- und Kommunikationstechnik";
                 break;
             case JOB_IKT_BACHELOR:
-                solution = "Berufsbegleitender IKT Bachelor";
+                solution = "Berufsbegleitender Bachelor of Engineering: Informations- und Kommunikationstechnik";
                 break;
             case JOB_IKT_MASTER:
-                solution = "Berufsbegleitender IKT Master";
+                solution = "Erst den berufsbegleitenden Bachelor of Engineering: Informations- und Kommunikationstechnik und dann den berufsbegleitenden Master of Engineering: Informations- und Kommunikationstechnik";
                 break;
             case DUAL_AI_BACHELOR:
-                solution = "Dualer AI Bachelor";
+                solution = "Dualer Bachelor of Science: Angewandte Informatik";
                 break;
         }
         return solution;
