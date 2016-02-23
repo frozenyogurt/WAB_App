@@ -48,13 +48,13 @@ public class SettingsFragment extends MyRefreshFragment
             @Override
             public void onClick(View v) {
                 MainActivity activity = ((MainActivity)getActivity());
-                activity.setColor(hex_value.getText().toString());
                 if (!hex_value.getText().toString().equals(""))
                 {
+                    activity.setColor(hex_value.getText().toString());
                     if (activity.convertColorString() != 0)
                     {
+                        activity.refreshFragments();
                         Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert " + hex_value.getText().toString() + " wurde erfolgreich gespeichert.", Toast.LENGTH_SHORT).show();
-                        ((MainActivity)getActivity()).refreshFragments();
                     }
                     else
                     {
@@ -89,10 +89,11 @@ public class SettingsFragment extends MyRefreshFragment
             public void onClick(View v)
             {
                 ((MainActivity)getActivity()).setColor(null);
+                ((MainActivity)getActivity()).refreshFragments();
                 german.setChecked(true);
                 english.setChecked(false);
                 hex_value.setText("");
-                ((MainActivity)getActivity()).setLocale("de_DE");
+                ((MainActivity)getActivity()).setLocale("de");
                 Toast.makeText(getActivity().getApplicationContext(), "Alle Werte wurden erfolgreich zurückgesetzt.", Toast.LENGTH_LONG).show();
             }
         });

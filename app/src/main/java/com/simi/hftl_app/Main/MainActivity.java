@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -318,11 +317,6 @@ public class MainActivity extends AppCompatActivity {
             study_dual_button.setBackgroundColor(getResources().getColor(R.color.study_dual_color));
             study_job_button.setBackgroundColor(getResources().getColor(R.color.study_job_color));
             study_test_button.setBackgroundColor(getResources().getColor(R.color.study_test_color));
-        }
-        Fragment fragment = getSupportFragmentManager().findFragmentByTag("HFTLInfoFragment");
-        if (fragment != null)
-        {
-            fragment.onResume();
         }
     }
 
