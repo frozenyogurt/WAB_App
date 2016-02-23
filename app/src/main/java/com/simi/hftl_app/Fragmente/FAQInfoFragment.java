@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.simi.hftl_app.Listen.FAQListItem;
@@ -65,6 +66,18 @@ public class FAQInfoFragment extends MyRefreshFragment
         if(clickedItem.getQuestionType().equals(QuestionType.WHICH_STUDY_COURSE))
         {
             text.setText(getActivity().getResources().getString(R.string.WHICH_STUDY_COURSE));
+        }
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
         }
 
         return view;

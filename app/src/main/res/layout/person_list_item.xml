@@ -51,6 +51,7 @@
                     android:layout_height="30dp" />
 
                 <TextView
+                    android:id="@+id/send_mail_text"
                     android:paddingTop="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"

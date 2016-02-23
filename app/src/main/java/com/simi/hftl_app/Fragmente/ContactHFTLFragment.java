@@ -35,6 +35,22 @@ public class ContactHFTLFragment extends MyRefreshFragment
         LinearLayout sendMail = (LinearLayout) view.findViewById(R.id.send_mail_to_developer);
         TextView sendMailText = (TextView) view.findViewById(R.id.send_mail_text);
 
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            hftlTitle.setTextColor(color);
+            developerTitle.setTextColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            hftlTitle.setTextColor(color);
+            developerTitle.setTextColor(color);
+        }
+
         titleFragment.setText("Kontakt");
         hftlText.setText("Kontakt hftl Text");
         hftlTitle.setText("Kontakt hftl Titel");

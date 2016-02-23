@@ -13,7 +13,7 @@
         android:textSize="25sp"
         android:gravity="center"
         android:text="Studiengang"
-        android:id="@+id/infoStudyTitle" />
+        android:id="@+id/title_portrait" />
 
     <LinearLayout
         android:layout_margin="5dp"

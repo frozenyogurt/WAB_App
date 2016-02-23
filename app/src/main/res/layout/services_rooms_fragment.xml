@@ -8,6 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/title_services_rooms"
         android:textColor="@android:color/black"
         android:layout_margin="10dp"
         android:text="Labore"
@@ -17,12 +18,14 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:id="@+id/underline"
         android:orientation="horizontal"
         android:background="@color/hftl_info_color"
         android:layout_width="match_parent"
         android:layout_height="3dp"/>
 
     <ListView
+        android:overScrollMode="never"
         android:scrollbars="none"
         android:layout_weight="1"
         android:dividerHeight="1dp"

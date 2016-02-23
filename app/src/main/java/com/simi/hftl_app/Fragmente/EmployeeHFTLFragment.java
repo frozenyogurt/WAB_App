@@ -1,11 +1,14 @@
 package com.simi.hftl_app.Fragmente;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.simi.hftl_app.Listen.PersonListAdapter;
 import com.simi.hftl_app.Listen.PersonListItem;
@@ -28,6 +31,9 @@ public class EmployeeHFTLFragment extends MyRefreshFragment
     {
         View view = inflater.inflate(R.layout.employee_hftl_fragment,container,false);
 
+        TextView title = (TextView) view.findViewById(R.id.employee_title);
+        title.setText("Mitarbeiter");
+
         ListView list = (ListView) view.findViewById(R.id.employee_list);
         ArrayList<PersonListItem> persons = new ArrayList<>();
 
@@ -41,9 +47,24 @@ public class EmployeeHFTLFragment extends MyRefreshFragment
                 (getActivity().getResources().getString(R.string.BADERSCHNEIDER)),
                 "claus.baderschneider@hft-leipzig.de"));
 
-
         PersonListAdapter adapter = new PersonListAdapter((MainActivity)getActivity(),R.layout.person_list_item,persons);
         list.setAdapter(adapter);
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
 
         return view;
     }

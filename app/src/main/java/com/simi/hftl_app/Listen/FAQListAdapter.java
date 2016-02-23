@@ -36,6 +36,9 @@ public class FAQListAdapter extends ArrayAdapter<FAQListItem>
         TextView name = (TextView) view.findViewById(R.id.faq_item_name);
         name.setText(listItem.getName());
 
+        TextView more = (TextView) view.findViewById(R.id.item_more);
+        more.setText("Antwort ansehen");
+
         return view;
     }
 }

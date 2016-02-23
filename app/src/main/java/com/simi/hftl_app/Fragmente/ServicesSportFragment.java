@@ -35,6 +35,11 @@ public class ServicesSportFragment extends MyRefreshFragment
         TextView textFour = (TextView) view.findViewById(R.id.services_sport_text_four);
         LinearLayout goToSportWebsite = (LinearLayout) view.findViewById(R.id.services_sport_website);
 
+        TextView title = (TextView) view.findViewById(R.id.title_services_sport);
+        title.setText("Sport");
+        TextView websiteText = (TextView) view.findViewById(R.id.services_sport_website_text);
+        websiteText.setText("Anmeldung und Informationen");
+
         goToSportWebsite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +74,26 @@ public class ServicesSportFragment extends MyRefreshFragment
                 "Tischtennisplatte in der HfTL");
         textFour.setText("Im laufenden Studienjahr werden in Abstimmung mit dem Studentenrat 3 bis 4 Hochschulmeister- schaften und Turniere durchgeführt. Die Auswahlmannschaften nehmen jährlich an den Hochschulmeisterschaften des Landes Sachsen teil.\n" +
                 "Die HfTL ist Mitglied des ADH (Allgemeiner Deutscher Hochschulsportverband) und kann bei Qualifizierung in einer Sportart auf Landesebene an den Deutschen Hochschulmeisterschaften der Bundesrepublik Deutschland teilnehmen.");
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+            titleFour.setTextColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+            titleFour.setTextColor(color);
+        }
 
         return view;
     }

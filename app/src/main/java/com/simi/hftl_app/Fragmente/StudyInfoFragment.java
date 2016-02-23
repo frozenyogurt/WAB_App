@@ -27,13 +27,21 @@ public class StudyInfoFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.study_info_fragment, container, false);
 
         StudyListItem element = ((MainActivity) getActivity()).getClickedElement();
-        TextView title = (TextView) view.findViewById(R.id.infoStudyTitle);
+        TextView title = (TextView) view.findViewById(R.id.title_portrait);
         title.setText(element.getName());
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.TitleUndeline);
         TextView titleJob = (TextView) view.findViewById(R.id.jobPerspectivesTitle);
         TextView titleCurri = (TextView) view.findViewById(R.id.curriculumTitle);
-        if (element.getCategory().equals(Category.NORMAL))
+
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            titleJob.setTextColor(color);
+            titleCurri.setTextColor(color);
+        }
+        else if (element.getCategory().equals(Category.NORMAL))
         {
             layout.setBackgroundColor(getActivity().getResources().getColor(R.color.study_color));
             titleJob.setTextColor(getActivity().getResources().getColor(R.color.study_color));

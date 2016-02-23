@@ -5,8 +5,10 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.R;
 
 /**
@@ -57,6 +59,32 @@ public class WhyHFTLFragment extends MyRefreshFragment
         textFive.setText("Text 5");
         textSix.setText("Text 6");
         textSeven.setText("Text 7");
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+            titleFour.setTextColor(color);
+            titleFive.setTextColor(color);
+            titleSix.setTextColor(color);
+            titleSeven.setTextColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+            titleFour.setTextColor(color);
+            titleFive.setTextColor(color);
+            titleSix.setTextColor(color);
+            titleSeven.setTextColor(color);
+        }
 
         return view;
     }

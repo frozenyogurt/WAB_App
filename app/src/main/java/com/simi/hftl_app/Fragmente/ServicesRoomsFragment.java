@@ -1,11 +1,14 @@
 package com.simi.hftl_app.Fragmente;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.simi.hftl_app.Listen.NewsListAdapter;
 import com.simi.hftl_app.Listen.NewsListItem;
@@ -40,6 +43,25 @@ public class ServicesRoomsFragment extends MyRefreshFragment
                 R.drawable.news_pic_test));
         NewsListAdapter adapter = new NewsListAdapter((MainActivity)getActivity(),R.layout.news_list_item,news);
         list.setAdapter(adapter);
+
+        TextView title = (TextView) view.findViewById(R.id.title_services_rooms);
+        title.setText("Labore");
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
 
         return view;
     }

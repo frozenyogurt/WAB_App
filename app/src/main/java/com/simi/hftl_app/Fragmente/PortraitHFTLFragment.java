@@ -6,8 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.R;
 
 /**
@@ -22,6 +24,21 @@ public class PortraitHFTLFragment extends MyRefreshFragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.portrait_hftl_fragment,container,false);
+
+        TextView title = (TextView) view.findViewById(R.id.title_portrait);
+        title.setText("Portrait");
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+        }
 
         TextView textOne = (TextView) view.findViewById(R.id.portrait_text_one);
         TextView textTwo = (TextView) view.findViewById(R.id.portrait_text_two);

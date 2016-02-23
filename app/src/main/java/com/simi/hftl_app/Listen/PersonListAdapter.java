@@ -39,6 +39,9 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
         View view = inflater.inflate(R.layout.person_list_item, parent, false);
         PersonListItem listItem = items.get(position);
 
+        TextView sendMailText = (TextView) view.findViewById(R.id.send_mail_text);
+        sendMailText.setText("Mail Senden");
+
         TextView name = (TextView) view.findViewById(R.id.person_name);
         name.setText(listItem.getName());
 

@@ -8,6 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/title_services_way_to"
         android:textColor="@android:color/black"
         android:layout_margin="10dp"
         android:text="Anfahrt"
@@ -17,6 +18,7 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:id="@+id/underline"
         android:orientation="horizontal"
         android:background="@color/hftl_info_color"
         android:layout_width="match_parent"
@@ -80,6 +82,7 @@
                     android:layout_height="30dp" />
 
                 <TextView
+                    android:id="@+id/services_way_to_navigate_text"
                     android:textSize="20sp"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
@@ -109,7 +112,12 @@
             <LinearLayout
                 android:gravity="center"
                 android:id="@+id/services_way_to_website_leipzig"
-                android:padding="20dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -120,6 +128,7 @@
                     android:layout_height="30dp" />
 
                 <TextView
+                    android:id="@+id/services_way_to_website_leipzig_text"
                     android:textSize="20sp"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
@@ -132,7 +141,12 @@
             <LinearLayout
                 android:gravity="center"
                 android:id="@+id/services_way_to_website_db"
-                android:padding="20dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -143,6 +157,7 @@
                     android:layout_height="30dp" />
 
                 <TextView
+                    android:id="@+id/services_way_to_website_db_text"
                     android:textSize="20sp"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"

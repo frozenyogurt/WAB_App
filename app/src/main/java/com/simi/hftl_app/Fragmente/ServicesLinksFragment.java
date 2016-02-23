@@ -1,12 +1,15 @@
 package com.simi.hftl_app.Fragmente;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.simi.hftl_app.Listen.ServicesLinkListAdapter;
 import com.simi.hftl_app.Listen.ServicesLinksListItem;
@@ -28,6 +31,9 @@ public class ServicesLinksFragment extends MyRefreshFragment
     {
         View view = inflater.inflate(R.layout.services_links_fragment,container,false);
 
+        TextView title = (TextView) view.findViewById(R.id.title_services_links);
+        title.setText("Links");
+
         ListView list = (ListView) view.findViewById(R.id.services_links_list);
         final ArrayList<ServicesLinksListItem> links = new ArrayList<>();
         links.add(new ServicesLinksListItem("Ilias - Lernplattform", "https://ilias.hft-leipzig.de/"));
@@ -46,6 +52,22 @@ public class ServicesLinksFragment extends MyRefreshFragment
                 ((MainActivity)getActivity()).goToWebsite(links.get(position).getWebsiteLink());
             }
         });
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
 
         return view;
     }

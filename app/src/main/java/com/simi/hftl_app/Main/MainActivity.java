@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
         toolbarTitle.setText(title);
     }
 
-    public int convertColorString(boolean isFragment)
+    public int convertColorString()
     {
         int color = 0;
         if(getColor() != null)
@@ -292,11 +292,6 @@ public class MainActivity extends AppCompatActivity {
                 study_dual_button.setBackgroundColor(color);
                 study_job_button.setBackgroundColor(color);
                 study_test_button.setBackgroundColor(color);
-                Fragment fragment = getSupportFragmentManager().findFragmentByTag("HFTLInfoFragment");
-                if (fragment != null && !isFragment)
-                {
-                    fragment.onResume();
-                }
                 return color;
             }
             catch (Exception e)

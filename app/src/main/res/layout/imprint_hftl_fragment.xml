@@ -8,6 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/title_fragment_imprint"
         android:textColor="@android:color/black"
         android:layout_margin="10dp"
         android:text="Impressum"
@@ -17,6 +18,7 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:id="@+id/underline"
         android:orientation="horizontal"
         android:background="@color/hftl_info_color"
         android:layout_width="match_parent"
@@ -84,6 +86,7 @@
                     android:layout_height="30dp" />
 
                 <TextView
+                    android:id="@+id/send_mail_leader_text"
                     android:paddingTop="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
@@ -110,6 +113,7 @@
                     android:layout_height="30dp" />
 
                 <TextView
+                    android:id="@+id/call_leader_text"
                     android:paddingTop="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
@@ -153,6 +157,7 @@
                     android:layout_height="30dp" />
 
                 <TextView
+                    android:id="@+id/send_mail_editorial_staff_text"
                     android:paddingTop="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
@@ -179,6 +184,7 @@
                     android:layout_height="30dp" />
 
                 <TextView
+                    android:id="@+id/call_editorial_staff_text"
                     android:paddingTop="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"

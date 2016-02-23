@@ -27,20 +27,6 @@ public class HFTLInfoFragment extends MyRefreshFragment
 
     public HFTLInfoFragment(){}
 
-    @Override
-    public void onResume()
-    {
-        if (((MainActivity) getActivity()).convertColorString(true) != 0)
-        {
-            setColors();
-        }
-        else
-        {
-            setDefaultColor();
-        }
-        super.onResume();
-    }
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -55,6 +41,15 @@ public class HFTLInfoFragment extends MyRefreshFragment
         services = (Button) view.findViewById(R.id.button_services);
         whyHFTL = (Button) view.findViewById(R.id.button_why_hftl);
         news = (Button) view.findViewById(R.id.button_news);
+
+        if (((MainActivity) getActivity()).convertColorString() != 0)
+        {
+            setColors();
+        }
+        else
+        {
+            setDefaultColor();
+        }
 
         portrait.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -137,7 +132,7 @@ public class HFTLInfoFragment extends MyRefreshFragment
             }
         });
 
-        if (((MainActivity) getActivity()).convertColorString(true) != 0)
+        if (((MainActivity) getActivity()).convertColorString() != 0)
         {
             setColors();
         }
@@ -161,13 +156,13 @@ public class HFTLInfoFragment extends MyRefreshFragment
     public void setColors()
     {
         MainActivity activity = ((MainActivity) getActivity());
-        news.setBackgroundColor(activity.convertColorString(true));
-        faq.setBackgroundColor(activity.convertColorString(true));
-        imprint.setBackgroundColor(activity.convertColorString(true));
-        portrait.setBackgroundColor(activity.convertColorString(true));
-        whyHFTL.setBackgroundColor(activity.convertColorString(true));
-        employee.setBackgroundColor(activity.convertColorString(true));
-        contact.setBackgroundColor(activity.convertColorString(true));
-        services.setBackgroundColor(activity.convertColorString(true));
+        news.setBackgroundColor(activity.convertColorString());
+        faq.setBackgroundColor(activity.convertColorString());
+        imprint.setBackgroundColor(activity.convertColorString());
+        portrait.setBackgroundColor(activity.convertColorString());
+        whyHFTL.setBackgroundColor(activity.convertColorString());
+        employee.setBackgroundColor(activity.convertColorString());
+        contact.setBackgroundColor(activity.convertColorString());
+        services.setBackgroundColor(activity.convertColorString());
     }
 }

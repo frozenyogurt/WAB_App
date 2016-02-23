@@ -72,6 +72,31 @@ public class ServicesWayToFragment extends MyRefreshFragment
             }
         });
 
+        TextView title = (TextView) view.findViewById(R.id.title_services_way_to);
+        title.setText("Anfahrt");
+        TextView navigateText = (TextView) view.findViewById(R.id.services_way_to_navigate_text);
+        navigateText.setText("Zur Hochschule");
+        TextView goToDBText = (TextView) view.findViewById(R.id.services_way_to_website_db_text);
+        goToDBText.setText("Deutsche Bahn");
+        TextView goToLeipzigText = (TextView) view.findViewById(R.id.services_way_to_website_leipzig_text);
+        goToLeipzigText.setText("Leipziger Verkehrsbetriebe");
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+        }
+
         return view;
     }
 }

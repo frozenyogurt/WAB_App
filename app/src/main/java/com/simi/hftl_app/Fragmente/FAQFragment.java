@@ -1,5 +1,6 @@
 package com.simi.hftl_app.Fragmente;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
@@ -7,7 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.simi.hftl_app.Listen.FAQListAdapter;
 import com.simi.hftl_app.Listen.FAQListItem;
@@ -29,6 +32,9 @@ public class FAQFragment extends MyRefreshFragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.faq_hftl_fragment,container,false);
+
+        TextView title = (TextView) view.findViewById(R.id.faq_fragment_title);
+        title.setText("Fragen");
 
         ListView list = (ListView) view.findViewById(R.id.faq_list);
         final ArrayList<FAQListItem> persons = new ArrayList<>();
@@ -55,6 +61,22 @@ public class FAQFragment extends MyRefreshFragment
                 ft.commit();
             }
         });
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
 
         return view;
     }

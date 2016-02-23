@@ -26,6 +26,9 @@ public class ServicesHFTLFragment extends MyRefreshFragment
     {
         View view = inflater.inflate(R.layout.services_hftl_fragment,container,false);
 
+        TextView title = (TextView) view.findViewById(R.id.services_main_title);
+        title.setText("Services");
+
         LinearLayout itemOne = (LinearLayout) view.findViewById(R.id.item_services_one);
         LinearLayout itemTwo = (LinearLayout) view.findViewById(R.id.item_services_two);
         LinearLayout itemThree = (LinearLayout) view.findViewById(R.id.item_services_three);
@@ -118,6 +121,21 @@ public class ServicesHFTLFragment extends MyRefreshFragment
                 ((MainActivity) getActivity()).goToWebsite("https://www.hft-leipzig.de/de/hochschule/service-an-der-hftl.html");
             }
         });
+
+        TextView allServices = (TextView) view.findViewById(R.id.all_services_text);
+        allServices.setText("Alle Infomationen ansehen");
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+        }
 
         return view;
     }

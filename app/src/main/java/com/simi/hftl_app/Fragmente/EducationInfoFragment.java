@@ -30,7 +30,6 @@ public class EducationInfoFragment extends MyRefreshFragment
         TextView title = (TextView) view.findViewById(R.id.infoEducationTitle);
         title.setText(element.getName());
 
-        LinearLayout layout = (LinearLayout) view.findViewById(R.id.eductaionTitleUndeline);
         TextView beginning = (TextView) view.findViewById(R.id.eductaionBeginningText);
         TextView titleOne = (TextView) view.findViewById(R.id.TOEIC_title_one);
         TextView titleTwo = (TextView) view.findViewById(R.id.TOEIC_title_two);
@@ -39,20 +38,33 @@ public class EducationInfoFragment extends MyRefreshFragment
         TextView textTwo = (TextView) view.findViewById(R.id.TOEIC_text_two);
         TextView textThree = (TextView) view.findViewById(R.id.TOEIC_text_three);
 
-        layout.setBackgroundColor(getActivity().getResources().getColor(R.color.education_color));
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
 
         beginning.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         if (element.getEducation().equals(Education.TOEIC))
         {
             beginning.setText(getActivity().getResources().getString(R.string.TOEIC_BEGINNING_TEXT));
 
-            titleOne.setTextColor(getActivity().getResources().getColor(R.color.education_color));
+            if (color != 0)
+            {
+                layout.setBackgroundColor(color);
+                titleOne.setTextColor(color);
+                titleTwo.setTextColor(color);
+                titleThree.setTextColor(color);
+            }
+            else
+            {
+                color = getActivity().getResources().getColor(R.color.education_color);
+                layout.setBackgroundColor(color);
+                titleOne.setTextColor(color);
+                titleTwo.setTextColor(color);
+                titleThree.setTextColor(color);
+            }
             titleOne.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_ONE));
             titleOne.setVisibility(View.VISIBLE);
-            titleTwo.setTextColor(getActivity().getResources().getColor(R.color.education_color));
             titleTwo.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_TWO));
             titleTwo.setVisibility(View.VISIBLE);
-            titleThree.setTextColor(getActivity().getResources().getColor(R.color.education_color));
             titleThree.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_THREE));
             titleThree.setVisibility(View.VISIBLE);
 

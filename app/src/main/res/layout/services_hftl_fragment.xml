@@ -14,12 +14,12 @@
         android:textSize="25sp"
         android:gravity="center"
         android:text="Services"
-        android:id="@+id/infoStudyTitle" />
+        android:id="@+id/services_main_title" />
 
     <LinearLayout
         android:layout_margin="5dp"
         android:background="@color/hftl_info_color"
-        android:id="@+id/TitleUndeline"
+        android:id="@+id/underline"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="2dp"/>
@@ -193,6 +193,7 @@
                 android:layout_height="30dp" />
 
             <TextView
+                android:id="@+id/all_services_text"
                 android:textSize="20sp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"

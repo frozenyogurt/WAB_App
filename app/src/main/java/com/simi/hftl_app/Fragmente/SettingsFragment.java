@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.simi.hftl_app.Main.MainActivity;
@@ -27,10 +28,21 @@ public class SettingsFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.settings_fragment,container,false);
 
         Button save = (Button) view.findViewById(R.id.button_save);
+        save.setText("Speichern");
         Button reset = (Button) view.findViewById(R.id.button_reset);
+        reset.setText("Zurücksetzen");
         final EditText hex_value = (EditText) view.findViewById(R.id.hex_value);
+        hex_value.setHint("hexadezimalen Wert eingeben");
         final CheckBox german = (CheckBox) view.findViewById(R.id.language_german);
+        german.setText("Deutsch");
         final CheckBox english = (CheckBox) view.findViewById(R.id.language_english);
+        english.setText("Englisch");
+        TextView titleChangeLanguage = (TextView) view.findViewById(R.id.titleChangeLanguage);
+        titleChangeLanguage.setText("Sprache");
+        TextView titleChangeDesign = (TextView) view.findViewById(R.id.titleChangeColor);
+        titleChangeDesign.setText("Farbdesign");
+        TextView textInfo = (TextView) view.findViewById(R.id.changeColorInfoText);
+        textInfo.setText("Der hier eingegebene Wert wird auf alle Farben angewandt, die nicht Magenta sind. Er muss das Format #RRGGBB oder #AARRGGBB haben.");
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,9 +51,10 @@ public class SettingsFragment extends MyRefreshFragment
                 activity.setColor(hex_value.getText().toString());
                 if (!hex_value.getText().toString().equals(""))
                 {
-                    if (activity.convertColorString(false) != 0)
+                    if (activity.convertColorString() != 0)
                     {
                         Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert " + hex_value.getText().toString() + " wurde erfolgreich gespeichert.", Toast.LENGTH_SHORT).show();
+                        ((MainActivity)getActivity()).refreshFragments();
                     }
                     else
                     {

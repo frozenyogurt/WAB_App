@@ -39,6 +39,9 @@ public class StudyListAdapter extends ArrayAdapter <StudyListItem>
         TextView name = (TextView) view.findViewById(R.id.item_name);
         name.setText(listItem.getName());
 
+        TextView text = (TextView) view.findViewById(R.id.item_more);
+        text.setText("Mehr Erfahren");
+
         return view;
     }
 

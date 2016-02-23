@@ -24,12 +24,33 @@ public class ServicesLibraryFragment extends MyRefreshFragment
     {
         View view = inflater.inflate(R.layout.services_library_fragment,container,false);
 
+        TextView title = (TextView) view.findViewById(R.id.title_services_libary);
+        title.setText("Bibliothek");
+
         TextView titleOne = (TextView) view.findViewById(R.id.title_library_one);
         TextView titleTwo = (TextView) view.findViewById(R.id.title_library_two);
         TextView titleThree = (TextView) view.findViewById(R.id.title_library_three);
         TextView textOne = (TextView) view.findViewById(R.id.text_library_one);
         TextView textTwo = (TextView) view.findViewById(R.id.text_library_two);
         TextView textThree = (TextView) view.findViewById(R.id.text_library_three);
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+        }
 
         titleOne.setText("Adresse der Bibliothek der HfTL und HTWK Leipzig");
         titleTwo.setText("Öffnungszeiten");

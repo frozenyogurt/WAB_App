@@ -14,12 +14,12 @@
         android:textSize="25sp"
         android:gravity="center"
         android:text="Portrait"
-        android:id="@+id/infoStudyTitle" />
+        android:id="@+id/title_portrait" />
 
     <LinearLayout
         android:layout_margin="5dp"
         android:background="@color/hftl_info_color"
-        android:id="@+id/TitleUndeline"
+        android:id="@+id/underline"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="2dp"/>

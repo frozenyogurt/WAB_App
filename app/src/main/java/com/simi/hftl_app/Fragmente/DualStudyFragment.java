@@ -1,5 +1,6 @@
 package com.simi.hftl_app.Fragmente;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
@@ -52,6 +53,19 @@ public class DualStudyFragment extends MyRefreshFragment
                 ft.commit();
             }
         });
+
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.study_dual_color);
+            list.setDivider(new ColorDrawable(color));
+            list.setDividerHeight(5);
+        }
 
         return view;
     }

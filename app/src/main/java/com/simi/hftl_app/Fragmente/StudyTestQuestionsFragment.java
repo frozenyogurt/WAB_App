@@ -87,7 +87,7 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                 if (position < activity.getQuestions().size() - 1) {
                     forwardButton.setVisibility(View.VISIBLE);
                 }
-                if (position == activity.getQuestions().size() - 1)
+                if (position == activity.getQuestions().size() - 1 || activity.getNotAnsweredQuestions().size() == 0)
                 {
                     result.setVisibility(View.VISIBLE);
                     result.setBackgroundResource(R.drawable.round_button_test);

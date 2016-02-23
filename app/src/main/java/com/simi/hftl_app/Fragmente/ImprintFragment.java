@@ -28,6 +28,30 @@ public class ImprintFragment extends MyRefreshFragment
         TextView text1 = (TextView) view.findViewById(R.id.text_inprint_one);
         TextView text2 = (TextView) view.findViewById(R.id.text_inprint_two);
         TextView text3 = (TextView) view.findViewById(R.id.text_inprint_three);
+        TextView titleOne = (TextView) view.findViewById(R.id.title_inprint_one);
+        titleOne.setText("HFTL TRÄGERGESELLSCHAFT mbH");
+        TextView titleTwo = (TextView) view.findViewById(R.id.title_inprint_two);
+        titleTwo.setText("Geschäftsführung");
+        TextView titleThree = (TextView) view.findViewById(R.id.title_inprint_three);
+        titleThree.setText("Redaktion");
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.hftl_info_color);
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+        }
 
         text1.setText("Friedrich-Ebert-Allee 140\n" +
                 "53113 Bonn\n" +
@@ -55,6 +79,15 @@ public class ImprintFragment extends MyRefreshFragment
         LinearLayout callLeader = (LinearLayout) view.findViewById(R.id.call_leader);
         LinearLayout sendMailStaff = (LinearLayout) view.findViewById(R.id.send_mail_editorial_staff);
         LinearLayout callStaff = (LinearLayout) view.findViewById(R.id.call_editorial_staff);
+
+        TextView sendMailLeaderText = (TextView) view.findViewById(R.id.send_mail_leader_text);
+        sendMailLeaderText.setText("Mail Senden");
+        TextView callLeaderText = (TextView) view.findViewById(R.id.call_leader_text);
+        callLeaderText.setText("Anrufen");
+        TextView sendMailStaffText = (TextView) view.findViewById(R.id.send_mail_editorial_staff_text);
+        sendMailStaffText.setText("Mail Senden");
+        TextView callStaffText = (TextView) view.findViewById(R.id.call_editorial_staff_text);
+        callStaffText.setText("Anrufen");
 
         sendMailLeader.setOnClickListener(new View.OnClickListener() {
             @Override

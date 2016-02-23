@@ -18,6 +18,7 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:id="@+id/underline"
         android:orientation="horizontal"
         android:background="@color/study_test_color"
         android:layout_width="match_parent"
