@@ -1,4 +1,4 @@
-package com.simi.hftl_app.Fragmente;
+package com.simi.hftl_app.QuestionFragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import com.simi.hftl_app.Fragmente.MyRefreshFragment;
 import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.Question;
 import com.simi.hftl_app.R;
@@ -15,11 +16,11 @@ import com.simi.hftl_app.R;
 /**
  * Created by student on 17.02.2016.
  */
-public class FirstQuestionFragment extends MyRefreshFragment
+public class Question3Fragment extends MyRefreshFragment
 {
     private Question currentQuestion;
 
-    public FirstQuestionFragment() {}
+    public Question3Fragment() {}
 
     @Nullable
     @Override
@@ -35,7 +36,7 @@ public class FirstQuestionFragment extends MyRefreshFragment
         final CheckBox questionFive = (CheckBox) view.findViewById(R.id.answer_five);
 
         MainActivity activity = ((MainActivity)getActivity());
-        currentQuestion = activity.getQuestions().get(0);
+        currentQuestion = activity.getQuestions().get(2);
         questionName.setText(currentQuestion.getQuestionName());
         for (int i = 0; i < currentQuestion.getAnswers().size(); i++)
         {

@@ -41,10 +41,32 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
         final TextView title = (TextView) view.findViewById(R.id.test_question_title);
 
         final ViewPager pager = (ViewPager) view.findViewById(R.id.question_slider);
-        ScreenSliderPagerAdapter adapter = new ScreenSliderPagerAdapter(getFragmentManager(), (MainActivity) getActivity());
+        ScreenSliderPagerAdapter adapter = new ScreenSliderPagerAdapter(getChildFragmentManager(), (MainActivity) getActivity());
         pager.setAdapter(adapter);
-        ((MainActivity)getActivity()).setCurrentPage(0);
+        MainActivity activity = ((MainActivity)getActivity());
+        pager.setCurrentItem(activity.getCurrentViewPagerItem());
         title.setText(getTitleText());
+
+        int position = activity.getCurrentViewPagerItem();
+        if (position > 0) {
+            backButton.setVisibility(View.VISIBLE);
+        }
+        if (position == 0) {
+            backButton.setVisibility(View.GONE);
+        }
+        if (position == activity.getQuestions().size() - 1) {
+            forwardButton.setVisibility(View.GONE);
+        }
+        if (position < activity.getQuestions().size() - 1) {
+            forwardButton.setVisibility(View.VISIBLE);
+        }
+        if (position == activity.getQuestions().size() - 1)
+        {
+            result.setVisibility(View.VISIBLE);
+            result.setBackgroundResource(R.drawable.round_button_test);
+            result.setText("Auswertung");
+        }
+
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}

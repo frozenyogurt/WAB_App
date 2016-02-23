@@ -194,9 +194,9 @@ public class MainActivity extends AppCompatActivity {
     {
         isMenuTapped = false;
         String lastFragmentName = getSupportFragmentManager().getBackStackEntryAt(getSupportFragmentManager().getBackStackEntryCount() - 1).getName();
-        questionsList = new ArrayList<>();
         if (getSupportFragmentManager().getBackStackEntryCount() == 0)
         {
+            questionsList = new ArrayList<>();
             isGoBack = false;
             setToolbarTitle("HFTL");
             backButton.setVisibility(View.INVISIBLE);
@@ -204,6 +204,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (getSupportFragmentManager().getBackStackEntryCount() == 1)
         {
+            questionsList = new ArrayList<>();
             isGoBack = false;
             setToolbarTitle("HFTL");
             backButton.setVisibility(View.INVISIBLE);
@@ -211,18 +212,25 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (lastFragmentName != null)
         {
-            if (!(lastFragmentName.equals("SettingsFragment") || lastFragmentName.equals("AboutUsFragment")))
+            if (lastFragmentName.equals("StudyTestResultFragment") || lastFragmentName.equals("MenuFragment"))
             {
+                if (lastFragmentName.equals("MenuFragment"))
+                {
+                    setCurrentPage(getCurrentViewPagerItem());
+                }
+                refreshFragments();
                 isGoBack = false;
             }
-            if (lastFragmentName.equals("StudyTestResultFragment"))
+            else if (!(lastFragmentName.equals("SettingsFragment") || lastFragmentName.equals("AboutUsFragment")))
             {
-                refreshFragments();
+                questionsList = new ArrayList<>();
+                isGoBack = false;
             }
             super.onBackPressed();
         }
         else
         {
+            questionsList = new ArrayList<>();
             super.onBackPressed();
         }
     }
