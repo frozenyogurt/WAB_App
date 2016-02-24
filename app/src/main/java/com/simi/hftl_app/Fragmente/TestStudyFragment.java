@@ -1,5 +1,6 @@
 package com.simi.hftl_app.Fragmente;
 
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
@@ -7,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
@@ -48,6 +50,25 @@ public class TestStudyFragment extends MyRefreshFragment
                 ft.commit();
             }
         });
+
+        LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
+        int color = ((MainActivity) getActivity()).convertColorString();
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            GradientDrawable shape =  new GradientDrawable();
+            float scale = getContext().getResources().getDisplayMetrics().density;
+            int pixels = (int) (10 * scale + 0.5f);
+            shape.setCornerRadius(pixels);
+            shape.setColor(color);
+            start.setBackgroundDrawable(shape);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.study_test_color);
+            layout.setBackgroundColor(color);
+            start.setBackgroundResource(R.drawable.round_button_test);
+        }
 
         return view;
     }

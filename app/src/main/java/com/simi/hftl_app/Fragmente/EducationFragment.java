@@ -33,11 +33,11 @@ public class EducationFragment extends MyRefreshFragment
 
         ListView list = (ListView) view.findViewById(R.id.listViewEducation);
         final ArrayList<EducationListItem> items = new ArrayList<>();
-        items.add(new EducationListItem("TOEIC", Education.TOEIC));
-        items.add(new EducationListItem("Business English Cambridge (BEC)", Education.BEC));
-        items.add(new EducationListItem("Cambridge Advanced English (CAE)", Education.CAE));
-        items.add(new EducationListItem("Intercultural Training", Education.IT));
-        items.add(new EducationListItem("Intensivkurs Deutsch", Education.ID));
+        items.add(new EducationListItem(getActivity().getResources().getString(R.string.EDUCATION_TOEIC_NAME), Education.TOEIC));
+        items.add(new EducationListItem(getActivity().getResources().getString(R.string.EDUCATION_BEC_NAME), Education.BEC));
+        items.add(new EducationListItem(getActivity().getResources().getString(R.string.EDUCATION_CAE_NAME), Education.CAE));
+        items.add(new EducationListItem(getActivity().getResources().getString(R.string.EDUCATION_IT_NAME), Education.IT));
+        items.add(new EducationListItem(getActivity().getResources().getString(R.string.EDUCATION_ID_NAME), Education.ID));
         EducationListAdapter adapter = new EducationListAdapter((MainActivity) getActivity(), R.layout.study_list_item, items);
         list.setAdapter(adapter);
 

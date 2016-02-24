@@ -32,20 +32,23 @@ public class EmployeeHFTLFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.employee_hftl_fragment,container,false);
 
         TextView title = (TextView) view.findViewById(R.id.employee_title);
-        title.setText("Mitarbeiter");
+        title.setText(getActivity().getResources().getString(R.string.EMPLOYEE_TITLE_TEXT));
 
         ListView list = (ListView) view.findViewById(R.id.employee_list);
         ArrayList<PersonListItem> persons = new ArrayList<>();
 
-        persons.add(new PersonListItem("Rektor: Prof. Dr.-Ing. habil. Volker Saupe", Person.SAUPE,
-                (getActivity().getResources().getString(R.string.SAUPE)),
-                "saupe@hft-leipzig.de"));
-        persons.add(new PersonListItem("Prorektor: Prof. Dr. Jean-Alexander Müller", Person.MUELLER,
-                (getActivity().getResources().getString(R.string.MUELLER)),
-                "mueller01@hft-leipzig.de"));
-        persons.add(new PersonListItem("Prorektor: Prof. Dr. Claus Baderschneider", Person.BADERSCHNEIDER,
-                (getActivity().getResources().getString(R.string.BADERSCHNEIDER)),
-                "claus.baderschneider@hft-leipzig.de"));
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.REKTOR_SAUPE_NAME),
+                Person.SAUPE,
+                getActivity().getResources().getString(R.string.SAUPE),
+                getActivity().getResources().getString(R.string.REKTOR_SAUPE_MAIL)));
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.PROREKTOR_MUELLER_NAME),
+                Person.MUELLER,
+                getActivity().getResources().getString(R.string.MUELLER),
+                getActivity().getResources().getString(R.string.PROREKTOR_MUELLER_MAIL)));
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.PROREKTOR_BADERSCHNEIDER_NAME),
+                Person.BADERSCHNEIDER,
+                getActivity().getResources().getString(R.string.BADERSCHNEIDER),
+                getActivity().getResources().getString(R.string.PROREKTOR_BADERSCHNEIDER_MAIL)));
 
         PersonListAdapter adapter = new PersonListAdapter((MainActivity)getActivity(),R.layout.person_list_item,persons);
         list.setAdapter(adapter);

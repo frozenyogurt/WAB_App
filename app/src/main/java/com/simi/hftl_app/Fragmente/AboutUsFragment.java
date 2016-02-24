@@ -30,15 +30,18 @@ public class AboutUsFragment extends MyRefreshFragment
 
         ListView list = (ListView) view.findViewById(R.id.about_us_list);
         ArrayList<PersonListItem> persons = new ArrayList<>();
-        persons.add(new PersonListItem("Stephan Wagener", Person.STEPHAN,
-                "Ich bin Stephan und meine Aufgabe war die Kernentwicklung unserer HFTL App und aller Funktionalitäten. Außerdem fungiere ich als Ansprechpartner für alle Fragen hinsichtlich Änderungen an der App. Wer Kontakt zu mir aufnehmen möchte, erreicht mich unter folgender E-Mail Adresse: s133235@hftl.de",
-                "s133235@hftl.de"));
-        persons.add(new PersonListItem("Björn Simion Beuran", Person.SIMION,
-                "Hey lieber Studieninteressierter! Ich hoffe ich konnte dir mit dieser App ein wenig bei deiner Studiengangwahl helfen und dich für die HFTL überzeugen. Schließlich bin ich für den Inhalt, die Ideen und das Design der App zuständig. Wenn dir also noch etwas einfällt oder du noch Fragen hast, kannst du mich gerne unter folgender E-Mail erreichen: s133202@hftl.de",
-                "s133202@hftl.de"));
-        persons.add(new PersonListItem("Florian Hollas", Person.FLORIAN,
-                "Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast du hier die Möglichkeit: s133215@hftl.de",
-                "s133215@hftl.de"));
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.stephan_name),
+                Person.STEPHAN,
+                getActivity().getResources().getString(R.string.stephan_description),
+                getActivity().getResources().getString(R.string.stephan_mail)));
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.simion_name),
+                Person.SIMION,
+                getActivity().getResources().getString(R.string.simion_description),
+                getActivity().getResources().getString(R.string.simion_mail)));
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.florian_name),
+                Person.FLORIAN,
+                getActivity().getResources().getString(R.string.florian_description),
+                getActivity().getResources().getString(R.string.florian_mail)));
         PersonListAdapter adapter = new PersonListAdapter((MainActivity)getActivity(),R.layout.person_list_item,persons);
         list.setAdapter(adapter);
 

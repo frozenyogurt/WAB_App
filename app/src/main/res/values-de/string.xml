@@ -398,4 +398,54 @@ Herzlich Willkommen.
         1.
     </string>
 
+    <string name="stephan_name">Stephan Wagener</string>
+    <string name="stephan_description">Ich bin Stephan und meine Aufgabe war die Kernentwicklung unserer HFTL App und aller Funktionalitäten. Außerdem fungiere ich als Ansprechpartner für alle Fragen hinsichtlich Änderungen an der App. Wer Kontakt zu mir aufnehmen möchte, erreicht mich unter folgender E-Mail Adresse: s133235@hftl.de</string>
+    <string name="stephan_mail">s133235@hftl.de</string>
+
+    <string name="simion_name">Björn Simion Beuran</string>
+    <string name="simion_description">Hey lieber Studieninteressierter! Ich hoffe ich konnte dir mit dieser App ein wenig bei deiner Studiengangwahl helfen und dich für die HFTL überzeugen. Schließlich bin ich für den Inhalt, die Ideen und das Design der App zuständig. Wenn dir also noch etwas einfällt oder du noch Fragen hast, kannst du mich gerne unter folgender E-Mail erreichen: s133202@hftl.de</string>
+    <string name="simion_mail">s133202@hftl.de</string>
+
+    <string name="florian_name">Florian Hollas</string>
+    <string name="florian_description">Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast du hier die Möglichkeit: s133215@hftl.de</string>
+    <string name="florian_mail">s133215@hftl.de</string>
+
+    <string name="send_mail">Mail Senden</string>
+    <string name="send_form">Formular über die Website abschicken</string>
+
+    <string name="KMI_BACHELOR_NAME">Kommunikations- und Medieninformatik (Bachelor)</string>
+    <string name="WI_BACHELOR_NAME">Wirtschaftsinformatik (Bachelor)</string>
+    <string name="AI_BACHELOR_NAME">Angewandte Informatik (Bachelor)</string>
+    <string name="WI_MASTER_NAME">Wirtschaftsinformatik (Master)</string>
+
+    <string name="EDUCATION_TOEIC_NAME">TOEIC</string>
+    <string name="EDUCATION_BEC_NAME">Business English Cambridge (BEC)</string>
+    <string name="EDUCATION_CAE_NAME">Cambridge Advanced English (CAE)</string>
+    <string name="EDUCATION_IT_NAME">Intercultural Training</string>
+    <string name="EDUCATION_ID_NAME">Intensivkurs Deutsch</string>
+
+    <string name="EMPLOYEE_TITLE_TEXT">Mitarbeiter</string>
+    <string name="REKTOR_SAUPE_NAME">Rektor: Prof. Dr.-Ing. habil. Volker Saupe</string>
+    <string name="REKTOR_SAUPE_MAIL">saupe@hft-leipzig.de</string>
+    <string name="PROREKTOR_MUELLER_NAME">Prorektor: Prof. Dr. Jean-Alexander Müller</string>
+    <string name="PROREKTOR_MUELLER_MAIL">mueller01@hft-leipzig.de</string>
+    <string name="PROREKTOR_BADERSCHNEIDER_NAME">Prorektor: Prof. Dr. Claus Baderschneider</string>
+    <string name="PROREKTOR_BADERSCHNEIDER_MAIL">claus.baderschneider@hft-leipzig.de</string>
+
+
     </resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

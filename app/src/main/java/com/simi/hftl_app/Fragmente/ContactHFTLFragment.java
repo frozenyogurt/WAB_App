@@ -58,8 +58,8 @@ public class ContactHFTLFragment extends MyRefreshFragment
         developerText.setText("Kontakt Entwickler Text");
         developerTitle.setText("Kontakt Entwickler Titel");
 
-        sendFormText.setText("Formular über die Website abschicken");
-        sendMailText.setText("Mail Senden");
+        sendFormText.setText(getActivity().getResources().getString(R.string.send_form));
+        sendMailText.setText(getActivity().getResources().getString(R.string.send_mail));
 
         sendForm.setOnClickListener(new View.OnClickListener() {
             @Override
