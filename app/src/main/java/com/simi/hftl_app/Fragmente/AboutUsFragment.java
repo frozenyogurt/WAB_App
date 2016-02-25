@@ -30,18 +30,18 @@ public class AboutUsFragment extends MyRefreshFragment
 
         ListView list = (ListView) view.findViewById(R.id.about_us_list);
         ArrayList<PersonListItem> persons = new ArrayList<>();
-        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.stephan_name),
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.STEPHAN_NAME),
                 Person.STEPHAN,
-                getActivity().getResources().getString(R.string.stephan_description),
-                getActivity().getResources().getString(R.string.stephan_mail)));
-        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.simion_name),
+                getActivity().getResources().getString(R.string.STEPHAN_DESCRIPTION),
+                getActivity().getResources().getString(R.string.STEPHAN_MAIL)));
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.SIMION_NAME),
                 Person.SIMION,
-                getActivity().getResources().getString(R.string.simion_description),
-                getActivity().getResources().getString(R.string.simion_mail)));
-        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.florian_name),
+                getActivity().getResources().getString(R.string.SIMION_DESCRIPTION),
+                getActivity().getResources().getString(R.string.SIMION_MAIL)));
+        persons.add(new PersonListItem(getActivity().getResources().getString(R.string.FLORIAN_NAME),
                 Person.FLORIAN,
-                getActivity().getResources().getString(R.string.florian_description),
-                getActivity().getResources().getString(R.string.florian_mail)));
+                getActivity().getResources().getString(R.string.FLORIAN_DESCRIPTION),
+                getActivity().getResources().getString(R.string.FLORIAN_MAIL)));
         PersonListAdapter adapter = new PersonListAdapter((MainActivity)getActivity(),R.layout.person_list_item,persons);
         list.setAdapter(adapter);
 

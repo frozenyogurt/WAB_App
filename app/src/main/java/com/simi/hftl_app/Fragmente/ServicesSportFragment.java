@@ -36,9 +36,9 @@ public class ServicesSportFragment extends MyRefreshFragment
         LinearLayout goToSportWebsite = (LinearLayout) view.findViewById(R.id.services_sport_website);
 
         TextView title = (TextView) view.findViewById(R.id.title_services_sport);
-        title.setText("Sport");
+        title.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TITLE));
         TextView websiteText = (TextView) view.findViewById(R.id.services_sport_website_text);
-        websiteText.setText("Anmeldung und Informationen");
+        websiteText.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_WEBSITE));
 
         goToSportWebsite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,33 +47,16 @@ public class ServicesSportFragment extends MyRefreshFragment
             }
         });
 
-        beginning.setText("Der Sport bietet eine gute Möglichkeit, im studentischen Umfeld mit KommilitonInnen anderer Studiengänge in Kontakt zu kommen. Deshalb haben wir ein attraktives Sportangebot für unsere Studierenden.\n" +
-                "Gemeinsam mit dem Hochschulsportzentrum der HTWK Leipzig können unsere Studierenden auch neue Sporttrends kennenlernen. Durch Hochschulmeisterschaften und nationale Meisterschaften bieten sich Möglichkeiten zum gemeinsamen Sporttreiben und geselligem Beisammmensein.");
-        titleOne.setText("Sportangebote an der HfTL");
-        titleTwo.setText("Zeiten für das Sportangebot der HfTL");
-        titleThree.setText("Sportanlagen der HfTL");
-        titleFour.setText("Hochschulinterne und außerschulische Turniere und Meisterschaften");
+        beginning.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_BEGINNING));
+        titleOne.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TITLE_ONE));
+        titleTwo.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TITLE_TWO));
+        titleThree.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TITLE_THREE));
+        titleFour.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TITLE_FOUR));
 
-        textOne.setText("Über unser aktuelles Sportangebot in der Sporthalle Arno-Nitzsche-Str. 29 informiert der Sportreferent des HfTL-Studentenrats.\n" +
-                "Folgende Sportarten werden direkt von der HfTL betreut:\n" +
-                "Fußball\n" +
-                "Volleyball\n" +
-                "Klettern\n" +
-                "Laufen\n" +
-                "Badminton\n" +
-                "Zahlreiche andere Sportarten, wie Aikido, Baseball, Basketball oder Volleyball werden über das Hochschulsportzentrum der HTWK Leipzig angeboten und können auch von unseren Studierenden genutzt werden. Diese Angebote sind allerdings zum Teil kostenpflichtig. Informieren und anmelden können Sie sich über:\n" +
-                "sport.htwk-leipzig.de");
-        textTwo.setText("Ab sofort kann in der Sporthalle Arno-Nitzsche-Str. 29 an folgenden Tagen gespielt werden:\n" +
-                "Fußball: Montags 17:30 - 19:00 Uhr\n" +
-                "Volleyball: Dienstags 17:30 - 19:00 Uhr\n" +
-                "Klettern: Dienstags 17:30 - 19:00 Uhr\n" +
-                "Laufen: Donnerstags ab 15:30 Uhr\n" +
-                "Badminton: Montags 17:30 - 19:00 Uhr\n" +
-                "(Badminton kann zusätzlich auch an jedem anderen Wochentag ganztägig gespielt werden)");
-        textThree.setText("Sporthalle Arno-Nitzsche-Str. 29\n" +
-                "Tischtennisplatte in der HfTL");
-        textFour.setText("Im laufenden Studienjahr werden in Abstimmung mit dem Studentenrat 3 bis 4 Hochschulmeister- schaften und Turniere durchgeführt. Die Auswahlmannschaften nehmen jährlich an den Hochschulmeisterschaften des Landes Sachsen teil.\n" +
-                "Die HfTL ist Mitglied des ADH (Allgemeiner Deutscher Hochschulsportverband) und kann bei Qualifizierung in einer Sportart auf Landesebene an den Deutschen Hochschulmeisterschaften der Bundesrepublik Deutschland teilnehmen.");
+        textOne.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TEXT_ONE));
+        textTwo.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TEXT_TWO));
+        textThree.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TEXT_THREE));
+        textFour.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TEXT_FOUR));
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();

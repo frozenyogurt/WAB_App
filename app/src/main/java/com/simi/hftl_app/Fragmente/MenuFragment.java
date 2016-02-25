@@ -32,10 +32,10 @@ public class MenuFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.study_menu,container,false);
 
         final ArrayList<OptionListItem> items = new ArrayList<>();
-        items.add(new OptionListItem("Einstellunegn", Option.SETTINGS));
-        items.add(new OptionListItem("Zur Webseite", Option.WEBSITE));
-        items.add(new OptionListItem("Über uns", Option.ABOUTUS));
-        items.add(new OptionListItem("Beenden", Option.EXIT));
+        items.add(new OptionListItem(getActivity().getResources().getString(R.string.MENU_SETTINGS_NAME), Option.SETTINGS));
+        items.add(new OptionListItem(getActivity().getResources().getString(R.string.MENU_WEBSITE_NAME), Option.WEBSITE));
+        items.add(new OptionListItem(getActivity().getResources().getString(R.string.MENU_ABOUT_US_NAME), Option.ABOUTUS));
+        items.add(new OptionListItem(getActivity().getResources().getString(R.string.MENU_EXIT_NAME), Option.EXIT));
 
         ListView list = (ListView) view.findViewById(R.id.options_list);
         OptionListAdapter adapter = new OptionListAdapter((MainActivity)getActivity(), R.layout.option_list_item, items);

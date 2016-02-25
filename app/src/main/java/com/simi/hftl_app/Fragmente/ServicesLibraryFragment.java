@@ -25,7 +25,7 @@ public class ServicesLibraryFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.services_library_fragment,container,false);
 
         TextView title = (TextView) view.findViewById(R.id.title_services_libary);
-        title.setText("Bibliothek");
+        title.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TITLE));
 
         TextView titleOne = (TextView) view.findViewById(R.id.title_library_one);
         TextView titleTwo = (TextView) view.findViewById(R.id.title_library_two);
@@ -52,18 +52,12 @@ public class ServicesLibraryFragment extends MyRefreshFragment
             titleThree.setTextColor(color);
         }
 
-        titleOne.setText("Adresse der Bibliothek der HfTL und HTWK Leipzig");
-        titleTwo.setText("Öffnungszeiten");
-        titleThree.setText("Ausleihe und Auskunft");
-        textOne.setText("Hochschule für Technik, Wirtschaft und Kultur Leipzig \n" +
-                "Hochschulbibliothek \n" +
-                "Gustav-Freytag-Straße 40 \n" +
-                "04277 Leipzig ");
-        textTwo.setText("Die Hochschulbibliothek hat von Montag bis Freitag von 09.00 - 20.00 Uhr geöffnet. Die Öffnungszeiten am Samstag sind von 09.00 -16.00 Uhr.\n" +
-                "Bücherrückgaben sind wie gewohnt auch bei geschlossener Bibliothek am Rückgabeautomaten möglich.\n" +
-                "Katalogrecherche, Verlängerungsmöglichkeiten sowie das elektronische Angebot stehen weiterhin zur Verfügung.");
-        textThree.setText("Telefon: +49 (0) 341 / 3076 6593 \n" +
-                "Fax: +49 (0) 341 / 3076 6478");
+        titleOne.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TITLE_ONE));
+        titleTwo.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TITLE_TWO));
+        titleThree.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TITLE_THREE));
+        textOne.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TEXT_ONE));
+        textTwo.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TEXT_TWO));
+        textThree.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TEXT_THREE));
 
         LinearLayout callLibrary = (LinearLayout) view.findViewById(R.id.call_library);
         TextView beginning1 = (TextView) view.findViewById(R.id.services_library_beginning_text);
@@ -92,9 +86,8 @@ public class ServicesLibraryFragment extends MyRefreshFragment
             }
         });
 
-        beginning1.setText("Die Hochschulbibliothek der HfTL wird gemeinsam mit der Bibliothek der Hochschule für Technik, Wirtschaft und Kultur (HTWK) Leipzig betrieben. Die Bestände bilden einen großen Querschnitt der einschlägigen Fachliteratur und liefern auch Informationen über den „Tellerrand“ hinaus. ");
-        beginning2.setText("Die Bestände der Bibliothek und die Verwaltung Deines Benutzerkontos sind für Dich unter Bibliothekskatalog KaPri erreichbar. Zusätzlich halten wir viele erweiterte Funktionen bereit, so kannst Du Literaturlisten und gedruckte sowie elektronische Dokumente zusammenstellen.");
-
+        beginning1.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_BEGINNING_ONE));
+        beginning2.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_BEGINNING_TWO));
         return view;
     }
 }

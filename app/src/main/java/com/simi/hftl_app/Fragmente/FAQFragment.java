@@ -34,19 +34,19 @@ public class FAQFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.faq_hftl_fragment,container,false);
 
         TextView title = (TextView) view.findViewById(R.id.faq_fragment_title);
-        title.setText("Fragen");
+        title.setText(getActivity().getResources().getString(R.string.FAQ_TITLE));
 
         ListView list = (ListView) view.findViewById(R.id.faq_list);
         final ArrayList<FAQListItem> persons = new ArrayList<>();
-        persons.add(new FAQListItem("Die HfTL ist eine private Hochschule. Wie hoch sind die Studiengebühren?", QuestionType.STUDY_COSTS));
-        persons.add(new FAQListItem("Wie hoch ist der Semesterbeitrag des Studentenwerkes?", QuestionType.STUDY_COSTS_SEMESTER));
-        persons.add(new FAQListItem("An der HfTL werden sowohl berufsbegleitende als auch duale Studiengänge angeboten. Wo ist der Unterschied?", QuestionType.STUDY_CATEGORY_DIFFERENCE));
-        persons.add(new FAQListItem("Woher weiß ich, ob ein Studium an der HfTL das richtige für mich ist?", QuestionType.WHICH_STUDY_COURSE));
-        persons.add(new FAQListItem("Die Studiengänge an der HfTL verfügen über eine Akkreditierung. Was bedeutet das?", QuestionType.MEANING_ACCREDITATION));
-        persons.add(new FAQListItem("Wann erfahre ich nach meiner Bewerbung, ob ich für ein Studium an der HfTL zugelassen bin?", QuestionType.ACCEPTED));
-        persons.add(new FAQListItem("Vermittelt die HfTL Wohnheimplätze?", QuestionType.APARTMENTS));
-        persons.add(new FAQListItem("Brauche ich ein Vorpraktikum, um ein Studium an der HfTL aufzunehmen?", QuestionType.INTERNSHIP));
-        persons.add(new FAQListItem("Werden mir die Studienleistungen aus einem Auslandssemester an der HfTL anerkannt?", QuestionType.STUDY_FAR_AWAY));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_STUDY_COSTS), QuestionType.STUDY_COSTS));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_STUDY_COSTS_SEMESTER), QuestionType.STUDY_COSTS_SEMESTER));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_STUDY_CATEGORY_DIFFERENCE), QuestionType.STUDY_CATEGORY_DIFFERENCE));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_WHICH_STUDY_COURSE), QuestionType.WHICH_STUDY_COURSE));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_MEANING_ACCREDITATION), QuestionType.MEANING_ACCREDITATION));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_ACCEPTED), QuestionType.ACCEPTED));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_APARTMENTS), QuestionType.APARTMENTS));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_INTERNSHIP), QuestionType.INTERNSHIP));
+        persons.add(new FAQListItem(getActivity().getResources().getString(R.string.QUESTION_STUDY_FAR_AWAY), QuestionType.STUDY_FAR_AWAY));
         FAQListAdapter adapter = new FAQListAdapter((MainActivity)getActivity(),R.layout.faq_list_item,persons);
         list.setAdapter(adapter);
 

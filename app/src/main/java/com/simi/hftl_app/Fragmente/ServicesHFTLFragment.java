@@ -27,7 +27,7 @@ public class ServicesHFTLFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.services_hftl_fragment,container,false);
 
         TextView title = (TextView) view.findViewById(R.id.services_main_title);
-        title.setText("Services");
+        title.setText(getActivity().getResources().getString(R.string.SERVICES_TITLE));
 
         LinearLayout itemOne = (LinearLayout) view.findViewById(R.id.item_services_one);
         LinearLayout itemTwo = (LinearLayout) view.findViewById(R.id.item_services_two);
@@ -102,11 +102,11 @@ public class ServicesHFTLFragment extends MyRefreshFragment
             }
         });
 
-        textOne.setText("Bibliothek");
-        textTwo.setText("Sport");
-        textThree.setText("Anfahrt");
-        textFour.setText("Links");
-        textFive.setText("Labore");
+        textOne.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TITLE));
+        textTwo.setText(getActivity().getResources().getString(R.string.SERVICES_SPORT_TITLE));
+        textThree.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_TITLE));
+        textFour.setText(getActivity().getResources().getString(R.string.SERVICES_LINKS_TITLE));
+        textFive.setText(getActivity().getResources().getString(R.string.SERVICES_ROOMS_TITLE));
 
         imageOne.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.libary));
         imageTwo.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.sport));
@@ -123,7 +123,7 @@ public class ServicesHFTLFragment extends MyRefreshFragment
         });
 
         TextView allServices = (TextView) view.findViewById(R.id.all_services_text);
-        allServices.setText("Alle Infomationen ansehen");
+        allServices.setText(getActivity().getResources().getString(R.string.SEE_ALL_INFORMATIONS));
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();

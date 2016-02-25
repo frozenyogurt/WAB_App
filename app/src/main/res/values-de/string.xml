@@ -398,20 +398,25 @@ Herzlich Willkommen.
         1.
     </string>
 
-    <string name="stephan_name">Stephan Wagener</string>
-    <string name="stephan_description">Ich bin Stephan und meine Aufgabe war die Kernentwicklung unserer HFTL App und aller Funktionalitäten. Außerdem fungiere ich als Ansprechpartner für alle Fragen hinsichtlich Änderungen an der App. Wer Kontakt zu mir aufnehmen möchte, erreicht mich unter folgender E-Mail Adresse: s133235@hftl.de</string>
-    <string name="stephan_mail">s133235@hftl.de</string>
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <string name="STEPHAN_NAME">Stephan Wagener</string>
+    <string name="STEPHAN_DESCRIPTION">Ich bin Stephan und meine Aufgabe war die Kernentwicklung unserer HFTL App und aller Funktionalitäten. Außerdem fungiere ich als Ansprechpartner für alle Fragen hinsichtlich Änderungen an der App. Wer Kontakt zu mir aufnehmen möchte, erreicht mich unter folgender E-Mail Adresse: s133235@hftl.de</string>
+    <string name="STEPHAN_MAIL">s133235@hftl.de</string>
 
-    <string name="simion_name">Björn Simion Beuran</string>
-    <string name="simion_description">Hey lieber Studieninteressierter! Ich hoffe ich konnte dir mit dieser App ein wenig bei deiner Studiengangwahl helfen und dich für die HFTL überzeugen. Schließlich bin ich für den Inhalt, die Ideen und das Design der App zuständig. Wenn dir also noch etwas einfällt oder du noch Fragen hast, kannst du mich gerne unter folgender E-Mail erreichen: s133202@hftl.de</string>
-    <string name="simion_mail">s133202@hftl.de</string>
+    <string name="SIMION_NAME">Björn Simion Beuran</string>
+    <string name="SIMION_DESCRIPTION">Hey lieber Studieninteressierter! Ich hoffe ich konnte dir mit dieser App ein wenig bei deiner Studiengangwahl helfen und dich für die HFTL überzeugen. Schließlich bin ich für den Inhalt, die Ideen und das Design der App zuständig. Wenn dir also noch etwas einfällt oder du noch Fragen hast, kannst du mich gerne unter folgender E-Mail erreichen: s133202@hftl.de</string>
+    <string name="SIMION_MAIL">s133202@hftl.de</string>
 
-    <string name="florian_name">Florian Hollas</string>
-    <string name="florian_description">Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast du hier die Möglichkeit: s133215@hftl.de</string>
-    <string name="florian_mail">s133215@hftl.de</string>
+    <string name="FLORIAN_NAME">Florian Hollas</string>
+    <string name="FLORIAN_DESCRIPTION">Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast du hier die Möglichkeit: s133215@hftl.de</string>
+    <string name="FLORIAN_MAIL">s133215@hftl.de</string>
 
-    <string name="send_mail">Mail Senden</string>
-    <string name="send_form">Formular über die Website abschicken</string>
+    <string name="CONTACT_HFTL_TITLE">Kontakt der HfTL</string>
+    <string name="CONTACT_DEVELOPER_TITLE">Kontakt der Entwickler</string>
+    <string name="SEND_MAIL">Mail Senden</string>
+    <string name="SEND_FORM">Formular über die Website abschicken</string>
 
     <string name="KMI_BACHELOR_NAME">Kommunikations- und Medieninformatik (Bachelor)</string>
     <string name="WI_BACHELOR_NAME">Wirtschaftsinformatik (Bachelor)</string>
@@ -432,8 +437,129 @@ Herzlich Willkommen.
     <string name="PROREKTOR_BADERSCHNEIDER_NAME">Prorektor: Prof. Dr. Claus Baderschneider</string>
     <string name="PROREKTOR_BADERSCHNEIDER_MAIL">claus.baderschneider@hft-leipzig.de</string>
 
+    <string name="QUESTION_STUDY_COSTS">Die HfTL ist eine private Hochschule. Wie hoch sind die Studiengebühren?</string>
+    <string name="QUESTION_STUDY_COSTS_SEMESTER">Wie hoch ist der Semesterbeitrag des Studentenwerkes?</string>
+    <string name="QUESTION_STUDY_CATEGORY_DIFFERENCE">An der HfTL werden sowohl berufsbegleitende als auch duale Studiengänge angeboten. Wo ist der Unterschied?</string>
+    <string name="QUESTION_WHICH_STUDY_COURSE">Woher weiß ich, ob ein Studium an der HfTL das richtige für mich ist?</string>
+    <string name="QUESTION_MEANING_ACCREDITATION">Die Studiengänge an der HfTL verfügen über eine Akkreditierung. Was bedeutet das?</string>
+    <string name="QUESTION_ACCEPTED">Wann erfahre ich nach meiner Bewerbung, ob ich für ein Studium an der HfTL zugelassen bin?</string>
+    <string name="QUESTION_APARTMENTS">Vermittelt die HfTL Wohnheimplätze?</string>
+    <string name="QUESTION_INTERNSHIP">Brauche ich ein Vorpraktikum, um ein Studium an der HfTL aufzunehmen?</string>
+    <string name="QUESTION_STUDY_FAR_AWAY">Werden mir die Studienleistungen aus einem Auslandssemester an der HfTL anerkannt?</string>
+    <string name="FAQ_TITLE">Fragen</string>
 
-    </resources>
+    <string name="PORTRAIT_TITLE">Portrait</string>
+    <string name="CONTACT_TITLE">Kontakt</string>
+    <string name="NEWS_TITLE">Aktuelles</string>
+    <string name="IMPRINT_TITLE">Impressum</string>
+    <string name="SERVICES_TITLE">Services</string>
+    <string name="WHY_HFTL_TITLE">Warum HfTL?</string>
+
+    <string name="IMPRINT_TITLE_ONE">HFTL TRÄGERGESELLSCHAFT mbH</string>
+    <string name="IMPRINT_TITLE_TWO">Geschäftsführung</string>
+    <string name="IMPRINT_TITLE_THREE">Redaktion</string>
+    <string name="CALL_TEXT">Anrufen</string>
+    <string name="IMPRINT_TEXT_ONE">Friedrich-Ebert-Allee 140
+                                    53113 Bonn \n \n
+                                    Sitz der Gesellschaft: Bonn \n
+                                    Amtsgericht Bonn HRB 19361 \n
+                                    USt-IdNr. DE 292363279</string>
+    <string name="IMPRINT_TEXT_TWO">Dr. Elke Frank
+                                    Dr. Oliver Lange \n
+                                    Friedrich-Ebert-Allee 140 \n
+                                    53113 Bonn \n \n
+                                    Telefon: 0228 181 - 0 \n
+                                    E-Mail: pr@hft-leipzig.de</string>
+    <string name="IMPRINT_TEXT_THREE">Torsten Büttner
+                                      Referent Öffentlichkeitsarbeit \n
+                                      Public Relations \n
+                                      Gustav-Freytag-Str. 43-45 \n
+                                      04277 Leipzig \n
+                                      0341/3062 120 \n
+                                      torsten.buettner@hft-leipzig.de \n
+                                      Bei Fragen zum Unternehmen, zur Hochschule und den angebotenen Studiengängen, nutzen Sie bitte unser Kontaktformular.</string>
+
+    <string name="IKT_BACHELOR_NAME">Informations- und Kommunikationstechnik (Bachelor)</string>
+    <string name="IKT_MASTER_NAME">Informations- und Kommunikationstechnik (Master)</string>
+
+    <string name="MENU_SETTINGS_NAME">Einstellungen</string>
+    <string name="MENU_WEBSITE_NAME">Zur Website</string>
+    <string name="MENU_ABOUT_US_NAME">Über Uns</string>
+    <string name="MENU_EXIT_NAME">Beenden</string>
+
+    <string name="SEE_ALL_INFORMATIONS">Alle Informationen ansehen</string>
+    <string name="SERVICES_LIBRARY_TITLE">Bibliothek</string>
+    <string name="SERVICES_SPORT_TITLE">Sport</string>
+    <string name="SERVICES_WAY_TO_TITLE">Anfahrt</string>
+    <string name="SERVICES_LINKS_TITLE">Links</string>
+    <string name="SERVICES_ROOMS_TITLE">Labore</string>
+
+    <string name="SERVICES_LIBRARY_TITLE_ONE">Adresse der Bibliothek der HfTL und HTWK Leipzig</string>
+    <string name="SERVICES_LIBRARY_TITLE_TWO">Öffnungszeiten</string>
+    <string name="SERVICES_LIBRARY_TITLE_THREE">Ausleihe und Auskunft</string>
+    <string name="SERVICES_LIBRARY_TEXT_ONE">Hochschule für Technik, Wirtschaft und Kultur Leipzig
+                                             Hochschulbibliothek \n
+                                             Gustav-Freytag-Straße 40 \n
+                                             04277 Leipzig</string>
+    <string name="SERVICES_LIBRARY_TEXT_TWO">Die Hochschulbibliothek hat von Montag bis Freitag von 09.00 - 20.00 Uhr geöffnet. Die Öffnungszeiten am Samstag sind von 09.00 -16.00 Uhr. \n
+                                             Bücherrückgaben sind wie gewohnt auch bei geschlossener Bibliothek am Rückgabeautomaten möglich. \n
+                                             Katalogrecherche, Verlängerungsmöglichkeiten sowie das elektronische Angebot stehen weiterhin zur Verfügung.</string>
+    <string name="SERVICES_LIBRARY_TEXT_THREE">Telefon: +49 (0) 341 / 3076 6593 \n
+                                               Fax: +49 (0) 341 / 3076 6478</string>
+    <string name="SERVICES_LIBRARY_BEGINNING_ONE">Die Hochschulbibliothek der HfTL wird gemeinsam mit der Bibliothek der Hochschule für Technik, Wirtschaft und Kultur (HTWK) Leipzig betrieben. Die Bestände bilden einen großen Querschnitt der einschlägigen Fachliteratur und liefern auch Informationen über den „Tellerrand“ hinaus. </string>
+    <string name="SERVICES_LIBRARY_BEGINNING_TWO">Die Bestände der Bibliothek und die Verwaltung Deines Benutzerkontos sind für Dich unter Bibliothekskatalog KaPri erreichbar. Zusätzlich halten wir viele erweiterte Funktionen bereit, so kannst Du Literaturlisten und gedruckte sowie elektronische Dokumente zusammenstellen.</string>
+
+    <string name="SERVICES_LINKS_ILIAS">Ilias - Lernplattform</string>
+    <string name="SERVICES_LINKS_OWA">OWA - OnlineWebAccess der HfTL</string>
+    <string name="SERVICES_LINKS_HIS">HIS/QIS - Hochschul- informationssystem</string>
+    <string name="SERVICES_LINKS_IEEE">IEEE</string>
+    <string name="SERVICES_LINKS_SPRINGER">SpringerLink</string>
+    <string name="SERVICES_LINKS_STATISTA">Statista</string>
+    <string name="SERVICES_LINKS_STUDY_FACTORY">Studentenwerk Leipzig</string>
+    
+    <string name="SERVICES_SPORT_WEBSITE">Anmeldung und Informationen</string>
+    <string name="SERVICES_SPORT_TITLE_ONE">Sportangebote an der HfTL</string>
+    <string name="SERVICES_SPORT_TITLE_TWO">Zeiten für das Sportangebot der HfTL</string>
+    <string name="SERVICES_SPORT_TITLE_THREE">Sportanlagen der HfTL</string>
+    <string name="SERVICES_SPORT_TITLE_FOUR">Hochschulinterne und außerschulische Turniere und Meisterschaften</string>
+    <string name="SERVICES_SPORT_TEXT_ONE">Über unser aktuelles Sportangebot in der Sporthalle Arno-Nitzsche-Str. 29 informiert der Sportreferent des HfTL-Studentenrats. \n
+                                           Folgende Sportarten werden direkt von der HfTL betreut: \n
+                                           Fußball \n
+                                           Volleyball \n
+                                           Klettern \n
+                                           Laufen \n
+                                           Badminton \n
+                                           Zahlreiche andere Sportarten, wie Aikido, Baseball, Basketball oder Volleyball werden über das Hochschulsportzentrum der HTWK Leipzig angeboten und können auch von unseren Studierenden genutzt werden. Diese Angebote sind allerdings zum Teil kostenpflichtig. Informieren und anmelden können Sie sich über: \n
+                                           sport.htwk-leipzig.de</string>
+    <string name="SERVICES_SPORT_TEXT_TWO">Ab sofort kann in der Sporthalle Arno-Nitzsche-Str. 29 an folgenden Tagen gespielt werden: \n
+                                           Fußball: Montags 17:30 - 19:00 Uhr \n
+                                           Volleyball: Dienstags 17:30 - 19:00 Uhr \n
+                                           Klettern: Dienstags 17:30 - 19:00 Uhr \n
+                                           Laufen: Donnerstags ab 15:30 Uhr \n
+                                           Badminton: Montags 17:30 - 19:00 Uhr \n
+                                           (Badminton kann zusätzlich auch an jedem anderen Wochentag ganztägig gespielt werden)</string>
+    <string name="SERVICES_SPORT_TEXT_THREE">Sporthalle Arno-Nitzsche-Str. 29 \n
+                                             Tischtennisplatte in der HfTL</string>
+    <string name="SERVICES_SPORT_TEXT_FOUR">Im laufenden Studienjahr werden in Abstimmung mit dem Studentenrat 3 bis 4 Hochschulmeister- schaften und Turniere durchgeführt. Die Auswahlmannschaften nehmen jährlich an den Hochschulmeisterschaften des Landes Sachsen teil. \n
+                                            Die HfTL ist Mitglied des ADH (Allgemeiner Deutscher Hochschulsportverband) und kann bei Qualifizierung in einer Sportart auf Landesebene an den Deutschen Hochschulmeisterschaften der Bundesrepublik Deutschland teilnehmen.</string>
+    <string name="SERVICES_SPORT_BEGINNING">Der Sport bietet eine gute Möglichkeit, im studentischen Umfeld mit KommilitonInnen anderer Studiengänge in Kontakt zu kommen. Deshalb haben wir ein attraktives Sportangebot für unsere Studierenden. \n
+                                            Gemeinsam mit dem Hochschulsportzentrum der HTWK Leipzig können unsere Studierenden auch neue Sporttrends kennenlernen. Durch Hochschulmeisterschaften und nationale Meisterschaften bieten sich Möglichkeiten zum gemeinsamen Sporttreiben und geselligem Beisammmensein.</string>
+
+    <string name="SERVICES_WAY_TO_NAVIGATE">Zur Hochschule</string>
+    <string name="SERVICES_WAY_TO_LEIPZIG">Leipziger Verkehrsbetriebe</string>
+    <string name="SERVICES_WAY_TO_DB">Deutsche Bahn</string>
+    <string name="SERVICES_WAY_TO_TITLE_ONE">Anfahrt mit dem Auto</string>
+    <string name="SERVICES_WAY_TO_TITLE_TWO">Anfahrt mit öffentlichen Verkehrsmitteln</string>
+    <string name="SERVICES_WAY_TO_TEXT_ONE">Als Anfahrtsadresse für Navigationssysteme geben Sie bitte folgende Adresse in Ihr Navigationssystem ein: \n \n
+                                            04277 Leipzig (Sachsen) \n
+                                            Gustav-Freytag-Straße 43 - 45 </string>
+    <string name="SERVICES_WAY_TO_TEXT_TWO">Ab Leipzig Hauptbahnhof können Sie mit den folgenden Straßenbahnlinien die Hochschule für Telekommunikation bequem und schnell erreichen. \n \n
+                                            Linie 9 (Richtung Markleeberg-West) \n \n
+                                            Linie 10 (Richtung Lößnig) \n \n
+                                            Linie 11 (Richtung Markleeberg-Ost) \n \n
+                                            Von der Haltestelle Connewitzer Kreuz sind es noch ca. 5 Minuten Fußweg bis zum Eingang der HfTL in der Gustav-Freytag-Straße 43 - 45.</string>
+    <string name="SERVICES_WAY_TO_BEGINNING">Im Folgenden ist eine Anfahrtsskizze zum Gelände der HfT Leipzig, eine Navigation mit dem Auto und Möglichkeiten zur Anreise mittels öffentlicher Verkehrsmittel.</string>
+</resources>
 
 
 

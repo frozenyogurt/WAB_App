@@ -26,7 +26,7 @@ public class PortraitHFTLFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.portrait_hftl_fragment,container,false);
 
         TextView title = (TextView) view.findViewById(R.id.title_portrait);
-        title.setText("Portrait");
+        title.setText(getActivity().getResources().getString(R.string.PORTRAIT_TITLE));
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();
@@ -45,8 +45,8 @@ public class PortraitHFTLFragment extends MyRefreshFragment
         ImageView imageOne = (ImageView) view.findViewById(R.id.portrait_image_one);
         ImageView imageTwo = (ImageView) view.findViewById(R.id.portrait_image_two);
 
-        textOne.setText(getActivity().getResources().getString(R.string.action_settings));
-        textTwo.setText(getActivity().getResources().getString(R.string.action_settings));
+        textOne.setText("Portrait Text");
+        textTwo.setText("Portrait Text");
         imageOne.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.news_pic_test));
         imageTwo.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.news_pic_test));
 

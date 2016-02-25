@@ -45,7 +45,7 @@ public class ServicesRoomsFragment extends MyRefreshFragment
         list.setAdapter(adapter);
 
         TextView title = (TextView) view.findViewById(R.id.title_services_rooms);
-        title.setText("Labore");
+        title.setText(getActivity().getResources().getString(R.string.SERVICES_ROOMS_TITLE));
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();

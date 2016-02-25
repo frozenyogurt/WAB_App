@@ -42,6 +42,15 @@ public class HFTLInfoFragment extends MyRefreshFragment
         whyHFTL = (Button) view.findViewById(R.id.button_why_hftl);
         news = (Button) view.findViewById(R.id.button_news);
 
+        portrait.setText(getActivity().getResources().getString(R.string.PORTRAIT_TITLE));
+        employee.setText(getActivity().getResources().getString(R.string.EMPLOYEE_TITLE_TEXT));
+        contact.setText(getActivity().getResources().getString(R.string.CONTACT_TITLE));
+        faq.setText(getActivity().getResources().getString(R.string.FAQ_TITLE));
+        imprint.setText(getActivity().getResources().getString(R.string.IMPRINT_TITLE));
+        services.setText(getActivity().getResources().getString(R.string.SERVICES_TITLE));
+        whyHFTL.setText(getActivity().getResources().getString(R.string.WHY_HFTL_TITLE));
+        news.setText(getActivity().getResources().getString(R.string.NEWS_TITLE));
+
         if (((MainActivity) getActivity()).convertColorString() != 0)
         {
             setColors();

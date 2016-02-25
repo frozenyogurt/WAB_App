@@ -25,15 +25,17 @@ public class ImprintFragment extends MyRefreshFragment
     {
         View view = inflater.inflate(R.layout.imprint_hftl_fragment,container,false);
 
+        TextView title = (TextView) view.findViewById(R.id.title_fragment_imprint);
+        title.setText(getActivity().getResources().getString(R.string.IMPRINT_TITLE));
         TextView text1 = (TextView) view.findViewById(R.id.text_inprint_one);
         TextView text2 = (TextView) view.findViewById(R.id.text_inprint_two);
         TextView text3 = (TextView) view.findViewById(R.id.text_inprint_three);
         TextView titleOne = (TextView) view.findViewById(R.id.title_inprint_one);
-        titleOne.setText("HFTL TRÄGERGESELLSCHAFT mbH");
+        titleOne.setText(getActivity().getResources().getString(R.string.IMPRINT_TITLE_ONE));
         TextView titleTwo = (TextView) view.findViewById(R.id.title_inprint_two);
-        titleTwo.setText("Geschäftsführung");
+        titleTwo.setText(getActivity().getResources().getString(R.string.IMPRINT_TITLE_TWO));
         TextView titleThree = (TextView) view.findViewById(R.id.title_inprint_three);
-        titleThree.setText("Redaktion");
+        titleThree.setText(getActivity().getResources().getString(R.string.IMPRINT_TITLE_THREE));
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();
@@ -53,27 +55,9 @@ public class ImprintFragment extends MyRefreshFragment
             titleThree.setTextColor(color);
         }
 
-        text1.setText("Friedrich-Ebert-Allee 140\n" +
-                "53113 Bonn\n" +
-                "\n" +
-                "Sitz der Gesellschaft: Bonn\n" +
-                "Amtsgericht Bonn HRB 19361\n" +
-                "USt-IdNr. DE 292363279");
-        text2.setText("Dr. Elke Frank\n" +
-                "Dr. Oliver Lange\n" +
-                "Friedrich-Ebert-Allee 140\n" +
-                "53113 Bonn\n" +
-                "\n" +
-                "Telefon: 0228 181 - 0\n" +
-                "E-Mail: pr@hft-leipzig.de");
-        text3.setText("Torsten Büttner \n" +
-                "Referent Öffentlichkeitsarbeit\n" +
-                "Public Relations\n" +
-                "Gustav-Freytag-Str. 43-45\n" +
-                "04277 Leipzig \n" +
-                "0341/3062 120\n" +
-                "torsten.buettner@hft-leipzig.de\n" +
-                "Bei Fragen zum Unternehmen, zur Hochschule und den angebotenen Studiengängen, nutzen Sie bitte unser Kontaktformular.");
+        text1.setText(getActivity().getResources().getString(R.string.IMPRINT_TEXT_ONE));
+        text2.setText(getActivity().getResources().getString(R.string.IMPRINT_TEXT_TWO));
+        text3.setText(getActivity().getResources().getString(R.string.IMPRINT_TEXT_THREE));
 
         LinearLayout sendMailLeader = (LinearLayout) view.findViewById(R.id.send_mail_leader);
         LinearLayout callLeader = (LinearLayout) view.findViewById(R.id.call_leader);
@@ -81,13 +65,13 @@ public class ImprintFragment extends MyRefreshFragment
         LinearLayout callStaff = (LinearLayout) view.findViewById(R.id.call_editorial_staff);
 
         TextView sendMailLeaderText = (TextView) view.findViewById(R.id.send_mail_leader_text);
-        sendMailLeaderText.setText("Mail Senden");
+        sendMailLeaderText.setText(getActivity().getResources().getString(R.string.SEND_MAIL));
         TextView callLeaderText = (TextView) view.findViewById(R.id.call_leader_text);
-        callLeaderText.setText("Anrufen");
+        callLeaderText.setText(getActivity().getResources().getString(R.string.CALL_TEXT));
         TextView sendMailStaffText = (TextView) view.findViewById(R.id.send_mail_editorial_staff_text);
-        sendMailStaffText.setText("Mail Senden");
+        sendMailStaffText.setText(getActivity().getResources().getString(R.string.SEND_MAIL));
         TextView callStaffText = (TextView) view.findViewById(R.id.call_editorial_staff_text);
-        callStaffText.setText("Anrufen");
+        callStaffText.setText(getActivity().getResources().getString(R.string.CALL_TEXT));
 
         sendMailLeader.setOnClickListener(new View.OnClickListener() {
             @Override

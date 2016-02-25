@@ -51,15 +51,15 @@ public class ContactHFTLFragment extends MyRefreshFragment
             developerTitle.setTextColor(color);
         }
 
-        titleFragment.setText("Kontakt");
+        titleFragment.setText(getActivity().getResources().getString(R.string.CONTACT_TITLE));
         hftlText.setText("Kontakt hftl Text");
-        hftlTitle.setText("Kontakt hftl Titel");
+        hftlTitle.setText(getActivity().getResources().getString(R.string.CONTACT_HFTL_TITLE));
 
         developerText.setText("Kontakt Entwickler Text");
-        developerTitle.setText("Kontakt Entwickler Titel");
+        developerTitle.setText(getActivity().getResources().getString(R.string.CONTACT_DEVELOPER_TITLE));
 
-        sendFormText.setText(getActivity().getResources().getString(R.string.send_form));
-        sendMailText.setText(getActivity().getResources().getString(R.string.send_mail));
+        sendFormText.setText(getActivity().getResources().getString(R.string.SEND_FORM));
+        sendMailText.setText(getActivity().getResources().getString(R.string.SEND_MAIL));
 
         sendForm.setOnClickListener(new View.OnClickListener() {
             @Override

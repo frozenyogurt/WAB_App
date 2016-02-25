@@ -45,7 +45,7 @@ public class NewsHFTLFragment extends MyRefreshFragment
         list.setAdapter(adapter);
 
         TextView title = (TextView) view.findViewById(R.id.title_fragment_news);
-        title.setText("Aktuelles");
+        title.setText(getActivity().getResources().getString(R.string.NEWS_TITLE));
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();
         if (color != 0)

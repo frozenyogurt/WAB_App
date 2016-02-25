@@ -30,22 +30,11 @@ public class ServicesWayToFragment extends MyRefreshFragment
         TextView textTwo = (TextView) view.findViewById(R.id.services_way_to_text_two);
         TextView beginning = (TextView) view.findViewById(R.id.services_way_to_beginning_text);
 
-        textOne.setText("Als Anfahrtsadresse für Navigationssysteme geben Sie bitte folgende Adresse in Ihr Navigationssystem ein: \n" +
-                "\n" +
-                "04277 Leipzig (Sachsen)\n" +
-                "Gustav-Freytag-Straße 43 - 45 ");
-        textTwo.setText("Ab Leipzig Hauptbahnhof können Sie mit den folgenden Straßenbahnlinien die Hochschule für Telekommunikation bequem und schnell erreichen.\n" +
-                "\n" +
-                "Linie 9 (Richtung Markleeberg-West)\n" +
-                "\n" +
-                "Linie 10 (Richtung Lößnig)\n" +
-                "\n" +
-                "Linie 11 (Richtung Markleeberg-Ost)\n" +
-                "\n" +
-                "Von der Haltestelle Connewitzer Kreuz sind es noch ca. 5 Minuten Fußweg bis zum Eingang der HfTL in der Gustav-Freytag-Straße 43 - 45.");
-        titleOne.setText("Anfahrt mit dem Auto");
-        titleTwo.setText("Anfahrt mit öffentlichen Verkehrsmitteln");
-        beginning.setText("Im Folgenden ist eine Anfahrtsskizze zum Gelände der HfT Leipzig, eine Navigation mit dem Auto und Möglichkeiten zur Anreise mittels öffentlicher Verkehrsmittel.");
+        textOne.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_TEXT_ONE));
+        textTwo.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_TEXT_TWO));
+        titleOne.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_TITLE_ONE));
+        titleTwo.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_TITLE_TWO));
+        beginning.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_BEGINNING));
 
         LinearLayout navigate = (LinearLayout) view.findViewById(R.id.services_way_to_navigate);
         LinearLayout goToDB = (LinearLayout) view.findViewById(R.id.services_way_to_website_db);
@@ -68,18 +57,18 @@ public class ServicesWayToFragment extends MyRefreshFragment
         goToLeipzig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)getActivity()).goToWebsite("https://www.l.de/verkehrsbetriebe/");
+                ((MainActivity) getActivity()).goToWebsite("https://www.l.de/verkehrsbetriebe/");
             }
         });
 
         TextView title = (TextView) view.findViewById(R.id.title_services_way_to);
-        title.setText("Anfahrt");
+        title.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_TITLE));
         TextView navigateText = (TextView) view.findViewById(R.id.services_way_to_navigate_text);
-        navigateText.setText("Zur Hochschule");
+        navigateText.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_NAVIGATE));
         TextView goToDBText = (TextView) view.findViewById(R.id.services_way_to_website_db_text);
-        goToDBText.setText("Deutsche Bahn");
+        goToDBText.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_DB));
         TextView goToLeipzigText = (TextView) view.findViewById(R.id.services_way_to_website_leipzig_text);
-        goToLeipzigText.setText("Leipziger Verkehrsbetriebe");
+        goToLeipzigText.setText(getActivity().getResources().getString(R.string.SERVICES_WAY_TO_LEIPZIG));
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();
