@@ -193,6 +193,8 @@ public class MainActivity extends AppCompatActivity {
                 isClose = false;
             }
         });
+
+        setToolbarTitle(getResources().getString(R.string.ACTIVITY_APP_TITLE));
     }
 
     @Override
