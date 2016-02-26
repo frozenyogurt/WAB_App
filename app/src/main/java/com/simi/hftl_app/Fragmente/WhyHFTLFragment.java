@@ -43,7 +43,7 @@ public class WhyHFTLFragment extends MyRefreshFragment
         TextView textSeven = (TextView) view.findViewById(R.id.text_why_seven);
 
         beginningText.setText(getActivity().getResources().getString(R.string.why_hftl_text));
-        titleFragment.setText("Warum HfTL?");
+        titleFragment.setText(getActivity().getResources().getString(R.string.WHY_HFTL_TITLE));
         titleOne.setText("Titel 1");
         titleTwo.setText("Titel 2");
         titleThree.setText("Titel 3");

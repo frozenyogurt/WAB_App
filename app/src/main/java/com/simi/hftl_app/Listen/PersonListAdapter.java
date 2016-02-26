@@ -40,7 +40,7 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
         PersonListItem listItem = items.get(position);
 
         TextView sendMailText = (TextView) view.findViewById(R.id.send_mail_text);
-        sendMailText.setText("Mail Senden");
+        sendMailText.setText(activity.getResources().getString(R.string.SEND_MAIL));
 
         TextView name = (TextView) view.findViewById(R.id.person_name);
         name.setText(listItem.getName());

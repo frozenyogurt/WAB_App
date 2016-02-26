@@ -30,10 +30,10 @@ public class StudyTestResultFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.study_test_result_fragment, container, false);
 
         TextView titleFragment = (TextView) view.findViewById(R.id.test_question_title);
-        titleFragment.setText("Auswertung");
+        titleFragment.setText(getActivity().getResources().getString(R.string.TEST_QUESTION_RESULT_TITLE));
 
         Button end = (Button) view.findViewById(R.id.end_test);
-        end.setText("Test Beenden");
+        end.setText(getActivity().getResources().getString(R.string.TEST_RESULT_END_TEST));
         end.setOnClickListener(new View.OnClickListener()
         {
             @Override

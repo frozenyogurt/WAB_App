@@ -21,12 +21,14 @@ public class StudyListAdapter extends ArrayAdapter <StudyListItem>
 
     private final LayoutInflater inflater;
     private final ArrayList<StudyListItem> items;
+    private final MainActivity activity;
 
     public StudyListAdapter(MainActivity activity, int resource, ArrayList<StudyListItem> items)
     {
         super(activity.getApplicationContext(), resource, items);
         this.inflater = (LayoutInflater) activity.getSystemService(LAYOUT_INFLATER_SERVICE);
         this.items = items;
+        this.activity = activity;
     }
 
     @Override
@@ -40,7 +42,7 @@ public class StudyListAdapter extends ArrayAdapter <StudyListItem>
         name.setText(listItem.getName());
 
         TextView text = (TextView) view.findViewById(R.id.item_more);
-        text.setText("Mehr Erfahren");
+        text.setText(activity.getResources().getString(R.string.STUDY_LIST_MORE));
 
         return view;
     }

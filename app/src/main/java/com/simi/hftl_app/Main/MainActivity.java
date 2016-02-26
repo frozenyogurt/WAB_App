@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         setLocale(language);
 
+        education_button.setText(getResources().getString(R.string.ACTIVITY_EDUCATION_TITLE));
         education_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,12 +105,13 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new EducationFragment(), "EducationFragment");
                 ft.addToBackStack(EducationFragment.class.getSimpleName());
                 ft.commit();
-                setToolbarTitle("Weiterbildung");
+                setToolbarTitle(getResources().getString(R.string.ACTIVITY_EDUCATION_TITLE));
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
         });
 
+        hftl_button.setText(getResources().getString(R.string.ACTIVITY_HFTL_INFO_TITLE_BUTTON));
         hftl_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,12 +120,13 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new HFTLInfoFragment(), "HFTLInfoFragment");
                 ft.addToBackStack(HFTLInfoFragment.class.getSimpleName());
                 ft.commit();
-                setToolbarTitle("HFTL Übersicht");
+                setToolbarTitle(getResources().getString(R.string.ACTIVITY_HFTL_INFO_TITLE));
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
         });
 
+        maps_button.setText(getResources().getString(R.string.ACTIVITY_MAPS_TITLE));
         maps_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -131,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        study_button.setText(getResources().getString(R.string.ACTIVITY_DIRECT_TITLE));
         study_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -139,12 +143,13 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new StudyFragment(), "StudyFragment");
                 ft.addToBackStack(StudyFragment.class.getSimpleName());
                 ft.commit();
-                setToolbarTitle("Direktstudium");
+                setToolbarTitle(getResources().getString(R.string.ACTIVITY_DIRECT_TITLE));
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
         });
 
+        study_dual_button.setText(getResources().getString(R.string.ACTIVITY_DUAL_TITLE));
         study_dual_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -153,12 +158,13 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new DualStudyFragment(), "DualStudyFragment");
                 ft.addToBackStack(DualStudyFragment.class.getSimpleName());
                 ft.commit();
-                setToolbarTitle("Dualstudium");
+                setToolbarTitle(getResources().getString(R.string.ACTIVITY_DUAL_TITLE));
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
         });
 
+        study_job_button.setText(getResources().getString(R.string.ACTIVITY_JOB_TITLE_BUTTON));
         study_job_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -167,12 +173,13 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new JobStudyFragment(), "JobStudyFragment");
                 ft.addToBackStack(JobStudyFragment.class.getSimpleName());
                 ft.commit();
-                setToolbarTitle("Berufsbegleitend");
+                setToolbarTitle(getResources().getString(R.string.ACTIVITY_JOB_TITLE));
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
         });
 
+        study_test_button.setText(getResources().getString(R.string.ACTIVITY_Test_TITLE_BUTTON));
         study_test_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -181,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.activityLayout, new TestStudyFragment(), "TestStudyFragment");
                 ft.addToBackStack(TestStudyFragment.class.getSimpleName());
                 ft.commit();
-                setToolbarTitle("Studientest");
+                setToolbarTitle(getResources().getString(R.string.ACTIVITY_Test_TITLE));
                 backButton.setVisibility(View.VISIBLE);
                 isClose = false;
             }
@@ -197,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
         {
             questionsList = new ArrayList<>();
             isGoBack = false;
-            setToolbarTitle("HFTL");
+            setToolbarTitle(getResources().getString(R.string.ACTIVITY_APP_TITLE));
             backButton.setVisibility(View.INVISIBLE);
             closeActivity();
         }
@@ -205,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
         {
             questionsList = new ArrayList<>();
             isGoBack = false;
-            setToolbarTitle("HFTL");
+            setToolbarTitle(getResources().getString(R.string.ACTIVITY_APP_TITLE));
             backButton.setVisibility(View.INVISIBLE);
             super.onBackPressed();
         }
@@ -239,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
         if (!isClose)
         {
             isClose = true;
-            Toast.makeText(getApplicationContext(), "Erneut tippen zum Beenden.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getResources().getString(R.string.ACTIVITY_TOUCH_AGAIN), Toast.LENGTH_LONG).show();
         }
         else
         {
@@ -326,10 +333,10 @@ public class MainActivity extends AppCompatActivity {
 
         emailIntent.setType("plain/text");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{person.getMail()});
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, new String[]{"Frage"});
-        emailIntent.putExtra(Intent.EXTRA_TEXT, "Hallo " + person.getName() + ",");
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, new String[]{getResources().getString(R.string.ACTIVITY_MAIL_EXTRA_SUBJECT)});
+        emailIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.ACTIVITY_MAIL_HELLO) + person.getName() + ",");
 
-        startActivity(Intent.createChooser(emailIntent, "Mail senden..."));
+        startActivity(Intent.createChooser(emailIntent, getResources().getString(R.string.ACTIVITY_MAIL_CHOOSER_TITLE)));
     }
 
     public void callPerson(String number)
@@ -403,7 +410,7 @@ public class MainActivity extends AppCompatActivity {
                 "http://maps.google.com/maps?daddr=%f,%f (%s)",
                 51.312870,
                 12.374920,
-                "Hochschule für Telekommunikation Leipzig");
+                getResources().getString(R.string.ACTIVITY_HFTL_NAME));
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
         startActivity(intent);

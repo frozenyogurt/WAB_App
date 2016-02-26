@@ -559,6 +559,60 @@ Herzlich Willkommen.
                                             Linie 11 (Richtung Markleeberg-Ost) \n \n
                                             Von der Haltestelle Connewitzer Kreuz sind es noch ca. 5 Minuten Fußweg bis zum Eingang der HfTL in der Gustav-Freytag-Straße 43 - 45.</string>
     <string name="SERVICES_WAY_TO_BEGINNING">Im Folgenden ist eine Anfahrtsskizze zum Gelände der HfT Leipzig, eine Navigation mit dem Auto und Möglichkeiten zur Anreise mittels öffentlicher Verkehrsmittel.</string>
+
+    <string name="SETTINGS_SAVE">Speichern</string>
+    <string name="SETTINGS_RESET">Zurücksetzen</string>
+    <string name="SETTINGS_LANGUAGE_GERMAN">Deutsch</string>
+    <string name="SETTINGS_LANGUAGE_ENGLISH">Englisch</string>
+    <string name="SETTINGS_LANGUAGE_TITLE">Sprache</string>
+    <string name="SETTINGS_DESIGN_TITLE">Design</string>
+    <string name="SETTINGS_DESIGN_INFO">Der hier eingegebene Wert wird auf alle Farben angewandt, die nicht Magenta sind. Er muss das Format #RRGGBB oder #AARRGGBB haben.</string>
+    <string name="SETTINGS_YOUR_VALUE">Der Wert </string>
+    <string name="SETTINGS_VALUE_SAVED"> wurde erfolgreich gespeichert.</string>
+    <string name="SETTINGS_WRONG_VALUE">Ihr Wert war ungültig.</string>
+    <string name="SETTINGS_LANGUAGE_CHANGED_TO_GERMAN">Die Sprache wurde auf Deutsch geändert.</string>
+    <string name="SETTINGS_LANGUAGE_CHANGED_TO_ENGLISH">Die Sprache wurde auf Englisch geändert.</string>
+    <string name="SETTINGS_RESET_SUCCESS">Alle Werte wurden erfolgreich zurückgesetzt.</string>
+    <string name="SETTINGS_HINT_TEXT">hexadezimalen Wert eingeben</string>
+
+    <string name="TEST_QUESTION_RESULT_TITLE">Auswertung</string>
+    <string name="TEST_QUESTION_THE_QUESTION">Die Frage </string>
+    <string name="TEST_QUESTION_THE_QUESTIONS">Die Fragen </string>
+    <string name="TEST_QUESTION_AND"> und </string>
+    <string name="TEST_QUESTION_OF"> von </string>
+    <string name="TEST_QUESTION">Frage </string>
+    <string name="TEST_QUESTION_THE_QUESTION_NOT_ANSWERED"> wurde nicht beantwortet.</string>
+    <string name="TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED"> wurden nicht beantwortet.</string>
+
+    <string name="TEST_RESULT_END_TEST"></string>
+    <!-- ACHTUNG -->
+    <!-- Hier kommen noch welche dazu, wenn der test fertig ist -->
+    <!-- ACHTUNG -->
+
+    <string name="TEST_START">Test starten</string>
+    <string name="TEST_START_BEGINNING">Einführung</string>
+    <string name="TEST_START_DESCRIPTION">Beschreibung des Testes.</string>
+    <string name="TEST_START_ATTENTION">Simmis Achtung Achtung Text.</string>
+
+    <string name="FAQ_SEE_ANSWER">Antwort ansehen</string>
+    <string name="STUDY_LIST_MORE">Mehr erfahren</string>
+
+    <string name="ACTIVITY_EDUCATION_TITLE">Weiterbildung</string>
+    <string name="ACTIVITY_MAPS_TITLE">Auf zur Hochschule!</string>
+    <string name="ACTIVITY_HFTL_INFO_TITLE">HfTL Übersicht</string>
+    <string name="ACTIVITY_HFTL_INFO_TITLE_BUTTON">Über die HfTL</string>
+    <string name="ACTIVITY_DUAL_TITLE">Dualstudium</string>
+    <string name="ACTIVITY_JOB_TITLE">Berufsbegleitend</string>
+    <string name="ACTIVITY_JOB_TITLE_BUTTON">Berufsbegleitendes Studium</string>
+    <string name="ACTIVITY_DIRECT_TITLE">Direktstudium</string>
+    <string name="ACTIVITY_Test_TITLE">Studientest</string>
+    <string name="ACTIVITY_Test_TITLE_BUTTON">Studiengangstest</string>
+    <string name="ACTIVITY_APP_TITLE">HfTL</string>
+    <string name="ACTIVITY_HFTL_NAME">Hochschule für Telekommunikation Leipzig</string>
+    <string name="ACTIVITY_MAIL_HELLO">Hallo</string>
+    <string name="ACTIVITY_MAIL_CHOOSER_TITLE">Mail Senden...</string>
+    <string name="ACTIVITY_MAIL_EXTRA_SUBJECT">Frage</string>
+    <string name="ACTIVITY_TOUCH_AGAIN">Erneut tippen zum Beenden.</string>
 </resources>
 
 

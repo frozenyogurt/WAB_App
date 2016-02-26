@@ -20,12 +20,14 @@ public class FAQListAdapter extends ArrayAdapter<FAQListItem>
 {
     private final LayoutInflater inflater;
     private final ArrayList<FAQListItem> items;
+    private final MainActivity activity;
 
     public FAQListAdapter (MainActivity activity, int resource, ArrayList<FAQListItem> items)
     {
         super(activity.getApplicationContext(), resource, items);
         this.inflater = (LayoutInflater) activity.getSystemService(LAYOUT_INFLATER_SERVICE);
         this.items = items;
+        this.activity = activity;
     }
 
     public View getView(int position, View convertView, ViewGroup parent)
@@ -37,7 +39,7 @@ public class FAQListAdapter extends ArrayAdapter<FAQListItem>
         name.setText(listItem.getName());
 
         TextView more = (TextView) view.findViewById(R.id.item_more);
-        more.setText("Antwort ansehen");
+        more.setText(activity.getResources().getString(R.string.FAQ_SEE_ANSWER));
 
         return view;
     }

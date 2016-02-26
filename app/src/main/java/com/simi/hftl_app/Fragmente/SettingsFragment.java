@@ -28,54 +28,45 @@ public class SettingsFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.settings_fragment,container,false);
 
         Button save = (Button) view.findViewById(R.id.button_save);
-        save.setText("Speichern");
+        save.setText(getActivity().getResources().getString(R.string.SETTINGS_SAVE));
         Button reset = (Button) view.findViewById(R.id.button_reset);
-        reset.setText("Zurücksetzen");
+        reset.setText(getActivity().getResources().getString(R.string.SETTINGS_RESET));
         final EditText hex_value = (EditText) view.findViewById(R.id.hex_value);
-        hex_value.setHint("hexadezimalen Wert eingeben");
+        hex_value.setHint(getActivity().getResources().getString(R.string.SETTINGS_HINT_TEXT));
         final CheckBox german = (CheckBox) view.findViewById(R.id.language_german);
-        german.setText("Deutsch");
+        german.setText(getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_GERMAN));
         final CheckBox english = (CheckBox) view.findViewById(R.id.language_english);
-        english.setText("Englisch");
+        english.setText(getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_ENGLISH));
         TextView titleChangeLanguage = (TextView) view.findViewById(R.id.titleChangeLanguage);
-        titleChangeLanguage.setText("Sprache");
+        titleChangeLanguage.setText(getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_TITLE));
         TextView titleChangeDesign = (TextView) view.findViewById(R.id.titleChangeColor);
-        titleChangeDesign.setText("Farbdesign");
+        titleChangeDesign.setText(getActivity().getResources().getString(R.string.SETTINGS_DESIGN_TITLE));
         TextView textInfo = (TextView) view.findViewById(R.id.changeColorInfoText);
-        textInfo.setText("Der hier eingegebene Wert wird auf alle Farben angewandt, die nicht Magenta sind. Er muss das Format #RRGGBB oder #AARRGGBB haben.");
+        textInfo.setText("");
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity activity = ((MainActivity)getActivity());
-                if (!hex_value.getText().toString().equals(""))
-                {
+                MainActivity activity = ((MainActivity) getActivity());
+                if (!hex_value.getText().toString().equals("")) {
                     activity.setColor(hex_value.getText().toString());
-                    if (activity.convertColorString() != 0)
-                    {
+                    if (activity.convertColorString() != 0) {
                         activity.refreshFragments();
-                        Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert " + hex_value.getText().toString() + " wurde erfolgreich gespeichert.", Toast.LENGTH_SHORT).show();
-                    }
-                    else
-                    {
-                        Toast.makeText(getActivity().getApplicationContext(), "Ihr Wert war ungültig!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_YOUR_VALUE) + hex_value.getText().toString() + getActivity().getResources().getString(R.string.SETTINGS_VALUE_SAVED), Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_WRONG_VALUE), Toast.LENGTH_LONG).show();
                     }
                 }
-                if (german.isChecked())
-                {
-                    if (((MainActivity)getActivity()).getLanguage().equals("en"))
-                    {
-                        Toast.makeText(getActivity().getApplicationContext(), "Die Sprache wurde auf Deutsch geändert.", Toast.LENGTH_LONG).show();
-                        ((MainActivity)getActivity()).refreshFragments();
+                if (german.isChecked()) {
+                    if (((MainActivity) getActivity()).getLanguage().equals("en")) {
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_CHANGED_TO_GERMAN), Toast.LENGTH_LONG).show();
+                        ((MainActivity) getActivity()).refreshFragments();
                     }
                     activity.setLocale("de");
-                }
-                else
-                {
-                    if (((MainActivity)getActivity()).getLanguage().equals("de"))
-                    {
-                        Toast.makeText(getActivity().getApplicationContext(), "Die Sprache wurde auf Englisch geändert.", Toast.LENGTH_LONG).show();
-                        ((MainActivity)getActivity()).refreshFragments();
+                } else {
+                    if (((MainActivity) getActivity()).getLanguage().equals("de")) {
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_ENGLISH), Toast.LENGTH_LONG).show();
+                        ((MainActivity) getActivity()).refreshFragments();
                     }
                     activity.setLocale("en");
                 }
@@ -94,7 +85,7 @@ public class SettingsFragment extends MyRefreshFragment
                 english.setChecked(false);
                 hex_value.setText("");
                 ((MainActivity)getActivity()).setLocale("de");
-                Toast.makeText(getActivity().getApplicationContext(), "Alle Werte wurden erfolgreich zurückgesetzt.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_RESET_SUCCESS), Toast.LENGTH_LONG).show();
             }
         });
 

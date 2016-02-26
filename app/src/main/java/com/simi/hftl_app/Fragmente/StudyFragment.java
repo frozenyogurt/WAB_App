@@ -33,10 +33,10 @@ public class StudyFragment extends MyRefreshFragment
 
         ListView list = (ListView) view.findViewById(R.id.listViewStudy);
         final ArrayList<StudyListItem> items = new ArrayList<>();
-        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Bachelor)", StudyCourse.IKT_BACHELOR));
-        items.add(new StudyListItem("Kommunikations- und Medieninformatik (Bachelor)", StudyCourse.KMI_BACHELOR));
-        items.add(new StudyListItem("Wirtschaftsinformatik (Bachelor)", StudyCourse.WI_BACHELOR));
-        items.add(new StudyListItem("Informations- und Kommunikationstechnik (Master)", StudyCourse.IKT_MASTER));
+        items.add(new StudyListItem(getActivity().getResources().getString(R.string.IKT_BACHELOR_NAME), StudyCourse.IKT_BACHELOR));
+        items.add(new StudyListItem(getActivity().getResources().getString(R.string.KMI_BACHELOR_NAME), StudyCourse.KMI_BACHELOR));
+        items.add(new StudyListItem(getActivity().getResources().getString(R.string.WI_BACHELOR_NAME), StudyCourse.WI_BACHELOR));
+        items.add(new StudyListItem(getActivity().getResources().getString(R.string.IKT_MASTER_NAME), StudyCourse.IKT_MASTER));
         items.add(new StudyListItem("Master Information and Communication Technology (Master - english)", StudyCourse.ICT_MASTER));
         StudyListAdapter adapter = new StudyListAdapter((MainActivity) getActivity(), R.layout.study_list_item, items);
         list.setAdapter(adapter);

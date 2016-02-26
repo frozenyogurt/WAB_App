@@ -30,15 +30,15 @@ public class TestStudyFragment extends MyRefreshFragment
         Button start = (Button) view.findViewById(R.id.start_test);
 
         TextView titleFragment = (TextView) view.findViewById(R.id.title_fragment);
-        titleFragment.setText("Einführung");
+        titleFragment.setText(getActivity().getResources().getString(R.string.TEST_START_BEGINNING));
 
         TextView firstBeginningText = (TextView) view.findViewById(R.id.test_attention_text);
-        firstBeginningText.setText("Dein Achtung Achtung Text simmi");
+        firstBeginningText.setText(getActivity().getResources().getString(R.string.TEST_START_ATTENTION));
 
         TextView secondDescriptionText = (TextView) view.findViewById(R.id.test_info_text);
-        secondDescriptionText.setText("Bescgriebung des Testes");
+        secondDescriptionText.setText(getActivity().getResources().getString(R.string.TEST_START_DESCRIPTION));
 
-        start.setText("Test Starten");
+        start.setText(getActivity().getResources().getString(R.string.TEST_START));
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

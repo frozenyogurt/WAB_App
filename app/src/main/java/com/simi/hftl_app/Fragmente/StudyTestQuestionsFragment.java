@@ -65,7 +65,7 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
         if (position == activity.getQuestions().size() - 1)
         {
             result.setVisibility(View.VISIBLE);
-            result.setText("Auswertung");
+            result.setText(getActivity().getResources().getString(R.string.TEST_QUESTION_RESULT_TITLE));
         }
 
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -91,7 +91,7 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                 if (position == activity.getQuestions().size() - 1 || activity.getNotAnsweredQuestions().size() == 0)
                 {
                     result.setVisibility(View.VISIBLE);
-                    result.setText("Auswertung");
+                    result.setText(getActivity().getResources().getString(R.string.TEST_QUESTION_RESULT_TITLE));
                 }
                 title.setText(getTitleText());
             }
@@ -113,29 +113,29 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                     ft.addToBackStack(StudyTestResultFragment.class.getSimpleName());
                     ft.commit();
                 }
-                else if (result.getText().toString().equals("Auswertung"))
+                else if (result.getText().toString().equals(getActivity().getResources().getString(R.string.TEST_QUESTION_RESULT_TITLE)))
                 {
                     StringBuilder string = new StringBuilder();
                     if (questions.size() == 1)
                     {
-                        Toast.makeText(getActivity().getApplicationContext(), "Die Frage " + questions.get(0) + " wurde nicht beantwortet.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTION) + questions.get(0) + getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTION_NOT_ANSWERED), Toast.LENGTH_LONG).show();
                     }
                     else
                     {
-                        string.append("Die Fragen ");
+                        string.append(getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTIONS));
                         for (int i = 0; i < questions.size(); i++)
                         {
                             string.append(questions.get(i));
                             if (i == questions.size() - 2)
                             {
-                                string.append(" und ");
+                                string.append(getActivity().getResources().getString(R.string.TEST_QUESTION_AND));
                             }
                             else if (i != questions.size() - 1)
                             {
                                 string.append(", ");
                             }
                         }
-                        string.append(" wurden nicht beantwortet.");
+                        string.append(getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED));
                         Toast.makeText(getActivity().getApplicationContext(), string.toString(), Toast.LENGTH_LONG).show();
                     }
 
@@ -222,6 +222,6 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
     public String getTitleText()
     {
         MainActivity activity = ((MainActivity)getActivity());
-        return "Frage " + (activity.getCurrentViewPagerItem()+1) + " von " + activity.getQuestions().size();
+        return activity.getResources().getString(R.string.TEST_QUESTION) + (activity.getCurrentViewPagerItem()+1) + activity.getResources().getString(R.string.TEST_QUESTION_OF) + activity.getQuestions().size();
     }
 }
