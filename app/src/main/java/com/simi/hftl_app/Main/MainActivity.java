@@ -221,7 +221,14 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (lastFragmentName != null)
         {
-            if (lastFragmentName.equals("ResultTestDataFragment") || lastFragmentName.equals("MenuFragment"))
+            if (lastFragmentName.equals("StudyTestQuestionsFragment"))
+            {
+                setCurrentPage(0);
+                questionsList = new ArrayList<>();
+            }
+            else if (lastFragmentName.equals("ResultTestDataFragment")
+                    || lastFragmentName.equals("MenuFragment")
+                    || lastFragmentName.equals("StudyTestResultFragment"))
             {
                 if (lastFragmentName.equals("MenuFragment"))
                 {
