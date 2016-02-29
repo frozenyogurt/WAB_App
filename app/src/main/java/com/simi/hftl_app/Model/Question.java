@@ -10,6 +10,11 @@ public class Question
     private String questionName;
     private ArrayList<Answer> answers = new ArrayList<>();
 
+    public Question (String name)
+    {
+        this.questionName = name;
+    }
+
     public Question(String name, ArrayList<Answer> answers)
     {
         this.questionName = name;

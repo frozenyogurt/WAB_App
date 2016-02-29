@@ -459,18 +459,18 @@ Herzlich Willkommen.
     <string name="IMPRINT_TITLE_TWO">Geschäftsführung</string>
     <string name="IMPRINT_TITLE_THREE">Redaktion</string>
     <string name="CALL_TEXT">Anrufen</string>
-    <string name="IMPRINT_TEXT_ONE">Friedrich-Ebert-Allee 140
+    <string name="IMPRINT_TEXT_ONE">Friedrich-Ebert-Allee 140 \n
                                     53113 Bonn \n \n
                                     Sitz der Gesellschaft: Bonn \n
                                     Amtsgericht Bonn HRB 19361 \n
                                     USt-IdNr. DE 292363279</string>
-    <string name="IMPRINT_TEXT_TWO">Dr. Elke Frank
+    <string name="IMPRINT_TEXT_TWO">Dr. Elke Frank \n
                                     Dr. Oliver Lange \n
                                     Friedrich-Ebert-Allee 140 \n
                                     53113 Bonn \n \n
                                     Telefon: 0228 181 - 0 \n
                                     E-Mail: pr@hft-leipzig.de</string>
-    <string name="IMPRINT_TEXT_THREE">Torsten Büttner
+    <string name="IMPRINT_TEXT_THREE">Torsten Büttner \n
                                       Referent Öffentlichkeitsarbeit \n
                                       Public Relations \n
                                       Gustav-Freytag-Str. 43-45 \n
@@ -497,7 +497,7 @@ Herzlich Willkommen.
     <string name="SERVICES_LIBRARY_TITLE_ONE">Adresse der Bibliothek der HfTL und HTWK Leipzig</string>
     <string name="SERVICES_LIBRARY_TITLE_TWO">Öffnungszeiten</string>
     <string name="SERVICES_LIBRARY_TITLE_THREE">Ausleihe und Auskunft</string>
-    <string name="SERVICES_LIBRARY_TEXT_ONE">Hochschule für Technik, Wirtschaft und Kultur Leipzig
+    <string name="SERVICES_LIBRARY_TEXT_ONE">Hochschule für Technik, Wirtschaft und Kultur Leipzig \n
                                              Hochschulbibliothek \n
                                              Gustav-Freytag-Straße 40 \n
                                              04277 Leipzig</string>

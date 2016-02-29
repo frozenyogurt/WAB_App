@@ -52,7 +52,7 @@ public class SettingsFragment extends MyRefreshFragment
                     activity.setColor(hex_value.getText().toString());
                     if (activity.convertColorString() != 0) {
                         activity.refreshFragments();
-                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_YOUR_VALUE) + hex_value.getText().toString() + getActivity().getResources().getString(R.string.SETTINGS_VALUE_SAVED), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_YOUR_VALUE) +" "+ hex_value.getText().toString() +" "+ getActivity().getResources().getString(R.string.SETTINGS_VALUE_SAVED), Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_WRONG_VALUE), Toast.LENGTH_LONG).show();
                     }

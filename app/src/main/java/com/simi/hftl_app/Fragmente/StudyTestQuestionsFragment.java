@@ -118,24 +118,24 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                     StringBuilder string = new StringBuilder();
                     if (questions.size() == 1)
                     {
-                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTION) + questions.get(0) + getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTION_NOT_ANSWERED), Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTION) +" "+ questions.get(0) +" "+ getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTION_NOT_ANSWERED), Toast.LENGTH_LONG).show();
                     }
                     else
                     {
-                        string.append(getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTIONS));
+                        string.append(getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTIONS)).append(" ");
                         for (int i = 0; i < questions.size(); i++)
                         {
                             string.append(questions.get(i));
                             if (i == questions.size() - 2)
                             {
-                                string.append(getActivity().getResources().getString(R.string.TEST_QUESTION_AND));
+                                string.append(" ").append(getActivity().getResources().getString(R.string.TEST_QUESTION_AND)).append(" ");
                             }
                             else if (i != questions.size() - 1)
                             {
                                 string.append(", ");
                             }
                         }
-                        string.append(getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED));
+                        string.append(" ").append(getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED));
                         Toast.makeText(getActivity().getApplicationContext(), string.toString(), Toast.LENGTH_LONG).show();
                     }
 
@@ -223,6 +223,6 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
     public String getTitleText()
     {
         MainActivity activity = ((MainActivity)getActivity());
-        return activity.getResources().getString(R.string.TEST_QUESTION) + (activity.getCurrentViewPagerItem()+1) + activity.getResources().getString(R.string.TEST_QUESTION_OF) + activity.getQuestions().size();
+        return activity.getResources().getString(R.string.TEST_QUESTION) +" "+ (activity.getCurrentViewPagerItem()+1) +" "+ activity.getResources().getString(R.string.TEST_QUESTION_OF) +" "+ activity.getQuestions().size();
     }
 }
