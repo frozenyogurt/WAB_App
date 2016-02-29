@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_fragment"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:text="Statistik"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/underline"
+        android:orientation="horizontal"
+        android:background="@color/study_test_color"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_study_course_one"
+                android:textSize="25sp"
+                android:text="Studiengang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progress_study_course_one"
+                    style="?android:progressBarStyleHorizontal"
+                    android:clickable="false"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/percentageOne"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:text="20%"
+                    android:layout_alignRight="@id/progress_study_course_one"
+                    android:layout_alignEnd="@id/progress_study_course_one"
+                    android:layout_alignBottom="@id/progress_study_course_one"
+                    android:layout_alignLeft="@id/progress_study_course_one"
+                    android:layout_alignStart="@id/progress_study_course_one"
+                    android:layout_alignParentTop="@id/progress_study_course_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text_study_course_two"
+                android:textSize="25sp"
+                android:text="Studiengang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progress_study_course_two"
+                    style="?android:progressBarStyleHorizontal"
+                    android:clickable="false"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/percentageTwo"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:text="20%"
+                    android:layout_alignRight="@id/progress_study_course_two"
+                    android:layout_alignEnd="@id/progress_study_course_two"
+                    android:layout_alignBottom="@id/progress_study_course_two"
+                    android:layout_alignLeft="@id/progress_study_course_two"
+                    android:layout_alignStart="@id/progress_study_course_two"
+                    android:layout_alignParentTop="@id/progress_study_course_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_study_course_three"
+                android:textSize="25sp"
+                android:text="Studiengang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progress_study_course_three"
+                    style="?android:progressBarStyleHorizontal"
+                    android:clickable="false"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/percentageThree"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:text="20%"
+                    android:layout_alignRight="@id/progress_study_course_three"
+                    android:layout_alignEnd="@id/progress_study_course_three"
+                    android:layout_alignBottom="@id/progress_study_course_three"
+                    android:layout_alignLeft="@id/progress_study_course_three"
+                    android:layout_alignStart="@id/progress_study_course_three"
+                    android:layout_alignParentTop="@id/progress_study_course_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_study_course_four"
+                android:textSize="25sp"
+                android:text="Studiengang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progress_study_course_four"
+                    style="?android:progressBarStyleHorizontal"
+                    android:clickable="false"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/percentageFour"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:text="20%"
+                    android:layout_alignRight="@id/progress_study_course_four"
+                    android:layout_alignEnd="@id/progress_study_course_four"
+                    android:layout_alignBottom="@id/progress_study_course_four"
+                    android:layout_alignLeft="@id/progress_study_course_four"
+                    android:layout_alignStart="@id/progress_study_course_four"
+                    android:layout_alignParentTop="@id/progress_study_course_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_winner_study_category"
+                android:textSize="25sp"
+                android:text="Gewinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/text_winner_study_category"
+                android:textSize="20sp"
+                android:text="Studienart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/title_winner_study_degree"
+                android:textSize="25sp"
+                android:text="Gewinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/text_winner_study_degree"
+                android:textSize="20sp"
+                android:text="Sudiengrad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_end_test"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:text="Test Beenden"
+                    android:background="@drawable/round_button_grey"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/button_decision"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_button_test"
+                    android:text="Vorschlag"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

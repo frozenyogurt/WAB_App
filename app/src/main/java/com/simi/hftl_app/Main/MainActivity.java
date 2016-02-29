@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private int currentPage;
     private ArrayList<StudyCourse> winner;
     private StudyCourse alternative;
+    private Rating rating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -220,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (lastFragmentName != null)
         {
-            if (lastFragmentName.equals("StudyTestResultFragment") || lastFragmentName.equals("MenuFragment"))
+            if (lastFragmentName.equals("ResultTestDataFragment") || lastFragmentName.equals("MenuFragment"))
             {
                 if (lastFragmentName.equals("MenuFragment"))
                 {
@@ -579,11 +580,15 @@ public class MainActivity extends AppCompatActivity {
         return notAnsweredQuestion;
     }
 
-    public void endTest()
+    public void endTest(boolean isLast)
     {
         onBackPressed();
         onBackPressed();
         onBackPressed();
+        if (isLast)
+        {
+            onBackPressed();
+        }
         setCurrentPage(0);
         questionsList = new ArrayList<>();
     }
@@ -602,6 +607,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void setAlternative(StudyCourse alternative) {
         this.alternative = alternative;
+    }
+
+    public Rating getRating() {
+        return rating;
+    }
+
+    public void setRating(Rating rating) {
+        this.rating = rating;
     }
 
     /*public void openImage(int id)

@@ -280,7 +280,7 @@ public class Rating
         return points;
     }
 
-    private HashMap<RatingCategory, Integer> getCategoryRatingMap()
+    public HashMap<RatingCategory, Integer> getCategoryRatingMap()
     {
         HashMap<RatingCategory, Integer> points = new HashMap<>();
         points.put(RatingCategory.DUAL, dualPoints);
@@ -289,7 +289,7 @@ public class Rating
         return points;
     }
 
-    private HashMap<RatingCategory, Integer> getDregreeRatingMap()
+    public HashMap<RatingCategory, Integer> getDregreeRatingMap()
     {
         HashMap<RatingCategory, Integer> points = new HashMap<>();
         points.put(RatingCategory.BACHELOR, bachelorPoints);

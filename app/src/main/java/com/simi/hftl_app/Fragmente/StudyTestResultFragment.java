@@ -39,7 +39,7 @@ public class StudyTestResultFragment extends MyRefreshFragment
             @Override
             public void onClick(View v)
             {
-                ((MainActivity)getActivity()).endTest();
+                ((MainActivity)getActivity()).endTest(true);
             }
         });
 

@@ -109,8 +109,8 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                     calculateResult();
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                     ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
-                    ft.add(R.id.activityLayout, new StudyTestResultFragment(), "StudyTestResultFragment");
-                    ft.addToBackStack(StudyTestResultFragment.class.getSimpleName());
+                    ft.add(R.id.activityLayout, new ResultTestDataFragment(), "ResultTestDataFragment");
+                    ft.addToBackStack(ResultTestDataFragment.class.getSimpleName());
                     ft.commit();
                 }
                 else if (result.getText().toString().equals(getActivity().getResources().getString(R.string.TEST_QUESTION_RESULT_TITLE)))
@@ -203,6 +203,7 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                 }
             }
         }
+        activity.setRating(rating);
         ArrayList<StudyCourse> winner = rating.getWinner();
         if (winner != null)
         {

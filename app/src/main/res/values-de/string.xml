@@ -584,7 +584,7 @@ Herzlich Willkommen.
     <string name="TEST_QUESTION_THE_QUESTION_NOT_ANSWERED"> wurde nicht beantwortet.</string>
     <string name="TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED"> wurden nicht beantwortet.</string>
 
-    <string name="TEST_RESULT_END_TEST"></string>
+    <string name="TEST_RESULT_END_TEST">Test Beenden</string>
     <!-- ACHTUNG -->
     <!-- Hier kommen noch welche dazu, wenn der test fertig ist -->
     <!-- ACHTUNG -->
