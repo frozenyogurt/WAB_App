@@ -19,6 +19,8 @@ import com.simi.hftl_app.R;
  */
 public class SettingsFragment extends MyRefreshFragment
 {
+    private Toast toast;
+
     public SettingsFragment () {}
 
     @Nullable
@@ -65,7 +67,7 @@ public class SettingsFragment extends MyRefreshFragment
                     activity.setLocale("de");
                 } else {
                     if (((MainActivity) getActivity()).getLanguage().equals("de")) {
-                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_ENGLISH), Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_CHANGED_TO_ENGLISH), Toast.LENGTH_LONG).show();
                         ((MainActivity) getActivity()).refreshFragments();
                     }
                     activity.setLocale("en");
@@ -79,13 +81,17 @@ public class SettingsFragment extends MyRefreshFragment
             @Override
             public void onClick(View v)
             {
-                ((MainActivity)getActivity()).setColor(null);
-                ((MainActivity)getActivity()).refreshFragments();
+                MainActivity activity = ((MainActivity)getActivity());
+                if (activity.getColor() != null)
+                {
+                    activity.setColor(null);
+                    activity.refreshFragments();
+                }
                 german.setChecked(true);
                 english.setChecked(false);
                 hex_value.setText("");
-                ((MainActivity)getActivity()).setLocale("de");
-                Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_RESET_SUCCESS), Toast.LENGTH_LONG).show();
+                activity.setLocale("de");
+                showAToast(getActivity().getResources().getString(R.string.SETTINGS_RESET_SUCCESS));
             }
         });
 
@@ -118,5 +124,20 @@ public class SettingsFragment extends MyRefreshFragment
         });
 
         return view;
+    }
+
+    public void showAToast (String st)
+    {
+        try
+        {
+            toast.getView().isShown();
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setText(st);
+        }
+        catch (Exception ex)
+        {
+            toast = Toast.makeText(getActivity().getApplicationContext(), st, Toast.LENGTH_LONG);
+        }
+        toast.show();
     }
 }

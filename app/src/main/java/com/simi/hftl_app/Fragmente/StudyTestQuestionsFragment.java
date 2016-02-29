@@ -29,6 +29,8 @@ import java.util.HashMap;
  */
 public class StudyTestQuestionsFragment extends MyRefreshFragment
 {
+    private Toast toast;
+
     public StudyTestQuestionsFragment(){}
 
     @Nullable
@@ -136,7 +138,7 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
                             }
                         }
                         string.append(" ").append(getActivity().getResources().getString(R.string.TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED));
-                        Toast.makeText(getActivity().getApplicationContext(), string.toString(), Toast.LENGTH_LONG).show();
+                        showAToast(string.toString());
                     }
 
                 }
@@ -224,5 +226,20 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
     {
         MainActivity activity = ((MainActivity)getActivity());
         return activity.getResources().getString(R.string.TEST_QUESTION) +" "+ (activity.getCurrentViewPagerItem()+1) +" "+ activity.getResources().getString(R.string.TEST_QUESTION_OF) +" "+ activity.getQuestions().size();
+    }
+
+    public void showAToast (String st)
+    {
+        try
+        {
+            toast.getView().isShown();
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setText(st);
+        }
+        catch (Exception ex)
+        {
+            toast = Toast.makeText(getActivity().getApplicationContext(), st, Toast.LENGTH_LONG);
+        }
+        toast.show();
     }
 }
