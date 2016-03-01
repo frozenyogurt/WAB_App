@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="progress_background_center">#ff888888</color>
+    <color name="progress_background_start">#ffcccccc</color>
+    <color name="progress_background_end">#ffaaaaaa</color>
+    <color name="light_green">#00cc00</color>
+    <color name="green">#00aa00</color>
+    <color name="light_grey">#cccccc</color>
     <color name="dark_grey">#999999</color>
     <color name="transparent_grey">#aaaaaaaa</color>
     <color name="statusbar_color">#CA0069</color>
     <color name="magenta">#e10075</color>
+    <color name="light_magenta">#ff0099</color>
     <color name="study_color">#9f4c97</color>
     <color name="study_dual_color">#eda95a</color>
     <color name="study_job_color">#64b9e4</color>

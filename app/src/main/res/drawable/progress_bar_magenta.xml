@@ -17,10 +17,10 @@
                 <corners android:radius="5dip" />
                 <gradient
                     android:angle="270"
-                    android:centerColor="@color/study_test_color"
+                    android:centerColor="@color/statusbar_color"
                     android:centerY="0.5"
-                    android:endColor="@color/green"
-                    android:startColor="@color/light_green" />
+                    android:endColor="@color/magenta"
+                    android:startColor="@color/light_magenta" />
             </shape>
         </clip>
     </item>

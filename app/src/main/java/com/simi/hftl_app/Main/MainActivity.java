@@ -299,23 +299,17 @@ public class MainActivity extends AppCompatActivity {
         int color = 0;
         if(getColor() != null)
         {
-            try{
-                color = Color.parseColor(getColor());
-                study_button.setBackgroundColor(color);
-                hftl_button.setBackgroundColor(color);
-                education_button.setBackgroundColor(color);
-                maps_button.setBackgroundColor(color);
-                study_dual_button.setBackgroundColor(color);
-                study_job_button.setBackgroundColor(color);
-                study_test_button.setBackgroundColor(color);
+            try
+            {
+                color = Color.parseColor("#" + getColor());
                 return color;
             }
             catch (Exception e)
             {
-                return 0;
+                return color;
             }
         }
-        return 0;
+        return color;
     }
 
     public String getColor() {
@@ -328,12 +322,36 @@ public class MainActivity extends AppCompatActivity {
         if (color == null)
         {
             study_button.setBackgroundColor(getResources().getColor(R.color.study_color));
+            study_button.setTextColor(getResources().getColor(android.R.color.white));
             hftl_button.setBackgroundColor(getResources().getColor(R.color.hftl_info_color));
+            hftl_button.setTextColor(getResources().getColor(android.R.color.white));
             education_button.setBackgroundColor(getResources().getColor(R.color.education_color));
+            education_button.setTextColor(getResources().getColor(android.R.color.white));
             maps_button.setBackgroundColor(getResources().getColor(R.color.maps_color));
+            maps_button.setTextColor(getResources().getColor(android.R.color.white));
             study_dual_button.setBackgroundColor(getResources().getColor(R.color.study_dual_color));
+            study_dual_button.setTextColor(getResources().getColor(android.R.color.white));
             study_job_button.setBackgroundColor(getResources().getColor(R.color.study_job_color));
+            study_job_button.setTextColor(getResources().getColor(android.R.color.white));
             study_test_button.setBackgroundColor(getResources().getColor(R.color.study_test_color));
+            study_test_button.setTextColor(getResources().getColor(android.R.color.white));
+        }
+        else if (color.equals(Integer.toHexString(getResources().getColor(R.color.magenta))))
+        {
+            study_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            study_button.setTextColor(getResources().getColor(R.color.magenta));
+            hftl_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            hftl_button.setTextColor(getResources().getColor(R.color.magenta));
+            education_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            education_button.setTextColor(getResources().getColor(R.color.magenta));
+            maps_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            maps_button.setTextColor(getResources().getColor(R.color.magenta));
+            study_dual_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            study_dual_button.setTextColor(getResources().getColor(R.color.magenta));
+            study_job_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            study_job_button.setTextColor(getResources().getColor(R.color.magenta));
+            study_test_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            study_test_button.setTextColor(getResources().getColor(R.color.magenta));
         }
     }
 

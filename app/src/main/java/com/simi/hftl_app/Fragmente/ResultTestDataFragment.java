@@ -33,7 +33,7 @@ public class ResultTestDataFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.result_test_data_fragment, container, false);
 
         TextView titleFragment = (TextView) view.findViewById(R.id.title_fragment);
-        titleFragment.setText("Statistik");
+        titleFragment.setText(getResources().getString(R.string.RESULT_DATA_TITLE));
 
         Rating rating = ((MainActivity) getActivity()).getRating();
         Button end = (Button) view.findViewById(R.id.button_end_test);
@@ -55,28 +55,27 @@ public class ResultTestDataFragment extends MyRefreshFragment
         TextView textWinnerCategory = (TextView) view.findViewById(R.id.text_winner_study_category);
         TextView textWinnerDegree = (TextView) view.findViewById(R.id.text_winner_study_degree);
 
-        titleWinnerCategory.setText("Studienart");
-        titleWinnerDegree.setText("Studiengrad");
-        titleOne.setText("KMI Punkte");
-        titleTwo.setText("WI Punkte");
-        titleThree.setText("IKT Punkte");
-        titleFour.setText("AI Punkte");
+        titleWinnerCategory.setText(getResources().getString(R.string.RESULT_DATA_STUDY_CATEGORY));
+        titleWinnerDegree.setText(getResources().getString(R.string.RESULT_DATA_STUDY_DEGREE));
+        setText(titleOne, rating, 0);
+        setText(titleTwo, rating, 1);
+        setText(titleThree, rating, 2);
+        setText(titleFour, rating, 3);
 
         progressOne.setMax(36);
         progressTwo.setMax(36);
         progressThree.setMax(36);
         progressFour.setMax(36);
-        progressOne.setProgress(rating.getKMIPoints());
-        progressTwo.setProgress(rating.getWIPoints());
-        progressThree.setProgress(rating.getIKTPoints());
-        progressFour.setProgress(rating.getAIPoints());
+        progressOne.setProgress(getValueOf(0, rating));
+        progressTwo.setProgress(getValueOf(1, rating));
+        progressThree.setProgress(getValueOf(2, rating));
+        progressFour.setProgress(getValueOf(3, rating));
+        percentageOne.setText(Math.round(((double)getValueOf(0, rating) / 36) * 100) + "%");
+        percentageTwo.setText(Math.round(((double)getValueOf(1, rating) / 36) * 100) + "%");
+        percentageThree.setText(Math.round(((double)getValueOf(2, rating) / 36) * 100) + "%");
+        percentageFour.setText(Math.round(((double)getValueOf(3, rating) / 36) * 100) + "%");
 
-        percentageOne.setText(Math.round(((double)rating.getKMIPoints() / 36) * 100) + "%");
-        percentageTwo.setText(Math.round(((double)rating.getWIPoints() / 36) * 100) + "%");
-        percentageThree.setText(Math.round(((double)rating.getIKTPoints() / 36) * 100) + "%");
-        percentageFour.setText(Math.round(((double)rating.getAIPoints() / 36) * 100) + "%");
-
-        end.setText("Test Beenden");
+        end.setText(getResources().getString(R.string.TEST_RESULT_END_TEST));
         end.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +83,7 @@ public class ResultTestDataFragment extends MyRefreshFragment
             }
         });
         
-        result.setText("Vorschlag");
+        result.setText(getResources().getString(R.string.RESULT_DATA_BUTTUN_DECISION));
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,15 +99,15 @@ public class ResultTestDataFragment extends MyRefreshFragment
         RatingCategory first = (RatingCategory) map.keySet().toArray()[0];
         if (first.equals(RatingCategory.DUAL))
         {
-            textWinnerCategory.setText("Dualstudium");
+            textWinnerCategory.setText(getResources().getString(R.string.RESULT_DATA_DUAL_TITLE));
         }
         else if (first.equals(RatingCategory.JOB))
         {
-            textWinnerCategory.setText("Berufsbegleitendes Studium");
+            textWinnerCategory.setText(getResources().getString(R.string.RESULT_DATA_JOB_TITLE_BUTTON));
         }
         else
         {
-            textWinnerCategory.setText("Direktstudium");
+            textWinnerCategory.setText(getResources().getString(R.string.RESULT_DATA_DIRECT_TITLE));
         }
 
         map = Rating.sortByValue(rating.getDregreeRatingMap());
@@ -116,15 +115,15 @@ public class ResultTestDataFragment extends MyRefreshFragment
         RatingCategory second = (RatingCategory) map.keySet().toArray()[1];
         if (map.get(first) == map.get(second))
         {
-            textWinnerDegree.setText("Bachelor oder Master");
+            textWinnerDegree.setText(getResources().getString(R.string.RESULT_DATA_BACHELOR_OR_MASTER));
         }
         else if (first.equals(RatingCategory.BACHELOR))
         {
-            textWinnerDegree.setText("Bachelor");
+            textWinnerDegree.setText(getResources().getString(R.string.RESULT_DATA_BACHELOR));
         }
         else
         {
-            textWinnerDegree.setText("Master");
+            textWinnerDegree.setText(getResources().getString(R.string.RESULT_DATA_MASTER));
         }
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
@@ -138,14 +137,48 @@ public class ResultTestDataFragment extends MyRefreshFragment
             shape.setCornerRadius(pixels);
             shape.setColor(color);
             result.setBackgroundDrawable(shape);
+
+            progressOne.setProgressDrawable(getResources().getDrawable(R.drawable.progress_bar_magenta));
+            progressTwo.setProgressDrawable(getResources().getDrawable(R.drawable.progress_bar_magenta));
+            progressThree.setProgressDrawable(getResources().getDrawable(R.drawable.progress_bar_magenta));
+            progressFour.setProgressDrawable(getResources().getDrawable(R.drawable.progress_bar_magenta));
         }
         else
         {
             color = getActivity().getResources().getColor(R.color.study_test_color);
             layout.setBackgroundColor(color);
+            progressOne.setProgressDrawable(getResources().getDrawable(R.drawable.progress_bar));
+            progressTwo.setProgressDrawable(getResources().getDrawable(R.drawable.progress_bar));
+            progressThree.setProgressDrawable(getResources().getDrawable(R.drawable.progress_bar));
+            progressFour.setProgressDrawable(getResources().getDrawable(R.drawable.progress_bar));
             result.setBackgroundResource(R.drawable.round_button_test);
         }
 
         return view;
+    }
+
+    public int getValueOf(int index, Rating rating)
+    {
+        return rating.getSortedStudyRatingMap().get(rating.getSortedStudyRatingMap().keySet().toArray()[index]);
+    }
+
+    public void setText(TextView textView, Rating rating, int index)
+    {
+        if (rating.getSortedStudyRatingMap().keySet().toArray()[index].equals(RatingCategory.KMI))
+        {
+            textView.setText(getResources().getString(R.string.RESULT_DATA_KMI_TITLE));
+        }
+        else if (rating.getSortedStudyRatingMap().keySet().toArray()[index].equals(RatingCategory.WI))
+        {
+            textView.setText(getResources().getString(R.string.RESULT_DATA_WI_TITLE));
+        }
+        else if (rating.getSortedStudyRatingMap().keySet().toArray()[index].equals(RatingCategory.IKT))
+        {
+            textView.setText(getResources().getString(R.string.RESULT_DATA_IKT_TITLE));
+        }
+        else if (rating.getSortedStudyRatingMap().keySet().toArray()[index].equals(RatingCategory.AI))
+        {
+            textView.setText(getResources().getString(R.string.RESULT_DATA_AI_TITLE));
+        }
     }
 }

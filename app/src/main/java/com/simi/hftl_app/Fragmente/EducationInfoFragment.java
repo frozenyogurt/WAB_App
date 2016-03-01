@@ -41,26 +41,27 @@ public class EducationInfoFragment extends MyRefreshFragment
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();
 
+        if (color != 0)
+        {
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+        }
+        else
+        {
+            color = getActivity().getResources().getColor(R.color.education_color);
+            layout.setBackgroundColor(color);
+            titleOne.setTextColor(color);
+            titleTwo.setTextColor(color);
+            titleThree.setTextColor(color);
+        }
+
         beginning.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         if (element.getEducation().equals(Education.TOEIC))
         {
             beginning.setText(getActivity().getResources().getString(R.string.TOEIC_BEGINNING_TEXT));
 
-            if (color != 0)
-            {
-                layout.setBackgroundColor(color);
-                titleOne.setTextColor(color);
-                titleTwo.setTextColor(color);
-                titleThree.setTextColor(color);
-            }
-            else
-            {
-                color = getActivity().getResources().getColor(R.color.education_color);
-                layout.setBackgroundColor(color);
-                titleOne.setTextColor(color);
-                titleTwo.setTextColor(color);
-                titleThree.setTextColor(color);
-            }
             titleOne.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_ONE));
             titleOne.setVisibility(View.VISIBLE);
             titleTwo.setText(getActivity().getResources().getString(R.string.TOEIC_TITLE_TWO));

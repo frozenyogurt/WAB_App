@@ -241,7 +241,7 @@ public class Rating
                 }
             }
         }
-        return null;
+        return courses;
     }
 
     public static <K, V extends Comparable<? super V>> LinkedHashMap<K, V> sortByValue( HashMap<K, V> map )
@@ -305,6 +305,12 @@ public class Rating
         points.put(RatingCategory.IKT, IKTPoints);
         points.put(RatingCategory.AI, AIPoints);
         return points;
+    }
+
+    public LinkedHashMap<RatingCategory, Integer> getSortedStudyRatingMap()
+    {
+        LinkedHashMap<RatingCategory, Integer> sortedStudyPoints = sortByValue(getStudyRatingMap());
+        return sortedStudyPoints;
     }
 
     public int getDualPoints() {

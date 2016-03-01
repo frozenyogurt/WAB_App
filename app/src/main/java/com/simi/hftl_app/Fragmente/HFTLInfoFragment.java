@@ -153,25 +153,41 @@ public class HFTLInfoFragment extends MyRefreshFragment
     {
         MainActivity activity = ((MainActivity) getActivity());
         news.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        news.setTextColor(getResources().getColor(android.R.color.white));
         faq.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        faq.setTextColor(getResources().getColor(android.R.color.white));
         imprint.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        imprint.setTextColor(getResources().getColor(android.R.color.white));
         portrait.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        portrait.setTextColor(getResources().getColor(android.R.color.white));
         whyHFTL.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        whyHFTL.setTextColor(getResources().getColor(android.R.color.white));
         employee.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        employee.setTextColor(getResources().getColor(android.R.color.white));
         contact.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        contact.setTextColor(getResources().getColor(android.R.color.white));
         services.setBackgroundColor(activity.getResources().getColor(R.color.hftl_info_color));
+        services.setTextColor(getResources().getColor(android.R.color.white));
     }
 
     public void setColors()
     {
         MainActivity activity = ((MainActivity) getActivity());
-        news.setBackgroundColor(activity.convertColorString());
-        faq.setBackgroundColor(activity.convertColorString());
-        imprint.setBackgroundColor(activity.convertColorString());
-        portrait.setBackgroundColor(activity.convertColorString());
-        whyHFTL.setBackgroundColor(activity.convertColorString());
-        employee.setBackgroundColor(activity.convertColorString());
-        contact.setBackgroundColor(activity.convertColorString());
-        services.setBackgroundColor(activity.convertColorString());
+        news.setBackgroundColor(getResources().getColor(R.color.light_grey));
+        news.setTextColor(getResources().getColor(R.color.magenta));
+        faq.setBackgroundColor(getResources().getColor(R.color.light_grey));
+        faq.setTextColor(getResources().getColor(R.color.magenta));
+        imprint.setBackgroundColor(getResources().getColor(R.color.light_grey));
+        imprint.setTextColor(getResources().getColor(R.color.magenta));
+        portrait.setBackgroundColor(getResources().getColor(R.color.light_grey));
+        portrait.setTextColor(getResources().getColor(R.color.magenta));
+        whyHFTL.setBackgroundColor(getResources().getColor(R.color.light_grey));
+        whyHFTL.setTextColor(getResources().getColor(R.color.magenta));
+        employee.setBackgroundColor(getResources().getColor(R.color.light_grey));
+        employee.setTextColor(getResources().getColor(R.color.magenta));
+        contact.setBackgroundColor(getResources().getColor(R.color.light_grey));
+        contact.setTextColor(getResources().getColor(R.color.magenta));
+        services.setBackgroundColor(getResources().getColor(R.color.light_grey));
+        services.setTextColor(getResources().getColor(R.color.magenta));
     }
 }

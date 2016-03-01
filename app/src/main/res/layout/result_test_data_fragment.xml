@@ -38,11 +38,12 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:gravity="center_vertical"
                 android:id="@+id/text_study_course_one"
                 android:textSize="25sp"
                 android:text="Studiengang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="60dp" />
 
             <RelativeLayout
                 android:layout_margin="10dp"
@@ -76,11 +77,12 @@
 
 
             <TextView
+                android:gravity="center_vertical"
                 android:id="@+id/text_study_course_two"
                 android:textSize="25sp"
                 android:text="Studiengang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="60dp" />
 
             <RelativeLayout
                 android:layout_margin="10dp"
@@ -113,11 +115,12 @@
             </RelativeLayout>
 
             <TextView
+                android:gravity="center_vertical"
                 android:id="@+id/text_study_course_three"
                 android:textSize="25sp"
                 android:text="Studiengang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="60dp" />
 
             <RelativeLayout
                 android:layout_margin="10dp"
@@ -150,11 +153,12 @@
             </RelativeLayout>
 
             <TextView
+                android:gravity="center_vertical"
                 android:id="@+id/text_study_course_four"
                 android:textSize="25sp"
-                android:text="Studiengang"
+                android:text="Kommunikations- und Medieninformatik"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="60dp" />
 
             <RelativeLayout
                 android:layout_margin="10dp"

@@ -564,16 +564,14 @@ Herzlich Willkommen.
     <string name="SETTINGS_RESET">Zurücksetzen</string>
     <string name="SETTINGS_LANGUAGE_GERMAN">Deutsch</string>
     <string name="SETTINGS_LANGUAGE_ENGLISH">Englisch</string>
-    <string name="SETTINGS_LANGUAGE_TITLE">Sprache</string>
+    <string name="SETTINGS_DESIGN_DEFAULT">I like Colors</string>
+    <string name="SETTINGS_DESIGN_MAGENTA">Magenta pur</string>
     <string name="SETTINGS_DESIGN_TITLE">Design</string>
-    <string name="SETTINGS_DESIGN_INFO">Der hier eingegebene Wert wird auf alle Farben angewandt, die nicht Magenta sind. Er muss das Format #RRGGBB oder #AARRGGBB haben.</string>
-    <string name="SETTINGS_YOUR_VALUE">Der Wert </string>
-    <string name="SETTINGS_VALUE_SAVED"> wurde erfolgreich gespeichert.</string>
-    <string name="SETTINGS_WRONG_VALUE">Ihr Wert war ungültig.</string>
+    <string name="SETTINGS_LANGUAGE_TITLE">Sprache</string>
+    <string name="SETTINGS_DESIGN_CHANGED">Das Design wurde erfolgreich geändert.</string>
     <string name="SETTINGS_LANGUAGE_CHANGED_TO_GERMAN">Die Sprache wurde auf Deutsch geändert.</string>
     <string name="SETTINGS_LANGUAGE_CHANGED_TO_ENGLISH">Die Sprache wurde auf Englisch geändert.</string>
     <string name="SETTINGS_RESET_SUCCESS">Alle Werte wurden erfolgreich zurückgesetzt.</string>
-    <string name="SETTINGS_HINT_TEXT">hexadezimalen Wert eingeben</string>
 
     <string name="TEST_QUESTION_RESULT_TITLE">Auswertung</string>
     <string name="TEST_QUESTION_THE_QUESTION">Die Frage </string>
@@ -613,6 +611,21 @@ Herzlich Willkommen.
     <string name="ACTIVITY_MAIL_CHOOSER_TITLE">Mail Senden...</string>
     <string name="ACTIVITY_MAIL_EXTRA_SUBJECT">Frage</string>
     <string name="ACTIVITY_TOUCH_AGAIN">Erneut tippen zum Beenden.</string>
+
+    <string name="RESULT_DATA_STUDY_CATEGORY">Studienart</string>
+    <string name="RESULT_DATA_STUDY_DEGREE">Studiengrad</string>
+    <string name="RESULT_DATA_KMI_TITLE">Kommunikations- und Medieninformatik</string>
+    <string name="RESULT_DATA_IKT_TITLE">Informations- und Kommunikationstechnik</string>
+    <string name="RESULT_DATA_WI_TITLE">Wirtschaftsinformatik</string>
+    <string name="RESULT_DATA_AI_TITLE">Angewandte Informatik</string>
+    <string name="RESULT_DATA_BUTTUN_DECISION">Vorschlag</string>
+    <string name="RESULT_DATA_TITLE">Statistik</string>
+    <string name="RESULT_DATA_BACHELOR_OR_MASTER">Bachelor oder Master</string>
+    <string name="RESULT_DATA_BACHELOR">Bachelor</string>
+    <string name="RESULT_DATA_MASTER">Master</string>
+    <string name="RESULT_DATA_DUAL_TITLE">Dualstudium</string>
+    <string name="RESULT_DATA_JOB_TITLE_BUTTON">Berufsbegleitendes Studium</string>
+    <string name="RESULT_DATA_DIRECT_TITLE">Direktstudium</string>
 </resources>
 
 

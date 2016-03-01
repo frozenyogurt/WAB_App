@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,31 +32,35 @@ public class SettingsFragment extends MyRefreshFragment
         save.setText(getActivity().getResources().getString(R.string.SETTINGS_SAVE));
         Button reset = (Button) view.findViewById(R.id.button_reset);
         reset.setText(getActivity().getResources().getString(R.string.SETTINGS_RESET));
-        final EditText hex_value = (EditText) view.findViewById(R.id.hex_value);
-        hex_value.setHint(getActivity().getResources().getString(R.string.SETTINGS_HINT_TEXT));
         final CheckBox german = (CheckBox) view.findViewById(R.id.language_german);
         german.setText(getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_GERMAN));
         final CheckBox english = (CheckBox) view.findViewById(R.id.language_english);
         english.setText(getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_ENGLISH));
+        final CheckBox defaultDesign = (CheckBox) view.findViewById(R.id.default_design);
+        defaultDesign.setText(getActivity().getResources().getString(R.string.SETTINGS_DESIGN_DEFAULT));
+        final CheckBox magentaDesign = (CheckBox) view.findViewById(R.id.magenta_design);
+        magentaDesign.setText(getActivity().getResources().getString(R.string.SETTINGS_DESIGN_MAGENTA));
         TextView titleChangeLanguage = (TextView) view.findViewById(R.id.titleChangeLanguage);
         titleChangeLanguage.setText(getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_TITLE));
         TextView titleChangeDesign = (TextView) view.findViewById(R.id.titleChangeColor);
         titleChangeDesign.setText(getActivity().getResources().getString(R.string.SETTINGS_DESIGN_TITLE));
-        TextView textInfo = (TextView) view.findViewById(R.id.changeColorInfoText);
-        textInfo.setText("");
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 MainActivity activity = ((MainActivity) getActivity());
-                if (!hex_value.getText().toString().equals("")) {
-                    activity.setColor(hex_value.getText().toString());
-                    if (activity.convertColorString() != 0) {
-                        activity.refreshFragments();
-                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_YOUR_VALUE) +" "+ hex_value.getText().toString() +" "+ getActivity().getResources().getString(R.string.SETTINGS_VALUE_SAVED), Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_WRONG_VALUE), Toast.LENGTH_LONG).show();
+                if (defaultDesign.isChecked()) {
+                    if (((MainActivity) getActivity()).getColor() != null) {
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_DESIGN_CHANGED), Toast.LENGTH_LONG).show();
+                        ((MainActivity) getActivity()).refreshFragments();
                     }
+                    activity.setColor(null);
+                } else {
+                    if (((MainActivity) getActivity()).getColor() == null) {
+                        Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_DESIGN_CHANGED), Toast.LENGTH_LONG).show();
+                        ((MainActivity) getActivity()).refreshFragments();
+                    }
+                    activity.setColor(Integer.toHexString(getActivity().getResources().getColor(R.color.magenta)));
                 }
                 if (german.isChecked()) {
                     if (((MainActivity) getActivity()).getLanguage().equals("en")) {
@@ -72,24 +75,21 @@ public class SettingsFragment extends MyRefreshFragment
                     }
                     activity.setLocale("en");
                 }
-
-                hex_value.setText("");
             }
         });
 
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                MainActivity activity = ((MainActivity)getActivity());
-                if (activity.getColor() != null)
-                {
+            public void onClick(View v) {
+                MainActivity activity = ((MainActivity) getActivity());
+                if (activity.getColor() != null) {
                     activity.setColor(null);
                     activity.refreshFragments();
                 }
                 german.setChecked(true);
                 english.setChecked(false);
-                hex_value.setText("");
+                defaultDesign.setChecked(true);
+                magentaDesign.setChecked(false);
                 activity.setLocale("de");
                 showAToast(getActivity().getResources().getString(R.string.SETTINGS_RESET_SUCCESS));
             }
@@ -112,13 +112,39 @@ public class SettingsFragment extends MyRefreshFragment
         english.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (german.isChecked())
-                {
+                if (german.isChecked()) {
                     german.setChecked(false);
                 }
-                if (!english.isChecked())
-                {
+                if (!english.isChecked()) {
                     german.setChecked(true);
+                }
+            }
+        });
+
+        defaultDesign.setChecked(((MainActivity) getActivity()).getColor() == null);
+        defaultDesign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (magentaDesign.isChecked()) {
+                    magentaDesign.setChecked(false);
+                }
+                if (!defaultDesign.isChecked()) {
+                    magentaDesign.setChecked(true);
+                }
+            }
+        });
+
+        magentaDesign.setChecked(((MainActivity) getActivity()).getColor() != null);
+        magentaDesign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (defaultDesign.isChecked())
+                {
+                    defaultDesign.setChecked(false);
+                }
+                if (!magentaDesign.isChecked())
+                {
+                    defaultDesign.setChecked(true);
                 }
             }
         });

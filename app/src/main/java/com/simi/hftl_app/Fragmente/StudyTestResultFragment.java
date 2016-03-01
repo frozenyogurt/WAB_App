@@ -88,7 +88,7 @@ public class StudyTestResultFragment extends MyRefreshFragment
     {
         MainActivity activity = ((MainActivity)getActivity());
         String solution = "";
-        if (activity.getWinner() != null)
+        if (activity.getWinner() != null && !activity.getWinner().isEmpty())
         {
             ArrayList<StudyCourse> winner = activity.getWinner();
             if (winner.size() == 1)
@@ -120,7 +120,7 @@ public class StudyTestResultFragment extends MyRefreshFragment
                 solution = "Direkter Bachelor of Enigeering: Kommunikations- und Medieninformatik";
                 break;
             case IKT_MASTER:
-                solution = "Erst den direkten Master of Engineering: Informations- und Kommunikationstechnik und dann den direkten Master of Engineering: Informations- und Kommunikationstechnik in Englisch oder Deutsch";
+                solution = "Erst den direkten Bachelor of Engineering: Informations- und Kommunikationstechnik und dann den direkten Master of Engineering: Informations- und Kommunikationstechnik in Englisch oder Deutsch";
                 break;
             case WI_BACHELOR:
                 solution = "Direkter Bachlor of Science: Wirtschaftsinformatik";
