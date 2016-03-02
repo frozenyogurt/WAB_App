@@ -1,4 +1,4 @@
-package com.simi.hftl_app.Main;
+package com.simi.hftl_app.Model;
 
 import android.content.Context;
 import android.graphics.Bitmap;

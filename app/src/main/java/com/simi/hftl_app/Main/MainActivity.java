@@ -3,11 +3,13 @@ package com.simi.hftl_app.Main;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -28,6 +30,8 @@ import com.simi.hftl_app.Listen.FAQListItem;
 import com.simi.hftl_app.Listen.PersonListItem;
 import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.Model.Answer;
+import com.simi.hftl_app.Model.MyDragListener;
+import com.simi.hftl_app.Model.MyLongClickListener;
 import com.simi.hftl_app.Model.Question;
 import com.simi.hftl_app.Model.Rating;
 import com.simi.hftl_app.Model.StudyCourse;
@@ -94,6 +98,22 @@ public class MainActivity extends AppCompatActivity {
         education_button = (Button) findViewById(R.id.button_education);
         maps_button = (Button) findViewById(R.id.button_maps);
         hftl_button = (Button) findViewById(R.id.button_hftl_info);
+
+        study_button.setOnLongClickListener(new MyLongClickListener(getWidth()/2, this));
+        study_dual_button.setOnLongClickListener(new MyLongClickListener(getWidth() /2, this));
+        study_job_button.setOnLongClickListener(new MyLongClickListener(getWidth() /2, this));
+        study_test_button.setOnLongClickListener(new MyLongClickListener(getWidth() /2, this));
+        education_button.setOnLongClickListener(new MyLongClickListener(getWidth() /2, this));
+        maps_button.setOnLongClickListener(new MyLongClickListener(getWidth() /2, this));
+        hftl_button.setOnLongClickListener(new MyLongClickListener(getWidth() /2, this));
+
+        study_button.setOnDragListener(new MyDragListener(this, getResources().getColor(R.color.study_color)));
+        study_dual_button.setOnDragListener(new MyDragListener(this, getResources().getColor(R.color.study_dual_color)));
+        study_job_button.setOnDragListener(new MyDragListener(this, getResources().getColor(R.color.study_job_color)));
+        study_test_button.setOnDragListener(new MyDragListener(this, getResources().getColor(R.color.study_test_color)));
+        education_button.setOnDragListener(new MyDragListener(this, getResources().getColor(R.color.education_color)));
+        maps_button.setOnDragListener(new MyDragListener(this, getResources().getColor(R.color.maps_color)));
+        hftl_button.setOnDragListener(new MyDragListener(this, getResources().getColor(R.color.hftl_info_color)));
 
         setLocale(language);
 
@@ -642,6 +662,13 @@ public class MainActivity extends AppCompatActivity {
         this.rating = rating;
     }
 
+    public int getWidth()
+    {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        return size.x;
+    }
     /*public void openImage(int id)
     {
         Uri path = Uri.parse("" + id);

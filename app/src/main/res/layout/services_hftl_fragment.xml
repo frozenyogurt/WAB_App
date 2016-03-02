@@ -49,7 +49,7 @@
                     android:padding="5dp"
                     android:id="@+id/item_services_one">
 
-                    <com.simi.hftl_app.Main.RoundedImageView
+                    <com.simi.hftl_app.Model.RoundedImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:id="@+id/item_image_one" />
@@ -74,7 +74,7 @@
                     android:padding="5dp"
                     android:id="@+id/item_services_two">
 
-                    <com.simi.hftl_app.Main.RoundedImageView
+                    <com.simi.hftl_app.Model.RoundedImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:id="@+id/item_image_two" />
@@ -99,7 +99,7 @@
                     android:padding="5dp"
                     android:id="@+id/item_services_three">
 
-                    <com.simi.hftl_app.Main.RoundedImageView
+                    <com.simi.hftl_app.Model.RoundedImageView
                         android:id="@+id/item_image_three"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
@@ -133,7 +133,7 @@
                     android:padding="5dp"
                     android:id="@+id/item_services_four">
 
-                    <com.simi.hftl_app.Main.RoundedImageView
+                    <com.simi.hftl_app.Model.RoundedImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:id="@+id/item_image_four" />
@@ -158,7 +158,7 @@
                     android:padding="5dp"
                     android:id="@+id/item_services_five">
 
-                    <com.simi.hftl_app.Main.RoundedImageView
+                    <com.simi.hftl_app.Model.RoundedImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:id="@+id/item_image_five" />

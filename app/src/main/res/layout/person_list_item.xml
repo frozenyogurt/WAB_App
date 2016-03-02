@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         
-        <com.simi.hftl_app.Main.RoundedImageView
+        <com.simi.hftl_app.Model.RoundedImageView
             android:padding="10dp"
             android:id="@+id/person_image"
             android:adjustViewBounds="true"
