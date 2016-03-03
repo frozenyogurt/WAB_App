@@ -207,7 +207,7 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
         }
         activity.setRating(rating);
         ArrayList<StudyCourse> winner = rating.getWinner();
-        if (winner != null)
+        if (winner != null && !winner.isEmpty())
         {
             activity.setWinner(winner);
         }

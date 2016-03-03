@@ -222,7 +222,11 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed()
     {
         isMenuTapped = false;
-        String lastFragmentName = getSupportFragmentManager().getBackStackEntryAt(getSupportFragmentManager().getBackStackEntryCount() - 1).getName();
+        String lastFragmentName = null;
+        if(getSupportFragmentManager().getBackStackEntryCount() > 0)
+        {
+            lastFragmentName = getSupportFragmentManager().getBackStackEntryAt(getSupportFragmentManager().getBackStackEntryCount() - 1).getName();
+        }
         if (getSupportFragmentManager().getBackStackEntryCount() == 0)
         {
             questionsList = new ArrayList<>();
@@ -358,19 +362,19 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (color.equals(Integer.toHexString(getResources().getColor(R.color.magenta))))
         {
-            study_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            study_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
             study_button.setTextColor(getResources().getColor(R.color.magenta));
-            hftl_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            hftl_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
             hftl_button.setTextColor(getResources().getColor(R.color.magenta));
-            education_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            education_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
             education_button.setTextColor(getResources().getColor(R.color.magenta));
-            maps_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            maps_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
             maps_button.setTextColor(getResources().getColor(R.color.magenta));
-            study_dual_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            study_dual_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
             study_dual_button.setTextColor(getResources().getColor(R.color.magenta));
-            study_job_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            study_job_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
             study_job_button.setTextColor(getResources().getColor(R.color.magenta));
-            study_test_button.setBackgroundColor(getResources().getColor(R.color.light_grey));
+            study_test_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
             study_test_button.setTextColor(getResources().getColor(R.color.magenta));
         }
     }

@@ -45,7 +45,7 @@ public class MyDragListener implements View.OnDragListener
                 }
                 else if (draggedView.getId() != droppedView.getId() && activity.getColor() != null)
                 {
-                    droppedView.setBackgroundColor(activity.getResources().getColor(R.color.light_grey));
+                    droppedView.setBackgroundDrawable(activity.getResources().getDrawable(R.drawable.bordered_magenta));
                     ((Button)droppedView).setTextColor(activity.getResources().getColor(R.color.magenta));
                 }
                 break;
@@ -53,7 +53,7 @@ public class MyDragListener implements View.OnDragListener
             case DragEvent.ACTION_DROP:
                 if (activity.getColor() != null)
                 {
-                    droppedView.setBackgroundColor(activity.getResources().getColor(R.color.light_grey));
+                    droppedView.setBackgroundDrawable(activity.getResources().getDrawable(R.drawable.bordered_magenta));
                     ((Button)droppedView).setTextColor(activity.getResources().getColor(R.color.magenta));
                 }
                 if (draggedView.getId() != droppedView.getId())
@@ -88,7 +88,7 @@ public class MyDragListener implements View.OnDragListener
                 }
                 else if (activity.getColor() != null)
                 {
-                    droppedView.setBackgroundColor(activity.getResources().getColor(R.color.light_grey));
+                    droppedView.setBackgroundDrawable(activity.getResources().getDrawable(R.drawable.bordered_magenta));
                     ((Button)droppedView).setTextColor(activity.getResources().getColor(R.color.magenta));
                 }
                 break;

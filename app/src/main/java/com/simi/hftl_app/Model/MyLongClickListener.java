@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.R;
 
 /**
  * Created by student on 02.03.2016.
@@ -31,8 +32,17 @@ public class MyLongClickListener implements View.OnLongClickListener
         toast.setGravity(Gravity.BOTTOM,0,0);
         toast.show();
         ClipData data = ClipData.newPlainText("", "");
-        ColorDrawable color = (ColorDrawable) v.getBackground();
-        v.startDrag(data, new MyDragShadow(v, color.getColor(), halfOfDisplayWidth), v, 0);
+        ColorDrawable color = null;
+        if (activity.getColor() == null)
+        {
+            color =(ColorDrawable) v.getBackground();
+            v.startDrag(data, new MyDragShadow(v, color.getColor(), halfOfDisplayWidth), v, 0);
+        }
+        else
+        {
+            v.startDrag(data, new MyDragShadow(v, activity.getResources().getColor(R.color.magenta), halfOfDisplayWidth), v, 0);
+        }
+
         v.setBackgroundColor(Color.WHITE);
         ((Button)v).setTextColor(Color.WHITE);
         return false;
