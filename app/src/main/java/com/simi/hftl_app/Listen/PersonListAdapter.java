@@ -52,34 +52,42 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
         if (listItem.getPerson().equals(Person.STEPHAN))
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.stephan));
+            image.setTag(R.drawable.stephan);
         }
         else if (listItem.getPerson().equals(Person.SIMION))
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.simion));
+            image.setTag(R.drawable.simion);
         }
         else if (listItem.getPerson().equals(Person.FLORIAN))
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.florian));
+            image.setTag(R.drawable.florian);
         }
         else if (listItem.getPerson().equals(Person.MUELLER))
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.pbh_mueller_herr));
+            image.setTag(R.drawable.pbh_mueller_herr);
         }
         else if (listItem.getPerson().equals(Person.SAUPE))
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.pbh_saupe));
+            image.setTag(R.drawable.pbh_saupe);
         }
         else if (listItem.getPerson().equals(Person.BADERSCHNEIDER))
         {
             image.setImageDrawable(activity.getResources().getDrawable(R.drawable.pbh_baderschneider));
+            image.setTag(R.drawable.pbh_baderschneider);
         }
 
-        /*image.setOnClickListener(new View.OnClickListener() {
+        image.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-                activity.openImage(R.drawable.stephan);
+            public void onClick(View v)
+            {
+                activity.openImage((Integer) image.getTag());
             }
-        });**/
+        });
 
         LinearLayout send_mail = (LinearLayout) view.findViewById(R.id.send_mail);
         send_mail.setOnClickListener(new View.OnClickListener() {

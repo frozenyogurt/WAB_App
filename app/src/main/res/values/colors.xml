@@ -8,6 +8,7 @@
     <color name="light_grey">#cccccc</color>
     <color name="dark_grey">#999999</color>
     <color name="transparent_grey">#aaaaaaaa</color>
+    <color name="transparent_dark">#dd000000</color>
     <color name="statusbar_color">#CA0069</color>
     <color name="magenta">#e10075</color>
     <color name="light_magenta">#ff0099</color>

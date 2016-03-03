@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Point;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 import com.simi.hftl_app.Fragmente.DualStudyFragment;
 import com.simi.hftl_app.Fragmente.EducationFragment;
+import com.simi.hftl_app.Fragmente.FullscreenImageFragment;
 import com.simi.hftl_app.Fragmente.HFTLInfoFragment;
 import com.simi.hftl_app.Fragmente.JobStudyFragment;
 import com.simi.hftl_app.Fragmente.MenuFragment;
@@ -63,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<StudyCourse> winner;
     private StudyCourse alternative;
     private Rating rating;
+    private int imageID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -673,12 +676,18 @@ public class MainActivity extends AppCompatActivity {
         display.getSize(size);
         return size.x;
     }
-    /*public void openImage(int id)
+    public void openImage(int id)
     {
-        Uri path = Uri.parse("" + id);
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setDataAndType(path, "image/png");
-        startActivity(intent);
-    }**/
+        imageID = id;
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+        ft.add(R.id.activityLayout, new FullscreenImageFragment(), "FullscreenImageFragment");
+        ft.addToBackStack(FullscreenImageFragment.class.getSimpleName());
+        ft.commit();
+    }
+
+    public Drawable getImage()
+    {
+        return getResources().getDrawable(imageID);
+    }
 }
