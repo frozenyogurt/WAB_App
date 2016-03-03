@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.simi.hftl_app.Main.MainActivity;
@@ -33,6 +34,7 @@ public class MyLongClickListener implements View.OnLongClickListener
         ColorDrawable color = (ColorDrawable) v.getBackground();
         v.startDrag(data, new MyDragShadow(v, color.getColor(), halfOfDisplayWidth), v, 0);
         v.setBackgroundColor(Color.WHITE);
+        ((Button)v).setTextColor(Color.WHITE);
         return false;
     }
 }

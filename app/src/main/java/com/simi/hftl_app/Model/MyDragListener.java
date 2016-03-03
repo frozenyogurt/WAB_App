@@ -2,6 +2,7 @@ package com.simi.hftl_app.Model;
 
 import android.view.DragEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.simi.hftl_app.Main.MainActivity;
@@ -38,13 +39,23 @@ public class MyDragListener implements View.OnDragListener
                 break;
 
             case DragEvent.ACTION_DRAG_EXITED:
-                if (draggedView.getId() != droppedView.getId())
+                if (draggedView.getId() != droppedView.getId() && activity.getColor() == null)
                 {
                     droppedView.setBackgroundColor(this.color);
+                }
+                else if (draggedView.getId() != droppedView.getId() && activity.getColor() != null)
+                {
+                    droppedView.setBackgroundColor(activity.getResources().getColor(R.color.light_grey));
+                    ((Button)droppedView).setTextColor(activity.getResources().getColor(R.color.magenta));
                 }
                 break;
 
             case DragEvent.ACTION_DROP:
+                if (activity.getColor() != null)
+                {
+                    droppedView.setBackgroundColor(activity.getResources().getColor(R.color.light_grey));
+                    ((Button)droppedView).setTextColor(activity.getResources().getColor(R.color.magenta));
+                }
                 if (draggedView.getId() != droppedView.getId())
                 {
                     droppedView.setVisibility(View.GONE);
@@ -61,14 +72,25 @@ public class MyDragListener implements View.OnDragListener
 
                     draggedView.setVisibility(View.VISIBLE);
                     droppedView.setVisibility(View.VISIBLE);
-                    droppedView.setBackgroundColor(this.color);
+                    if (activity.getColor() == null)
+                    {
+                        droppedView.setBackgroundColor(this.color);
+                    }
                     owner.addView(droppedView);
                     container.addView(draggedView);
                 }
                 break;
 
             case DragEvent.ACTION_DRAG_ENDED:
-                droppedView.setBackgroundColor(this.color);
+                if (activity.getColor() == null)
+                {
+                    droppedView.setBackgroundColor(this.color);
+                }
+                else if (activity.getColor() != null)
+                {
+                    droppedView.setBackgroundColor(activity.getResources().getColor(R.color.light_grey));
+                    ((Button)droppedView).setTextColor(activity.getResources().getColor(R.color.magenta));
+                }
                 break;
 
             default:
