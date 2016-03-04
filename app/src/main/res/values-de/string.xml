@@ -2,16 +2,16 @@
 <resources>
     <string name="ICT_MASTER_BEGINNING_TEXT">"The Hochschule für Telekommunikation Leipzig(HfTL) starts with an international research and project oriented master's degree program in summer semester 2016 .  Information and Communication Technology Master´s degree programme is a full time Master course. \n
 The Information and Communication Technology programme completes the HfTL’s set of full time study options. This programme allows you to gain further qualifications and to receive training for special jobs in the ICT sector and management skills."</string>
-    <string name="ICT_MASTER_PERSPECTIVES_TEXT">Graduat es will be able to assess future developments in communication and computer networks. They will be able to apply the latest developments in these subjects. They will gain expertise and skills for signal description, analysis and the most common methods for generation, transmission and reception in optical transmission systems with highest data rates. Graduates of the study program will be able to evaluate the complexity and performance of modern transmission methods. /n
+    <string name="ICT_MASTER_PERSPECTIVES_TEXT">Graduat es will be able to assess future developments in communication and computer networks. They will be able to apply the latest developments in these subjects. They will gain expertise and skills for signal description, analysis and the most common methods for generation, transmission and reception in optical transmission systems with highest data rates. Graduates of the study program will be able to evaluate the complexity and performance of modern transmission methods. \n
 They will know the basics of calculation of the mobile multipath channel for wireless communicationand various communication protocols. They will have knowledge and skills to evaluate and apply IT-security systems. They will be able to plan and implement it-security systems. Project management and scientific methods will reinforce at this study program. </string>
-    <string name="ICT_MASTER_CURRICULUM_TEXT">Compulsory modules: /n
- Applied Mathematics /n
- ICT Consulting /n
- Project Management /n
- ICT lab courses /n
- Law /n
- Project work /n
-Specialisation 10 modules for specialisation in communication technology or information technology /n
+    <string name="ICT_MASTER_CURRICULUM_TEXT">Compulsory modules: \n
+ Applied Mathematics \n
+ ICT Consulting \n
+ Project Management \n
+ ICT lab courses \n
+ Law \n
+ Project work \n
+Specialisation 10 modules for specialisation in communication technology or information technology \n
 Please refer to the curriculum to find courses currently available.</string>
     <!-- Trennzeichen -->
         <string name="KMI_BACHELOR_BEGINNING_TEXT">Ohne Fachexperten wäre das Smartphone nur ein Stück Plastik.
@@ -20,7 +20,7 @@ Please refer to the curriculum to find courses currently available.</string>
             Wenn Du immer auf dem neuesten Stand bist und wissen willst, was die sozialen Medien am Leben erhält, wie Apps entstehen und wie moderne Datenströme fließen, ist Kommunikations- und Medieninformatik Dein Fach.
             Im Fokus des Studienganges stehen Medien und ihre Technologie</string>
     <string name="KMI_BACHELOR_PERSPECTIVES_TEXT">Unternehmen organisieren sich immer stärker in Netzwerken: Zulieferer, Partner und Kunden werden in großen Systemen organisiert.
-        Hierfür braucht man Softwareentwickler und Systembetreuer – und damit Dich. Du lernst, wie man sichere Netze konzipiert, entwickelt und einführt. /n
+        Hierfür braucht man Softwareentwickler und Systembetreuer – und damit Dich. Du lernst, wie man sichere Netze konzipiert, entwickelt und einführt. \n
         Auch im Projektmanagement kannst Du als SystemarchitektIn oder SystemdesignerIn arbeiten – nicht nur bei der Telekom: Auch andere Informations- und Telekommunikationsunternehmen melden einen hohen Fachkräftebedarf für Leute mit Deiner Ausbildung an.</string>
     <string name="KMI_BACHELOR_CURRICULUM_TEXT">- allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch) \n
                 - Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) \n
@@ -90,7 +90,8 @@ Kommunikations- und Medieninformatik vermittelt Kenntnisse aus den Bereichen Phy
     <!-- Trennzeichen -->
     <string name="IKT_MASTER_BEGINNING_TEXT">Mit einem Master in Informations- und Kommunikationstechnik legst Du einen wichtigen Grundstein für Deine Karriere in der Telekommunikationsbranche.
         Der Abschluss eröffnet Dir aber noch ganz andere Möglichkeiten: Vertiefte Fachkenntnisse in Telekommunikation, Informatik und Schlüsselqualifikationen aus BWL, Recht und Projektmanagement machen Dich bereit für leitende Positionen ganz weit oben auf der Karriereleiter.\n
-        Mit dem Master erhältst Du alle Voraussetzungen, um komplexe Telekommunikationssysteme verantwortlich zu entwickeln und Führungsverantwortung zu übernehmen.</string>
+        Mit dem Master erhältst Du alle Voraussetzungen, um komplexe Telekommunikationssysteme verantwortlich zu entwickeln und Führungsverantwortung zu übernehmen.\n
+    Eine Besonderheit ist, dass du diesen Master auch in Englischer Sprache machen kannst.</string>
     <string name="IKT_MASTER_PERSPECTIVES_TEXT">Informations- und KommunikationstechnikerInnen arbeiten in nahezu allen Branchen und in den unterschiedlichsten Bereichen.
         Ihr Fachwissen sowie ihre Management- und Methodenkompetenz werden von Unternehmen wie der Deutschen Telekom, SAP, Siemens oder IBM weltweit geschätzt.
         Als Master-AbsolventIn der Informations- und Kommunikationstechnik kannst Du Projekte managen und effizient führen – schließlich durchschaust Du auch die ökonomischen Zusammenhänge.\n
@@ -285,17 +286,17 @@ Kommunikations- und Medieninformatik vermittelt Kenntnisse aus den Bereichen Phy
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <string name="ACCEPTED">Nach der Tagung der Zulassungskommission Anfang August werden die Zulassungen oder Absagen umgehend an die Bewerber verschickt.</string>
-    <string name="APARTMENTS">Für Direktstudenten unterstützt das Studentenwerk Leipzig bei der Wohnungssuche, das eigene Unterkünfte zur Verfügung stellt. Die Hochschule selbst vermittelt keine Wohnheimplätze./n
+    <string name="APARTMENTS">Für Direktstudenten unterstützt das Studentenwerk Leipzig bei der Wohnungssuche, das eigene Unterkünfte zur Verfügung stellt. Die Hochschule selbst vermittelt keine Wohnheimplätze.\n
         In Leipzig gibt es ein großes Angebot an bezahlbarem Wohnraum; gerade für Studenten bieten Leipziger Wohnungsunternehmen viele Alternativen an. </string>
     <string name="INTERNSHIP">Nein, für ein Studium an der HfTL benötigst Du kein Vorpraktikum als Zugangsvoraussetzung.</string>
-    <string name="MEANING_ACCREDITATION">Im Rahmen des Bologna-Prozesses und der Vereinheitlichung der zu erwerbenden Abschlüsse sind die Hochschulen und Universitäten angehalten, Ihre Studiengänge und Studieninhalte durch Akkreditierungsgesellschaften hinsichtlich der Qualität kontinuierlich überprüfen zu lassen. /n
+    <string name="MEANING_ACCREDITATION">Im Rahmen des Bologna-Prozesses und der Vereinheitlichung der zu erwerbenden Abschlüsse sind die Hochschulen und Universitäten angehalten, Ihre Studiengänge und Studieninhalte durch Akkreditierungsgesellschaften hinsichtlich der Qualität kontinuierlich überprüfen zu lassen. \n
 Die Hochschule für Telekommunikation Leipzig hat für alle angebotenen Studiengänge eine Akkreditierung. Damit bestätigt die Agenturen, die hohe Qualität der Ausbildung und die erfolgreiche Umsetzung und Fortführung des Bologna-Prozesses an der HfTL.</string>
-    <string name="STUDY_CATEGORY_DIFFERENCE">Ein kooperativer Studiengang wird kombiniert mit einem Ausbildungsvertrag bei der Deutschen Telekom und dient der beruflichen Erstausbildung./n
+    <string name="STUDY_CATEGORY_DIFFERENCE">Ein kooperativer Studiengang wird kombiniert mit einem Ausbildungsvertrag bei der Deutschen Telekom und dient der beruflichen Erstausbildung.\n
         Das berufsbegleitende Studium stellt eine Weiterbildungsmöglichkeit für bereits ausgebildete Berufstätige, nicht nur der Deutschen Telekom AG, dar.</string>
     <string name="STUDY_COSTS">Die Gebühren belaufen sich auf 250 Euro pro Monat.</string>
     <string name="STUDY_COSTS_SEMESTER">Der Semesterbeitrag beträgt 184,50 Euro.</string>
     <string name="STUDY_FAR_AWAY">Da die HfTL über ein weites Netz an Partnerhochschule auf der ganzen Welt verfügt, an denen Auslandsemester absolviert werden können, ist die Anrechnung von im Ausland erbrachten Studienleistungen gewährleistet.</string>
-    <string name="WHICH_STUDY_COURSE">Um das zu erfahren, haben wir für Dich einen Studiengangtest gefunden, den du im Hauptmenü findest und dich nach deinen Vorstellungen berät. /n
+    <string name="WHICH_STUDY_COURSE">Um das zu erfahren, haben wir für Dich einen Studiengangtest gefunden, den du im Hauptmenü findest und dich nach deinen Vorstellungen berät. \n
 Weitere Möglichkeiten sich vorab über die HfTL zu informieren, gibt es bei unserem Tag der offenen Hochschultür und dem jährlich statt findenden Schnupperstudium. Des Weiteren kannst Du problemlos über unsere Serviceline (0341 3062 123) einen Termin zum Kennenlernen vereinbaren - und wir zeigen Dir die Hochschule.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
@@ -386,15 +387,15 @@ Herzlich Willkommen.
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="why_hftl_text">Du interessierst Dich für ein Studium an der HfTL? /n
+    <string name="why_hftl_text">Du interessierst Dich für ein Studium an der HfTL? \n
     Dann können wir Dich an dieser Stelle bereits herzlich beglückwünschen.
         An der Hochschule für Telekommunikation Leipzig erhältst Du eine individuelle und nachhaltige Ausbildung, die Dich perfekt auf den Einstieg in die faszinierende, internationale Telekommunikationsbranche vorbereitet.
-        Deine Ideen sind von Anfang an gefragt: Aus unserem Studienangebot kannst Du Dir die Studienart und den Studiengang auswählen, der am besten zu Deinen persönlichen Bedürfnissen passt./n
-        /n
+        Deine Ideen sind von Anfang an gefragt: Aus unserem Studienangebot kannst Du Dir die Studienart und den Studiengang auswählen, der am besten zu Deinen persönlichen Bedürfnissen passt.\n
+        \n
         Ein hoher Praxisanteil und Übungen in modern ausgestatteten Laboratorien sowie vielfältige Unternehmenseinblicke machen Dein Studium abwechslungsreich.
-        Dazu sorgt die Deutsche Telekom als Träger der HfTL und weltweiter Innovationsführer der Telekommunikationsbranche dafür, dass Inhalte und Ausstattung unserer Hochschule immer up-to-date sind. /n
-        /n
-        7 Weitere Gründe, die Dir Deine Entscheidung für die HfTL leicht machen werden, sind:/n
+        Dazu sorgt die Deutsche Telekom als Träger der HfTL und weltweiter Innovationsführer der Telekommunikationsbranche dafür, dass Inhalte und Ausstattung unserer Hochschule immer up-to-date sind. \n
+        \n
+        7 Weitere Gründe, die Dir Deine Entscheidung für die HfTL leicht machen werden, sind:\n
         1.
     </string>
 
