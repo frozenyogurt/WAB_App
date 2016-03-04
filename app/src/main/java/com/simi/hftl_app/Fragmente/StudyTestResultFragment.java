@@ -3,6 +3,7 @@ package com.simi.hftl_app.Fragmente;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,9 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.Category;
 import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.R;
 
@@ -34,12 +37,51 @@ public class StudyTestResultFragment extends MyRefreshFragment
 
         Button end = (Button) view.findViewById(R.id.end_test);
         end.setText(getActivity().getResources().getString(R.string.TEST_RESULT_END_TEST));
-        end.setOnClickListener(new View.OnClickListener()
+        end.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity) getActivity()).endTest(true);
+            }
+        });
+
+        Button info = (Button) view.findViewById(R.id.study_info_button);
+        info.setText("Infomationen");
+        info.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                ((MainActivity)getActivity()).endTest(true);
+                MainActivity activity = ((MainActivity)getActivity());
+                ArrayList<StudyCourse> course = new ArrayList<>();
+                if (activity.getWinner() != null && !activity.getWinner().isEmpty())
+                {
+                    course = activity.getWinner();
+                }
+                else if (activity.getAlternative() != null)
+                {
+                    course.add(activity.getAlternative());
+                }
+                activity.setClickedElement(new StudyListItem((MainActivity) getActivity(), course.get(course.size() - 1)));
+                if (activity.getClickedElement() != null)
+                {
+                    if (activity.getClickedElement().getCategory().equals(Category.DUAL))
+                    {
+                        activity.setToolbarTitle(activity.getResources().getString(R.string.ACTIVITY_DUAL_TITLE));
+                }
+                    else if (activity.getClickedElement().getCategory().equals(Category.JOB))
+                    {
+                        activity.setToolbarTitle(activity.getResources().getString(R.string.ACTIVITY_JOB_TITLE));
+                    }
+                    else
+                    {
+                        activity.setToolbarTitle(activity.getResources().getString(R.string.ACTIVITY_DIRECT_TITLE));
+                    }
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                    ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out);
+                    ft.add(R.id.activityLayout, new StudyInfoFragment(), "StudyInfoFragment");
+                    ft.addToBackStack(StudyInfoFragment.class.getSimpleName());
+                    ft.commit();
+                }
             }
         });
 
@@ -72,13 +114,14 @@ public class StudyTestResultFragment extends MyRefreshFragment
             int pixels = (int) (10 * scale + 0.5f);
             shape.setCornerRadius(pixels);
             shape.setColor(color);
-            end.setBackgroundDrawable(shape);
+            info.setBackgroundDrawable(shape);
         }
         else
         {
             color = getActivity().getResources().getColor(R.color.study_test_color);
             layout.setBackgroundColor(color);
-            end.setBackgroundResource(R.drawable.round_button_test);
+            end.setBackgroundResource(R.drawable.round_button_grey);
+            info.setBackgroundResource(R.drawable.round_button_test);
         }
 
         return view;

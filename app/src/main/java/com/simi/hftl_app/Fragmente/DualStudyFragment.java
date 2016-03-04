@@ -33,10 +33,10 @@ public class DualStudyFragment extends MyRefreshFragment
 
         ListView list = (ListView) view.findViewById(R.id.listViewStudyDual);
         final ArrayList<StudyListItem> items = new ArrayList<>();
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.KMI_BACHELOR_NAME), StudyCourse.DUAL_KMI_BACHELOR));
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.WI_BACHELOR_NAME), StudyCourse.DUAL_WI_BACHELOR));
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.AI_BACHELOR_NAME), StudyCourse.DUAL_AI_BACHELOR));
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.WI_MASTER_NAME), StudyCourse.DUAL_WI_MASTER));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.DUAL_KMI_BACHELOR));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.DUAL_WI_BACHELOR));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.DUAL_AI_BACHELOR));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.DUAL_WI_MASTER));
         StudyListAdapter adapter = new StudyListAdapter((MainActivity) getActivity(), R.layout.study_list_item, items);
         list.setAdapter(adapter);
 

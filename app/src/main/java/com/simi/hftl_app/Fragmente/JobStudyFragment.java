@@ -33,11 +33,11 @@ public class JobStudyFragment extends MyRefreshFragment
 
         ListView list = (ListView) view.findViewById(R.id.listViewStudyJob);
         final ArrayList<StudyListItem> items = new ArrayList<>();
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.IKT_BACHELOR_NAME), StudyCourse.JOB_IKT_BACHELOR));
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.KMI_BACHELOR_NAME), StudyCourse.JOB_KMI_BACHELOR));
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.WI_BACHELOR_NAME), StudyCourse.JOB_WI_BACHELOR));
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.IKT_MASTER_NAME), StudyCourse.JOB_IKT_MASTER));
-        items.add(new StudyListItem(getActivity().getResources().getString(R.string.WI_MASTER_NAME), StudyCourse.JOB_WI_MASTER));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.JOB_IKT_BACHELOR));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.JOB_KMI_BACHELOR));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.JOB_WI_BACHELOR));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.JOB_IKT_MASTER));
+        items.add(new StudyListItem((MainActivity) getActivity(), StudyCourse.JOB_WI_MASTER));
         StudyListAdapter adapter = new StudyListAdapter((MainActivity) getActivity(), R.layout.study_list_item, items);
         list.setAdapter(adapter);
 

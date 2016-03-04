@@ -255,8 +255,13 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (lastFragmentName.equals("ResultTestDataFragment")
                     || lastFragmentName.equals("MenuFragment")
-                    || lastFragmentName.equals("StudyTestResultFragment"))
+                    || lastFragmentName.equals("StudyTestResultFragment")
+                    || lastFragmentName.equals("StudyInfoFragment"))
             {
+                if (lastFragmentName.equals("StudyInfoFragment"))
+                {
+                    setToolbarTitle(getResources().getString(R.string.ACTIVITY_Test_TITLE));
+                }
                 if (lastFragmentName.equals("MenuFragment"))
                 {
                     setCurrentPage(getCurrentViewPagerItem());
@@ -264,7 +269,9 @@ public class MainActivity extends AppCompatActivity {
                 refreshFragments();
                 isGoBack = false;
             }
-            else if (!(lastFragmentName.equals("SettingsFragment") || lastFragmentName.equals("AboutUsFragment")))
+            else if (!(lastFragmentName.equals("SettingsFragment")
+                    || lastFragmentName.equals("AboutUsFragment")
+                    || lastFragmentName.equals("FullscreenImageFragment")))
             {
                 questionsList = new ArrayList<>();
                 isGoBack = false;

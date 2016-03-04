@@ -18,5 +18,4 @@ public enum StudyCourse
     JOB_WI_BACHELOR,
     JOB_WI_MASTER,
     JOB_IKT_MASTER,
-    ICT_MASTER
 }
