@@ -55,18 +55,18 @@ public class Rating
             {
                 if (winners.get(2).equals(RatingCategory.IKT))
                 {
-                    return StudyCourse.IKT_BACHELOR;
+                    return StudyCourse.JOB_IKT_BACHELOR;
                 }
             }
             else if (winners.get(1).equals(RatingCategory.MASTER))
             {
                 if (winners.get(2).equals(RatingCategory.KMI))
                 {
-                    return StudyCourse.JOB_IKT_MASTER;
+                    return StudyCourse.DUAL_KMI_BACHELOR;
                 }
                 else if (winners.get(2).equals(RatingCategory.AI))
                 {
-                    return StudyCourse.JOB_IKT_MASTER;
+                    return StudyCourse.DUAL_AI_BACHELOR;
                 }
                 else if (winners.get(2).equals(RatingCategory.IKT))
                 {
@@ -80,18 +80,18 @@ public class Rating
             {
                 if (winners.get(2).equals(RatingCategory.AI))
                 {
-                    return StudyCourse.KMI_BACHELOR;
+                    return StudyCourse.DUAL_AI_BACHELOR;
                 }
             }
             else if (winners.get(1).equals(RatingCategory.MASTER))
             {
                 if (winners.get(2).equals(RatingCategory.KMI))
                 {
-                    return StudyCourse.IKT_MASTER;
+                    return StudyCourse.KMI_BACHELOR;
                 }
                 else if (winners.get(2).equals(RatingCategory.AI))
                 {
-                    return StudyCourse.IKT_MASTER;
+                    return StudyCourse.DUAL_AI_BACHELOR;
                 }
                 else if (winners.get(2).equals(RatingCategory.WI))
                 {

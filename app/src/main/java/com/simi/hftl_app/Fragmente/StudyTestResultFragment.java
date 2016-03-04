@@ -87,7 +87,7 @@ public class StudyTestResultFragment extends MyRefreshFragment
 
         MainActivity activity = ((MainActivity)getActivity());
         TextView solutionText = (TextView) view.findViewById(R.id.solution_text_test);
-        if (activity.getWinner() != null)
+        if (activity.getWinner() != null && !activity.getWinner().isEmpty())
         {
             solutionText.setText("Der folgende Studiengang passt perfekt zu dir:");
         }

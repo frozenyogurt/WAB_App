@@ -590,8 +590,13 @@ Herzlich Willkommen.
 
     <string name="TEST_START">Test starten</string>
     <string name="TEST_START_BEGINNING">Einführung</string>
-    <string name="TEST_START_DESCRIPTION">Beschreibung des Testes.</string>
-    <string name="TEST_START_ATTENTION">Simmis Achtung Achtung Text.</string>
+    <string name="TEST_START_DESCRIPTION">Bei der Durchführung des Testes, bitten wir Dich folgende Punkte zu beachten:\n
+- Jede Frage muss beantwortet werden\n
+- Du kannst nur eine Antwort auswählen\n
+- Wenn Du dir nicht sicher bist, nimm die Antwort, die dir am ehesten zusagt\n
+- Zur Navigation dienen die Pfeile oder das Streichen über den Bildschirm</string>
+    <string name="TEST_START_ATTENTION">Willkommen beim Studiengangtest!\n
+Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dich bezüglich der Studienart und dem Studiengrad. Trotz unserer Auswertung kannst Du dich natürlich auch gerne für etwas anderes entscheiden.</string>
 
     <string name="FAQ_SEE_ANSWER">Antwort ansehen</string>
     <string name="STUDY_LIST_MORE">Mehr erfahren</string>
