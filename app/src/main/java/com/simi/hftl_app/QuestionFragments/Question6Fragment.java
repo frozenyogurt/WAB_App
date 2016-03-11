@@ -44,6 +44,25 @@ public class Question6Fragment extends MyRefreshFragment
         {
             currentQuestion = new Question("Frage unbekannt");
         }
+
+        int color = activity.convertColorString();
+        if (color != 0)
+        {
+            questionOne.setButtonDrawable(R.drawable.checkbox_selector_magenta);
+            questionTwo.setButtonDrawable(R.drawable.checkbox_selector_magenta);
+            questionThree.setButtonDrawable(R.drawable.checkbox_selector_magenta);
+            questionFour.setButtonDrawable(R.drawable.checkbox_selector_magenta);
+            questionFive.setButtonDrawable(R.drawable.checkbox_selector_magenta);
+        }
+        else
+        {
+            questionOne.setButtonDrawable(R.drawable.checkbox_selector_green);
+            questionTwo.setButtonDrawable(R.drawable.checkbox_selector_green);
+            questionThree.setButtonDrawable(R.drawable.checkbox_selector_green);
+            questionFour.setButtonDrawable(R.drawable.checkbox_selector_green);
+            questionFive.setButtonDrawable(R.drawable.checkbox_selector_green);
+        }
+
         questionName.setText(currentQuestion.getQuestionName());
         for (int i = 0; i < currentQuestion.getAnswers().size(); i++)
         {

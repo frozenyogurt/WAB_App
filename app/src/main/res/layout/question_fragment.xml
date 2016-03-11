@@ -23,6 +23,7 @@
         android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 1"
+        android:button="@drawable/checkbox_selector_green"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -32,6 +33,7 @@
         android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 2"
+        android:button="@drawable/checkbox_selector_green"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -41,6 +43,7 @@
         android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 3"
+        android:button="@drawable/checkbox_selector_green"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -49,6 +52,7 @@
         android:clickable="true"
         android:textSize="15sp"
         android:padding="10dp"
+        android:button="@drawable/checkbox_selector_green"
         android:text="Antwort 4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -56,6 +60,7 @@
     <CheckBox
         android:id="@+id/answer_five"
         android:clickable="true"
+        android:button="@drawable/checkbox_selector_green"
         android:textSize="15sp"
         android:padding="10dp"
         android:text="Antwort 5"
