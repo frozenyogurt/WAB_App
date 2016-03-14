@@ -396,9 +396,45 @@ Herzlich Willkommen.
         Dazu sorgt die Deutsche Telekom als Träger der HfTL und weltweiter Innovationsführer der Telekommunikationsbranche dafür, dass Inhalte und Ausstattung unserer Hochschule immer up-to-date sind. \n
         \n
         7 Weitere Gründe, die Dir Deine Entscheidung für die HfTL leicht machen werden, sind:\n
-        1.
     </string>
-
+    <string name="title_reason_one">1. Das Studium an der HfTL ist individuell und flexibel</string>
+    <string name="reason_one">Neben einem direkten Studium kannst Du an der HfTL auch neben dem Beruf oder kombiniert mit einem Praxiseinsatz bei der Telekom studieren. So kannst Du Dein Studium Deinen persönlichen Wünschen und Bedürfnissen anpassen und Deinen Weg zu einer erfolgreichen Berufslaufbahn finden.</string>
+    <string name="title_reason_two">2. Du studierst über den Tellerrand hinaus</string>
+    <string name="reason_two">Wir unterstützen und ermutigen Dich bei der Planung von Semestern, Praktika oder Abschlussarbeiten im Ausland, zum Beispiel an einer unserer internationalen Partnerhochschulen. Die Erfahrungen, die Du dabei sammelst, können Dein Leben bereichern - beruflich und persönlich.</string>
+    <string name="title_reason_three">3. Du lernst und forschst gemeinsam mit starken Partnern</string>
+    <string name="reason_three">Gemeinsam mit Partnern aus der Wirtschaft und der Deutschen Telekom kannst Du während des Studiums an der HfTL an spannenden Forschungsprojekten praktisch mitwirken! Neben der Bereicherung für Deinen Erfahrungshorizont kannst Du wertvolle Kontakte knüpfen, die Dir in Deinem späteren Berufsleben sehr nützlich werden können.</string>
+    <string name="title_reason_four">4. Du studierst auf einem übersichtlichen und ansprechenden Campus</string>
+    <string name="reason_four">Vom Hörsaal über die Labore bis in die Cafeteria – auf unserem Campus in Leipzig erreichst Du alle wichtigen Stellen schnell und unkompliziert. In familiärer Atmosphäre kannst Du hier lernen oder einfach mal eine Pause in entspannender Umgebung machen.</string>
+    <string name="title_reason_five">5. Du hast gute finanzielle Aussichten durch Stipendien und Studienförderungen</string>
+    <string name="reason_five">Individuelle Betreuung und gut ausgebildete Lehrkräfte: An der HfTL kannst Du alle Vorteile einer privaten Hochschule genießen. Und das ohne Studiengebühren – denn mit unserem MINT-Bonbon Stipendium sind die Studiengebühren im Direktstudium nach einer erfolgreichen Bewerbung „gelutscht“!\n
+        Im dualen Studium werden die Studiengebühren von Deinem neuen Arbeitgeber, der Deutschen Telekom, übernommen.\n
+        Im berufsbegleitenden Studium fördert die Deutsche Telekom die Mitarbeiter des Konzerns und Du musst nur einen Teil der Studiengebühren selbst erbringen.</string>
+    <string name="title_reason_six">6. Du kannst Die Zukunft und die Gesellschaft mitgestalten</string>
+    <string name="reason_six">Mit einem Abschluss der Hochschule für Telekommunikation Leipzig in der Tasche bist du als Berufseinsteiger gern gesehen. So bekommst Du die Möglichkeit, mit Deinem Wissen und Können die Zukunft mit zu gestalten.</string>
+    <string name="title_reason_seven">7. Du studierst in einer lebendigen und wachsenden Stadt</string>
+    <string name="reason_seven">Leipzig ist in: In den letzten Jahren hat sich die sächsische Stadt zu einem Anziehungspunkt für die internationale Kunst- und Kulturszene entwickelt – der Spaßfaktor ist hoch. Leipzig gehört seit 2010 zu den am schnellsten wachsenden Städten Deutschlands.\n
+        Dennoch sind die Lebenshaltungskosten niedrig – perfekte Voraussetzungen für ein angenehmes Studentenleben.</string>
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- AB HIER Portrait -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <string name="portrait_text_one">Hier siehst Du ein Bild der HfTL von vor 60 Jahren. Schon damals, bereits 20 Jahre vor der Erfindung des Internets, konnte man hier die Zukunft der Nachrichtenübertragung aktiv mitgestalten.</string>
+    <string name="portrait_text_two">Und wie die HfTL heute aussieht, siehst du hier.\n
+    Eine Hochschule, die weiterhin für Fortschritt und Innovation steht und sich in Deutschland und international einen einzigartigen Status geschaffen hat.\n
+    An unserer Hochschule betreiben wir gemeinsam mit Partnern der Deutschen Telekom AG und aus der Industrie Forschung und Entwicklung. Dies bedeutet große Praxisnähe: Projekte können unter Deiner aktiven Beteiligung aus der Planungs- in die Realisierungsphase überführt werden.
+    </string>
+    <!-- NEU -->
     <!-- NEU -->
     <!-- NEU -->
     <!-- NEU -->

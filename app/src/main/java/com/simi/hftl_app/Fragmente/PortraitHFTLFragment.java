@@ -19,6 +19,8 @@ public class PortraitHFTLFragment extends MyRefreshFragment
 {
     public PortraitHFTLFragment() {}
 
+    //hhh
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -45,10 +47,10 @@ public class PortraitHFTLFragment extends MyRefreshFragment
         ImageView imageOne = (ImageView) view.findViewById(R.id.portrait_image_one);
         ImageView imageTwo = (ImageView) view.findViewById(R.id.portrait_image_two);
 
-        textOne.setText("Portrait Text");
-        textTwo.setText("Portrait Text");
-        imageOne.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.news_pic_test));
-        imageTwo.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.news_pic_test));
+        textOne.setText(getActivity().getResources().getString(R.string.portrait_text_one));
+        textTwo.setText(getActivity().getResources().getString(R.string.portrait_text_two));
+        imageOne.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.hftl_old_days));
+        imageTwo.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.Telekom_Hochschule));
 
         return view;
     }
