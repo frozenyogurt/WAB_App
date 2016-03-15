@@ -316,21 +316,21 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <!-- NEU -->
     <!-- NEU -->
     <string name="STEPHAN_NAME">Stephan Wagener</string>
-    <string name="STEPHAN_DESCRIPTION">Ich bin Stephan und meine Aufgabe war die Kernentwicklung unserer HFTL App und aller Funktionalitäten. Außerdem fungiere ich als Ansprechpartner für alle Fragen hinsichtlich Änderungen an der App. Wer Kontakt zu mir aufnehmen möchte, erreicht mich unter folgender E-Mail Adresse: s133235@hftl.de</string>
+    <string name="STEPHAN_DESCRIPTION">I'm Stephan and my job was programming this HfTL app and all it's functionalities. Additionally I am your contact for all questions regarding changes of the app. If you want to contact me, you can do so at s133235@hftl.de</string>
     <string name="STEPHAN_MAIL">s133235@hftl.de</string>
 
     <string name="SIMION_NAME">Björn Simion Beuran</string>
-    <string name="SIMION_DESCRIPTION">Hey lieber Studieninteressierter! Ich hoffe ich konnte dir mit dieser App ein wenig bei deiner Studiengangwahl helfen und dich für die HFTL überzeugen. Schließlich bin ich für den Inhalt, die Ideen und das Design der App zuständig. Wenn dir also noch etwas einfällt oder du noch Fragen hast, kannst du mich gerne unter folgender E-Mail erreichen: s133202@hftl.de</string>
+    <string name="SIMION_DESCRIPTION">Hey study-enthusiast! I hope with this app I was able to help you choose the ideal study major and interest you i the HfTL. Also, I am responsible for the content, design and ideas behind this app. So if you have any remarks or questions contact me at s133202@hftl.de</string>
     <string name="SIMION_MAIL">s133202@hftl.de</string>
 
     <string name="FLORIAN_NAME">Florian Hollas</string>
-    <string name="FLORIAN_DESCRIPTION">Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast du hier die Möglichkeit: s133215@hftl.de</string>
+    <string name="FLORIAN_DESCRIPTION">Would you like to take a look at the doucmentation of this app? I can help you out, guaranteed. As project manager I did not only take care of the organisational tasks but rather documented all of our work, hopefully leaving no question unanswered. So if you want to take a look or if you have any general questions about this project, don't hesitate to contact me at s133215@hftl.de</string>
     <string name="FLORIAN_MAIL">s133215@hftl.de</string>
 
-    <string name="CONTACT_HFTL_TITLE">Kontakt der HfTL</string>
-    <string name="CONTACT_DEVELOPER_TITLE">Kontakt der Entwickler</string>
-    <string name="SEND_MAIL">Mail Senden</string>
-    <string name="SEND_FORM">Formular über die Website abschicken</string>
+    <string name="CONTACT_HFTL_TITLE">HfTL Contact</string>
+    <string name="CONTACT_DEVELOPER_TITLE">Developer Contact</string>
+    <string name="SEND_MAIL">Send Mail</string>
+    <string name="SEND_FORM">Send form through the website.</string>
 
     <string name="KMI_BACHELOR_NAME">Kommunikations- und Medieninformatik (Bachelor)</string>
     <string name="WI_BACHELOR_NAME">Wirtschaftsinformatik (Bachelor)</string>
@@ -341,7 +341,7 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="EDUCATION_BEC_NAME">Business English Cambridge (BEC)</string>
     <string name="EDUCATION_CAE_NAME">Cambridge Advanced English (CAE)</string>
     <string name="EDUCATION_IT_NAME">Intercultural Training</string>
-    <string name="EDUCATION_ID_NAME">Intensivkurs Deutsch</string>
+    <string name="EDUCATION_ID_NAME">Crash Course German</string>
 
     <string name="EMPLOYEE_TITLE_TEXT">Mitarbeiter</string>
     <string name="REKTOR_SAUPE_NAME">Rektor: Prof. Dr.-Ing. habil. Volker Saupe</string>
@@ -431,19 +431,19 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="SERVICES_LINKS_STATISTA">Statista</string>
     <string name="SERVICES_LINKS_STUDY_FACTORY">Studentenwerk Leipzig</string>
 
-    <string name="SERVICES_SPORT_WEBSITE">Anmeldung und Informationen</string>
-    <string name="SERVICES_SPORT_TITLE_ONE">Sportangebote an der HfTL</string>
-    <string name="SERVICES_SPORT_TITLE_TWO">Zeiten für das Sportangebot der HfTL</string>
-    <string name="SERVICES_SPORT_TITLE_THREE">Sportanlagen der HfTL</string>
-    <string name="SERVICES_SPORT_TITLE_FOUR">Hochschulinterne und außerschulische Turniere und Meisterschaften</string>
+    <string name="SERVICES_SPORT_WEBSITE">Signing up and Information</string>
+    <string name="SERVICES_SPORT_TITLE_ONE">Sports at the HfTL</string>
+    <string name="SERVICES_SPORT_TITLE_TWO">Set hours for sports at the HfTL</string>
+    <string name="SERVICES_SPORT_TITLE_THREE">HfTL sports grounds</string>
+    <string name="SERVICES_SPORT_TITLE_FOUR">Competitions and Championships</string>
     <string name="SERVICES_SPORT_TEXT_ONE">Über unser aktuelles Sportangebot in der Sporthalle Arno-Nitzsche-Str. 29 informiert der Sportreferent des HfTL-Studentenrats. \n
-                                           Folgende Sportarten werden direkt von der HfTL betreut: \n
-                                           Fußball \n
-                                           Volleyball \n
-                                           Klettern \n
-                                           Laufen \n
-                                           Badminton \n
-                                           Zahlreiche andere Sportarten, wie Aikido, Baseball, Basketball oder Volleyball werden über das Hochschulsportzentrum der HTWK Leipzig angeboten und können auch von unseren Studierenden genutzt werden. Diese Angebote sind allerdings zum Teil kostenpflichtig. Informieren und anmelden können Sie sich über: \n
+                                           The following sports are offered at the HfTL: \n
+                                           football \n
+                                           volleyball \n
+                                           climbing \n
+                                           running \n
+                                           badminton \n
+                                           Various other sports such as Aikido, baseball, basketball or volleyball are offered through the HTWK Leipzig and can be accessed through that but some of them require fees. Information and sign-up at:\n
                                            sport.htwk-leipzig.de</string>
     <string name="SERVICES_SPORT_TEXT_TWO">Ab sofort kann in der Sporthalle Arno-Nitzsche-Str. 29 an folgenden Tagen gespielt werden: \n
                                            Fußball: Montags 17:30 - 19:00 Uhr \n
@@ -459,11 +459,11 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="SERVICES_SPORT_BEGINNING">Der Sport bietet eine gute Möglichkeit, im studentischen Umfeld mit KommilitonInnen anderer Studiengänge in Kontakt zu kommen. Deshalb haben wir ein attraktives Sportangebot für unsere Studierenden. \n
                                             Gemeinsam mit dem Hochschulsportzentrum der HTWK Leipzig können unsere Studierenden auch neue Sporttrends kennenlernen. Durch Hochschulmeisterschaften und nationale Meisterschaften bieten sich Möglichkeiten zum gemeinsamen Sporttreiben und geselligem Beisammmensein.</string>
 
-    <string name="SERVICES_WAY_TO_NAVIGATE">Zur Hochschule</string>
-    <string name="SERVICES_WAY_TO_LEIPZIG">Leipziger Verkehrsbetriebe</string>
-    <string name="SERVICES_WAY_TO_DB">Deutsche Bahn</string>
-    <string name="SERVICES_WAY_TO_TITLE_ONE">Anfahrt mit dem Auto</string>
-    <string name="SERVICES_WAY_TO_TITLE_TWO">Anfahrt mit öffentlichen Verkehrsmitteln</string>
+    <string name="SERVICES_WAY_TO_NAVIGATE">How to get here</string>
+    <string name="SERVICES_WAY_TO_LEIPZIG">Public Transportation Leipzig</string>
+    <string name="SERVICES_WAY_TO_DB">Train-Deutsche Bahn</string>
+    <string name="SERVICES_WAY_TO_TITLE_ONE">Route by car</string>
+    <string name="SERVICES_WAY_TO_TITLE_TWO">Route using public transportation</string>
     <string name="SERVICES_WAY_TO_TEXT_ONE">Als Anfahrtsadresse für Navigationssysteme geben Sie bitte folgende Adresse in Ihr Navigationssystem ein: \n \n
                                             04277 Leipzig (Sachsen) \n
                                             Gustav-Freytag-Straße 43 - 45 </string>
@@ -474,70 +474,70 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
                                             Von der Haltestelle Connewitzer Kreuz sind es noch ca. 5 Minuten Fußweg bis zum Eingang der HfTL in der Gustav-Freytag-Straße 43 - 45.</string>
     <string name="SERVICES_WAY_TO_BEGINNING">Im Folgenden ist eine Anfahrtsskizze zum Gelände der HfT Leipzig, eine Navigation mit dem Auto und Möglichkeiten zur Anreise mittels öffentlicher Verkehrsmittel.</string>
 
-    <string name="SETTINGS_SAVE">Speichern</string>
-    <string name="SETTINGS_RESET">Zurücksetzen</string>
-    <string name="SETTINGS_LANGUAGE_GERMAN">Deutsch</string>
-    <string name="SETTINGS_LANGUAGE_ENGLISH">Englisch</string>
+    <string name="SETTINGS_SAVE">Save</string>
+    <string name="SETTINGS_RESET">Reset</string>
+    <string name="SETTINGS_LANGUAGE_GERMAN">German</string>
+    <string name="SETTINGS_LANGUAGE_ENGLISH">English</string>
     <string name="SETTINGS_DESIGN_TITLE">Design</string>
     <string name="SETTINGS_DESIGN_DEFAULT">Standard</string>
     <string name="SETTINGS_DESIGN_MAGENTA">Magenta</string>
-    <string name="SETTINGS_LANGUAGE_TITLE">Sprache</string>
-    <string name="SETTINGS_DESIGN_CHANGED">Das Design wurde erfolgreich geändert.</string>
+    <string name="SETTINGS_LANGUAGE_TITLE">Language</string>
+    <string name="SETTINGS_DESIGN_CHANGED">Design was changed successfully.</string>
     <string name="SETTINGS_LANGUAGE_CHANGED_TO_GERMAN">Die Sprache wurde auf Deutsch geändert.</string>
-    <string name="SETTINGS_LANGUAGE_CHANGED_TO_ENGLISH">Die Sprache wurde auf Englisch geändert.</string>
-    <string name="SETTINGS_RESET_SUCCESS">Alle Werte wurden erfolgreich zurückgesetzt.</string>
+    <string name="SETTINGS_LANGUAGE_CHANGED_TO_ENGLISH">Language was changed to English.</string>
+    <string name="SETTINGS_RESET_SUCCESS">All values reset successfully.</string>
 
-    <string name="TEST_QUESTION_RESULT_TITLE">Auswertung</string>
-    <string name="TEST_QUESTION_THE_QUESTION">Die Frage </string>
-    <string name="TEST_QUESTION_THE_QUESTIONS">Die Fragen </string>
-    <string name="TEST_QUESTION_AND"> und </string>
-    <string name="TEST_QUESTION_OF"> von </string>
-    <string name="TEST_QUESTION">Frage </string>
-    <string name="TEST_QUESTION_THE_QUESTION_NOT_ANSWERED"> wurde nicht beantwortet.</string>
-    <string name="TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED"> wurden nicht beantwortet.</string>
+    <string name="TEST_QUESTION_RESULT_TITLE">Result</string>
+    <string name="TEST_QUESTION_THE_QUESTION">The question </string>
+    <string name="TEST_QUESTION_THE_QUESTIONS">The questions </string>
+    <string name="TEST_QUESTION_AND"> and </string>
+    <string name="TEST_QUESTION_OF"> of </string>
+    <string name="TEST_QUESTION">Question </string>
+    <string name="TEST_QUESTION_THE_QUESTION_NOT_ANSWERED"> was not answered.</string>
+    <string name="TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED"> were not answered.</string>
 
     <string name="TEST_RESULT_END_TEST">Test Beenden</string>
     <!-- ACHTUNG -->
     <!-- Hier kommen noch welche dazu, wenn der test fertig ist -->
     <!-- ACHTUNG -->
 
-    <string name="TEST_START">Test starten</string>
-    <string name="TEST_START_BEGINNING">Einführung</string>
+    <string name="TEST_START">Start Evaluation</string>
+    <string name="TEST_START_BEGINNING">Introduction</string>
     <string name="TEST_START_DESCRIPTION">Beschreibung des Testes.</string>
     <string name="TEST_START_ATTENTION">Simmis Achtung Achtung Text.</string>
 
-    <string name="FAQ_SEE_ANSWER">Antwort ansehen</string>
-    <string name="STUDY_LIST_MORE">Mehr erfahren</string>
+    <string name="FAQ_SEE_ANSWER">See answer</string>
+    <string name="STUDY_LIST_MORE">Show more</string>
 
-    <string name="ACTIVITY_EDUCATION_TITLE">Weiterbildung</string>
-    <string name="ACTIVITY_MAPS_TITLE">Auf zur Hochschule!</string>
-    <string name="ACTIVITY_HFTL_INFO_TITLE">HfTL Übersicht</string>
-    <string name="ACTIVITY_HFTL_INFO_TITLE_BUTTON">Über die HfTL</string>
-    <string name="ACTIVITY_DUAL_TITLE">Dualstudium</string>
-    <string name="ACTIVITY_JOB_TITLE">Berufsbegleitend</string>
-    <string name="ACTIVITY_JOB_TITLE_BUTTON">Berufsbegleitendes Studium</string>
-    <string name="ACTIVITY_DIRECT_TITLE">Direktstudium</string>
-    <string name="ACTIVITY_Test_TITLE">Studientest</string>
-    <string name="ACTIVITY_Test_TITLE_BUTTON">Studiengangstest</string>
+    <string name="ACTIVITY_EDUCATION_TITLE">Further Education</string>
+    <string name="ACTIVITY_MAPS_TITLE">How to get here!</string>
+    <string name="ACTIVITY_HFTL_INFO_TITLE">HfTL Overview</string>
+    <string name="ACTIVITY_HFTL_INFO_TITLE_BUTTON">About HfTL</string>
+    <string name="ACTIVITY_DUAL_TITLE">Integrated Studies</string>
+    <string name="ACTIVITY_JOB_TITLE">Extra Occupational</string>
+    <string name="ACTIVITY_JOB_TITLE_BUTTON">Extra Occupational Studies</string>
+    <string name="ACTIVITY_DIRECT_TITLE">Regular Studies</string>
+    <string name="ACTIVITY_Test_TITLE">Evaluation</string>
+    <string name="ACTIVITY_Test_TITLE_BUTTON">Study Evaluation</string>
     <string name="ACTIVITY_APP_TITLE">HfTL</string>
-    <string name="ACTIVITY_HFTL_NAME">Hochschule für Telekommunikation Leipzig</string>
-    <string name="ACTIVITY_MAIL_HELLO">Hallo</string>
-    <string name="ACTIVITY_MAIL_CHOOSER_TITLE">Mail Senden...</string>
-    <string name="ACTIVITY_MAIL_EXTRA_SUBJECT">Frage</string>
-    <string name="ACTIVITY_TOUCH_AGAIN">Erneut tippen zum Beenden.</string>
+    <string name="ACTIVITY_HFTL_NAME">University of Applied Science - Hochschule für Telekommunikation Leipzig</string>
+    <string name="ACTIVITY_MAIL_HELLO">Hello</string>
+    <string name="ACTIVITY_MAIL_CHOOSER_TITLE">Send mail..</string>
+    <string name="ACTIVITY_MAIL_EXTRA_SUBJECT">Question</string>
+    <string name="ACTIVITY_TOUCH_AGAIN">Tap again to exit.</string>
 
-    <string name="RESULT_DATA_STUDY_CATEGORY">Studienart</string>
-    <string name="RESULT_DATA_STUDY_DEGREE">Studiengrad</string>
-    <string name="RESULT_DATA_KMI_TITLE">Kommunikations- und Medieninformatik</string>
-    <string name="RESULT_DATA_IKT_TITLE">Informations- und Kommunikationstechnik</string>
-    <string name="RESULT_DATA_WI_TITLE">Wirtschaftsinformatik</string>
-    <string name="RESULT_DATA_AI_TITLE">Angewandte Informatik</string>
-    <string name="RESULT_DATA_BUTTUN_DECISION">Vorschlag</string>
-    <string name="RESULT_DATA_TITLE">Statistik</string>
-    <string name="RESULT_DATA_BACHELOR_OR_MASTER">Bachelor oder Master</string>
+    <string name="RESULT_DATA_STUDY_CATEGORY">Type of Study</string>
+    <string name="RESULT_DATA_STUDY_DEGREE">Degree</string>
+    <string name="RESULT_DATA_KMI_TITLE">Computer Science and Telecommunications</string>
+    <string name="RESULT_DATA_IKT_TITLE">Information and Communication Technology</string>
+    <string name="RESULT_DATA_WI_TITLE">Business Information Systems</string>
+    <string name="RESULT_DATA_AI_TITLE">Applied Computer Science</string>
+    <string name="RESULT_DATA_BUTTUN_DECISION">Recommendation</string>
+    <string name="RESULT_DATA_TITLE">Statistics</string>
+    <string name="RESULT_DATA_BACHELOR_OR_MASTER">Bachelor or Master</string>
     <string name="RESULT_DATA_BACHELOR">Bachelor</string>
     <string name="RESULT_DATA_MASTER">Master</string>
-    <string name="RESULT_DATA_DUAL_TITLE">Dualstudium</string>
-    <string name="RESULT_DATA_JOB_TITLE_BUTTON">Berufsbegleitendes Studium</string>
-    <string name="RESULT_DATA_DIRECT_TITLE">Direktstudium</string>
+    <string name="RESULT_DATA_DUAL_TITLE">Integrated Studies</string>
+    <string name="RESULT_DATA_JOB_TITLE_BUTTON">Extra Occupational Studies</string>
+    <string name="RESULT_DATA_DIRECT_TITLE">Regular Studies</string>
 </resources>
