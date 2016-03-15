@@ -4,37 +4,65 @@
 
 
     <string name="ICT_MASTER_BEGINNING_TEXT">"The Hochschule für Telekommunikation Leipzig(HfTL) starts with an international research and project oriented master's degree program in summer semester 2016 .  Information and Communication Technology Master´s degree programme is a full time Master course. \n
-The Information and Communication Technology programme completes the HfTL’s set of full time study options. This programme allows you to gain further qualifications and to receive training for special jobs in the ICT sector and management skills."</string>
-    <string name="ICT_MASTER_PERSPECTIVES_TEXT">Graduates will be able to assess future developments in communication and computer networks. They will be able to apply the latest developments in these subjects. They will gain expertise and skills for signal description, analysis and the most common methods for generation, transmission and reception in optical transmission systems with highest data rates. Graduates of the study program will be able to evaluate the complexity and performance of modern transmission methods./n
-They will know the basics of calculation of the mobile multipath channel for wireless communication and various communication protocols. They will have knowledge and skills to evaluate and apply IT-security systems. They will be able to plan and implement it-security systems. Project management and scientific methods will reinforce at this study program. </string>
-    <string name="ICT_MASTER_CURRICULUM_TEXT">Compulsory modules: /n
- Applied Mathematics /n
- ICT Consulting /n
- Project Management /n
- ICT lab courses /n
- Law /n
- Project work /n
-Specialisation 10 modules for specialisation in communication technology or information technology /n
-Please refer to the curriculum to find courses currently available.</string>
+    The Information and Communication Technology programme completes the HfTL’s set of full time study options. This programme allows you to gain further qualifications and to receive training for special jobs in the ICT sector and management skills."</string>
+    <string name="ICT_MASTER_PERSPECTIVES_TEXT">Graduates will be able to assess future developments in communication and computer networks. They will be able to apply the latest developments in these subjects. They will gain expertise and skills for signal description, analysis and the most common methods for generation, transmission and reception in optical transmission systems with highest data rates. Graduates of the study program will be able to evaluate the complexity and performance of modern transmission methods.\n
+    They will know the basics of calculation of the mobile multipath channel for wireless communication and various communication protocols. They will have knowledge and skills to evaluate and apply IT-security systems. They will be able to plan and implement it-security systems. Project management and scientific methods will reinforce at this study program. </string>
+    <string name="ICT_MASTER_CURRICULUM_TEXT">Compulsory modules: \n
+    Applied Mathematics \n
+    ICT Consulting \n
+    Project Management \n
+    ICT lab courses \n
+    Law \n
+    Project work \n \n
+    Specialisation 10 modules for specialisation in communication technology or information technology \n
+    Please refer to the curriculum to find courses currently available.</string>
     <!-- Trennzeichen -->
-    <string name="KMI_BACHELOR_BEGINNING_TEXT">englischer text</string>
-    <string name="KMI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="KMI_BACHELOR_CURRICULUM_TEXT">text</string>
-    <!-- Trennzeichen -->
-    <!-- Trennzeichen -->
-    <string name="DUAL_KMI_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="DUAL_KMI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="DUAL_KMI_BACHELOR_CURRICULUM_TEXT">text</string>
-    <!-- Trennzeichen -->
-    <!-- Trennzeichen -->
-    <string name="JOB_KMI_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="JOB_KMI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="JOB_KMI_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="KMI_BACHELOR_BEGINNING_TEXT">These days there\'s a mobile app for nearly everything. Computer science and telecommunications experts are the ones bringing the world to your mobile phone. At the HfTL they learn all about processing, storing and transmitting data in telecommunication systems, and how modern communication processes and systems work. \n
+    As students learn about the properties of different transmission media, the term “media” is a key area of this programme. There is a three-month project course where students can apply their mathematics, physics electrical and electronics engineering and IT knowledge while working in a company. </string>
+    <string name="KMI_BACHELOR_PERSPECTIVES_TEXT">The networks between businesses and their suppliers, partners, and customers are expanding and becoming more complex, which is why they need experts such as software developers and system administrators. Are you interested in large networks and how they’re designed? As a student of computer science and telecommunications, you will learn how to plan, develop, and implement networks. As a systems architect or designer, you could also work in project management. \n
+    Telekom is not the only company on the lookout for these experts, who are also in high demand at other information and telecommunication companies. Further promising career options include jobs in the energy sector and with car manufacturers, hardware and software companies, and in public services. </string>
+    <string name="KMI_BACHELOR_CURRICULUM_TEXT">- General courses (project management, law and economics, technical English) \n
+    - Math and science basic courses (mathematics, physics, electrical/electronics engineering) \n
+    - Telecommunications (signals and systems, transmission technology, network management, radio systems) \n
+    - Computer science (introduction, programming, software technology databases, hardware and software architectures, networks, simulations, routing and switching, protocols) \n
+    - Distributed computing \n
+    - Telecommunications (signals and systems, transmission technology, network management, radio systems) </string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="IKT_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="IKT_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="IKT_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="DUAL_KMI_BACHELOR_BEGINNING_TEXT">The HfTL’s co-operative bachelor’s programme Computer Science and Telecommunications offers students the opportunity of earning a first degree while starting a career at Deutsche Telekom. The university works in close cooperation with the company, allowing students to learn in both environments. Attendance periods in classrooms are combined with learning from home via online classes. The Deutsche Telekom AG ensures that the theoretical knowledge taught in subjects such as mathematics, physics, electrical engineering, is applied to practical tasks within the company. </string>
+    <string name="DUAL_KMI_BACHELOR_PERSPECTIVES_TEXT">Practically everywhere you look, information is being processed, stored, and transferred, which is precisely what students learn to do at the HfTL. Our graduates therefore work in many different areas. Systems and network specialists, for example, build and run large IT environments and make sure that web-based customer services are available around the clock. After all, internet portals must remain accessible at all times. \n
+    Another option is to become a software developer and create applications for web browsers, desktop, and mobile devices. Systems architects maintain the overview of projects where web-based applications are being developed or managed, e.g. shop solutions, search engines, or communication and planning tools. Network architects design and run large corporate networks and promote the increase of global broadband availability. Our graduates also work as consultants for major IT projects.</string>
+    <string name="DUAL_KMI_BACHELOR_CURRICULUM_TEXT">- General basic courses (project management, law and economics, technical English) \n
+    - Math and science basic courses (mathematics, physics, electrical and electronics engineering) \n
+    - Computer Science (introduction, programming, software engineering, databases, hardware and software architectures, networks, simulations, routing and switching, protocols) \n
+    - Distributed computing \n
+    - Telecommunications  (signals and systems, transmission technology, network management, wireless technology)</string>
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <string name="JOB_KMI_BACHELOR_BEGINNING_TEXT">This part-time programme offers professionals with a university entrance qualification the opportunity of gaining further training. Most of the work is done via an online learning platform, allowing you more flexibility in balancing academics and work. We support effective learning of mathematics, physics, electrical engineering, information technology and communications contents by combining attendance periods at the HfT Leipzig with online tutorials. \n
+    You will gain a deeper understanding of all aspects of the technology of the new media. This is a programme aimed at those who wish to learn about what IT-principles and technologies Web 2.0 is based on and how social networks and applications work. The term “media” is a defining area of this programme, as students learn about the properties of different transmission media. </string>
+    <string name="JOB_KMI_BACHELOR_PERSPECTIVES_TEXT">There is a high demand for IT professionals in all areas. The following are just a few examples of potential careers. As networks between businesses and their suppliers, customers, and partners become ever more important, increasingly complex IT environments are being created. These are designed and managed by system and network administrators in charge of ensuring that their internet-based services, such as web portals, are available at all times. \n
+    Graduates also develop software, creating IT solutions such as applications for desktop PCs, smartphones, or web browser applications while taking into consideration the latest quality and safety standards. System architects develop networks for entire companies and are pushing forward the development of the global broadband network. Consultants provide customers with advice on IT projects. </string>
+    <string name="JOB_KMI_BACHELOR_CURRICULUM_TEXT">- General courses (project management, law and economics, technical English) \n
+    - Scientific courses (mathematics, physics, electrical and electronics engineering) \n
+    - Computer Science (introduction, programming, software engineering, databases, hardware and software architectures, networks, simulations, routing and switching, protocols) \n
+    - Distributed computing \n
+    - Telecommunications (signals and systems, transmission technology, network management, wireless technology)</string>
+    <!-- Trennzeichen -->
+    <!-- Trennzeichen -->
+    <string name="IKT_BACHELOR_BEGINNING_TEXT">Signals are needed whenever information has to be transmitted, e.g. when sending SMS messages, or for controlling the production line of a car manufacture plant. This is where communication engineers come in. They make sure that information always gets to the right place. \n
+    Media design is a combination of mathematics, physics, computer science, and electrical engineering. Media designers are able to create systems for transmitting information using various ways. The key topics covered by the programme are transmission media, signal processing, and procedures/methods used for transmitting information. You will be able to apply what you have learned in a 3-month practical project, which involves taking on engineering tasks under supervision in a company. </string>
+    <string name="IKT_BACHELOR_PERSPECTIVES_TEXT">One thing is certain: communication is becoming ever more important. This translates into many opportunities for information and media designers in a broad range of companies and sectors. As a production and quality manager, for instance, you are in charge of coordinating your team’s activities in producing competitive products. \n
+    Network operators depend on your analytical skills and foresight in capacity planning and management. Other tasks involve developing networks fit for the future, purchasing, logistics, in services, marketing, sales, customer support, or training and professional development. Telecommunications is everywhere, which is why our graduates’ expertise is also needed in medical, automation, and automotive engineering. </string>
+    <string name="IKT_BACHELOR_CURRICULUM_TEXT">- Basic courses (project management, law economics, technical English) \n
+    - Math and science basic courses (mathematics, physics) \n
+    - Fundamentals of IT and electrical engineering \n
+    - Signals &amp; systems \n
+    - Photonics \n
+    - Electromagnetic fields and waves \n
+    - Networks \n
+    - Radio systems \n
+    - Hardware and software architecture</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <string name="IKT_MASTER_BEGINNING_TEXT">text</string>
@@ -43,44 +71,130 @@ Please refer to the curriculum to find courses currently available.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
 
-    <string name="JOB_IKT_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="JOB_IKT_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="JOB_IKT_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="JOB_IKT_BACHELOR_BEGINNING_TEXT">This part-time programme offers professionals with a university entrance qualification the opportunity of gaining further training. Course contents are focused on the requirements of modern telecommunications, including management aspects. Using the latest education technologies and creating classroom environments based on web 2.0 applications enables students to study while working. \n
+    Media Design is a combination of mathematics, physics, information technology, and electrical engineering. These fields supply the knowledge needed to create systems for transferring information across various media. Key elements of this course include: communication media, signal processing, and communication processes. \n \n
+    In addition to meeting the requirements set out by the Deutsche Telekom Group, the Information and Media Design curriculum covers business administration contents for project and sales engineers.</string>
+    <string name="JOB_IKT_BACHELOR_PERSPECTIVES_TEXT">There are many careers for Information and Media Design graduates to pursue. Development engineers address technical issues and create efficient IT solutions and continuously optimize their products. Project engineers design and operate telecommunications equipment and facilities. They manage the projects and ensure that the customer demands are met. Sales engineers are in charge of planning and managing complex telecommunications marketing and sales processes. Key activities in their work also include marketing research and competitive intelligence. \n
+    An important term used in telecommunications is “convergence”, which is the merging of voice and data services in mobile and fixed network infrastructures, an area requiring specialists for management and capacity planning. After all, networks must be developed in a way that guarantees they will fulfil the needs of the future. Our graduates also work in operating and servicing telecommunications facilities, in purchasing, logistics, training and professional development, marketing, and sales.
+Telecommunications is everywhere, which is why our graduates’ expertise is also needed in medical, automation, and automotive engineering. \n</string>
+    <string name="JOB_IKT_BACHELOR_CURRICULUM_TEXT">- General basic courses: Project management, technical English, economics and law, scientific working techniques, soft skills and management training, project work (innovative Deutsche Telekom projects and research projects at the university) \n
+    - Mathematics, physics, measurement engineering, electrical engineering, circuitry \n
+    - Telecommunications engineering and networks \n
+    - Signal processing, basic principles of data compression, methods for preventing transmission errors, optical transmission systems and technologies (wide-area and access networks), high-frequency engineering, wireless data communication, quality analysis and quality assurance procedures in telecommunications networks as part of network management, data traffic theory and analyses, network planning \n
+    - Introduction to computer science, programming, and computer engineering \n
+    - Business administration \n
+    - Cost management, customer relationship management, price management, accounting, controlling, marketing </string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="JOB_IKT_MASTER_BEGINNING_TEXT">text</string>
-    <string name="JOB_IKT_MASTER_PERSPECTIVES_TEXT">text</string>
-    <string name="JOB_IKT_MASTER_CURRICULUM_TEXT">text</string>
+    <string name="JOB_IKT_MASTER_BEGINNING_TEXT">The Information and Communication Technology programme completes the HfTL’s set of part-time study options. This programme allows professionals to gain further qualifications and to receive training for special jobs in the ICT sector and management tasks. Since a large amount of the credits required can be earned via e-learning, the programme is flexible in meeting the time and place requirements of professionals. </string>
+    <string name="JOB_IKT_MASTER_PERSPECTIVES_TEXT">The IT market is changing more rapidly than ever and has a high demand for talented minds. Our alumni are highly sought-after due to their expert knowledge as well as their management and people skills. ICT graduates are not just appealing candidates for positions at the Deutsche Telekom, but also for companies such as SAP, Siemens, or IBM. A Master of Engineering degree will prepare you for one of the many jobs in which self-reliance is a must. As a project manager with both business management and IT skills, you will have the tools necessary for good decision-making. \n
+    One area for with ICT technicians are responsible is designing and planning networks and transmissions systems and managing IT systems. Surveys among alumni have shown that ICT technicians can be found just about anywhere – in R&amp;D, in project design, planning, and monitoring, as well as marketing and sales. \n
+    A Master’s degree in Information and Communication Technology is a perfect choice for those who want to keep their options open. </string>
+    <string name="JOB_IKT_MASTER_CURRICULUM_TEXT">Compulsory modules: \n
+    Applied Mathematics \n
+    ICT Consulting \n
+    Project Management \n
+    ICT lab courses \n
+    Law \n
+    Project work \n \n
+    10 modules for specialisation in communication technology \n \n
+    10 modules for specialisation in information technology \n \n
+    Please refer to the curriculum to find courses currently available.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="WI_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="WI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="WI_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="WI_BACHELOR_BEGINNING_TEXT">When companies have to deliver goods or services all over the country, it’s easy to make mistakes. Business information systems experts make sure that logistics and information streams function properly, for example by developing the right software solutions. Business administration and computer science are the two pillars on which this HfTL programme is based. In practical projects, students have the opportunity of proving and improving their entrepreneurial approaches and business IT solutions.</string>
+    <string name="WI_BACHELOR_PERSPECTIVES_TEXT">As a business information systems expert, you will find work in all areas of a company which have to do with IT systems. Which practically all areas do. After all, these days one can hardly imagine any department not relying on IT systems to get work done. You could work in IT departments or for IT service providers, designing systems and providing support for other company departments. This means you will also be working in manufacturing, logistics, controlling, marketing, and sales. \n
+    Process managers play an important role in any company. They analyse and improve business processes, making sure that they are efficient and customer-oriented. This means they have to work closely with other departments. Online marketing professionals plan and implement internet marketing tools, e.g. professional marketing campaigns. Business analysts work with company data, interpreting them to gain new insights about the market, customers, and the competition. These skills make them valuable assets for management and mean that they help shape the future of the company. </string>
+    <string name="WI_BACHELOR_CURRICULUM_TEXT">- Basic courses (mathematics, statistics, project management and project work, technical and business English, law) \n
+    - Economics (general business studies, marketing &amp; CRM, macroeconomics, accounting and controlling, network-based business models) \n
+    - Computer science (programming, computer architectures, communication networks, distributed computing, IT security) \n
+    - Business information systems (introduction, process management, data management, IT service and supply chain management business information systems, software engineering, business intelligence) \n
+    - Specialisation in international IT and telecommunications</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="DUAL_WI_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="DUAL_WI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="DUAL_WI_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="DUAL_WI_BACHELOR_BEGINNING_TEXT">The HfTL’s co-operative bachelor’s programme Business Information Systems offers students an opportunity to earn a first degree while starting a career at Deutsche Telekom. The university works in close cooperation with the company, allowing students to learn in both environments. The programme focuses on business applications and IT systems as well as information and knowledge management. Actively integrating students into the work processes at Deutsche Telekom guarantees an optimal learning experience. </string>
+    <string name="DUAL_WI_BACHELOR_PERSPECTIVES_TEXT">There are many exciting jobs in store for business information systems graduates, experts responsible for developing IT and communication systems used for creating or improving business processes. Examples include accounting, production control, and customer support processes. Business information specialists often work on multidisciplinary projects in international teams. They are able to rapidly respond to changes in market demand by optimising IT systems accordingly. Business information specialists speak the language of economists and are also familiar with the terminology used in computer science, allowing them to act as “interpreters” between these two environments. This is why the programme also aims to improve students’ communication skills in English and German, and includes an introduction to law.
+    In today’s world, information and communication systems are needed in all sectors, from economy to public services. This opens up a broad spectrum of job opportunities for computing experts.
+    </string>
+    <string name="DUAL_WI_BACHELOR_CURRICULUM_TEXT">- General basic courses (mathematics, statistics, project management, technical &amp; business english, law) \n
+    - Economics (general business studies, marketing &amp; CRM, macroeconomics, accounting and controlling, network-based business models) \n
+    - Computer science (programming, hardware and software systems, communication networks, distributed computing, IT security) \n
+    - Business information systems (process management, data management, IT services and supply chain management, enterprise software, software engineering, business intelligence)</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="DUAL_WI_MASTER_BEGINNING_TEXT">text</string>
-    <string name="DUAL_WI_MASTER_PERSPECTIVES_TEXT">text</string>
-    <string name="DUAL_WI_MASTER_CURRICULUM_TEXT">text</string>
+    <string name="DUAL_WI_MASTER_BEGINNING_TEXT">The programme’s objective is to teach the skills needed to design and modify IT processes in businesses and corporate networks, including the ability to use the fundamentals of change management in ICT in order to achieve certain results. The key focus lies on innovative concepts and methods used to ensure that business information and communication technologies are continuously adapted to a corporate strategy.  Actively integrating students into the work processes at Deutsche Telekom guarantees an optimal learning experience. \n
+    The programme is aimed at talented young professionals with a bachelor’s degree in business computing. Applicants with a bachelor’s degree in economics or information technology may also be admitted after proof of their qualification has been reviewed.</string>
+    <string name="DUAL_WI_MASTER_PERSPECTIVES_TEXT">The Master’s programme Business Information Systems covers: \n
+    - Enterprise information management \n
+    - Management of business information models \n
+    - Software &amp; service management \n
+    Enterprise information management is about how to provide the conditions necessary for effectively and efficiently using information to increase productivity in large companies. In addition to fundamental knowledge of the technology and economics relevant to information management, the course also covers legal aspects of IT and demonstrates how these can be used to create innovative business models. \n
+    The programme also features a course on the development of information models for specific businesses and requirements as well as their systematic integration into high-performance business architectures. Students learn about advanced enterprise modelling, business process optimisation and management of enterprise application architectures. \n
+    Software &amp; Service Management introduces students to basic methodological principles of software engineering in addition to current concepts of cost-efficient planning, managing, and monitoring of entire application life cycles. \n
+    In this course, students also learn how to manage IT services using the latest reference models (e.g. ITIL, eTOM). \n
+    Students have the opportunity of broadening their horizons by taking extra courses in addition to the ones mentioned above. </string>
+    <string name="DUAL_WI_MASTER_CURRICULUM_TEXT">Compulsory modules: \n
+    Information management \n
+    IT law \n
+    New business development &amp; technology management \n
+    IT controlling \n
+    Business information &amp; process modeling \n
+    Research methods \n
+    Business process optimization \n
+    Enterprise architecture management \n
+    Software engineering \n
+    Software management \n
+    IT project management \n
+    IT service management \n \n
+    Specialisation options: \n
+    Software engineering \n
+    Enterprise planning &amp; decision support </string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="JOB_WI_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="JOB_WI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="JOB_WI_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="JOB_WI_BACHELOR_BEGINNING_TEXT">The HfTL’s part-time bachelor’s programme in business information systems allows vocational training graduates who are employed to gain further qualifications while working. Because it is such a flexible programme, students can study according to their own time and location needs, using online learning platforms and tutorials at times when they are not physically present at the university. </string>
+    <string name="JOB_WI_BACHELOR_PERSPECTIVES_TEXT">There are many exciting jobs in store for business information systems graduates, experts responsible for developing IT and communication systems used for creating or improving business processes. Examples include accounting, production control, and customer support processes. Business information specialists often work on multidisciplinary projects in international teams. They are able to rapidly respond to changes in market demand by optimising IT systems accordingly. Business information specialists speak the language of economists and are also familiar with the terminology used in computer science, allowing them to act as “interpreters” between these two environments. This is why the programme also aims to improve students’ communication skills in English and German, and includes an introduction to law.
+    In today’s world, information and communication systems are needed in all sectors, from economy to public services. This opens up a broad spectrum of job opportunities for computing experts.</string>
+    <string name="JOB_WI_BACHELOR_CURRICULUM_TEXT">- General basic courses (mathematics, statistics, project management, technical &amp; business English, law) \n
+    - Economics (general business studies, marketing &amp; CRM, macroeconomics, accounting and controlling, network-based business models) \n
+    - Computer Science (programming, hardware and software systems, communication networks, distributed computing, IT security) \n
+    - Business information systems (process management, data management, IT services &amp; supply chain management, enterprise software, software engineering, business intelligence) </string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="JOB_WI_MASTER_BEGINNING_TEXT">text</string>
-    <string name="JOB_WI_MASTER_PERSPECTIVES_TEXT">text</string>
-    <string name="JOB_WI_MASTER_CURRICULUM_TEXT">text</string>
+    <string name="JOB_WI_MASTER_BEGINNING_TEXT">The programme’s objective is to teach the skills needed to design and modify IT processes in businesses and corporate networks, including the ability to use the fundamentals of change management in ICT in order to achieve certain results. The key focus lies on innovative concepts and methods used to ensure that business information and communication technologies are continuously adapted to a corporate strategy. \n
+    The programme is aimed at talented young professionals with a bachelor’s degree in business computing. Applicants with a bachelor’s degree in economics or information technology may also be admitted after proof of their qualification has been reviewed.</string>
+    <string name="JOB_WI_MASTER_PERSPECTIVES_TEXT">The Master’s programme Business Information Systems covers: \n
+    - Enterprise information management \n
+    - Management of business information models \n
+    - Software &amp; service management \n
+    Enterprise information management is about how to provide the conditions necessary for effectively and efficiently using information to increase productivity in large companies. In addition to fundamental knowledge of the technology and economics relevant to information management, the course also covers legal aspects of IT and demonstrates how these can be used to create innovative business models. \n
+    The programme also features a course on the development of information models for specific businesses and requirements as well as their systematic integration into high-performance business architectures. Students learn about advanced enterprise modelling, business process optimisation and management of enterprise application architectures. \n
+    Software &amp; Service Management introduces students to basic methodological principles of software engineering in addition to current concepts of cost-efficient planning, managing, and monitoring of entire application life cycles. \n
+    In this course, students also learn how to manage IT services using the latest reference models (e.g. ITIL, eTOM). \n
+    Students have the opportunity of broadening their horizons by taking extra courses in addition to the ones mentioned above.</string>
+    <string name="JOB_WI_MASTER_CURRICULUM_TEXT">Compulsory modules: \n
+    Information management \n
+    IT law \n
+    New business development &amp; technology management \n
+    IT controlling \n
+    Business information &amp; process modeling \n
+    Research methods \n
+    Business process optimization \n
+    Enterprise architecture management \n
+    Software engineering \n
+    Software management \n
+    IT project management \n
+    IT service management \n \n
+    Specialisation options: \n
+    Software engineering \n
+    Enterprise planning &amp; decision support </string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="DUAL_AI_BACHELOR_BEGINNING_TEXT">text</string>
-    <string name="DUAL_AI_BACHELOR_PERSPECTIVES_TEXT">text</string>
-    <string name="DUAL_AI_BACHELOR_CURRICULUM_TEXT">text</string>
+    <string name="DUAL_AI_BACHELOR_BEGINNING_TEXT">The HfTL’s co-operative bachelor’s programme Applied Computer Science offers students the opportunity of earning a first degree while starting a career at Deutsche Telekom. The university works in close cooperation with the company, allowing students to learn in both environments. Attendance periods in classrooms are combined with learning from home via online classes. \n
+    The content of study programme at the HfTL in Leipzig is the fundamentals of computer science as well as future-oriented technologies and their applications in Smart Home and the Automotive industry and. </string>
+    <string name="DUAL_AI_BACHELOR_PERSPECTIVES_TEXT">Anyone who has studied applied computer science, is a real all-rounder. Because with these skills and knowledge acquired during the course, one is able to act as the linking element in many innovative sectors and application-related challenges. Whether cloud computing, smart home, visualization, data security or automotive - the range of career options here ranges from consulting about the development, implementation and operation of complex hardware and software systems in an internationally oriented project environment. Therefore, we refine your communication skills - in English and German. You also get an insight into the law. \n
+    Here are some examples: \n
+    As a project manager you analyze and realize successful projects for major clients demanding and coordinating these with other areas of the company. In your studies you sharpen your logical and analytical thinking as well as your ability to use intercultural communication skills with business partners and employees. This allows you a smooth entry into your career in numerous business fields of German Telekom, but also opens up many opportunities in the traditional engineering activities in the automotive industry, with insurance companies, Internet service providers and banks.</string>
+    <string name="DUAL_AI_BACHELOR_CURRICULUM_TEXT">fundamentals (mathematics, programming, electrical engineering, physics, technical computer science, project management, Technical &amp; Business English, and law), computer networks, database management systems, operating systems, security in web applications, computer architecture, software engineering, systems theory, network infrastructures and protocols, web technologies, distributed applications, data protection, business administration, project management, profiling modules, Social Media Communication, future technologies</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
