@@ -50,7 +50,7 @@ public class PortraitHFTLFragment extends MyRefreshFragment
         textOne.setText(getActivity().getResources().getString(R.string.portrait_text_one));
         textTwo.setText(getActivity().getResources().getString(R.string.portrait_text_two));
         imageOne.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.hftl_old_days));
-        imageTwo.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.telekom_hochschule));
+        imageTwo.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.telekom_hochschule2));
 
         return view;
     }
