@@ -26,13 +26,23 @@ public class StudyInfoFragment extends MyRefreshFragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.study_info_fragment, container, false);
 
-        StudyListItem element = ((MainActivity) getActivity()).getClickedElement();
+        final StudyListItem element = ((MainActivity) getActivity()).getClickedElement();
         TextView title = (TextView) view.findViewById(R.id.title_portrait);
         title.setText(element.getName());
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.TitleUndeline);
+        LinearLayout websiteLink = (LinearLayout) view.findViewById(R.id.study_info_website_link);
+        TextView websiteText = (TextView) view.findViewById(R.id.all_informations_link);
         TextView titleJob = (TextView) view.findViewById(R.id.jobPerspectivesTitle);
         TextView titleCurri = (TextView) view.findViewById(R.id.curriculumTitle);
+
+        websiteText.setText("Alle Informationen");
+        websiteLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity) getActivity()).goToWebsite(element.getLink());
+            }
+        });
 
         int color = ((MainActivity) getActivity()).convertColorString();
         if (color != 0)
