@@ -306,14 +306,6 @@ public class MainActivity extends AppCompatActivity {
         this.clickedElement = clickedElement;
     }
 
-    public FAQListItem getClickedFAQ() {
-        return clickedFAQ;
-    }
-
-    public void setClickedFAQ(FAQListItem clickedElement) {
-        this.clickedFAQ = clickedElement;
-    }
-
     public EducationListItem getClickedEductaion() {
         return clickedEductaion;
     }
