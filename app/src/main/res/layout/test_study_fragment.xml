@@ -13,7 +13,7 @@
         android:layout_margin="10dp"
         android:text="Einführung"
         android:gravity="center"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -39,7 +39,7 @@
         <TextView
             android:id="@+id/test_attention_text"
             android:text="Willkomen zum Test. Simmis Achtung Achtung Text."
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -47,9 +47,98 @@
             android:layout_marginTop="20dp"
             android:id="@+id/test_info_text"
             android:text="Der Test enthällt 200 Fragen und ist sehr leicht durchzuführen."
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/circle"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/study_test_first_point_text"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Alle Informationen anschauen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/circle"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/study_test_second_point_text"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Alle Informationen anschauen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/circle"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/study_test_third_point_text"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Alle Informationen anschauen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/circle"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/study_test_fourth_point_text"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Alle Informationen anschauen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
 
         <Button
             android:id="@+id/start_test"

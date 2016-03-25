@@ -9,12 +9,15 @@ import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.Model.StudyType;
 import com.simi.hftl_app.R;
 
+import java.util.ArrayList;
+
 /**
  * Created by student on 10.02.2016.
  */
 public class StudyListItem
 {
     private String name;
+    private ArrayList<String> points = new ArrayList<>();
     private String link;
     private StudyCourse course;
     private Category category;
@@ -22,8 +25,9 @@ public class StudyListItem
     private StudyType studyType;
     private Activity activity;
 
-    public StudyListItem(MainActivity activity, StudyCourse course)
+    public StudyListItem(MainActivity activity, StudyCourse course, ArrayList<String> points)
     {
+        this.points = points;
         this.course = course;
         this.activity = activity;
         init();
@@ -184,5 +188,13 @@ public class StudyListItem
 
     public void setLink(String link) {
         this.link = link;
+    }
+
+    public ArrayList<String> getPoints() {
+        return points;
+    }
+
+    public void setPoints(ArrayList<String> points) {
+        this.points = points;
     }
 }

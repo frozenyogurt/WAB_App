@@ -14,6 +14,8 @@ import com.simi.hftl_app.Model.Category;
 import com.simi.hftl_app.Model.StudyCourse;
 import com.simi.hftl_app.R;
 
+import java.util.ArrayList;
+
 /**
  * Created by student on 10.02.2016.
  */
@@ -35,6 +37,45 @@ public class StudyInfoFragment extends MyRefreshFragment
         TextView websiteText = (TextView) view.findViewById(R.id.all_informations_link);
         TextView titleJob = (TextView) view.findViewById(R.id.jobPerspectivesTitle);
         TextView titleCurri = (TextView) view.findViewById(R.id.curriculumTitle);
+
+        TextView pointOne = (TextView) view.findViewById(R.id.study_info_first_point_text);
+        TextView pointTwo = (TextView) view.findViewById(R.id.study_info_second_point_text);
+        TextView pointThree = (TextView) view.findViewById(R.id.study_info_third_point_text);
+        TextView pointFour = (TextView) view.findViewById(R.id.study_info_fourth_point_text);
+        TextView pointFive = (TextView) view.findViewById(R.id.study_info_fifth_point_text);
+        TextView pointSix = (TextView) view.findViewById(R.id.study_info_sixth_point_text);
+        TextView pointSeven = (TextView) view.findViewById(R.id.study_info_seventh_point_text);
+
+        ArrayList<TextView> pointViews = new ArrayList<>();
+        pointViews.add(pointOne);
+        pointViews.add(pointTwo);
+        pointViews.add(pointThree);
+        pointViews.add(pointFour);
+        pointViews.add(pointFive);
+        pointViews.add(pointSix);
+        pointViews.add(pointSeven);
+
+        if (element.getPoints().size() < 7)
+        {
+            pointSeven.setVisibility(View.GONE);
+        }
+        if (element.getPoints().size() < 6)
+        {
+            pointSix.setVisibility(View.GONE);
+        }
+        if (element.getPoints().size() < 5)
+        {
+            pointFive.setVisibility(View.GONE);
+        }
+        if (element.getPoints().size() < 4)
+        {
+            pointFour.setVisibility(View.GONE);
+        }
+
+        for(int i = 0; i < element.getPoints().size(); i++)
+        {
+            pointViews.get(i).setText(element.getPoints().get(i));
+        }
 
         websiteText.setText("Alle Informationen");
         websiteLink.setOnClickListener(new View.OnClickListener() {
@@ -72,86 +113,86 @@ public class StudyInfoFragment extends MyRefreshFragment
 
         TextView beginning = (TextView) view.findViewById(R.id.beginningText);
         TextView perspectives = (TextView) view.findViewById(R.id.jobPerspectivesText);
-        TextView curriculumText = (TextView) view.findViewById(R.id.curriculumText);
+        //TextView curriculumText = (TextView) view.findViewById(R.id.curriculumText);
 
         if (element.getCourse().equals(StudyCourse.KMI_BACHELOR))
         {
 
             beginning.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.KMI_BACHELOR_CURRICULUM_TEXT));
     }
         else if (element.getCourse().equals(StudyCourse.DUAL_KMI_BACHELOR))
         {
             beginning.setText(getActivity().getResources().getString(R.string.DUAL_KMI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.DUAL_KMI_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_KMI_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_KMI_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.JOB_KMI_BACHELOR))
         {
             beginning.setText(getActivity().getResources().getString(R.string.JOB_KMI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.JOB_KMI_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.JOB_KMI_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.JOB_KMI_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.IKT_BACHELOR))
         {
             beginning.setText(getActivity().getResources().getString(R.string.IKT_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.IKT_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.IKT_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.IKT_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.IKT_MASTER))
         {
             beginning.setText(getActivity().getResources().getString(R.string.IKT_MASTER_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.IKT_MASTER_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.IKT_MASTER_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.IKT_MASTER_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.JOB_IKT_BACHELOR))
         {
             beginning.setText(getActivity().getResources().getString(R.string.JOB_IKT_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.JOB_IKT_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.JOB_IKT_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.JOB_IKT_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.JOB_IKT_MASTER))
         {
             beginning.setText(getActivity().getResources().getString(R.string.JOB_IKT_MASTER_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.JOB_IKT_MASTER_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.JOB_IKT_MASTER_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.JOB_IKT_MASTER_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.WI_BACHELOR))
         {
             beginning.setText(getActivity().getResources().getString(R.string.WI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.WI_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.WI_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.WI_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.DUAL_WI_BACHELOR))
         {
             beginning.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.DUAL_WI_MASTER))
         {
             beginning.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.JOB_WI_BACHELOR))
         {
             beginning.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_WI_BACHELOR_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.JOB_WI_MASTER))
         {
             beginning.setText(getActivity().getResources().getString(R.string.JOB_WI_MASTER_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.JOB_WI_MASTER_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.JOB_WI_MASTER_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.JOB_WI_MASTER_CURRICULUM_TEXT));
         }
         else if (element.getCourse().equals(StudyCourse.DUAL_AI_BACHELOR))
         {
             beginning.setText(getActivity().getResources().getString(R.string.DUAL_AI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.DUAL_AI_BACHELOR_PERSPECTIVES_TEXT));
-            curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_AI_BACHELOR_CURRICULUM_TEXT));
+            //curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_AI_BACHELOR_CURRICULUM_TEXT));
         }
 
         return view;

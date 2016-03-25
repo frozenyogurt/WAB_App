@@ -61,7 +61,15 @@ public class StudyTestResultFragment extends MyRefreshFragment
                 {
                     course.add(activity.getAlternative());
                 }
-                activity.setClickedElement(new StudyListItem((MainActivity) getActivity(), course.get(course.size() - 1)));
+                ArrayList<String> points = new ArrayList<>();
+                points.add("Punkt 1");
+                points.add("Punkt 2");
+                points.add("Punkt 3");
+                points.add("Punkt 4");
+                points.add("Punkt 5");
+                points.add("Punkt 6");
+                points.add("Punkt 7");
+                activity.setClickedElement(new StudyListItem((MainActivity) getActivity(), course.get(course.size() - 1), points));
                 if (activity.getClickedElement() != null)
                 {
                     if (activity.getClickedElement().getCategory().equals(Category.DUAL))

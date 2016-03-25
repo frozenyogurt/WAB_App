@@ -38,6 +38,16 @@ public class TestStudyFragment extends MyRefreshFragment
         TextView secondDescriptionText = (TextView) view.findViewById(R.id.test_info_text);
         secondDescriptionText.setText(getActivity().getResources().getString(R.string.TEST_START_DESCRIPTION));
 
+        TextView pointOne = (TextView) view.findViewById(R.id.study_test_first_point_text);
+        TextView pointTwo = (TextView) view.findViewById(R.id.study_test_second_point_text);
+        TextView pointThree = (TextView) view.findViewById(R.id.study_test_third_point_text);
+        TextView pointFour = (TextView) view.findViewById(R.id.study_test_fourth_point_text);
+
+        pointOne.setText("Punkt 1");
+        pointTwo.setText("Punkt 2");
+        pointThree.setText("Punkt 3");
+        pointFour.setText("Punkt 4");
+
         start.setText(getActivity().getResources().getString(R.string.TEST_START));
         start.setOnClickListener(new View.OnClickListener() {
             @Override
