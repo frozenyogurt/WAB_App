@@ -25,9 +25,8 @@ public class StudyListItem
     private StudyType studyType;
     private Activity activity;
 
-    public StudyListItem(MainActivity activity, StudyCourse course, ArrayList<String> points)
+    public StudyListItem(MainActivity activity, StudyCourse course)
     {
-        this.points = points;
         this.course = course;
         this.activity = activity;
         init();
@@ -42,6 +41,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.KMI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/direktstudium/kmi-bachelor.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.DUAL_KMI_BACHELOR))
         {
@@ -50,6 +56,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.KMI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/duales-studium/kmi-bachelor-dual.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.JOB_KMI_BACHELOR))
         {
@@ -58,6 +71,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.KMI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/berufsbegleitendes-studium/kmi-bachelor-berufsbegleitend.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.WI_BACHELOR))
         {
@@ -66,6 +86,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.WI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/direktstudium/wi-bachelor.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.DUAL_WI_BACHELOR))
         {
@@ -74,6 +101,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.WI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/duales-studium/wi-bachelor-dual.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.DUAL_WI_MASTER))
         {
@@ -82,6 +116,13 @@ public class StudyListItem
             this.studyDegree = Degree.MASTER;
             this.studyType = StudyType.WI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/duales-studium/wi-master-dual.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.JOB_WI_BACHELOR))
         {
@@ -90,6 +131,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.WI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/berufsbegleitendes-studium/wi-bachelor-berufsbegleitend.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.JOB_WI_MASTER))
         {
@@ -98,6 +146,13 @@ public class StudyListItem
             this.studyDegree = Degree.MASTER;
             this.studyType = StudyType.WI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/berufsbegleitendes-studium/wi-master-berufsbegleitend.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.DUAL_AI_BACHELOR))
         {
@@ -106,6 +161,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.AI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/duales-studium/ai-bachelor-dual.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.IKT_BACHELOR))
         {
@@ -114,6 +176,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.IKT;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/direktstudium/ikt-bachelor.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.IKT_MASTER))
         {
@@ -122,6 +191,13 @@ public class StudyListItem
             this.studyDegree = Degree.MASTER;
             this.studyType = StudyType.IKT;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/direktstudium/ikt-master.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.JOB_IKT_BACHELOR))
         {
@@ -130,6 +206,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.IKT;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-aktuelle-daten/berufsbegleitendes-studium/ikt-bachelor-berufsbegleitend.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
         if (course.equals(StudyCourse.JOB_IKT_MASTER))
         {
@@ -138,6 +221,13 @@ public class StudyListItem
             this.studyDegree = Degree.MASTER;
             this.studyType = StudyType.IKT;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/berufsbegleitendes-studium/ikt-master-berufsbegleitend.html";
+            this.points.add("Punkt 1");
+            this.points.add("Punkt 2");
+            this.points.add("Punkt 3");
+            this.points.add("Punkt 4");
+            this.points.add("Punkt 5");
+            this.points.add("Punkt 6");
+            this.points.add("Punkt 7");
         }
     }
 
