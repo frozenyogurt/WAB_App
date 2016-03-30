@@ -42,7 +42,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:textStyle="bold"
                 android:text="HFTL TRÄGERGESELLSCHAFT mbH"/>
 
@@ -59,7 +58,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:textStyle="bold"
                 android:text="Geschäftsführung"/>
 
@@ -73,7 +71,6 @@
 
             <LinearLayout
                 android:id="@+id/send_mail_leader"
-                android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -100,7 +97,6 @@
 
             <LinearLayout
                 android:id="@+id/call_leader"
-                android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -131,7 +127,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:textStyle="bold"
                 android:text="Redaktion"/>
 
@@ -144,7 +139,6 @@
 
             <LinearLayout
                 android:id="@+id/send_mail_editorial_staff"
-                android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -171,7 +165,6 @@
 
             <LinearLayout
                 android:id="@+id/call_editorial_staff"
-                android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
