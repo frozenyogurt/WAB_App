@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     private StudyCourse alternative;
     private Rating rating;
     private int imageID;
-    private TextSize textSize = TextSize.SMALL;
+    private TextSize textSize = TextSize.MIDDLE;
     private TextView toolbarTitle;
 
     @Override
@@ -706,7 +706,6 @@ public class MainActivity extends AppCompatActivity {
         {
             study_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
             study_job_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
-            study_job_button.setText("Berufsbegleitendes Studium");
             study_test_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
             study_dual_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
             education_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
@@ -718,7 +717,6 @@ public class MainActivity extends AppCompatActivity {
         {
             study_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
             study_job_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
-            study_job_button.setText("Berufsbegleitendes Studium");
             study_test_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
             study_dual_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
             education_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
@@ -730,7 +728,6 @@ public class MainActivity extends AppCompatActivity {
         {
             study_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
             study_job_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
-            study_job_button.setText("Berufsbeglei- tendes Studium");
             study_test_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
             study_dual_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
             education_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));

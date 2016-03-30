@@ -141,6 +141,7 @@
             </LinearLayout>
 
         <Button
+            android:textAllCaps="false"
             android:id="@+id/start_test"
             android:layout_margin="20dp"
             android:background="@drawable/round_button_test"

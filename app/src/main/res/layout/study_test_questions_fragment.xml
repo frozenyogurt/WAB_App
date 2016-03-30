@@ -48,6 +48,7 @@
             android:layout_height="50dp" />
 
         <Button
+            android:textAllCaps="false"
             android:id="@+id/calculate_answers"
             android:layout_marginLeft="60dp"
             android:layout_marginStart="60dp"

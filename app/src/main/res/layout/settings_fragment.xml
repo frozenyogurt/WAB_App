@@ -129,6 +129,7 @@
                 android:layout_height="match_parent">
 
                 <Button
+                    android:textAllCaps="false"
                     android:id="@+id/button_reset"
                     android:textColor="@android:color/white"
                     android:layout_margin="5dp"
@@ -139,6 +140,7 @@
                     android:layout_height="wrap_content" />
 
                 <Button
+                    android:textAllCaps="false"
                     android:id="@+id/button_save"
                     android:textColor="@android:color/white"
                     android:layout_margin="5dp"
