@@ -4,6 +4,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.Category;
 import com.simi.hftl_app.Model.StudyCourse;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -44,6 +46,9 @@ public class StudyTestResultFragment extends MyRefreshFragment
             }
         });
 
+        final MainActivity activity = ((MainActivity)getActivity());
+        activity.setToolbarTitle(activity.getResources().getString(R.string.ACTIVITY_Test_TITLE));
+
         Button info = (Button) view.findViewById(R.id.study_info_button);
         info.setText("Infomationen");
         info.setOnClickListener(new View.OnClickListener()
@@ -51,7 +56,6 @@ public class StudyTestResultFragment extends MyRefreshFragment
             @Override
             public void onClick(View v)
             {
-                MainActivity activity = ((MainActivity)getActivity());
                 ArrayList<StudyCourse> course = new ArrayList<>();
                 if (activity.getWinner() != null && !activity.getWinner().isEmpty())
                 {
@@ -86,7 +90,6 @@ public class StudyTestResultFragment extends MyRefreshFragment
             }
         });
 
-        MainActivity activity = ((MainActivity)getActivity());
         TextView solutionText = (TextView) view.findViewById(R.id.solution_text_test);
         if (activity.getWinner() != null && !activity.getWinner().isEmpty())
         {
@@ -123,6 +126,31 @@ public class StudyTestResultFragment extends MyRefreshFragment
             layout.setBackgroundColor(color);
             end.setBackgroundResource(R.drawable.round_button_grey);
             info.setBackgroundResource(R.drawable.round_button_test);
+        }
+
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            info.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_middle));
+            end.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_middle));
+            titleFragment.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+            solutionText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            result.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            info.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size));
+            end.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size));
+            titleFragment.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+            solutionText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            result.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            info.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            end.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            titleFragment.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+            solutionText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            result.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
         }
 
         return view;

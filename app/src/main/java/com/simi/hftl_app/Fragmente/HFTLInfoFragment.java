@@ -3,12 +3,14 @@ package com.simi.hftl_app.Fragmente;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 /**
@@ -50,6 +52,41 @@ public class HFTLInfoFragment extends MyRefreshFragment
         services.setText(getActivity().getResources().getString(R.string.SERVICES_TITLE));
         whyHFTL.setText(getActivity().getResources().getString(R.string.WHY_HFTL_TITLE));
         news.setText(getActivity().getResources().getString(R.string.NEWS_TITLE));
+
+        MainActivity activity = ((MainActivity)getActivity());
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            portrait.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            employee.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            contact.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            faq.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            imprint.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            services.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            whyHFTL.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            news.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            portrait.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            employee.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            contact.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            faq.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            imprint.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            services.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            whyHFTL.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            news.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            portrait.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            employee.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            contact.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            faq.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            imprint.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            services.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            whyHFTL.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            news.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+        }
 
         if (((MainActivity) getActivity()).convertColorString() != 0)
         {

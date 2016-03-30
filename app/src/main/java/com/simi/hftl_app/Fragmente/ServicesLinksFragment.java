@@ -3,6 +3,7 @@ package com.simi.hftl_app.Fragmente;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import com.simi.hftl_app.Listen.ServicesLinkListAdapter;
 import com.simi.hftl_app.Listen.ServicesLinksListItem;
 import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -33,6 +35,20 @@ public class ServicesLinksFragment extends MyRefreshFragment
 
         TextView title = (TextView) view.findViewById(R.id.title_services_links);
         title.setText(getActivity().getResources().getString(R.string.SERVICES_LINKS_TITLE));
+
+        MainActivity activity = ((MainActivity)getActivity());
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+        }
 
         ListView list = (ListView) view.findViewById(R.id.services_links_list);
         final ArrayList<ServicesLinksListItem> links = new ArrayList<>();

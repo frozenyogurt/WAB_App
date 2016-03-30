@@ -1,5 +1,6 @@
 package com.simi.hftl_app.Listen;
 
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.Person;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -47,6 +49,25 @@ public class PersonListAdapter extends ArrayAdapter<PersonListItem>
 
         TextView description = (TextView) view.findViewById(R.id.person_description);
         description.setText(listItem.getDescription());
+
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            name.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+            sendMailText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_middle));
+            description.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            name.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+            sendMailText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size));
+            description.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            name.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+            sendMailText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            description.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+        }
 
         final ImageView image = (ImageView) view.findViewById(R.id.person_image);
         if (listItem.getPerson().equals(Person.STEPHAN))

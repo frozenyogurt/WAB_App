@@ -1,21 +1,21 @@
 package com.simi.hftl_app.Listen;
 
 import android.content.Context;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
 
 public class ExpandableFAQListAdapter extends BaseExpandableListAdapter
 {
-    private ImageView arrow;
     private MainActivity activity;
     private ArrayList<FAQListItem> items;
 
@@ -51,6 +51,18 @@ public class ExpandableFAQListAdapter extends BaseExpandableListAdapter
 
         TextView infoText = (TextView) convertView.findViewById(R.id.faq_text);
         infoText.setText(childText);
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            infoText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            infoText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            infoText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+        }
 
         return convertView;
     }
@@ -83,15 +95,27 @@ public class ExpandableFAQListAdapter extends BaseExpandableListAdapter
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent)
     {
         String title = ((FAQListItem) getGroup(groupPosition)).getName();
+
         if (convertView == null)
         {
             LayoutInflater inflater = (LayoutInflater) this.activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.faq_list_item, null);
         }
 
-        arrow = (ImageView) convertView.findViewById(R.id.item_arrow);
         TextView titleText = (TextView) convertView.findViewById(R.id.faq_item_name);
         titleText.setText(title);
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            titleText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            titleText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            titleText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+        }
 
         return convertView;
     }

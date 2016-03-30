@@ -13,7 +13,7 @@
         android:layout_margin="10dp"
         android:text="Kontakt"
         android:gravity="center"
-        android:textSize="25sp"
+        android:textSize="@dimen/info_title_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -40,7 +40,7 @@
                 android:id="@+id/contact_hftl_tite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="@dimen/info_title_size"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:textStyle="bold"
@@ -51,7 +51,7 @@
                 android:layout_margin="5dp"
                 android:layout_marginTop="10dp"
                 android:id="@+id/contact_hftl_text"
-                android:textSize="20sp"
+                android:textSize="@dimen/info_text_size"
                 android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -75,7 +75,7 @@
 
                 <TextView
                     android:id="@+id/send_form_text"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/info_text_size"
                     android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
                     android:layout_gravity="center"
@@ -89,7 +89,7 @@
                 android:id="@+id/contact_developer_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="@dimen/info_title_size"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:textStyle="bold"
@@ -100,7 +100,7 @@
                 android:layout_margin="5dp"
                 android:layout_marginTop="10dp"
                 android:id="@+id/contact_developer_text"
-                android:textSize="20sp"
+                android:textSize="@dimen/info_text_size"
                 android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -124,7 +124,7 @@
 
                 <TextView
                     android:id="@+id/send_mail_text"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/info_text_size"
                     android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
                     android:layout_gravity="center"

@@ -1,5 +1,6 @@
 package com.simi.hftl_app.Listen;
 
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -45,6 +47,22 @@ public class NewsListAdapter extends ArrayAdapter<NewsListItem>
 
         TextView title = (TextView) view.findViewById(R.id.news_title);
         title.setText(listItem.getTitle());
+
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+            message.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+            message.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+            message.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+        }
 
         return view;
     }

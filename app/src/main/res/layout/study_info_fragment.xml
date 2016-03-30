@@ -61,7 +61,7 @@
                 android:id="@+id/jobPerspectivesText"/>
 
             <TextView
-                android:id="@+id/curriculumTitle"
+                android:id="@+id/study_content_title"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"

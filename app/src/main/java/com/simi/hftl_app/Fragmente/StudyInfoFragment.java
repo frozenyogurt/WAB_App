@@ -2,6 +2,7 @@ package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.Category;
 import com.simi.hftl_app.Model.StudyCourse;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -36,7 +38,7 @@ public class StudyInfoFragment extends MyRefreshFragment
         LinearLayout websiteLink = (LinearLayout) view.findViewById(R.id.study_info_website_link);
         TextView websiteText = (TextView) view.findViewById(R.id.all_informations_link);
         TextView titleJob = (TextView) view.findViewById(R.id.jobPerspectivesTitle);
-        TextView titleCurri = (TextView) view.findViewById(R.id.curriculumTitle);
+        TextView titleContent = (TextView) view.findViewById(R.id.study_content_title);
 
         TextView pointOne = (TextView) view.findViewById(R.id.study_info_first_point_text);
         TextView pointTwo = (TextView) view.findViewById(R.id.study_info_second_point_text);
@@ -90,25 +92,25 @@ public class StudyInfoFragment extends MyRefreshFragment
         {
             layout.setBackgroundColor(color);
             titleJob.setTextColor(color);
-            titleCurri.setTextColor(color);
+            titleContent.setTextColor(color);
         }
         else if (element.getCategory().equals(Category.NORMAL))
         {
             layout.setBackgroundColor(getActivity().getResources().getColor(R.color.study_color));
             titleJob.setTextColor(getActivity().getResources().getColor(R.color.study_color));
-            titleCurri.setTextColor(getActivity().getResources().getColor(R.color.study_color));
+            titleContent.setTextColor(getActivity().getResources().getColor(R.color.study_color));
         }
         else if (element.getCategory().equals(Category.DUAL))
         {
             layout.setBackgroundColor(getActivity().getResources().getColor(R.color.study_dual_color));
             titleJob.setTextColor(getActivity().getResources().getColor(R.color.study_dual_color));
-            titleCurri.setTextColor(getActivity().getResources().getColor(R.color.study_dual_color));
+            titleContent.setTextColor(getActivity().getResources().getColor(R.color.study_dual_color));
         }
         else
         {
             layout.setBackgroundColor(getActivity().getResources().getColor(R.color.study_job_color));
             titleJob.setTextColor(getActivity().getResources().getColor(R.color.study_job_color));
-            titleCurri.setTextColor(getActivity().getResources().getColor(R.color.study_job_color));
+            titleContent.setTextColor(getActivity().getResources().getColor(R.color.study_job_color));
         }
 
         TextView beginning = (TextView) view.findViewById(R.id.beginningText);
@@ -193,6 +195,62 @@ public class StudyInfoFragment extends MyRefreshFragment
             beginning.setText(getActivity().getResources().getString(R.string.DUAL_AI_BACHELOR_BEGINNING_TEXT));
             perspectives.setText(getActivity().getResources().getString(R.string.DUAL_AI_BACHELOR_PERSPECTIVES_TEXT));
             //curriculumText.setText(getActivity().getResources().getString(R.string.DUAL_AI_BACHELOR_CURRICULUM_TEXT));
+        }
+
+        MainActivity activity = ((MainActivity)getActivity());
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+            titleJob.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+            titleContent.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+            websiteText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            beginning.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            perspectives.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            pointOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            pointTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            pointThree.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            pointFour.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            pointFive.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            pointSix.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            pointSeven.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            websiteText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            beginning.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+            titleJob.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+            titleContent.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+            websiteText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            beginning.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            perspectives.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            pointOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            pointTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            pointThree.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            pointFour.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            pointFive.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            pointSix.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            pointSeven.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            websiteText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            beginning.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+            titleJob.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+            titleContent.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+            websiteText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            beginning.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            perspectives.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            pointOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            pointTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            pointThree.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            pointFour.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            pointFive.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            pointSix.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            pointSeven.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            websiteText.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            beginning.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
         }
 
         return view;

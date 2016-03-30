@@ -8,11 +8,12 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/title_about_us"
         android:textColor="@android:color/black"
         android:layout_margin="10dp"
         android:text="Unser Team"
         android:gravity="center"
-        android:textSize="25sp"
+        android:textSize="@dimen/info_title_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

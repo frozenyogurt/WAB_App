@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,7 @@ import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.Rating;
 import com.simi.hftl_app.Model.RatingCategory;
 import com.simi.hftl_app.Model.StudyCourse;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -176,6 +178,22 @@ public class StudyTestQuestionsFragment extends MyRefreshFragment
             color = getActivity().getResources().getColor(R.color.study_test_color);
             layout.setBackgroundColor(color);
             result.setBackgroundResource(R.drawable.round_button_test);
+        }
+
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            result.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_middle));
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            result.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size));
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            result.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
         }
 
         return view;

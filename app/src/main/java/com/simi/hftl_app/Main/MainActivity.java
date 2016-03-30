@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.TypedValue;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
@@ -28,7 +29,6 @@ import com.simi.hftl_app.Fragmente.MyRefreshFragment;
 import com.simi.hftl_app.Fragmente.StudyFragment;
 import com.simi.hftl_app.Fragmente.TestStudyFragment;
 import com.simi.hftl_app.Listen.EducationListItem;
-import com.simi.hftl_app.Listen.FAQListItem;
 import com.simi.hftl_app.Listen.PersonListItem;
 import com.simi.hftl_app.Listen.StudyListItem;
 import com.simi.hftl_app.Model.Answer;
@@ -37,6 +37,7 @@ import com.simi.hftl_app.Model.MyLongClickListener;
 import com.simi.hftl_app.Model.Question;
 import com.simi.hftl_app.Model.Rating;
 import com.simi.hftl_app.Model.StudyCourse;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -57,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
     private Button education_button;
     private Button maps_button;
     private Button hftl_button;
-    private FAQListItem clickedFAQ;
     private String language = "de";
     private boolean isGoBack = false;
     private ArrayList<Question> questionsList = new ArrayList<>();
@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
     private StudyCourse alternative;
     private Rating rating;
     private int imageID;
+    private TextSize textSize = TextSize.SMALL;
+    private TextView toolbarTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        toolbarTitle = (TextView) this.findViewById(R.id.toolbarTitle);
         study_button = (Button) findViewById(R.id.button_study);
         study_dual_button = (Button) findViewById(R.id.button_study_dual);
         study_job_button = (Button) findViewById(R.id.button_study_job);
@@ -101,6 +104,8 @@ public class MainActivity extends AppCompatActivity {
         education_button = (Button) findViewById(R.id.button_education);
         maps_button = (Button) findViewById(R.id.button_maps);
         hftl_button = (Button) findViewById(R.id.button_hftl_info);
+
+        setTextSizeForViews();
 
         study_button.setOnLongClickListener(new MyLongClickListener(getWidth()/2, this));
         study_dual_button.setOnLongClickListener(new MyLongClickListener(getWidth() /2, this));
@@ -258,10 +263,6 @@ public class MainActivity extends AppCompatActivity {
                     || lastFragmentName.equals("StudyTestResultFragment")
                     || lastFragmentName.equals("StudyInfoFragment"))
             {
-                if (lastFragmentName.equals("StudyInfoFragment"))
-                {
-                    setToolbarTitle(getResources().getString(R.string.ACTIVITY_Test_TITLE));
-                }
                 if (lastFragmentName.equals("MenuFragment"))
                 {
                     setCurrentPage(getCurrentViewPagerItem());
@@ -316,7 +317,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void setToolbarTitle(String title)
     {
-        TextView toolbarTitle = (TextView) this.findViewById(R.id.toolbarTitle);
         toolbarTitle.setText(title);
     }
 
@@ -688,5 +688,52 @@ public class MainActivity extends AppCompatActivity {
     public Drawable getImage()
     {
         return getResources().getDrawable(imageID);
+    }
+
+    public TextSize getTextSize() {
+        return textSize;
+    }
+
+    public void setTextSize(TextSize textSize)
+    {
+        this.textSize = textSize;
+        setTextSizeForViews();
+    }
+
+    public void setTextSizeForViews()
+    {
+        if (this.textSize.equals(TextSize.MIDDLE))
+        {
+            study_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            study_job_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            study_test_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            study_dual_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            education_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            maps_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            hftl_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_middle));
+            toolbarTitle.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.special_title_size_middle));
+        }
+        else if (this.textSize.equals(TextSize.SMALL))
+        {
+            study_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            study_job_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            study_test_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            study_dual_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            education_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            maps_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            hftl_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size));
+            toolbarTitle.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.special_title_size));
+        }
+        else if (this.textSize.equals(TextSize.BIG))
+        {
+            study_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            study_job_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            study_test_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            study_dual_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            education_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            maps_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            hftl_button.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.default_button_text_size_big));
+            toolbarTitle.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.special_title_size_big));
+        }
     }
 }

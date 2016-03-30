@@ -3,17 +3,20 @@ package com.simi.hftl_app.Fragmente;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.simi.hftl_app.Listen.OptionListAdapter;
 import com.simi.hftl_app.Listen.OptionListItem;
 import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.Option;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -36,6 +39,22 @@ public class MenuFragment extends MyRefreshFragment
         items.add(new OptionListItem(getActivity().getResources().getString(R.string.MENU_WEBSITE_NAME), Option.WEBSITE));
         items.add(new OptionListItem(getActivity().getResources().getString(R.string.MENU_ABOUT_US_NAME), Option.ABOUTUS));
         items.add(new OptionListItem(getActivity().getResources().getString(R.string.MENU_EXIT_NAME), Option.EXIT));
+
+        TextView titleFragemnt = (TextView) view.findViewById(R.id.titleOptions);
+        titleFragemnt.setText("Optionen");
+        MainActivity activity = ((MainActivity)getActivity());
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            titleFragemnt.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            titleFragemnt.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            titleFragemnt.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+        }
 
         ListView list = (ListView) view.findViewById(R.id.options_list);
         OptionListAdapter adapter = new OptionListAdapter((MainActivity)getActivity(), R.layout.option_list_item, items);

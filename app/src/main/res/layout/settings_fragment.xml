@@ -6,99 +6,152 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/titleChangeLanguage"
-        android:textColor="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sprache"
-        android:layout_margin="5dp"
-        android:textSize="25sp"/>
-
-    <LinearLayout
-        android:background="@color/magenta"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"/>
-
-    <CheckBox
-        android:id="@+id/language_german"
-        android:clickable="true"
-        android:checked="true"
-        android:textSize="20sp"
-        android:layout_margin="10dp"
-        android:text="Deutsch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <CheckBox
-        android:id="@+id/language_english"
-        android:clickable="true"
-        android:textSize="20sp"
-        android:layout_margin="10dp"
-        android:text="Englisch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/titleChangeColor"
-        android:textColor="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Design"
-        android:layout_margin="5dp"
-        android:textSize="25sp"/>
-
-    <LinearLayout
-        android:background="@color/magenta"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"/>
-
-    <CheckBox
-        android:id="@+id/default_design"
-        android:clickable="true"
-        android:textSize="20sp"
-        android:layout_margin="10dp"
-        android:text="Standard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <CheckBox
-        android:id="@+id/magenta_design"
-        android:clickable="true"
-        android:textSize="20sp"
-        android:layout_margin="10dp"
-        android:text="Magenta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <LinearLayout
-        android:weightSum="2"
-        android:layout_gravity="bottom"
+    <ScrollView
+        android:scrollbars="none"
+        android:overScrollMode="never"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button_reset"
-            android:textColor="@android:color/white"
-            android:layout_margin="5dp"
-            android:layout_gravity="bottom"
-            android:text="Zurücksetzen"
-            android:background="@drawable/round_button_grey"
-            android:layout_weight="1"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button_save"
-            android:textColor="@android:color/white"
-            android:layout_margin="5dp"
-            android:layout_gravity="bottom"
-            android:background="@drawable/round_button_magenta"
-            android:text="Speichern"
-            android:layout_weight="1"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/titleChangeLanguage"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sprache"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
-    </LinearLayout>
+            <LinearLayout
+                android:background="@color/magenta"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <CheckBox
+                android:id="@+id/language_german"
+                android:clickable="true"
+                android:checked="true"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:text="Deutsch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/language_english"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:text="Englisch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/titleChangeColor"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Design"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:background="@color/magenta"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <CheckBox
+                android:id="@+id/default_design"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:text="Standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/magenta_design"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:text="Magenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/title_change_text_size"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Textgröße"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:background="@color/magenta"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <CheckBox
+                android:id="@+id/text_size_small"
+                android:clickable="true"
+                android:textSize="@dimen/info_title_size"
+                android:layout_margin="10dp"
+                android:text="Klein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/text_size_middle"
+                android:clickable="true"
+                android:textSize="@dimen/info_title_size_middle"
+                android:layout_margin="10dp"
+                android:text="Mittel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/text_size_big"
+                android:clickable="true"
+                android:textSize="@dimen/info_title_size_big"
+                android:layout_margin="10dp"
+                android:text="Groß"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_reset"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:text="Zurücksetzen"
+                    android:background="@drawable/round_button_grey"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/button_save"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_button_magenta"
+                    android:text="Speichern"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

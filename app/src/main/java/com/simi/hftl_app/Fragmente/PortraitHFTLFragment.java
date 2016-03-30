@@ -2,6 +2,7 @@ package com.simi.hftl_app.Fragmente;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 /**
@@ -28,7 +30,28 @@ public class PortraitHFTLFragment extends MyRefreshFragment
         View view = inflater.inflate(R.layout.portrait_hftl_fragment,container,false);
 
         TextView title = (TextView) view.findViewById(R.id.title_portrait);
+        TextView textOne = (TextView) view.findViewById(R.id.portrait_text_one);
+        TextView textTwo = (TextView) view.findViewById(R.id.portrait_text_two);
         title.setText(getActivity().getResources().getString(R.string.PORTRAIT_TITLE));
+        MainActivity activity = ((MainActivity)getActivity());
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+            textOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            textTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+            textOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            textTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+            textOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            textTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+        }
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
         int color = ((MainActivity) getActivity()).convertColorString();
@@ -42,8 +65,6 @@ public class PortraitHFTLFragment extends MyRefreshFragment
             layout.setBackgroundColor(color);
         }
 
-        TextView textOne = (TextView) view.findViewById(R.id.portrait_text_one);
-        TextView textTwo = (TextView) view.findViewById(R.id.portrait_text_two);
         ImageView imageOne = (ImageView) view.findViewById(R.id.portrait_image_one);
         ImageView imageTwo = (ImageView) view.findViewById(R.id.portrait_image_two);
 

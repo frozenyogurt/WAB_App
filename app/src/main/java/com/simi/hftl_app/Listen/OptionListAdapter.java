@@ -1,5 +1,6 @@
 package com.simi.hftl_app.Listen;
 
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.Option;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -40,6 +42,18 @@ public class OptionListAdapter extends ArrayAdapter<OptionListItem>
 
         TextView name = (TextView) view.findViewById(R.id.item_option_name);
         name.setText(listItem.getName());
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            name.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            name.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            name.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+        }
 
         ImageView image = (ImageView) view.findViewById(R.id.item_option_image);
         if (listItem.getOption().equals(Option.ABOUTUS))

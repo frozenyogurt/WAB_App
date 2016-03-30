@@ -3,6 +3,7 @@ package com.simi.hftl_app.Fragmente;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import com.simi.hftl_app.Listen.ExpandableFAQListAdapter;
 import com.simi.hftl_app.Listen.FAQListItem;
 import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.QuestionType;
+import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
 import java.util.ArrayList;
@@ -37,6 +39,19 @@ public class FAQFragment extends MyRefreshFragment
 
         TextView title = (TextView) view.findViewById(R.id.faq_fragment_title);
         title.setText(getActivity().getResources().getString(R.string.FAQ_TITLE));
+        MainActivity activity = ((MainActivity)getActivity());
+        if (activity.getTextSize().equals(TextSize.MIDDLE))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_middle));
+        }
+        else if (activity.getTextSize().equals(TextSize.SMALL))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size));
+        }
+        else if (activity.getTextSize().equals(TextSize.BIG))
+        {
+            title.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+        }
 
         ExpandableListView list = (ExpandableListView) view.findViewById(R.id.faq_list);
         final ArrayList<FAQListItem> persons = new ArrayList<>();
