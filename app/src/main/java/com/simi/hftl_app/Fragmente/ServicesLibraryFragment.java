@@ -35,6 +35,8 @@ public class ServicesLibraryFragment extends MyRefreshFragment
         TextView textOne = (TextView) view.findViewById(R.id.text_library_one);
         TextView textTwo = (TextView) view.findViewById(R.id.text_library_two);
         TextView textThree = (TextView) view.findViewById(R.id.text_library_three);
+        TextView beginning1 = (TextView) view.findViewById(R.id.services_library_beginning_text);
+        TextView beginning2 = (TextView) view.findViewById(R.id.services_library_beginning_text2);
 
         MainActivity activity = ((MainActivity)getActivity());
         if (activity.getTextSize().equals(TextSize.MIDDLE))
@@ -46,6 +48,8 @@ public class ServicesLibraryFragment extends MyRefreshFragment
             textOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
             textTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
             textThree.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            beginning1.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
+            beginning2.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_middle));
         }
         else if (activity.getTextSize().equals(TextSize.SMALL))
         {
@@ -56,6 +60,8 @@ public class ServicesLibraryFragment extends MyRefreshFragment
             textOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
             textTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
             textThree.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            beginning1.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
+            beginning2.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size));
         }
         else if (activity.getTextSize().equals(TextSize.BIG))
         {
@@ -66,6 +72,8 @@ public class ServicesLibraryFragment extends MyRefreshFragment
             textOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
             textTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
             textThree.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            beginning1.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
+            beginning2.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_text_size_big));
         }
 
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.underline);
@@ -94,8 +102,6 @@ public class ServicesLibraryFragment extends MyRefreshFragment
         textThree.setText(getActivity().getResources().getString(R.string.SERVICES_LIBRARY_TEXT_THREE));
 
         LinearLayout callLibrary = (LinearLayout) view.findViewById(R.id.call_library);
-        TextView beginning1 = (TextView) view.findViewById(R.id.services_library_beginning_text);
-        TextView beginning2 = (TextView) view.findViewById(R.id.services_library_beginning_text2);
         LinearLayout goToLibraryWebsite = (LinearLayout) view.findViewById(R.id.services_library_website);
         LinearLayout goToLibraryInventoryWebsite = (LinearLayout) view.findViewById(R.id.services_library_inventory_website);
 

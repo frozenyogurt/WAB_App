@@ -67,12 +67,20 @@ public class Question11Fragment extends MyRefreshFragment
         }
         else if (activity.getTextSize().equals(TextSize.BIG))
         {
+            int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10, getResources().getDisplayMetrics());
+            int px2 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics());
             questionOne.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            questionOne.setPadding(px, px2, 0, px2);
             questionTwo.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            questionTwo.setPadding(px, px2, 0, px2);
             questionThree.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            questionThree.setPadding(px, px2, 0, px2);
             questionFour.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            questionFour.setPadding(px, px2, 0, px2);
             questionFive.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.default_button_text_size_big));
+            questionFive.setPadding(px, px2, 0, px2);
             questionName.setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.getResources().getDimension(R.dimen.info_title_size_big));
+            questionName.setPadding(0, px2, 0, px2);
         }
 
         int color = activity.convertColorString();
