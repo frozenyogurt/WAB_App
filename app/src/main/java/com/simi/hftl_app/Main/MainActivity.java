@@ -364,20 +364,20 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (color.equals(Integer.toHexString(getResources().getColor(R.color.magenta))))
         {
-            study_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
-            study_button.setTextColor(getResources().getColor(R.color.magenta));
-            hftl_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
-            hftl_button.setTextColor(getResources().getColor(R.color.magenta));
-            education_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
-            education_button.setTextColor(getResources().getColor(R.color.magenta));
-            maps_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
-            maps_button.setTextColor(getResources().getColor(R.color.magenta));
-            study_dual_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
-            study_dual_button.setTextColor(getResources().getColor(R.color.magenta));
-            study_job_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
-            study_job_button.setTextColor(getResources().getColor(R.color.magenta));
-            study_test_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.bordered_magenta));
-            study_test_button.setTextColor(getResources().getColor(R.color.magenta));
+            study_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.box));
+            //study_button.setTextColor(getResources().getColor(R.color.magenta));
+            hftl_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.box));
+            //hftl_button.setTextColor(getResources().getColor(R.color.magenta));
+            education_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.box));
+            //education_button.setTextColor(getResources().getColor(R.color.magenta));
+            maps_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.box));
+            //maps_button.setTextColor(getResources().getColor(R.color.magenta));
+            study_dual_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.box));
+            //study_dual_button.setTextColor(getResources().getColor(R.color.magenta));
+            study_job_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.box));
+            //study_job_button.setTextColor(getResources().getColor(R.color.magenta));
+            study_test_button.setBackgroundDrawable(getResources().getDrawable(R.drawable.box));
+            //study_test_button.setTextColor(getResources().getColor(R.color.magenta));
         }
     }
 
@@ -502,11 +502,12 @@ public class MainActivity extends AppCompatActivity {
     public void initQuestionList()
     {
         ArrayList<Answer> answers1 = new ArrayList<>();
-        answers1.add(new Answer("Sehr gut", Rating.getInitializedRatingMap(0,0,0,6,6,6,6,0,0)));
-        answers1.add(new Answer("Gut", Rating.getInitializedRatingMap(0,0,0,4,6,4,4,0,0)));
-        answers1.add(new Answer("Geht so", Rating.getInitializedRatingMap(0,0,0,2,6,2,2,0,0)));
-        answers1.add(new Answer("Nicht so gut", Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
-        questionsList.add(new Question("Wie schätzt du dein math.-naturwissenschaftliches Vorwissen ein?", answers1));
+
+        answers1.add(new Answer(getResources().getString(R.string.QUESTION_ONE_ANSWER_ONE), Rating.getInitializedRatingMap(0,0,0,6,6,6,6,0,0)));
+        answers1.add(new Answer(getResources().getString(R.string.QUESTION_ONE_ANSWER_TWO), Rating.getInitializedRatingMap(0,0,0,4,6,4,4,0,0)));
+        answers1.add(new Answer(getResources().getString(R.string.QUESTION_ONE_ANSWER_THREE), Rating.getInitializedRatingMap(0,0,0,2,6,2,2,0,0)));
+        answers1.add(new Answer(getResources().getString(R.string.QUESTION_ONE_ANSWER_FOUR), Rating.getInitializedRatingMap(0,0,0,0,6,0,0,0,0)));
+        questionsList.add(new Question(getResources().getString(R.string.QUESTION_ONE_NAME), answers1));
 
         ArrayList<Answer> answers2 = new ArrayList<>();
         answers2.add(new Answer("Ja, so viele wie möglich", Rating.getInitializedRatingMap(0,0,0,6,0,6,6,0,0)));

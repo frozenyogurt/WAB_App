@@ -620,17 +620,10 @@ Herzlich Willkommen.
     <string name="TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED"> wurden nicht beantwortet.</string>
 
     <string name="TEST_RESULT_END_TEST">Test Beenden</string>
-    <!-- ACHTUNG -->
-    <!-- Hier kommen noch welche dazu, wenn der test fertig ist -->
-    <!-- ACHTUNG -->
 
     <string name="TEST_START">Test starten</string>
     <string name="TEST_START_BEGINNING">Einführung</string>
-    <string name="TEST_START_DESCRIPTION">Bei der Durchführung des Testes, bitten wir Dich folgende Punkte zu beachten:\n
-- Jede Frage muss beantwortet werden\n
-- Du kannst nur eine Antwort auswählen\n
-- Wenn Du dir nicht sicher bist, nimm die Antwort, die dir am ehesten zusagt\n
-- Zur Navigation dienen die Pfeile oder das Streichen über den Bildschirm</string>
+    <string name="TEST_START_DESCRIPTION">Bei der Durchführung des Testes, bitten wir Dich folgende Punkte zu beachten:</string>
     <string name="TEST_START_ATTENTION">Willkommen beim Studiengangtest!\n
 Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dich bezüglich der Studienart und dem Studiengrad. Trotz unserer Auswertung kannst Du dich natürlich auch gerne für etwas anderes entscheiden.</string>
 
@@ -668,6 +661,50 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="RESULT_DATA_DUAL_TITLE">Dualstudium</string>
     <string name="RESULT_DATA_JOB_TITLE_BUTTON">Berufsbegleitendes Studium</string>
     <string name="RESULT_DATA_DIRECT_TITLE">Direktstudium</string>
+
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+
+    <string name="QUESTION_ONE_ANSWER_ONE">Sehr gut</string>
+    <string name="QUESTION_ONE_ANSWER_TWO">Gut</string>
+    <string name="QUESTION_ONE_ANSWER_THREE">Geht so</string>
+    <string name="QUESTION_ONE_ANSWER_FOUR">Nicht so gut</string>
+    <string name="QUESTION_ONE_NAME">Wie schätzt du dein math.-naturwissenschaftliches Vorwissen ein?</string>
+
+    <string name="KMI_BACHELOR_POINT_ONE">Punkt 1</string>
+    <string name="KMI_BACHELOR_POINT_TWO">Punkt 2</string>
+    <string name="KMI_BACHELOR_POINT_THREE">Punkt 3</string>
+    <string name="KMI_BACHELOR_POINT_FOUR">Punkt 4</string>
+    <string name="KMI_BACHELOR_POINT_FIVE">Punkt 5</string>
+    <string name="KMI_BACHELOR_POINT_SIX">Punkt 6</string>
+    <string name="KMI_BACHELOR_POINT_SEVEN">Punkt 7</string>
+
+    <string name="STUDY_INFO_TITLE_CONTENT">Studieninhalte</string>
+    <string name="STUDY_TEST_RESULT_INFO_BUTTON">Informationen</string>
+    <string name="STUDY_TEST_RESULT_PERFECT_TEXT">Der folgende Studiengang passt perfekt zu dir:</string>
+    <string name="STUDY_TEST_RESULT_NEARLY_TEXT">Der folgende Studiengang kommt deinen Anforderungen am Nähesten:</string>
+    <string name="STUDY_TEST_RESULT_NOTHING_TEXT">Lieder haben wir keinen Studiengang an der HfTL für dich ausfindig machen können.</string>
+    <string name="STUDY_TEST_RESULT_OR">oder</string>
+    <string name="STUDY_TEST_RESULT_NOTHING">Keiner</string>
+    <string name="STUDY_TEST_RESULT_KMI_BACHELOR_RESULT">Direkter Bachelor of Enigeering: Kommunikations- und Medieninformatik</string>
+    <string name="STUDY_TEST_RESULT_IKT_MASTER_RESULT">Erst den direkten Bachelor of Engineering: Informations- und Kommunikationstechnik und dann den direkten Master of Engineering: Informations- und Kommunikationstechnik in Englisch oder Deutsch</string>
+    <string name="STUDY_TEST_RESULT_WI_BACHELOR_RESULT">Direkter Bachlor of Science: Wirtschaftsinformatik</string>
+    <string name="STUDY_TEST_RESULT_DUAL_KMI_BACHELOR_RESULT">Dualer Bachelor of Enigeering: Kommunikations- und Medieninformatik</string>
+    <string name="STUDY_TEST_RESULT_DUAL_WI_BACHELOR_RESULT">Dualer Bachlor of Science: Wirtschaftsinformatik</string>
+    <string name="STUDY_TEST_RESULT_DUAL_WI_MASTER_RESULT">Erst den dualen Bachlor of Science: Wirtschaftsinformatik und dann den dualen Master of Science: Wirtschaftsinformatik</string>
+    <string name="STUDY_TEST_RESULT_JOB_WI_BACHELOR_RESULT">Berufsbegleitender Bachlor of Science: Wirtschaftsinformatik</string>
+    <string name="STUDY_TEST_RESULT_JOB_WI_MASTER_RESULT">Erst den berufsbegleitenden Bachlor of Science: Wirtschaftsinformatik und dann den berufsbegleitenden Master of Science: Wirtschaftsinformatik</string>
+    <string name="STUDY_TEST_RESULT_IKT_BACHELOR_RESULT">Direkter Bachelor of Engineering: Informations- und Kommunikationstechnik</string>
+    <string name="STUDY_TEST_RESULT_JOB_IKT_BACHELOR_RESULT">Berufsbegleitender Bachelor of Engineering: Informations- und Kommunikationstechnik</string>
+    <string name="STUDY_TEST_RESULT_JOB_IKT_MASTER_RESULT">Erst den berufsbegleitenden Bachelor of Engineering: Informations- und Kommunikationstechnik und dann den berufsbegleitenden Master of Engineering: Informations- und Kommunikationstechnik</string>
+    <string name="STUDY_TEST_RESULT_DUAL_AI_BACHELOR_RESULT">Dualer Bachelor of Science: Angewandte Informatik</string>
+    <string name="STUDY_TEST_RESULT_JOB_KMI_BACHELOR_RESULT">Berufsbegleitender Bachelor of Enigeering: Kommunikations- und Medieninformatik</string>
+
+    <string name="STUDY_TEST_POINT_ONE">Jede Frage muss beantwortet werden</string>
+    <string name="STUDY_TEST_POINT_TWO">Du kannst nur eine Antwort auswählen</string>
+    <string name="STUDY_TEST_POINT_THREE">Wenn Du dir nicht sicher bist, nimm die Antwort, die dir am ehesten zusagt</string>
+    <string name="STUDY_TEST_POINT_FOUR">Zur Navigation dienen die Pfeile oder das Streichen über den Bildschirm</string>
 </resources>
 
 

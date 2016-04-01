@@ -50,7 +50,7 @@ public class StudyTestResultFragment extends MyRefreshFragment
         activity.setToolbarTitle(activity.getResources().getString(R.string.ACTIVITY_Test_TITLE));
 
         Button info = (Button) view.findViewById(R.id.study_info_button);
-        info.setText("Infomationen");
+        info.setText(activity.getResources().getString(R.string.STUDY_TEST_RESULT_INFO_BUTTON));
         info.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -93,15 +93,15 @@ public class StudyTestResultFragment extends MyRefreshFragment
         TextView solutionText = (TextView) view.findViewById(R.id.solution_text_test);
         if (activity.getWinner() != null && !activity.getWinner().isEmpty())
         {
-            solutionText.setText("Der folgende Studiengang passt perfekt zu dir:");
+            solutionText.setText(activity.getResources().getString(R.string.STUDY_TEST_RESULT_PERFECT_TEXT));
         }
         else if (activity.getAlternative() != null)
         {
-            solutionText.setText("Der folgende Studiengang kommt deinen Anforderungen am Nähesten:");
+            solutionText.setText(activity.getResources().getString(R.string.STUDY_TEST_RESULT_NEARLY_TEXT));
         }
         else
         {
-            solutionText.setText("Lieder haben wir keinen Studiengang an der HfTL für dich ausfindig machen können.");
+            solutionText.setText(activity.getResources().getString(R.string.STUDY_TEST_RESULT_NOTHING_TEXT));
         }
 
         TextView result = (TextView) view.findViewById(R.id.result_test);
@@ -169,7 +169,7 @@ public class StudyTestResultFragment extends MyRefreshFragment
             }
             else
             {
-                solution = getSolution(winner.get(0)) + " oder " + getSolution(winner.get(1));
+                solution = getSolution(winner.get(0)) + " " + activity.getResources().getString(R.string.STUDY_TEST_RESULT_OR) + " " + getSolution(winner.get(1));
             }
         }
         else if (activity.getAlternative() != null)
@@ -178,7 +178,7 @@ public class StudyTestResultFragment extends MyRefreshFragment
         }
         else
         {
-            solution = "Keinen";
+            solution = activity.getResources().getString(R.string.STUDY_TEST_RESULT_NOTHING);
         }
         return solution;
     }
@@ -189,43 +189,43 @@ public class StudyTestResultFragment extends MyRefreshFragment
         switch (course)
         {
             case KMI_BACHELOR:
-                solution = "Direkter Bachelor of Enigeering: Kommunikations- und Medieninformatik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_KMI_BACHELOR_RESULT);
                 break;
             case IKT_MASTER:
-                solution = "Erst den direkten Bachelor of Engineering: Informations- und Kommunikationstechnik und dann den direkten Master of Engineering: Informations- und Kommunikationstechnik in Englisch oder Deutsch";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_IKT_MASTER_RESULT);
                 break;
             case WI_BACHELOR:
-                solution = "Direkter Bachlor of Science: Wirtschaftsinformatik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_WI_BACHELOR_RESULT);
                 break;
             case DUAL_KMI_BACHELOR:
-                solution = "Dualer Bachelor of Enigeering: Kommunikations- und Medieninformatik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_DUAL_KMI_BACHELOR_RESULT);
                 break;
             case JOB_KMI_BACHELOR:
-                solution = "Berufsbegleitender Bachelor of Enigeering: Kommunikations- und Medieninformatik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_JOB_KMI_BACHELOR_RESULT);
                 break;
             case DUAL_WI_BACHELOR:
-                solution = "Dualer Bachlor of Science: Wirtschaftsinformatik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_DUAL_WI_BACHELOR_RESULT);
                 break;
             case DUAL_WI_MASTER:
-                solution = "Erst den dualen Bachlor of Science: Wirtschaftsinformatik und dann den dualen Master of Science: Wirtschaftsinformatik.";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_DUAL_WI_MASTER_RESULT);
                 break;
             case JOB_WI_BACHELOR:
-                solution = "Berufsbegleitender Bachlor of Science: Wirtschaftsinformatik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_JOB_WI_BACHELOR_RESULT);
                 break;
             case JOB_WI_MASTER:
-                solution = "Erst den berufsbegleitenden Bachlor of Science: Wirtschaftsinformatik und dann den berufsbegleitenden Master of Science: Wirtschaftsinformatik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_JOB_WI_MASTER_RESULT);
                 break;
             case IKT_BACHELOR:
-                solution = "Direkter Bachelor of Engineering: Informations- und Kommunikationstechnik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_IKT_BACHELOR_RESULT);
                 break;
             case JOB_IKT_BACHELOR:
-                solution = "Berufsbegleitender Bachelor of Engineering: Informations- und Kommunikationstechnik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_JOB_IKT_BACHELOR_RESULT);
                 break;
             case JOB_IKT_MASTER:
-                solution = "Erst den berufsbegleitenden Bachelor of Engineering: Informations- und Kommunikationstechnik und dann den berufsbegleitenden Master of Engineering: Informations- und Kommunikationstechnik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_JOB_IKT_MASTER_RESULT);
                 break;
             case DUAL_AI_BACHELOR:
-                solution = "Dualer Bachelor of Science: Angewandte Informatik";
+                solution = getActivity().getResources().getString(R.string.STUDY_TEST_RESULT_DUAL_AI_BACHELOR_RESULT);
                 break;
         }
         return solution;

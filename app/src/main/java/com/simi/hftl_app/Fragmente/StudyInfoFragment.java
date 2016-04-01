@@ -39,6 +39,7 @@ public class StudyInfoFragment extends MyRefreshFragment
         TextView websiteText = (TextView) view.findViewById(R.id.all_informations_link);
         TextView titleJob = (TextView) view.findViewById(R.id.jobPerspectivesTitle);
         TextView titleContent = (TextView) view.findViewById(R.id.study_content_title);
+        titleContent.setText(getActivity().getResources().getString(R.string.STUDY_INFO_TITLE_CONTENT));
 
         TextView pointOne = (TextView) view.findViewById(R.id.study_info_first_point_text);
         TextView pointTwo = (TextView) view.findViewById(R.id.study_info_second_point_text);

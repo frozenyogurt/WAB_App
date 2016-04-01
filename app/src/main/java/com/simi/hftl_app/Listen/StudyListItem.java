@@ -41,13 +41,13 @@ public class StudyListItem
             this.studyDegree = Degree.BACHELOR;
             this.studyType = StudyType.KMI;
             this.link = "https://www.hft-leipzig.de/de/studiengaenge-end/direktstudium/kmi-bachelor.html";
-            this.points.add("Punkt 1");
-            this.points.add("Punkt 2");
-            this.points.add("Punkt 3");
-            this.points.add("Punkt 4");
-            this.points.add("Punkt 5");
-            this.points.add("Punkt 6");
-            this.points.add("Punkt 7");
+            this.points.add(activity.getResources().getString(R.string.KMI_BACHELOR_POINT_ONE));
+            this.points.add(activity.getResources().getString(R.string.KMI_BACHELOR_POINT_TWO));
+            this.points.add(activity.getResources().getString(R.string.KMI_BACHELOR_POINT_THREE));
+            this.points.add(activity.getResources().getString(R.string.KMI_BACHELOR_POINT_FOUR));
+            this.points.add(activity.getResources().getString(R.string.KMI_BACHELOR_POINT_FIVE));
+            this.points.add(activity.getResources().getString(R.string.KMI_BACHELOR_POINT_SIX));
+            this.points.add(activity.getResources().getString(R.string.KMI_BACHELOR_POINT_SEVEN));
         }
         if (course.equals(StudyCourse.DUAL_KMI_BACHELOR))
         {
