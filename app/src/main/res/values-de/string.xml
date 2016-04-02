@@ -672,13 +672,8 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="QUESTION_ONE_ANSWER_FOUR">Nicht so gut</string>
     <string name="QUESTION_ONE_NAME">Wie schätzt du dein math.-naturwissenschaftliches Vorwissen ein?</string>
 
-    <string name="KMI_BACHELOR_POINT_ONE">Punkt 1</string>
-    <string name="KMI_BACHELOR_POINT_TWO">Punkt 2</string>
-    <string name="KMI_BACHELOR_POINT_THREE">Punkt 3</string>
-    <string name="KMI_BACHELOR_POINT_FOUR">Punkt 4</string>
-    <string name="KMI_BACHELOR_POINT_FIVE">Punkt 5</string>
-    <string name="KMI_BACHELOR_POINT_SIX">Punkt 6</string>
-    <string name="KMI_BACHELOR_POINT_SEVEN">Punkt 7</string>
+
+
 
     <string name="STUDY_INFO_TITLE_CONTENT">Studieninhalte</string>
     <string name="STUDY_TEST_RESULT_INFO_BUTTON">Informationen</string>
@@ -705,6 +700,84 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="STUDY_TEST_POINT_TWO">Du kannst nur eine Antwort auswählen</string>
     <string name="STUDY_TEST_POINT_THREE">Wenn Du dir nicht sicher bist, nimm die Antwort, die dir am ehesten zusagt</string>
     <string name="STUDY_TEST_POINT_FOUR">Zur Navigation dienen die Pfeile oder das Streichen über den Bildschirm</string>
+
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- AB HIER STUDIENBESCHREIBUNGEN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <string name="KMI_BACHELOR_POINT_ONE">allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch)</string>
+    <string name="KMI_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) </string>
+    <string name="KMI_BACHELOR_POINT_THREE">Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) </string>
+    <string name="KMI_BACHELOR_POINT_FOUR">Verteilte Anwendungen </string>
+    <string name="KMI_BACHELOR_POINT_FIVE">Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)</string>
+
+    <string name="DUAL_KMI_BACHELOR_POINT_ONE">allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch)</string>
+    <string name="DUAL_KMI_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) </string>
+    <string name="DUAL_KMI_BACHELOR_POINT_THREE">Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) </string>
+    <string name="DUAL_KMI_BACHELOR_POINT_FOUR">Verteilte Anwendungen </string>
+    <string name="DUAL_KMI_BACHELOR_POINT_FIVE">Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)</string>
+
+    <string name="JOB_KMI_BACHELOR_POINT_ONE">allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch)</string>
+    <string name="JOB_KMI_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) </string>
+    <string name="JOB_KMI_BACHELOR_POINT_THREE">Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) </string>
+    <string name="JOB_KMI_BACHELOR_POINT_FOUR">Verteilte Anwendungen </string>
+    <string name="JOB_KMI_BACHELOR_POINT_FIVE">Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)</string>
+
+    <string name="WI_BACHELOR_POINT_ONE">Grundlagen: Mathematik, Statistik, Projektmanagement, Technical &amp; Business Englisch, Recht </string>
+    <string name="WI_BACHELOR_POINT_TWO">Wirtschaft: Allgemeine Betriebswirtschaftslehre, Marketing &amp; CRM, Volkswirtschaftslehre, Rechnungswesen und Controlling, Netzbasierte Geschäftsmodelle</string>
+    <string name="WI_BACHELOR_POINT_THREE">Informatik: Programmierung, Hard- und Softwaresysteme, Kommunikationsnetze, Verteilte Anwendungen, IT-Sicherheit </string>
+    <string name="WI_BACHELOR_POINT_FOUR">Wirtschaftsinformatik: Prozessmanagement, Datenmanagement, IT-Service- &amp; Supply Chain Management, Betriebliche Informationssysteme, Softwareengineering, Business Intelligence</string>
+
+    <string name="DUAL_WI_BACHELOR_POINT_ONE">Grundlagen: Mathematik, Statistik, Projektmanagement, Technical &amp; Business Englisch, Recht </string>
+    <string name="DUAL_WI_BACHELOR_POINT_TWO">Wirtschaft: Allgemeine Betriebswirtschaftslehre, Marketing &amp; CRM, Volkswirtschaftslehre, Rechnungswesen und Controlling, Netzbasierte Geschäftsmodelle</string>
+    <string name="DUAL_WI_BACHELOR_POINT_THREE">Informatik: Programmierung, Hard- und Softwaresysteme, Kommunikationsnetze, Verteilte Anwendungen, IT-Sicherheit </string>
+    <string name="DUAL_WI_BACHELOR_POINT_FOUR">Wirtschaftsinformatik: Prozessmanagement, Datenmanagement, IT-Service- &amp; Supply Chain Management, Betriebliche Informationssysteme, Softwareengineering, Business Intelligence</string>
+
+    <string name="JOB_WI_BACHELOR_POINT_ONE">Grundlagen: Mathematik, Statistik, Projektmanagement, Technical &amp; Business Englisch, Recht </string>
+    <string name="JOB_WI_BACHELOR_POINT_TWO">Wirtschaft: Allgemeine Betriebswirtschaftslehre, Marketing &amp; CRM, Volkswirtschaftslehre, Rechnungswesen und Controlling, Netzbasierte Geschäftsmodelle</string>
+    <string name="JOB_WI_BACHELOR_POINT_THREE">Informatik: Programmierung, Hard- und Softwaresysteme, Kommunikationsnetze, Verteilte Anwendungen, IT-Sicherheit </string>
+    <string name="JOB_WI_BACHELOR_POINT_FOUR">Wirtschaftsinformatik: Prozessmanagement, Datenmanagement, IT-Service- &amp; Supply Chain Management, Betriebliche Informationssysteme, Softwareengineering, Business Intelligence</string>
+
+    <string name="DUAL_WI_MASTER_POINT_ONE">Pflichtmodule: Information Management,IT-Recht,New Business Development &amp; Technology Management, IT-Controlling, Business Information &amp; Process Modeling, Research Methods, Business Process Optimization, Enterprise Architecture Management, Software Engineering, Software Management, IT-Project Management, IT-Service Management</string>
+    <string name="DUAL_WI_MASTER_POINT_TWO">Profilierungsbereiche: Software Engineering, Business Analytics</string>
+
+    <string name="JOB_WI_MASTER_POINT_ONE">Pflichtmodule: Information Management,IT-Recht,New Business Development &amp; Technology Management, IT-Controlling, Business Information &amp; Process Modeling, Research Methods, Business Process Optimization, Enterprise Architecture Management, Software Engineering, Software Management, IT-Project Management, IT-Service Management</string>
+    <string name="JOB_WI_MASTER_POINT_TWO">Profilierungsbereiche: Software Engineering, Business Analytics</string>
+
+    <string name="DUAL_AI_BACHELOR_POINT_ONE">Grundlagen: Mathematik, Programmierung, Elektrotechnik, Physik, Technische Informatik, Projektmanagement, Technical &amp; Business Englisch, Recht</string>
+    <string name="DUAL_AI_BACHELOR_POINT_TWO">Rechnernetze, Datenbankmanagementsysteme, Betriebssysteme, Sicherheit in Webanwendungen, Rechnerarchitekturen, Softwareengineering, Systemtheorie, Netzinfrastrukturen und Protokolle, Webtechnologien, Verteilte Anwendungen, Datenschutz, Betriebswirtschaftslehre, Projektmanagement, Profilierungsmodule, Social Media Communication, Zukunftstechnologien</string>
+
+    <string name="IKT_BACHELOR_POINT_ONE">allgemeine Grundlagen: Projektmanagement, Wirtschaft und Recht, technisches Englisch</string>
+    <string name="IKT_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen: Mathematik, Physik</string>
+    <string name="IKT_BACHELOR_POINT_THREE">Grundlagen der Elektrotechnik und Informationstechnik: Informatik, Elektrotechnik</string>
+    <string name="IKT_BACHELOR_POINT_FOUR"> Signale &amp; Systeme, Photonik; Felder &amp; Wellen, Netze, Funk, Hard- und Softwarearchitektur</string>
+
+    <string name="IKT_MASTER_POINT_ONE">Kernbereiche: Angewandte Mathematik, Systemtheorie, Software-Technologie, Photonik, Systeme der Funktechnik, Networking, BWL, Recht, Projektmanagement </string>
+    <string name="IKT_MASTER_POINT_TWO">Profilierungsmodule Kommunikationstechnik </string>
+    <string name="IKT_MASTER_POINT_THREE">Profilierungsmodule Informationstechnologie</string>
+
+    <string name="JOB_IKT_BACHELOR_POINT_ONE">allgemeine Grundlagen: Projektmanagement, Wirtschaft und Recht, technisches Englisch</string>
+    <string name="JOB_IKT_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen: Mathematik, Physik</string>
+    <string name="JOB_IKT_BACHELOR_POINT_THREE">Grundlagen der Elektrotechnik und Informationstechnik: Informatik, Elektrotechnik</string>
+    <string name="JOB_IKT_BACHELOR_POINT_FOUR"> Signale &amp; Systeme, Photonik; Felder &amp; Wellen, Netze, Funk, Hard- und Softwarearchitektur</string>
+
+    <string name="JOB_IKT_MASTER_POINT_ONE">Pflichtmodule: Angewandte Mathematik, ICT-Consulting, Projektmanagement, Informations- und Kommunikationstechnik Laborpraktika, Recht, Arbeit am Projekt</string>
+    <string name="JOB_IKT_MASTER_POINT_TWO">Profilierungsmodule: 10 aus dem Bereich Kommunikationstechnik, \n 10 aus dem Bereich Informationstechnologie </string>
+
+
+
 </resources>
 
 
