@@ -665,6 +665,19 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <!-- NEU -->
     <!-- NEU -->
     <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- AB HIER Fragen und Antworten auf die Fragen des Tests! -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
 
     <string name="QUESTION_ONE_ANSWER_ONE">Sehr gut</string>
     <string name="QUESTION_ONE_ANSWER_TWO">Gut</string>
@@ -672,7 +685,98 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="QUESTION_ONE_ANSWER_FOUR">Nicht so gut</string>
     <string name="QUESTION_ONE_NAME">Wie schätzt du dein math.-naturwissenschaftliches Vorwissen ein?</string>
 
+    <string name="QUESTION_TWO_ANSWER_ONE">Ja, so viele wie möglich</string>
+    <string name="QUESTION_TWO_ANSWER_TWO">Ja, einige sind gut</string>
+    <string name="QUESTION_TWO_ANSWER_THREE">Nur wenn es sein muss</string>
+    <string name="QUESTION_TWO_ANSWER_FOUR">Auf keinen Fall</string>
+    <string name="QUESTION_TWO_NAME">Bist du an den math.-naturwissenschaftlichen Grundlagen der Informatik interessiert?</string>
 
+    <string name="QUESTION_THREE_ANSWER_ONE">Ja, sie sind sehr wichti</string>
+    <string name="QUESTION_THREE_ANSWER_TWO">Ja, sie sind wichtig</string>
+    <string name="QUESTION_THREE_ANSWER_THREE">Geht so</string>
+    <string name="QUESTION_THREE_ANSWER_FOUR">Gar nicht wichtig</string>
+    <string name="QUESTION_THREE_NAME">Sind Dir wirtschaftliche Module wie Allgemeine Betriebswirtschaftslehre, Marketing &amp; CRM und Volkswirtschaftslehre wichtig?</string>
+
+    <string name="QUESTION_FOUR_ANSWER_ONE">Rechnungswesen &amp; Controlling</string>
+    <string name="QUESTION_FOUR_ANSWER_TWO">Programmierung</string>
+    <string name="QUESTION_FOUR_ANSWER_THREE">Social Media Communication</string>
+    <string name="QUESTION_FOUR_NAME">Welches dieser Themengebiete sagt Dir am meisten zu?</string>
+
+    <string name="QUESTION_FIVE_ANSWER_ONE">ProjektmanagerIn in Themen wie Cloud Computingoder Datensicherheit</string>
+    <string name="QUESTION_FIVE_ANSWER_TWO">In Kapazitätsplanung und -management</string>
+    <string name="QUESTION_FIVE_ANSWER_THREE">SoftwareentwicklerIn, SystembetreuerIn oder SystemdesignerIn großer Systeme</string>
+    <string name="QUESTION_FIVE_ANSWER_FOUR">Überall, wo IT auf betriebswirtschaftliche Funktionen trifft</string>
+    <string name="QUESTION_FIVE_NAME">"In welchem dieser Tätigkeitsbereiche würdest Du am liebsten arbeiten?</string>
+
+    <string name="QUESTION_SIX_ANSWER_ONE">Netztopologie</string>
+    <string name="QUESTION_SIX_ANSWER_TWO">Signalverarbeitung</string>
+    <string name="QUESTION_SIX_ANSWER_THREE">Datensicherheit/Datenkompression</string>
+    <string name="QUESTION_SIX_ANSWER_FOUR">Datenanalyse</string>
+    <string name="QUESTION_SIX_NAME">Welches dieser Stichworte interessiert dich bei der Datenübertragung am meisten?</string>
+
+    <string name="QUESTION_SEVEN_ANSWER_ONE">ja</string>
+    <string name="QUESTION_SEVEN_ANSWER_TWO">nein</string>
+    <string name="QUESTION_SEVEN_NAME">Hast du bereits eine Ausbildung im IT-Bereich absolviert?</string>
+
+    <string name="QUESTION_EIGHT_ANSWER_ONE">Nein, unter keinen Umständen</string>
+    <string name="QUESTION_EIGHT_ANSWER_TWO">Ja, ich wäre bereit sie selbst zu zahlen</string>
+    <string name="QUESTION_EIGHT_ANSWER_THREE">Ja, wenn ich diese durch eine Anstellung bei der Telekom finanzieren kann.</string>
+    <string name="QUESTION_EIGHT_NAME">Wärst Du bereit Studiengebühren in Höhe von 250 pro Monat zu zahlen?</string>
+
+    <string name="QUESTION_NINE_ANSWER_ONE">Ja, sehr wichtig, am besten das einer ausgelernten IT Fachkraft</string>
+    <string name="QUESTION_NINE_ANSWER_TWO">Ja, es soll primär die Kosten decken, die mir entstehen</string>
+    <string name="QUESTION_NINE_ANSWER_THREE">Nein, ich will nicht nebenbei bei der Telekom arbeiten, um Geld zu verdienen</string>
+    <string name="QUESTION_NINE_NAME">Ist es dir wichtig neben dem Studium auch ein Gehalt von der Telekom zu beziehen - und wenn ja, wie viel?</string>
+
+    <string name="QUESTION_TEN_ANSWER_ONE">Ja, es ist mir sehr wichtig</string>
+    <string name="QUESTION_TEN_ANSWER_TWO">Ja, es ist mir wichtig</string>
+    <string name="QUESTION_TEN_ANSWER_THREE">Es ist mir nicht so wichtig</string>
+    <string name="QUESTION_TEN_ANSWER_FOUR">Nein, denn ich will mich nur auf das Studium konzentrieren</string>
+    <string name="QUESTION_TEN_NAME">Ist es Dir wichtig auch Berufserfahrung während des Studiums zu gewinnen?</string>
+
+    <string name="QUESTION_ELEVEN_ANSWER_ONE">Nein, ich will mir nach dem Studium meinen Arbeitgeber selbst aussuchen oder ohne Verzögerung einen Master machen</string>
+    <string name="QUESTION_ELEVEN_ANSWER_TWO">Ja, für zwei Jahre ist das in Ordnung</string>
+    <string name="QUESTION_ELEVEN_ANSWER_THREE">Ja, ich will ohnehin bei der Telekom bleiben.</string>
+    <string name="QUESTION_ELEVEN_NAME">Kannst Du dir vorstellen für mindestens zwei Jahre nach dem Studium bei der Telekom zu bleiben?</string>
+
+    <string name="QUESTION_TWELVE_ANSWER_ONE">Mir ist eine Übernahme komplett unwichtig</string>
+    <string name="QUESTION_TWELVE_ANSWER_TWO">Eine Übernahme wäre nicht schlecht, muss aber nicht sein</string>
+    <string name="QUESTION_TWELVE_ANSWER_THREE">Ich will mit hoher Wahrscheinlichkeit übernommen werden</string>
+    <string name="QUESTION_TWELVE_NAME">Wie wichtig ist Dir die Aussicht auf eine Übernahme bei der Telekom?</string>
+
+    <string name="QUESTION_THIRTEEN_ANSWER_ONE">Anhand von Skripten lernen ist für mich ideal</string>
+    <string name="QUESTION_THIRTEEN_ANSWER_TWO">Skripte sind gut, aber Vorlesungen sind auch wichtig</string>
+    <string name="QUESTION_THIRTEEN_ANSWER_THREE">Ich möchte lieber weniger anhand von Skripten lernen, sondern eher an Vorlesungen teilnehmen</string>
+    <string name="QUESTION_THIRTEEN_ANSWER_FOUR">Ich muss bei jeder Vorlesung dabei sein</string>
+    <string name="QUESTION_THIRTEEN_NAME">Vermittelst du dir eher über Skripte oder Vorlesungen die Lerninhalte?</string>
+
+    <string name="QUESTION_FOURTEEN_ANSWER_ONE">Ja</string>
+    <string name="QUESTION_FOURTEEN_ANSWER_TWO">Nein</string>
+    <string name="QUESTION_FOURTEEN_ANSWER_THREE">Teilweise</string>
+    <string name="QUESTION_FOURTEEN_NAME">Bist du bereit auf Freizeit zu verzichten, um dein Studium mit einer Berufstätigkeit zu verbinden?</string>
+
+    <string name="QUESTION_FIFTEEN_ANSWER_ONE">Ja</string>
+    <string name="QUESTION_FIFTEEN_ANSWER_TWO">Nein</string>
+    <string name="QUESTION_FIFTEEN_ANSWER_THREE">Das weiß ich noch nicht</string>
+    <string name="QUESTION_FIFTEEN_ANSWER_FOUR">text</string>
+    <string name="QUESTION_FIFTEEN_NAME">Planst du nach deinem Bachelor einen Master Studiengang?</string>
+
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- AB HIER kA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
+    <!-- NEU -->
 
 
     <string name="STUDY_INFO_TITLE_CONTENT">Studieninhalte</string>
