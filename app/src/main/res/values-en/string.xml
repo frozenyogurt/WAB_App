@@ -332,10 +332,10 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="SEND_MAIL">Send Mail</string>
     <string name="SEND_FORM">Send form through the website.</string>
 
-    <string name="KMI_BACHELOR_NAME">Kommunikations- und Medieninformatik (Bachelor)</string>
-    <string name="WI_BACHELOR_NAME">Wirtschaftsinformatik (Bachelor)</string>
-    <string name="AI_BACHELOR_NAME">Angewandte Informatik (Bachelor)</string>
-    <string name="WI_MASTER_NAME">Wirtschaftsinformatik (Master)</string>
+    <string name="KMI_BACHELOR_NAME">Computer Science and Telekommunications (Bachelor)</string>
+    <string name="WI_BACHELOR_NAME">Business Information Systems (Bachelor)</string>
+    <string name="AI_BACHELOR_NAME">Applied Computer Science (Bachelor)</string>
+    <string name="WI_MASTER_NAME">Business Information Systems (Master)</string>
 
     <string name="EDUCATION_TOEIC_NAME">TOEIC</string>
     <string name="EDUCATION_BEC_NAME">Business English Cambridge (BEC)</string>
@@ -343,93 +343,92 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="EDUCATION_IT_NAME">Intercultural Training</string>
     <string name="EDUCATION_ID_NAME">Crash Course German</string>
 
-    <string name="EMPLOYEE_TITLE_TEXT">Mitarbeiter</string>
-    <string name="REKTOR_SAUPE_NAME">Rektor: Prof. Dr.-Ing. habil. Volker Saupe</string>
+    <string name="EMPLOYEE_TITLE_TEXT">Staff</string>
+    <string name="REKTOR_SAUPE_NAME">Principal: Prof. Dr.-Ing. habil. Volker Saupe</string>
     <string name="REKTOR_SAUPE_MAIL">saupe@hft-leipzig.de</string>
-    <string name="PROREKTOR_MUELLER_NAME">Prorektor: Prof. Dr. Jean-Alexander Müller</string>
+    <string name="PROREKTOR_MUELLER_NAME">Prorector: Prof. Dr. Jean-Alexander Müller</string>
     <string name="PROREKTOR_MUELLER_MAIL">mueller01@hft-leipzig.de</string>
-    <string name="PROREKTOR_BADERSCHNEIDER_NAME">Prorektor: Prof. Dr. Claus Baderschneider</string>
+    <string name="PROREKTOR_BADERSCHNEIDER_NAME">Prorector: Prof. Dr. Claus Baderschneider</string>
     <string name="PROREKTOR_BADERSCHNEIDER_MAIL">claus.baderschneider@hft-leipzig.de</string>
 
-    <string name="QUESTION_STUDY_COSTS">Die HfTL ist eine private Hochschule. Wie hoch sind die Studiengebühren?</string>
-    <string name="QUESTION_STUDY_COSTS_SEMESTER">Wie hoch ist der Semesterbeitrag des Studentenwerkes?</string>
-    <string name="QUESTION_STUDY_CATEGORY_DIFFERENCE">An der HfTL werden sowohl berufsbegleitende als auch duale Studiengänge angeboten. Wo ist der Unterschied?</string>
-    <string name="QUESTION_WHICH_STUDY_COURSE">Woher weiß ich, ob ein Studium an der HfTL das richtige für mich ist?</string>
-    <string name="QUESTION_MEANING_ACCREDITATION">Die Studiengänge an der HfTL verfügen über eine Akkreditierung. Was bedeutet das?</string>
-    <string name="QUESTION_ACCEPTED">Wann erfahre ich nach meiner Bewerbung, ob ich für ein Studium an der HfTL zugelassen bin?</string>
-    <string name="QUESTION_APARTMENTS">Vermittelt die HfTL Wohnheimplätze?</string>
-    <string name="QUESTION_INTERNSHIP">Brauche ich ein Vorpraktikum, um ein Studium an der HfTL aufzunehmen?</string>
-    <string name="QUESTION_STUDY_FAR_AWAY">Werden mir die Studienleistungen aus einem Auslandssemester an der HfTL anerkannt?</string>
-    <string name="FAQ_TITLE">Fragen</string>
+    <string name="QUESTION_STUDY_COSTS">The HfTL is a private College. How much is the study fee?</string>
+    <string name="QUESTION_STUDY_COSTS_SEMESTER">How much is the contribution to the student services?</string>
+    <string name="QUESTION_STUDY_CATEGORY_DIFFERENCE">The HfTL offers both integrated and extra occupational study courses. Where is the difference?</string>
+    <string name="QUESTION_WHICH_STUDY_COURSE">How do I know if studying at the HfTL is right for me?</string>
+    <string name="QUESTION_MEANING_ACCREDITATION">The study courses at the HfTL are accredited. What does that mean?</string>
+    <string name="QUESTION_ACCEPTED">After I applied, how do I know if I have been accepted?</string>
+    <string name="QUESTION_APARTMENTS">Does the HfTL mediate dorm rooms?</string>
+    <string name="QUESTION_INTERNSHIP">Do I need a pre-study internship to start studying at the HfTL?</string>
+    <string name="QUESTION_STUDY_FAR_AWAY">Wil the credits I obtained during a semester abroad be recognised by the HfTL?</string>
+    <string name="FAQ_TITLE">Questions</string>
 
     <string name="PORTRAIT_TITLE">Portrait</string>
-    <string name="CONTACT_TITLE">Kontakt</string>
-    <string name="NEWS_TITLE">Aktuelles</string>
-    <string name="IMPRINT_TITLE">Impressum</string>
+    <string name="CONTACT_TITLE">Contact</string>
+    <string name="NEWS_TITLE">News</string>
+    <string name="IMPRINT_TITLE">Legal notice</string>
     <string name="SERVICES_TITLE">Services</string>
-    <string name="WHY_HFTL_TITLE">Warum HfTL?</string>
+    <string name="WHY_HFTL_TITLE">Why HfTL?</string>
 
     <string name="IMPRINT_TITLE_ONE">HFTL TRÄGERGESELLSCHAFT mbH</string>
-    <string name="IMPRINT_TITLE_TWO">Geschäftsführung</string>
-    <string name="IMPRINT_TITLE_THREE">Redaktion</string>
-    <string name="CALL_TEXT">Anrufen</string>
+    <string name="IMPRINT_TITLE_TWO">Executive board</string>
+    <string name="IMPRINT_TITLE_THREE">Editors</string>
+    <string name="CALL_TEXT">Call</string>
     <string name="IMPRINT_TEXT_ONE">Friedrich-Ebert-Allee 140 \n
                                     53113 Bonn \n \n
-                                    Sitz der Gesellschaft: Bonn \n
-                                    Amtsgericht Bonn HRB 19361 \n
+                                    Main office: Bonn \n
+                                    District court Bonn HRB 19361 \n
                                     USt-IdNr. DE 292363279</string>
     <string name="IMPRINT_TEXT_TWO">Dr. Elke Frank \n
                                     Dr. Oliver Lange \n
                                     Friedrich-Ebert-Allee 140 \n
                                     53113 Bonn \n \n
-                                    Telefon: 0228 181 - 0 \n
-                                    E-Mail: pr@hft-leipzig.de</string>
+                                    Phone: 0228 181 - 0 \n
+                                    Mail: pr@hft-leipzig.de</string>
     <string name="IMPRINT_TEXT_THREE">Torsten Büttner \n
-                                      Referent Öffentlichkeitsarbeit \n
-                                      Public Relations \n
+                                      Advisor Public Relations \n
                                       Gustav-Freytag-Str. 43-45 \n
                                       04277 Leipzig \n
                                       0341/3062 120 \n
                                       torsten.buettner@hft-leipzig.de \n
-                                      Bei Fragen zum Unternehmen, zur Hochschule und den angebotenen Studiengängen, nutzen Sie bitte unser Kontaktformular.</string>
+                                      For questions regarding the enterprise, the college and the offered study courses please use our contact form.</string>
 
-    <string name="IKT_BACHELOR_NAME">Informations- und Kommunikationstechnik (Bachelor)</string>
-    <string name="IKT_MASTER_NAME">Informations- und Kommunikationstechnik (Master)</string>
+    <string name="IKT_BACHELOR_NAME">Information and Communication Technology (Bachelor)</string>
+    <string name="IKT_MASTER_NAME">Information and Communication Technology (Master)</string>
 
-    <string name="MENU_SETTINGS_NAME">Einstellungen</string>
-    <string name="MENU_WEBSITE_NAME">Zur Website</string>
-    <string name="MENU_ABOUT_US_NAME">Über Uns</string>
-    <string name="MENU_EXIT_NAME">Beenden</string>
+    <string name="MENU_SETTINGS_NAME">Settings</string>
+    <string name="MENU_WEBSITE_NAME">To the website</string>
+    <string name="MENU_ABOUT_US_NAME">About us</string>
+    <string name="MENU_EXIT_NAME">Exit</string>
 
-    <string name="SEE_ALL_INFORMATIONS">Alle Informationen ansehen</string>
-    <string name="SERVICES_LIBRARY_TITLE">Bibliothek</string>
-    <string name="SERVICES_SPORT_TITLE">Sport</string>
-    <string name="SERVICES_WAY_TO_TITLE">Anfahrt</string>
+    <string name="SEE_ALL_INFORMATIONS">See all information</string>
+    <string name="SERVICES_LIBRARY_TITLE">Library</string>
+    <string name="SERVICES_SPORT_TITLE">Sports</string>
+    <string name="SERVICES_WAY_TO_TITLE">Journey</string>
     <string name="SERVICES_LINKS_TITLE">Links</string>
-    <string name="SERVICES_ROOMS_TITLE">Labore</string>
+    <string name="SERVICES_ROOMS_TITLE">Laboratories</string>
 
-    <string name="SERVICES_LIBRARY_TITLE_ONE">Adresse der Bibliothek der HfTL und HTWK Leipzig</string>
-    <string name="SERVICES_LIBRARY_TITLE_TWO">Öffnungszeiten</string>
-    <string name="SERVICES_LIBRARY_TITLE_THREE">Ausleihe und Auskunft</string>
+    <string name="SERVICES_LIBRARY_TITLE_ONE">Address for the library of the HfTL and HTWK Leipzig</string>
+    <string name="SERVICES_LIBRARY_TITLE_TWO">Opening hours</string>
+    <string name="SERVICES_LIBRARY_TITLE_THREE">Issue and information</string>
     <string name="SERVICES_LIBRARY_TEXT_ONE">Hochschule für Technik, Wirtschaft und Kultur Leipzig \n
                                              Hochschulbibliothek \n
                                              Gustav-Freytag-Straße 40 \n
                                              04277 Leipzig</string>
-    <string name="SERVICES_LIBRARY_TEXT_TWO">Die Hochschulbibliothek hat von Montag bis Freitag von 09.00 - 20.00 Uhr geöffnet. Die Öffnungszeiten am Samstag sind von 09.00 -16.00 Uhr. \n
-                                             Bücherrückgaben sind wie gewohnt auch bei geschlossener Bibliothek am Rückgabeautomaten möglich. \n
-                                             Katalogrecherche, Verlängerungsmöglichkeiten sowie das elektronische Angebot stehen weiterhin zur Verfügung.</string>
-    <string name="SERVICES_LIBRARY_TEXT_THREE">Telefon: +49 (0) 341 / 3076 6593 \n
+    <string name="SERVICES_LIBRARY_TEXT_TWO">The library is open Monday through Friday from 09:00 to 20.00 and 09:00 to 16:00 on Saturdays. \n
+                                             Returning books is possible at the returning machine even when the library is closed. \n
+                                             Catalog inquiry, extension services as well as the electronic supply are available as well.</string>
+    <string name="SERVICES_LIBRARY_TEXT_THREE">Phone: +49 (0) 341 / 3076 6593 \n
                                                Fax: +49 (0) 341 / 3076 6478</string>
-    <string name="SERVICES_LIBRARY_BEGINNING_ONE">Die Hochschulbibliothek der HfTL wird gemeinsam mit der Bibliothek der Hochschule für Technik, Wirtschaft und Kultur (HTWK) Leipzig betrieben. Die Bestände bilden einen großen Querschnitt der einschlägigen Fachliteratur und liefern auch Informationen über den „Tellerrand“ hinaus. </string>
-    <string name="SERVICES_LIBRARY_BEGINNING_TWO">Die Bestände der Bibliothek und die Verwaltung Deines Benutzerkontos sind für Dich unter Bibliothekskatalog KaPri erreichbar. Zusätzlich halten wir viele erweiterte Funktionen bereit, so kannst Du Literaturlisten und gedruckte sowie elektronische Dokumente zusammenstellen.</string>
+    <string name="SERVICES_LIBRARY_BEGINNING_ONE">The libray is shared with the Hochschule für Technik, Wirtschaft und Kultur (HTWK) Leipzig (College for technology, economics and culture). A wide array of subject literature is offered as well as plenty to go beyond. </string>
+    <string name="SERVICES_LIBRARY_BEGINNING_TWO">The library stocks as well as the administration of your user account is available at the library catalog KaPri. Additionally there are many extended features such as creating lists of literature or printed and electronic documents.</string>
 
-    <string name="SERVICES_LINKS_ILIAS">Ilias - Lernplattform</string>
-    <string name="SERVICES_LINKS_OWA">OWA - OnlineWebAccess der HfTL</string>
-    <string name="SERVICES_LINKS_HIS">HIS/QIS - Hochschul- informationssystem</string>
+    <string name="SERVICES_LINKS_ILIAS">Ilias - Learning platform</string>
+    <string name="SERVICES_LINKS_OWA">OWA - HfTL OnlineWebAccess</string>
+    <string name="SERVICES_LINKS_HIS">HIS/QIS - College and information system</string>
     <string name="SERVICES_LINKS_IEEE">IEEE</string>
     <string name="SERVICES_LINKS_SPRINGER">SpringerLink</string>
     <string name="SERVICES_LINKS_STATISTA">Statista</string>
-    <string name="SERVICES_LINKS_STUDY_FACTORY">Studentenwerk Leipzig</string>
+    <string name="SERVICES_LINKS_STUDY_FACTORY">Student services Leipzig</string>
 
     <string name="SERVICES_SPORT_WEBSITE">Signing up and Information</string>
     <string name="SERVICES_SPORT_TITLE_ONE">Sports at the HfTL</string>
@@ -445,15 +444,15 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
                                            badminton \n
                                            Various other sports such as Aikido, baseball, basketball or volleyball are offered through the HTWK Leipzig and can be accessed through that but some of them require fees. Information and sign-up at:\n
                                            sport.htwk-leipzig.de</string>
-    <string name="SERVICES_SPORT_TEXT_TWO">Ab sofort kann in der Sporthalle Arno-Nitzsche-Str. 29 an folgenden Tagen gespielt werden: \n
-                                           Fußball: Montags 17:30 - 19:00 Uhr \n
-                                           Volleyball: Dienstags 17:30 - 19:00 Uhr \n
-                                           Klettern: Dienstags 17:30 - 19:00 Uhr \n
-                                           Laufen: Donnerstags ab 15:30 Uhr \n
-                                           Badminton: Montags 17:30 - 19:00 Uhr \n
-                                           (Badminton kann zusätzlich auch an jedem anderen Wochentag ganztägig gespielt werden)</string>
-    <string name="SERVICES_SPORT_TEXT_THREE">Sporthalle Arno-Nitzsche-Str. 29 \n
-                                             Tischtennisplatte in der HfTL</string>
+    <string name="SERVICES_SPORT_TEXT_TWO">On the following days the gym at Arno-Nitzsche-Str. 29 can be used: \n
+                                           Football: Mondays 17:30 - 19:00 Uhr \n
+                                           Volleyball: Tuesdays 17:30 - 19:00 Uhr \n
+                                           CLimbing: Tuesdays 17:30 - 19:00 Uhr \n
+                                           Running: Thursdays ab 15:30 Uhr \n
+                                           Badminton: Mondays 17:30 - 19:00 Uhr \n
+                                           (Badminton can be played all weekdays at all times)</string>
+    <string name="SERVICES_SPORT_TEXT_THREE">Gym at Arno-Nitzsche-Str. 29 \n
+                                             Ping-pong table at the HfTL</string>
     <string name="SERVICES_SPORT_TEXT_FOUR">Im laufenden Studienjahr werden in Abstimmung mit dem Studentenrat 3 bis 4 Hochschulmeister- schaften und Turniere durchgeführt. Die Auswahlmannschaften nehmen jährlich an den Hochschulmeisterschaften des Landes Sachsen teil. \n
                                             Die HfTL ist Mitglied des ADH (Allgemeiner Deutscher Hochschulsportverband) und kann bei Qualifizierung in einer Sportart auf Landesebene an den Deutschen Hochschulmeisterschaften der Bundesrepublik Deutschland teilnehmen.</string>
     <string name="SERVICES_SPORT_BEGINNING">Der Sport bietet eine gute Möglichkeit, im studentischen Umfeld mit KommilitonInnen anderer Studiengänge in Kontakt zu kommen. Deshalb haben wir ein attraktives Sportangebot für unsere Studierenden. \n
@@ -464,15 +463,15 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="SERVICES_WAY_TO_DB">Train-Deutsche Bahn</string>
     <string name="SERVICES_WAY_TO_TITLE_ONE">Route by car</string>
     <string name="SERVICES_WAY_TO_TITLE_TWO">Route using public transportation</string>
-    <string name="SERVICES_WAY_TO_TEXT_ONE">Als Anfahrtsadresse für Navigationssysteme geben Sie bitte folgende Adresse in Ihr Navigationssystem ein: \n \n
+    <string name="SERVICES_WAY_TO_TEXT_ONE">The address for your GPS system is: \n \n
                                             04277 Leipzig (Sachsen) \n
                                             Gustav-Freytag-Straße 43 - 45 </string>
-    <string name="SERVICES_WAY_TO_TEXT_TWO">Ab Leipzig Hauptbahnhof können Sie mit den folgenden Straßenbahnlinien die Hochschule für Telekommunikation bequem und schnell erreichen. \n \n
-                                            Linie 9 (Richtung Markleeberg-West) \n \n
-                                            Linie 10 (Richtung Lößnig) \n \n
-                                            Linie 11 (Richtung Markleeberg-Ost) \n \n
-                                            Von der Haltestelle Connewitzer Kreuz sind es noch ca. 5 Minuten Fußweg bis zum Eingang der HfTL in der Gustav-Freytag-Straße 43 - 45.</string>
-    <string name="SERVICES_WAY_TO_BEGINNING">Im Folgenden ist eine Anfahrtsskizze zum Gelände der HfT Leipzig, eine Navigation mit dem Auto und Möglichkeiten zur Anreise mittels öffentlicher Verkehrsmittel.</string>
+    <string name="SERVICES_WAY_TO_TEXT_TWO">From Leipzig Central Station you can comfortably get to the HfTL with the following metro lines. \n \n
+                                            Linie 9 (final destination Markleeberg-West) \n \n
+                                            Linie 10 (final destination Lößnig) \n \n
+                                            Linie 11 (final destination Markleeberg-Ost) \n \n
+                                            From the stop Connewitzer Kreuz the main entrance to the HfTL (Gustav-Freytag-Straße 43-45) is within 5 minutes of walking distance.</string>
+    <string name="SERVICES_WAY_TO_BEGINNING">Here is a draft of the route to the HfT Leipzig, a navigation by car and different ways of getting here with public transportation.</string>
 
     <string name="SETTINGS_SAVE">Save</string>
     <string name="SETTINGS_RESET">Reset</string>
@@ -496,13 +495,13 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="TEST_QUESTION_THE_QUESTION_NOT_ANSWERED"> was not answered.</string>
     <string name="TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED"> were not answered.</string>
 
-    <string name="TEST_RESULT_END_TEST">Test Beenden</string>
+    <string name="TEST_RESULT_END_TEST">Finish the evaluation</string>
 
     <string name="TEST_START">Start Evaluation</string>
     <string name="TEST_START_BEGINNING">Introduction</string>
-    <string name="TEST_START_DESCRIPTION">Bei der Durchführung des Testes, bitten wir Dich folgende Punkte zu beachten:</string>
-    <string name="TEST_START_ATTENTION">Willkommen beim Studiengangtest!\n
-Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dich bezüglich der Studienart und dem Studiengrad. Trotz unserer Auswertung kannst Du dich natürlich auch gerne für etwas anderes entscheiden.</string>
+    <string name="TEST_START_DESCRIPTION">While taking the test, please mind the following advice:</string>
+    <string name="TEST_START_ATTENTION">Welcome to the study evaluation test!\n
+Here you will find your perfect study course. Additionally, we give advice regarding the type of study and the study degree. No matter what the results show, you can of course decide differently.</string>
 
     <string name="FAQ_SEE_ANSWER">See answer</string>
     <string name="STUDY_LIST_MORE">Show more</string>
@@ -556,87 +555,87 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <!-- NEU -->
     <!-- NEU -->
 
-    <string name="QUESTION_ONE_ANSWER_ONE">Sehr gut</string>
-    <string name="QUESTION_ONE_ANSWER_TWO">Gut</string>
-    <string name="QUESTION_ONE_ANSWER_THREE">Geht so</string>
-    <string name="QUESTION_ONE_ANSWER_FOUR">Nicht so gut</string>
-    <string name="QUESTION_ONE_NAME">Wie schätzt du dein math.-naturwissenschaftliches Vorwissen ein?</string>
+    <string name="QUESTION_ONE_ANSWER_ONE">Very good</string>
+    <string name="QUESTION_ONE_ANSWER_TWO">Good</string>
+    <string name="QUESTION_ONE_ANSWER_THREE">Okay</string>
+    <string name="QUESTION_ONE_ANSWER_FOUR">Not that good</string>
+    <string name="QUESTION_ONE_NAME">How would you rate your mathematical/scientific fundamentals?</string>
 
-    <string name="QUESTION_TWO_ANSWER_ONE">Ja, so viele wie möglich</string>
-    <string name="QUESTION_TWO_ANSWER_TWO">Ja, einige sind gut</string>
-    <string name="QUESTION_TWO_ANSWER_THREE">Nur wenn es sein muss</string>
-    <string name="QUESTION_TWO_ANSWER_FOUR">Auf keinen Fall</string>
-    <string name="QUESTION_TWO_NAME">Bist du an den math.-naturwissenschaftlichen Grundlagen der Informatik interessiert?</string>
+    <string name="QUESTION_TWO_ANSWER_ONE">Yes, as much as possible</string>
+    <string name="QUESTION_TWO_ANSWER_TWO">Yes, some will be useful</string>
+    <string name="QUESTION_TWO_ANSWER_THREE">Only if it is necessary</string>
+    <string name="QUESTION_TWO_ANSWER_FOUR">Not at all</string>
+    <string name="QUESTION_TWO_NAME">Are you interested in the mathematical/scientific fundamentals of computer science?</string>
 
-    <string name="QUESTION_THREE_ANSWER_ONE">Ja, sie sind sehr wichti</string>
-    <string name="QUESTION_THREE_ANSWER_TWO">Ja, sie sind wichtig</string>
-    <string name="QUESTION_THREE_ANSWER_THREE">Geht so</string>
-    <string name="QUESTION_THREE_ANSWER_FOUR">Gar nicht wichtig</string>
-    <string name="QUESTION_THREE_NAME">Sind Dir wirtschaftliche Module wie Allgemeine Betriebswirtschaftslehre, Marketing &amp; CRM und Volkswirtschaftslehre wichtig?</string>
+    <string name="QUESTION_THREE_ANSWER_ONE">Yes, they are very important</string>
+    <string name="QUESTION_THREE_ANSWER_TWO">Yes, they are important</string>
+    <string name="QUESTION_THREE_ANSWER_THREE">Kind of important</string>
+    <string name="QUESTION_THREE_ANSWER_FOUR">Not important</string>
+    <string name="QUESTION_THREE_NAME">How important are lectures like business administration, marketing &amp; CRM or economics for you?</string>
 
-    <string name="QUESTION_FOUR_ANSWER_ONE">Rechnungswesen &amp; Controlling</string>
-    <string name="QUESTION_FOUR_ANSWER_TWO">Programmierung</string>
-    <string name="QUESTION_FOUR_ANSWER_THREE">Social Media Communication</string>
-    <string name="QUESTION_FOUR_NAME">Welches dieser Themengebiete sagt Dir am meisten zu?</string>
+    <string name="QUESTION_FOUR_ANSWER_ONE">Accountinng &amp; Controlling</string>
+    <string name="QUESTION_FOUR_ANSWER_TWO">Programming</string>
+    <string name="QUESTION_FOUR_ANSWER_THREE">Social Media Communications</string>
+    <string name="QUESTION_FOUR_NAME">Which of these topics sounds most interesting to you?</string>
 
-    <string name="QUESTION_FIVE_ANSWER_ONE">ProjektmanagerIn in Themen wie Cloud Computingoder Datensicherheit</string>
-    <string name="QUESTION_FIVE_ANSWER_TWO">In Kapazitätsplanung und -management</string>
-    <string name="QUESTION_FIVE_ANSWER_THREE">SoftwareentwicklerIn, SystembetreuerIn oder SystemdesignerIn großer Systeme</string>
-    <string name="QUESTION_FIVE_ANSWER_FOUR">Überall, wo IT auf betriebswirtschaftliche Funktionen trifft</string>
-    <string name="QUESTION_FIVE_NAME">"In welchem dieser Tätigkeitsbereiche würdest Du am liebsten arbeiten?</string>
+    <string name="QUESTION_FIVE_ANSWER_ONE">Project manager in fields lke cloud computing or data security</string>
+    <string name="QUESTION_FIVE_ANSWER_TWO">Capacity planning and management</string>
+    <string name="QUESTION_FIVE_ANSWER_THREE">Software developer, system analyst or system designer</string>
+    <string name="QUESTION_FIVE_ANSWER_FOUR">Everything that mixes business administration and IT tasks</string>
+    <string name="QUESTION_FIVE_NAME">Which of these fields would you like to work in?</string>
 
-    <string name="QUESTION_SIX_ANSWER_ONE">Netztopologie</string>
-    <string name="QUESTION_SIX_ANSWER_TWO">Signalverarbeitung</string>
-    <string name="QUESTION_SIX_ANSWER_THREE">Datensicherheit/Datenkompression</string>
-    <string name="QUESTION_SIX_ANSWER_FOUR">Datenanalyse</string>
-    <string name="QUESTION_SIX_NAME">Welches dieser Stichworte interessiert dich bei der Datenübertragung am meisten?</string>
+    <string name="QUESTION_SIX_ANSWER_ONE">Network topology</string>
+    <string name="QUESTION_SIX_ANSWER_TWO">Signal processing</string>
+    <string name="QUESTION_SIX_ANSWER_THREE">Data security/compression</string>
+    <string name="QUESTION_SIX_ANSWER_FOUR">Data analysis</string>
+    <string name="QUESTION_SIX_NAME">Regarding data transmission, which of these topics attracts you most?</string>
 
-    <string name="QUESTION_SEVEN_ANSWER_ONE">ja</string>
-    <string name="QUESTION_SEVEN_ANSWER_TWO">nein</string>
-    <string name="QUESTION_SEVEN_NAME">Hast du bereits eine Ausbildung im IT-Bereich absolviert?</string>
+    <string name="QUESTION_SEVEN_ANSWER_ONE">Yes</string>
+    <string name="QUESTION_SEVEN_ANSWER_TWO">No</string>
+    <string name="QUESTION_SEVEN_NAME">Did you already complete an apprenticeship in the IT sector?</string>
 
-    <string name="QUESTION_EIGHT_ANSWER_ONE">Nein, unter keinen Umständen</string>
-    <string name="QUESTION_EIGHT_ANSWER_TWO">Ja, ich wäre bereit sie selbst zu zahlen</string>
-    <string name="QUESTION_EIGHT_ANSWER_THREE">Ja, wenn ich diese durch eine Anstellung bei der Telekom finanzieren kann.</string>
-    <string name="QUESTION_EIGHT_NAME">Wärst Du bereit Studiengebühren in Höhe von 250 pro Monat zu zahlen?</string>
+    <string name="QUESTION_EIGHT_ANSWER_ONE">No way</string>
+    <string name="QUESTION_EIGHT_ANSWER_TWO">Yes, I would pay for it myself</string>
+    <string name="QUESTION_EIGHT_ANSWER_THREE">Yes, if I can fund it through a job at Deutsche Telekom</string>
+    <string name="QUESTION_EIGHT_NAME">Would you be open to paying the study fee of 250€ per month?</string>
 
-    <string name="QUESTION_NINE_ANSWER_ONE">Ja, sehr wichtig, am besten das einer ausgelernten IT Fachkraft</string>
-    <string name="QUESTION_NINE_ANSWER_TWO">Ja, es soll primär die Kosten decken, die mir entstehen</string>
-    <string name="QUESTION_NINE_ANSWER_THREE">Nein, ich will nicht nebenbei bei der Telekom arbeiten, um Geld zu verdienen</string>
-    <string name="QUESTION_NINE_NAME">Ist es dir wichtig neben dem Studium auch ein Gehalt von der Telekom zu beziehen - und wenn ja, wie viel?</string>
+    <string name="QUESTION_NINE_ANSWER_ONE">Yes, I need an IT-professional's full pay</string>
+    <string name="QUESTION_NINE_ANSWER_TWO">Yes, it just needs to compensate for the fees.</string>
+    <string name="QUESTION_NINE_ANSWER_THREE">No, I do not want to work at Deutsche Telekom while I am studying</string>
+    <string name="QUESTION_NINE_NAME">Are you depended on a salary while doing your studies? If so, how much do you need?</string>
 
-    <string name="QUESTION_TEN_ANSWER_ONE">Ja, es ist mir sehr wichtig</string>
-    <string name="QUESTION_TEN_ANSWER_TWO">Ja, es ist mir wichtig</string>
-    <string name="QUESTION_TEN_ANSWER_THREE">Es ist mir nicht so wichtig</string>
-    <string name="QUESTION_TEN_ANSWER_FOUR">Nein, denn ich will mich nur auf das Studium konzentrieren</string>
-    <string name="QUESTION_TEN_NAME">Ist es Dir wichtig auch Berufserfahrung während des Studiums zu gewinnen?</string>
+    <string name="QUESTION_TEN_ANSWER_ONE">Yes, it is very important</string>
+    <string name="QUESTION_TEN_ANSWER_TWO">Yes, it is important</string>
+    <string name="QUESTION_TEN_ANSWER_THREE">It is not too important</string>
+    <string name="QUESTION_TEN_ANSWER_FOUR">Not at all, I want to focus on my studies</string>
+    <string name="QUESTION_TEN_NAME">How important is it for you to gain professional experience during your study time?</string>
 
-    <string name="QUESTION_ELEVEN_ANSWER_ONE">Nein, ich will mir nach dem Studium meinen Arbeitgeber selbst aussuchen oder ohne Verzögerung einen Master machen</string>
-    <string name="QUESTION_ELEVEN_ANSWER_TWO">Ja, für zwei Jahre ist das in Ordnung</string>
-    <string name="QUESTION_ELEVEN_ANSWER_THREE">Ja, ich will ohnehin bei der Telekom bleiben.</string>
-    <string name="QUESTION_ELEVEN_NAME">Kannst Du dir vorstellen für mindestens zwei Jahre nach dem Studium bei der Telekom zu bleiben?</string>
+    <string name="QUESTION_ELEVEN_ANSWER_ONE">No, I want to choose my employer freely or immediately go for the Masters degree.</string>
+    <string name="QUESTION_ELEVEN_ANSWER_TWO">Yes, two years are absolutely fine</string>
+    <string name="QUESTION_ELEVEN_ANSWER_THREE">Yes, my plan was to work at Deutsche Telekom anyway</string>
+    <string name="QUESTION_ELEVEN_NAME">Would you be fine with working at Deutsche Telekom for at least 2 years after you completed your studies?</string>
 
-    <string name="QUESTION_TWELVE_ANSWER_ONE">Mir ist eine Übernahme komplett unwichtig</string>
-    <string name="QUESTION_TWELVE_ANSWER_TWO">Eine Übernahme wäre nicht schlecht, muss aber nicht sein</string>
-    <string name="QUESTION_TWELVE_ANSWER_THREE">Ich will mit hoher Wahrscheinlichkeit übernommen werden</string>
-    <string name="QUESTION_TWELVE_NAME">Wie wichtig ist Dir die Aussicht auf eine Übernahme bei der Telekom?</string>
+    <string name="QUESTION_TWELVE_ANSWER_ONE">A takeover is not important to me</string>
+    <string name="QUESTION_TWELVE_ANSWER_TWO">A takeover would be cool, but it is not necessary</string>
+    <string name="QUESTION_TWELVE_ANSWER_THREE">I want to have a high chance of a takeover</string>
+    <string name="QUESTION_TWELVE_NAME">How relevant is the possibility of a takeover at Deutsche Telekom for you??</string>
 
-    <string name="QUESTION_THIRTEEN_ANSWER_ONE">Anhand von Skripten lernen ist für mich ideal</string>
-    <string name="QUESTION_THIRTEEN_ANSWER_TWO">Skripte sind gut, aber Vorlesungen sind auch wichtig</string>
-    <string name="QUESTION_THIRTEEN_ANSWER_THREE">Ich möchte lieber weniger anhand von Skripten lernen, sondern eher an Vorlesungen teilnehmen</string>
-    <string name="QUESTION_THIRTEEN_ANSWER_FOUR">Ich muss bei jeder Vorlesung dabei sein</string>
-    <string name="QUESTION_THIRTEEN_NAME">Vermittelst du dir eher über Skripte oder Vorlesungen die Lerninhalte?</string>
+    <string name="QUESTION_THIRTEEN_ANSWER_ONE">Learning with the lecture notes is ideal for me</string>
+    <string name="QUESTION_THIRTEEN_ANSWER_TWO">Both are equally important to me</string>
+    <string name="QUESTION_THIRTEEN_ANSWER_THREE">I don' want to work with scripts/notes too much and I prefer attending lectures</string>
+    <string name="QUESTION_THIRTEEN_ANSWER_FOUR">I have to attend every lecture</string>
+    <string name="QUESTION_THIRTEEN_NAME">Do you prefer learning via scripts/notes or by attending the lectures?</string>
 
-    <string name="QUESTION_FOURTEEN_ANSWER_ONE">Ja</string>
-    <string name="QUESTION_FOURTEEN_ANSWER_TWO">Nein</string>
-    <string name="QUESTION_FOURTEEN_ANSWER_THREE">Teilweise</string>
-    <string name="QUESTION_FOURTEEN_NAME">Bist du bereit auf Freizeit zu verzichten, um dein Studium mit einer Berufstätigkeit zu verbinden?</string>
+    <string name="QUESTION_FOURTEEN_ANSWER_ONE">Yes</string>
+    <string name="QUESTION_FOURTEEN_ANSWER_TWO">No</string>
+    <string name="QUESTION_FOURTEEN_ANSWER_THREE">Somewhat</string>
+    <string name="QUESTION_FOURTEEN_NAME">Would you consider ceasing your spare time in order to gain professional experience during your study time?</string>
 
-    <string name="QUESTION_FIFTEEN_ANSWER_ONE">Ja</string>
-    <string name="QUESTION_FIFTEEN_ANSWER_TWO">Nein</string>
-    <string name="QUESTION_FIFTEEN_ANSWER_THREE">Das weiß ich noch nicht</string>
+    <string name="QUESTION_FIFTEEN_ANSWER_ONE">Yes</string>
+    <string name="QUESTION_FIFTEEN_ANSWER_TWO">No</string>
+    <string name="QUESTION_FIFTEEN_ANSWER_THREE">I am not sure yet</string>
     <string name="QUESTION_FIFTEEN_ANSWER_FOUR">text</string>
-    <string name="QUESTION_FIFTEEN_NAME">Planst du nach deinem Bachelor einen Master Studiengang?</string>
+    <string name="QUESTION_FIFTEEN_NAME">Do you plan on pursuing a Masters degree after completing your Bachelor studies?</string>
 
     <!-- NEU -->
     <!-- NEU -->
@@ -655,31 +654,31 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <!-- NEU -->
     <!-- NEU -->
 
-    <string name="STUDY_INFO_TITLE_CONTENT">Studieninhalte</string>
-    <string name="STUDY_TEST_RESULT_INFO_BUTTON">Informationen</string>
-    <string name="STUDY_TEST_RESULT_PERFECT_TEXT">Der folgende Studiengang passt perfekt zu dir:</string>
-    <string name="STUDY_TEST_RESULT_NEARLY_TEXT">Der folgende Studiengang kommt deinen Anforderungen am Nähesten:</string>
-    <string name="STUDY_TEST_RESULT_NOTHING_TEXT">Lieder haben wir keinen Studiengang an der HfTL für dich ausfindig machen können.</string>
-    <string name="STUDY_TEST_RESULT_OR">oder</string>
-    <string name="STUDY_TEST_RESULT_NOTHING">Keiner</string>
-    <string name="STUDY_TEST_RESULT_KMI_BACHELOR_RESULT">Direkter Bachelor of Enigeering: Kommunikations- und Medieninformatik</string>
-    <string name="STUDY_TEST_RESULT_IKT_MASTER_RESULT">Erst den direkten Bachelor of Engineering: Informations- und Kommunikationstechnik und dann den direkten Master of Engineering: Informations- und Kommunikationstechnik in Englisch oder Deutsch</string>
-    <string name="STUDY_TEST_RESULT_WI_BACHELOR_RESULT">Direkter Bachlor of Science: Wirtschaftsinformatik</string>
-    <string name="STUDY_TEST_RESULT_DUAL_KMI_BACHELOR_RESULT">Dualer Bachelor of Enigeering: Kommunikations- und Medieninformatik</string>
-    <string name="STUDY_TEST_RESULT_DUAL_WI_BACHELOR_RESULT">Dualer Bachlor of Science: Wirtschaftsinformatik</string>
-    <string name="STUDY_TEST_RESULT_DUAL_WI_MASTER_RESULT">Erst den dualen Bachlor of Science: Wirtschaftsinformatik und dann den dualen Master of Science: Wirtschaftsinformatik</string>
-    <string name="STUDY_TEST_RESULT_JOB_WI_BACHELOR_RESULT">Berufsbegleitender Bachlor of Science: Wirtschaftsinformatik</string>
-    <string name="STUDY_TEST_RESULT_JOB_WI_MASTER_RESULT">Erst den berufsbegleitenden Bachlor of Science: Wirtschaftsinformatik und dann den berufsbegleitenden Master of Science: Wirtschaftsinformatik</string>
-    <string name="STUDY_TEST_RESULT_IKT_BACHELOR_RESULT">Direkter Bachelor of Engineering: Informations- und Kommunikationstechnik</string>
-    <string name="STUDY_TEST_RESULT_JOB_IKT_BACHELOR_RESULT">Berufsbegleitender Bachelor of Engineering: Informations- und Kommunikationstechnik</string>
-    <string name="STUDY_TEST_RESULT_JOB_IKT_MASTER_RESULT">Erst den berufsbegleitenden Bachelor of Engineering: Informations- und Kommunikationstechnik und dann den berufsbegleitenden Master of Engineering: Informations- und Kommunikationstechnik</string>
-    <string name="STUDY_TEST_RESULT_DUAL_AI_BACHELOR_RESULT">Dualer Bachelor of Science: Angewandte Informatik</string>
-    <string name="STUDY_TEST_RESULT_JOB_KMI_BACHELOR_RESULT">Berufsbegleitender Bachelor of Enigeering: Kommunikations- und Medieninformatik</string>
+    <string name="STUDY_INFO_TITLE_CONTENT">Study contents</string>
+    <string name="STUDY_TEST_RESULT_INFO_BUTTON">Information</string>
+    <string name="STUDY_TEST_RESULT_PERFECT_TEXT">The following course fits you perfectly:</string>
+    <string name="STUDY_TEST_RESULT_NEARLY_TEXT">The following study close comes closest to your needs:</string>
+    <string name="STUDY_TEST_RESULT_NOTHING_TEXT">Unfortunately we were not able to find a fitting study course for you at the HfTL</string>
+    <string name="STUDY_TEST_RESULT_OR">or</string>
+    <string name="STUDY_TEST_RESULT_NOTHING">None</string>
+    <string name="STUDY_TEST_RESULT_KMI_BACHELOR_RESULT">Regular Bachelor of Enigeering: Computer Science and Telekommunications</string>
+    <string name="STUDY_TEST_RESULT_IKT_MASTER_RESULT">First, the regular Bachelor of Engineering: Computer Science and Telekommunications followed by the regular Master of Engineering: Information and Communication Technology in English or German</string>
+    <string name="STUDY_TEST_RESULT_WI_BACHELOR_RESULT">Regular Bachlor of Science: Business Information Systems</string>
+    <string name="STUDY_TEST_RESULT_DUAL_KMI_BACHELOR_RESULT">Integrated Bachelor of Enigeering: Computer Science and Telekommunications</string>
+    <string name="STUDY_TEST_RESULT_DUAL_WI_BACHELOR_RESULT">Integrated Bachlor of Science: Business Information Systems</string>
+    <string name="STUDY_TEST_RESULT_DUAL_WI_MASTER_RESULT">First, the integrated Bachlor of Science: Business Information Systems followed by the integrated Master of Science: Business Information Systems</string>
+    <string name="STUDY_TEST_RESULT_JOB_WI_BACHELOR_RESULT">Extra occupational Bachlor of Science: Business Information Systems</string>
+    <string name="STUDY_TEST_RESULT_JOB_WI_MASTER_RESULT">First, the extra occupational Bachlor of Science: Business Information Systems followed by the extra occupational Master of Science: Business Information Systems</string>
+    <string name="STUDY_TEST_RESULT_IKT_BACHELOR_RESULT">Regular Bachelor of Engineering: Information and Communication Technology</string>
+    <string name="STUDY_TEST_RESULT_JOB_IKT_BACHELOR_RESULT">Extra occupational Bachelor of Engineering: Information and Communication Technology</string>
+    <string name="STUDY_TEST_RESULT_JOB_IKT_MASTER_RESULT">First, the extra occupational Bachelor of Engineering: Information and Communication Technology followed by the extra occupational Master of Engineering: Information and Communication Technology</string>
+    <string name="STUDY_TEST_RESULT_DUAL_AI_BACHELOR_RESULT">Integrated Bachelor of Science: Applied Computer Science</string>
+    <string name="STUDY_TEST_RESULT_JOB_KMI_BACHELOR_RESULT">Extra occupational Bachelor of Enigeering: Computer Science and Telekommunications</string>
 
-    <string name="STUDY_TEST_POINT_ONE">Jede Frage muss beantwortet werden</string>
-    <string name="STUDY_TEST_POINT_TWO">Du kannst nur eine Antwort auswählen</string>
-    <string name="STUDY_TEST_POINT_THREE">Wenn Du dir nicht sicher bist, nimm die Antwort, die dir am ehesten zusagt</string>
-    <string name="STUDY_TEST_POINT_FOUR">Zur Navigation dienen die Pfeile oder das Streichen über den Bildschirm</string>
+    <string name="STUDY_TEST_POINT_ONE">Every question has to be answered</string>
+    <string name="STUDY_TEST_POINT_TWO">You can only choose one answer</string>
+    <string name="STUDY_TEST_POINT_THREE">If you are not sure, choose the answer that comes closest</string>
+    <string name="STUDY_TEST_POINT_FOUR">To navigate, use the arrows or swipe on your screen</string>
 
 
 
@@ -701,63 +700,63 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <!-- NEU -->
     <!-- NEU -->
     <!-- NEU -->
-    <string name="KMI_BACHELOR_POINT_ONE">allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch)</string>
-    <string name="KMI_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) </string>
-    <string name="KMI_BACHELOR_POINT_THREE">Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) </string>
-    <string name="KMI_BACHELOR_POINT_FOUR">Verteilte Anwendungen </string>
-    <string name="KMI_BACHELOR_POINT_FIVE">Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)</string>
+    <string name="KMI_BACHELOR_POINT_ONE">General basics (project management, economics and law, technological English)</string>
+    <string name="KMI_BACHELOR_POINT_TWO">Mathematical/scientific basics (mathematics, physics, electrical engineering/electronics) </string>
+    <string name="KMI_BACHELOR_POINT_THREE">Computer Science (basics, programming, software technology, databases, hard- and software architecture, networks, simulations, routing, switching, protocols) </string>
+    <string name="KMI_BACHELOR_POINT_FOUR">Distributed applications </string>
+    <string name="KMI_BACHELOR_POINT_FIVE">Telecomunnication (signals and systems, transmission technology, network management, radio)</string>
 
-    <string name="DUAL_KMI_BACHELOR_POINT_ONE">allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch)</string>
-    <string name="DUAL_KMI_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) </string>
-    <string name="DUAL_KMI_BACHELOR_POINT_THREE">Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) </string>
-    <string name="DUAL_KMI_BACHELOR_POINT_FOUR">Verteilte Anwendungen </string>
-    <string name="DUAL_KMI_BACHELOR_POINT_FIVE">Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)</string>
+    <string name="DUAL_KMI_BACHELOR_POINT_ONE">General basics (project management, economics and law, technological English)</string>
+    <string name="DUAL_KMI_BACHELOR_POINT_TWO">Mathematical/scientific basics (mathematics, physics, electrical engineering/electronics) </string>
+    <string name="DUAL_KMI_BACHELOR_POINT_THREE">Computer Science (basics, programming, software technology, databases, hard- and software architecture, networks, simulations, routing, switching, protocols) </string>
+    <string name="DUAL_KMI_BACHELOR_POINT_FOUR">Distributed applications </string>
+    <string name="DUAL_KMI_BACHELOR_POINT_FIVE">Telecomunnication (signals and systems, transmission technology, network management, radio)</string>
 
-    <string name="JOB_KMI_BACHELOR_POINT_ONE">allgemeine Grundlagen (Projektmanagement, Wirtschaft und Recht, technisches Englisch)</string>
-    <string name="JOB_KMI_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen (Mathematik, Physik, Elektrotechnik/Elektronik) </string>
-    <string name="JOB_KMI_BACHELOR_POINT_THREE">Informatik (Grundlagen, Programmierung, Softwaretechnik, Datenbanken, Hard- und Softwarearchitekturen, Netze, Simulationen, Routing, Switching, Protokolle) </string>
-    <string name="JOB_KMI_BACHELOR_POINT_FOUR">Verteilte Anwendungen </string>
-    <string name="JOB_KMI_BACHELOR_POINT_FIVE">Telekommunikation (Signale und Systeme, Übertragungstechnik, Netzmanagement, Funk)</string>
+    <string name="JOB_KMI_BACHELOR_POINT_ONE">General basics (project management, economics and law, technological English)</string>
+    <string name="JOB_KMI_BACHELOR_POINT_TWO">Mathematical/scientific basics (mathematics, physics, electrical engineering/electronics) </string>
+    <string name="JOB_KMI_BACHELOR_POINT_THREE">Computer Science (basics, programming, software technology, databases, hard- and software architecture, networks, simulations, routing, switching, protocols) </string>
+    <string name="JOB_KMI_BACHELOR_POINT_FOUR">Distributed applications </string>
+    <string name="JOB_KMI_BACHELOR_POINT_FIVE">Telecomunnication (signals and systems, transmission technology, network management, radio)</string>
 
-    <string name="WI_BACHELOR_POINT_ONE">Grundlagen: Mathematik, Statistik, Projektmanagement, Technical &amp; Business Englisch, Recht </string>
-    <string name="WI_BACHELOR_POINT_TWO">Wirtschaft: Allgemeine Betriebswirtschaftslehre, Marketing &amp; CRM, Volkswirtschaftslehre, Rechnungswesen und Controlling, Netzbasierte Geschäftsmodelle</string>
-    <string name="WI_BACHELOR_POINT_THREE">Informatik: Programmierung, Hard- und Softwaresysteme, Kommunikationsnetze, Verteilte Anwendungen, IT-Sicherheit </string>
-    <string name="WI_BACHELOR_POINT_FOUR">Wirtschaftsinformatik: Prozessmanagement, Datenmanagement, IT-Service- &amp; Supply Chain Management, Betriebliche Informationssysteme, Softwareengineering, Business Intelligence</string>
+    <string name="WI_BACHELOR_POINT_ONE">Basics: mathematics, statistics, project management, technological &amp; business English, law </string>
+    <string name="WI_BACHELOR_POINT_TWO">Economics: business administration, marketing &amp; CRM, economics, accounting and controlling, network based business models</string>
+    <string name="WI_BACHELOR_POINT_THREE">Computer science: programming, hard- and software systems, communication networks, distributed applications, IT-security </string>
+    <string name="WI_BACHELOR_POINT_FOUR">Business information systems: process management, data management, IT service- &amp; supply chain management, business information systems, software engineering, business intelligence</string>
 
-    <string name="DUAL_WI_BACHELOR_POINT_ONE">Grundlagen: Mathematik, Statistik, Projektmanagement, Technical &amp; Business Englisch, Recht </string>
-    <string name="DUAL_WI_BACHELOR_POINT_TWO">Wirtschaft: Allgemeine Betriebswirtschaftslehre, Marketing &amp; CRM, Volkswirtschaftslehre, Rechnungswesen und Controlling, Netzbasierte Geschäftsmodelle</string>
-    <string name="DUAL_WI_BACHELOR_POINT_THREE">Informatik: Programmierung, Hard- und Softwaresysteme, Kommunikationsnetze, Verteilte Anwendungen, IT-Sicherheit </string>
-    <string name="DUAL_WI_BACHELOR_POINT_FOUR">Wirtschaftsinformatik: Prozessmanagement, Datenmanagement, IT-Service- &amp; Supply Chain Management, Betriebliche Informationssysteme, Softwareengineering, Business Intelligence</string>
+    <string name="DUAL_WI_BACHELOR_POINT_ONE">Basics: mathematics, statistics, project management, technological &amp; business English, law </string>
+    <string name="DUAL_WI_BACHELOR_POINT_TWO">Economics: business administration, marketing &amp; CRM, economics, accounting and controlling, network based business models</string>
+    <string name="DUAL_WI_BACHELOR_POINT_THREE">Computer science: programming, hard- and software systems, communication networks, distributed applications, IT-security</string>
+    <string name="DUAL_WI_BACHELOR_POINT_FOUR">Business information systems: process management, data management, IT service- &amp; supply chain management, business information systems, software engineering, business intelligence</string>
 
-    <string name="JOB_WI_BACHELOR_POINT_ONE">Grundlagen: Mathematik, Statistik, Projektmanagement, Technical &amp; Business Englisch, Recht </string>
-    <string name="JOB_WI_BACHELOR_POINT_TWO">Wirtschaft: Allgemeine Betriebswirtschaftslehre, Marketing &amp; CRM, Volkswirtschaftslehre, Rechnungswesen und Controlling, Netzbasierte Geschäftsmodelle</string>
-    <string name="JOB_WI_BACHELOR_POINT_THREE">Informatik: Programmierung, Hard- und Softwaresysteme, Kommunikationsnetze, Verteilte Anwendungen, IT-Sicherheit </string>
-    <string name="JOB_WI_BACHELOR_POINT_FOUR">Wirtschaftsinformatik: Prozessmanagement, Datenmanagement, IT-Service- &amp; Supply Chain Management, Betriebliche Informationssysteme, Softwareengineering, Business Intelligence</string>
+    <string name="JOB_WI_BACHELOR_POINT_ONE">Basics: mathematics, statistics, project management, technological &amp; business English, law </string>
+    <string name="JOB_WI_BACHELOR_POINT_TWO">Economics: business administration, marketing &amp; CRM, economics, accounting and controlling, network based business models</string>
+    <string name="JOB_WI_BACHELOR_POINT_THREE">Computer science: programming, hard- and software systems, communication networks, distributed applications, IT-security</string>
+    <string name="JOB_WI_BACHELOR_POINT_FOUR">Business information systems: process management, data management, IT service- &amp; supply chain management, business information systems, software engineering, business intelligence</string>
 
-    <string name="DUAL_WI_MASTER_POINT_ONE">Pflichtmodule: Information Management,IT-Recht,New Business Development &amp; Technology Management, IT-Controlling, Business Information &amp; Process Modeling, Research Methods, Business Process Optimization, Enterprise Architecture Management, Software Engineering, Software Management, IT-Project Management, IT-Service Management</string>
-    <string name="DUAL_WI_MASTER_POINT_TWO">Profilierungsbereiche: Software Engineering, Business Analytics</string>
+    <string name="DUAL_WI_MASTER_POINT_ONE">Obligatory courses: information management, IT law, new business development &amp; technology management, IT controlling, business information &amp; process modeling, research methods, business process optimization, enterprise architecture management, software engineering, software management, IT project management, IT service management</string>
+    <string name="DUAL_WI_MASTER_POINT_TWO">Profiling fields: software engineering, business analytics</string>
 
-    <string name="JOB_WI_MASTER_POINT_ONE">Pflichtmodule: Information Management,IT-Recht,New Business Development &amp; Technology Management, IT-Controlling, Business Information &amp; Process Modeling, Research Methods, Business Process Optimization, Enterprise Architecture Management, Software Engineering, Software Management, IT-Project Management, IT-Service Management</string>
-    <string name="JOB_WI_MASTER_POINT_TWO">Profilierungsbereiche: Software Engineering, Business Analytics</string>
+    <string name="JOB_WI_MASTER_POINT_ONE">Obligatory courses: information management, IT law, new business development &amp; technology management, IT controlling, business information &amp; process modeling, research methods, business process optimization, enterprise architecture management, software engineering, software management, IT project management, IT service management</string>
+    <string name="JOB_WI_MASTER_POINT_TWO">Profiling fields: software engineering, business analytics</string>
 
-    <string name="DUAL_AI_BACHELOR_POINT_ONE">Grundlagen: Mathematik, Programmierung, Elektrotechnik, Physik, Technische Informatik, Projektmanagement, Technical &amp; Business Englisch, Recht</string>
-    <string name="DUAL_AI_BACHELOR_POINT_TWO">Rechnernetze, Datenbankmanagementsysteme, Betriebssysteme, Sicherheit in Webanwendungen, Rechnerarchitekturen, Softwareengineering, Systemtheorie, Netzinfrastrukturen und Protokolle, Webtechnologien, Verteilte Anwendungen, Datenschutz, Betriebswirtschaftslehre, Projektmanagement, Profilierungsmodule, Social Media Communication, Zukunftstechnologien</string>
+    <string name="DUAL_AI_BACHELOR_POINT_ONE">Basics: msthematics, programming, electrical engineering, physics, technical computer science, project management, technological &amp; business English, law</string>
+    <string name="DUAL_AI_BACHELOR_POINT_TWO">Computer networks, database management systems, operating systems, security in web applications, computer architecture, software engineering, system theory, network infrastructure and protocols, web technologies, distributed applications, data security, business administration, project management, profiling courses, social media communication, future technoligies</string>
 
-    <string name="IKT_BACHELOR_POINT_ONE">allgemeine Grundlagen: Projektmanagement, Wirtschaft und Recht, technisches Englisch</string>
-    <string name="IKT_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen: Mathematik, Physik</string>
-    <string name="IKT_BACHELOR_POINT_THREE">Grundlagen der Elektrotechnik und Informationstechnik: Informatik, Elektrotechnik</string>
-    <string name="IKT_BACHELOR_POINT_FOUR"> Signale &amp; Systeme, Photonik; Felder &amp; Wellen, Netze, Funk, Hard- und Softwarearchitektur</string>
+    <string name="IKT_BACHELOR_POINT_ONE">General basics: project management, economics and law, technological English</string>
+    <string name="IKT_BACHELOR_POINT_TWO">Mathematical/scientific basics: mathematics, physics</string>
+    <string name="IKT_BACHELOR_POINT_THREE">Basics of electricalengineering and IT: computer science and electrical engineering</string>
+    <string name="IKT_BACHELOR_POINT_FOUR"> Signals &amp; systems, photonics; fields &amp; waves, networks, radio, hard- and softwarearchitecture</string>
 
-    <string name="IKT_MASTER_POINT_ONE">Kernbereiche: Angewandte Mathematik, Systemtheorie, Software-Technologie, Photonik, Systeme der Funktechnik, Networking, BWL, Recht, Projektmanagement </string>
-    <string name="IKT_MASTER_POINT_TWO">Profilierungsmodule Kommunikationstechnik </string>
-    <string name="IKT_MASTER_POINT_THREE">Profilierungsmodule Informationstechnologie</string>
+    <string name="IKT_MASTER_POINT_ONE">Core fields: applied mathematics, system theory, software technology, photonics, systems of radio technology, networking, BA, law, project management </string>
+    <string name="IKT_MASTER_POINT_TWO">Profiling courses communication technology </string>
+    <string name="IKT_MASTER_POINT_THREE">Profiling courses information technology</string>
 
-    <string name="JOB_IKT_BACHELOR_POINT_ONE">allgemeine Grundlagen: Projektmanagement, Wirtschaft und Recht, technisches Englisch</string>
-    <string name="JOB_IKT_BACHELOR_POINT_TWO">Mathematisch-naturwissenschaftliche Grundlagen: Mathematik, Physik</string>
-    <string name="JOB_IKT_BACHELOR_POINT_THREE">Grundlagen der Elektrotechnik und Informationstechnik: Informatik, Elektrotechnik</string>
-    <string name="JOB_IKT_BACHELOR_POINT_FOUR"> Signale &amp; Systeme, Photonik; Felder &amp; Wellen, Netze, Funk, Hard- und Softwarearchitektur</string>
+    <string name="JOB_IKT_BACHELOR_POINT_ONE">General basics: project management, economics and law, technological English</string>
+    <string name="JOB_IKT_BACHELOR_POINT_TWO">Mathematical/scientific basics: mathematics, physics</string>
+    <string name="JOB_IKT_BACHELOR_POINT_THREE">Basics of electricalengineering and IT: computer science and electrical engineering</string>
+    <string name="JOB_IKT_BACHELOR_POINT_FOUR"> Signals &amp; systems, photonics; fields &amp; waves, networks, radio, hard- and software archiecture</string>
 
-    <string name="JOB_IKT_MASTER_POINT_ONE">Pflichtmodule: Angewandte Mathematik, ICT-Consulting, Projektmanagement, Informations- und Kommunikationstechnik Laborpraktika, Recht, Arbeit am Projekt</string>
-    <string name="JOB_IKT_MASTER_POINT_TWO">Profilierungsmodule: 10 aus dem Bereich Kommunikationstechnik, \n 10 aus dem Bereich Informationstechnologie </string>
+    <string name="JOB_IKT_MASTER_POINT_ONE">Obligatory courses: applied mathematics, ICT consulting, project management, ICT laboratory apprenticeships, law, work on projects</string>
+    <string name="JOB_IKT_MASTER_POINT_TWO">Profiling courses: 10 out of the field communication technology, \n 10 out of the field information technology </string>
 
 </resources>
