@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.View;
@@ -407,7 +408,15 @@ public class MainActivity extends AppCompatActivity {
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
-        getApplicationContext().getResources().updateConfiguration(config, null);
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        getApplicationContext().getResources().updateConfiguration(config, displayMetrics);
+        education_button.setText(getResources().getString(R.string.ACTIVITY_EDUCATION_TITLE));
+        hftl_button.setText(getResources().getString(R.string.ACTIVITY_HFTL_INFO_TITLE_BUTTON));
+        maps_button.setText(getResources().getString(R.string.ACTIVITY_MAPS_TITLE));
+        study_button.setText(getResources().getString(R.string.ACTIVITY_DIRECT_TITLE));
+        study_dual_button.setText(getResources().getString(R.string.ACTIVITY_DUAL_TITLE));
+        study_job_button.setText(getResources().getString(R.string.ACTIVITY_JOB_TITLE_BUTTON));
+        study_test_button.setText(getResources().getString(R.string.ACTIVITY_Test_TITLE_BUTTON));
     }
 
     public String getLanguage()
@@ -438,6 +447,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void refreshFragments()
     {
+        if (getQuestions() != null && !getQuestions().isEmpty())
+        {
+            refreshQuestionList();
+        }
         for (int entry = 0; entry < getSupportFragmentManager().getBackStackEntryCount(); entry++)
         {
             String name = getSupportFragmentManager().getBackStackEntryAt(entry).getName();
@@ -445,6 +458,115 @@ public class MainActivity extends AppCompatActivity {
             if (fragment != null)
             {
                 fragment.refresh();
+            }
+        }
+    }
+
+    private void refreshQuestionList()
+    {
+        for (int i = 0; i < getQuestions().size(); i++)
+        {
+            Question question = getQuestions().get(i);
+            switch (i)
+            {
+                case 0:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_ONE_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_ONE_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_ONE_ANSWER_THREE));
+                    question.getAnswers().get(3).setAnswerName(getResources().getString(R.string.QUESTION_ONE_ANSWER_FOUR));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_ONE_NAME));
+                    break;
+                case 1:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_TWO_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_TWO_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_TWO_ANSWER_THREE));
+                    question.getAnswers().get(3).setAnswerName(getResources().getString(R.string.QUESTION_TWO_ANSWER_FOUR));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_TWO_NAME));
+                    break;
+                case 2:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_THREE_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_THREE_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_THREE_ANSWER_THREE));
+                    question.getAnswers().get(3).setAnswerName(getResources().getString(R.string.QUESTION_THREE_ANSWER_FOUR));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_THREE_NAME));
+                    break;
+                case 3:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_FOUR_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_FOUR_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_FOUR_ANSWER_THREE));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_FOUR_NAME));
+                    break;
+                case 4:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_FIVE_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_FIVE_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_FIVE_ANSWER_THREE));
+                    question.getAnswers().get(3).setAnswerName(getResources().getString(R.string.QUESTION_FIVE_ANSWER_FOUR));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_FIVE_NAME));
+                    break;
+                case 5:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_SIX_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_SIX_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_SIX_ANSWER_THREE));
+                    question.getAnswers().get(3).setAnswerName(getResources().getString(R.string.QUESTION_SIX_ANSWER_FOUR));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_SIX_NAME));
+                    break;
+                case 6:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_SEVEN_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_SEVEN_ANSWER_TWO));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_SEVEN_NAME));
+                    break;
+                case 7:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_EIGHT_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_EIGHT_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_EIGHT_ANSWER_THREE));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_EIGHT_NAME));
+                    break;
+                case 8:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_NINE_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_NINE_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_NINE_ANSWER_THREE));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_NINE_NAME));
+                    break;
+                case 9:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_TEN_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_TEN_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_TEN_ANSWER_THREE));
+                    question.getAnswers().get(3).setAnswerName(getResources().getString(R.string.QUESTION_TEN_ANSWER_FOUR));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_TEN_NAME));
+                    break;
+                case 10:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_ELEVEN_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_ELEVEN_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_ELEVEN_ANSWER_THREE));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_ELEVEN_NAME));
+                    break;
+                case 11:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_TWELVE_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_TWELVE_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_TWELVE_ANSWER_THREE));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_TWELVE_NAME));
+                    break;
+                case 12:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_THIRTEEN_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_THIRTEEN_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_THIRTEEN_ANSWER_THREE));
+                    question.getAnswers().get(3).setAnswerName(getResources().getString(R.string.QUESTION_THIRTEEN_ANSWER_FOUR));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_THIRTEEN_NAME));
+                    break;
+                case 13:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_FOURTEEN_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_FOURTEEN_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_FOURTEEN_ANSWER_THREE));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_FOURTEEN_NAME));
+                    break;
+                case 14:
+                    question.getAnswers().get(0).setAnswerName(getResources().getString(R.string.QUESTION_FIFTEEN_ANSWER_ONE));
+                    question.getAnswers().get(1).setAnswerName(getResources().getString(R.string.QUESTION_FIFTEEN_ANSWER_TWO));
+                    question.getAnswers().get(2).setAnswerName(getResources().getString(R.string.QUESTION_FIFTEEN_ANSWER_THREE));
+                    question.setQuestionName(getResources().getString(R.string.QUESTION_FIFTEEN_NAME));
+                    break;
+                default:
+                    break;
             }
         }
     }

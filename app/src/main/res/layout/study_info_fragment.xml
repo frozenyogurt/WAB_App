@@ -72,6 +72,7 @@
                 android:text="Studienordnungen und Curriculum"/>
 
             <LinearLayout
+                android:id="@+id/point_one_layout"
                 android:gravity="center"
                 android:padding="10dp"
                 android:orientation="horizontal"
@@ -94,6 +95,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/point_two_layout"
                 android:gravity="center"
                 android:padding="10dp"
                 android:orientation="horizontal"
@@ -116,6 +118,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/point_three_layout"
                 android:gravity="center"
                 android:padding="10dp"
                 android:orientation="horizontal"
@@ -138,6 +141,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/point_four_layout"
                 android:gravity="center"
                 android:padding="10dp"
                 android:orientation="horizontal"
@@ -160,6 +164,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/point_five_layout"
                 android:gravity="center"
                 android:padding="10dp"
                 android:orientation="horizontal"
@@ -182,6 +187,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/point_six_layout"
                 android:gravity="center"
                 android:padding="10dp"
                 android:orientation="horizontal"
@@ -204,6 +210,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/point_seven_layout"
                 android:gravity="center"
                 android:padding="10dp"
                 android:orientation="horizontal"

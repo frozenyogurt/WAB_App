@@ -49,6 +49,13 @@ public class StudyInfoFragment extends MyRefreshFragment
         TextView pointSix = (TextView) view.findViewById(R.id.study_info_sixth_point_text);
         TextView pointSeven = (TextView) view.findViewById(R.id.study_info_seventh_point_text);
 
+        LinearLayout pointSevenLayout = (LinearLayout) view.findViewById(R.id.point_seven_layout);
+        LinearLayout pointSixLayout = (LinearLayout) view.findViewById(R.id.point_six_layout);
+        LinearLayout pointFiveLayout = (LinearLayout) view.findViewById(R.id.point_five_layout);
+        LinearLayout pointFourLayout = (LinearLayout) view.findViewById(R.id.point_four_layout);
+        LinearLayout pointThreeLayout = (LinearLayout) view.findViewById(R.id.point_three_layout);
+        LinearLayout pointTwoLayout = (LinearLayout) view.findViewById(R.id.point_two_layout);
+
         ArrayList<TextView> pointViews = new ArrayList<>();
         pointViews.add(pointOne);
         pointViews.add(pointTwo);
@@ -60,19 +67,27 @@ public class StudyInfoFragment extends MyRefreshFragment
 
         if (element.getPoints().size() < 7)
         {
-            pointSeven.setVisibility(View.GONE);
+            pointSevenLayout.setVisibility(View.GONE);
         }
         if (element.getPoints().size() < 6)
         {
-            pointSix.setVisibility(View.GONE);
+            pointSixLayout.setVisibility(View.GONE);
         }
         if (element.getPoints().size() < 5)
         {
-            pointFive.setVisibility(View.GONE);
+            pointFiveLayout.setVisibility(View.GONE);
         }
         if (element.getPoints().size() < 4)
         {
-            pointFour.setVisibility(View.GONE);
+            pointFourLayout.setVisibility(View.GONE);
+        }
+        if (element.getPoints().size() < 3)
+        {
+            pointThreeLayout.setVisibility(View.GONE);
+        }
+        if (element.getPoints().size() < 2)
+        {
+            pointTwoLayout.setVisibility(View.GONE);
         }
 
         for(int i = 0; i < element.getPoints().size(); i++)
@@ -80,7 +95,7 @@ public class StudyInfoFragment extends MyRefreshFragment
             pointViews.get(i).setText(element.getPoints().get(i));
         }
 
-        websiteText.setText("Alle Informationen");
+        websiteText.setText(getActivity().getResources().getString(R.string.ALL_INFORMATIONS));
         websiteLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

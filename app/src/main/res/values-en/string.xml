@@ -400,12 +400,13 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="MENU_ABOUT_US_NAME">About us</string>
     <string name="MENU_EXIT_NAME">Exit</string>
 
+    <string name="ALL_INFORMATIONS">all information</string>
     <string name="SEE_ALL_INFORMATIONS">See all information</string>
     <string name="SERVICES_LIBRARY_TITLE">Library</string>
     <string name="SERVICES_SPORT_TITLE">Sports</string>
     <string name="SERVICES_WAY_TO_TITLE">Journey</string>
     <string name="SERVICES_LINKS_TITLE">Links</string>
-    <string name="SERVICES_ROOMS_TITLE">Laboratories</string>
+    <string name="SERVICES_ROOMS_TITLE">Rooms</string>
 
     <string name="SERVICES_LIBRARY_TITLE_ONE">Address for the library of the HfTL and HTWK Leipzig</string>
     <string name="SERVICES_LIBRARY_TITLE_TWO">Opening hours</string>
@@ -599,7 +600,7 @@ Here you will find your perfect study course. Additionally, we give advice regar
     <string name="QUESTION_EIGHT_ANSWER_THREE">Yes, if I can fund it through a job at Deutsche Telekom</string>
     <string name="QUESTION_EIGHT_NAME">Would you be open to paying the study fee of 250€ per month?</string>
 
-    <string name="QUESTION_NINE_ANSWER_ONE">Yes, I need an IT-professional's full pay</string>
+    <string name="QUESTION_NINE_ANSWER_ONE">Yes, I need an IT-professional\'s full pay</string>
     <string name="QUESTION_NINE_ANSWER_TWO">Yes, it just needs to compensate for the fees.</string>
     <string name="QUESTION_NINE_ANSWER_THREE">No, I do not want to work at Deutsche Telekom while I am studying</string>
     <string name="QUESTION_NINE_NAME">Are you depended on a salary while doing your studies? If so, how much do you need?</string>
@@ -622,7 +623,7 @@ Here you will find your perfect study course. Additionally, we give advice regar
 
     <string name="QUESTION_THIRTEEN_ANSWER_ONE">Learning with the lecture notes is ideal for me</string>
     <string name="QUESTION_THIRTEEN_ANSWER_TWO">Both are equally important to me</string>
-    <string name="QUESTION_THIRTEEN_ANSWER_THREE">I don' want to work with scripts/notes too much and I prefer attending lectures</string>
+    <string name="QUESTION_THIRTEEN_ANSWER_THREE">I don\'t want to work with scripts/notes too much and I prefer attending lectures</string>
     <string name="QUESTION_THIRTEEN_ANSWER_FOUR">I have to attend every lecture</string>
     <string name="QUESTION_THIRTEEN_NAME">Do you prefer learning via scripts/notes or by attending the lectures?</string>
 
@@ -634,7 +635,6 @@ Here you will find your perfect study course. Additionally, we give advice regar
     <string name="QUESTION_FIFTEEN_ANSWER_ONE">Yes</string>
     <string name="QUESTION_FIFTEEN_ANSWER_TWO">No</string>
     <string name="QUESTION_FIFTEEN_ANSWER_THREE">I am not sure yet</string>
-    <string name="QUESTION_FIFTEEN_ANSWER_FOUR">text</string>
     <string name="QUESTION_FIFTEEN_NAME">Do you plan on pursuing a Masters degree after completing your Bachelor studies?</string>
 
     <!-- NEU -->

@@ -524,6 +524,7 @@ Herzlich Willkommen.
     <string name="MENU_ABOUT_US_NAME">Über Uns</string>
     <string name="MENU_EXIT_NAME">Beenden</string>
 
+    <string name="ALL_INFORMATIONS">Alle Informationen</string>
     <string name="SEE_ALL_INFORMATIONS">Alle Informationen ansehen</string>
     <string name="SERVICES_LIBRARY_TITLE">Bibliothek</string>
     <string name="SERVICES_SPORT_TITLE">Sport</string>
@@ -758,7 +759,6 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="QUESTION_FIFTEEN_ANSWER_ONE">Ja</string>
     <string name="QUESTION_FIFTEEN_ANSWER_TWO">Nein</string>
     <string name="QUESTION_FIFTEEN_ANSWER_THREE">Das weiß ich noch nicht</string>
-    <string name="QUESTION_FIFTEEN_ANSWER_FOUR">text</string>
     <string name="QUESTION_FIFTEEN_NAME">Planst du nach deinem Bachelor einen Master Studiengang?</string>
 
     <!-- NEU -->
