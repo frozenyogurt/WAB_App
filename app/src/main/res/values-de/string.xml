@@ -16,7 +16,7 @@ Please refer to the curriculum to find courses currently available.</string>
     <!-- Trennzeichen -->
         <string name="KMI_BACHELOR_BEGINNING_TEXT">Ohne Fachexperten wäre das Smartphone nur ein Stück Plastik.
             Doch auch jenseits der Entwicklung von Apps für Spiele und Informationen hat der Studiengang eine Menge zu bieten.
-            An der HfTL lernst du als Telekommunikationsinformatiker alles über die Speicherung und Übertragung von Informationen in der Telekommunikation und wirst so fit für modernste Kommunikationseinrichtungen und -prozesse. \n
+            An der HfTL lernst Du als Telekommunikationsinformatiker alles über die Speicherung und Übertragung von Informationen in der Telekommunikation und wirst so fit für modernste Kommunikationseinrichtungen und -prozesse. \n
             Wenn Du immer auf dem neuesten Stand bist und wissen willst, was die sozialen Medien am Leben erhält, wie Apps entstehen und wie moderne Datenströme fließen, ist Kommunikations- und Medieninformatik Dein Fach.
             Im Fokus des Studienganges stehen Medien und ihre Technologie</string>
     <string name="KMI_BACHELOR_PERSPECTIVES_TEXT">Unternehmen organisieren sich immer stärker in Netzwerken: Zulieferer, Partner und Kunden werden in großen Systemen organisiert.
@@ -91,7 +91,7 @@ Kommunikations- und Medieninformatik vermittelt Kenntnisse aus den Bereichen Phy
     <string name="IKT_MASTER_BEGINNING_TEXT">Mit einem Master in Informations- und Kommunikationstechnik legst Du einen wichtigen Grundstein für Deine Karriere in der Telekommunikationsbranche.
         Der Abschluss eröffnet Dir aber noch ganz andere Möglichkeiten: Vertiefte Fachkenntnisse in Telekommunikation, Informatik und Schlüsselqualifikationen aus BWL, Recht und Projektmanagement machen Dich bereit für leitende Positionen ganz weit oben auf der Karriereleiter.\n
         Mit dem Master erhältst Du alle Voraussetzungen, um komplexe Telekommunikationssysteme verantwortlich zu entwickeln und Führungsverantwortung zu übernehmen.\n
-    Eine Besonderheit ist, dass du diesen Master auch in Englischer Sprache machen kannst.</string>
+    Eine Besonderheit ist, dass Du diesen Master auch in Englischer Sprache machen kannst.</string>
     <string name="IKT_MASTER_PERSPECTIVES_TEXT">Informations- und KommunikationstechnikerInnen arbeiten in nahezu allen Branchen und in den unterschiedlichsten Bereichen.
         Ihr Fachwissen sowie ihre Management- und Methodenkompetenz werden von Unternehmen wie der Deutschen Telekom, SAP, Siemens oder IBM weltweit geschätzt.
         Als Master-AbsolventIn der Informations- und Kommunikationstechnik kannst Du Projekte managen und effizient führen – schließlich durchschaust Du auch die ökonomischen Zusammenhänge.\n
@@ -296,7 +296,7 @@ Die Hochschule für Telekommunikation Leipzig hat für alle angebotenen Studieng
     <string name="STUDY_COSTS">Die Gebühren belaufen sich auf 250 Euro pro Monat.</string>
     <string name="STUDY_COSTS_SEMESTER">Der Semesterbeitrag beträgt 184,50 Euro.</string>
     <string name="STUDY_FAR_AWAY">Da die HfTL über ein weites Netz an Partnerhochschule auf der ganzen Welt verfügt, an denen Auslandsemester absolviert werden können, ist die Anrechnung von im Ausland erbrachten Studienleistungen gewährleistet.</string>
-    <string name="WHICH_STUDY_COURSE">Um das zu erfahren, haben wir für Dich einen Studiengangtest gefunden, den du im Hauptmenü findest und dich nach deinen Vorstellungen berät. \n
+    <string name="WHICH_STUDY_COURSE">Um das zu erfahren, haben wir für Dich einen Studiengangtest gefunden, den Du im Hauptmenü findest und dich nach deinen Vorstellungen berät. \n
 Weitere Möglichkeiten sich vorab über die HfTL zu informieren, gibt es bei unserem Tag der offenen Hochschultür und dem jährlich statt findenden Schnupperstudium. Des Weiteren kannst Du problemlos über unsere Serviceline (0341 3062 123) einen Termin zum Kennenlernen vereinbaren - und wir zeigen Dir die Hochschule.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
@@ -334,7 +334,7 @@ Die HfTL ist seit 2010 ein zertifiziertes TOEIC Testzentrum.
         Das Zertifikat ist die perfekte Ergänzung deiner zukünftigen Bewerbungen.
         \n
         \n
-Im Folgenden kannst du aus drei Varianten wählen:</string>
+Im Folgenden kannst Du aus drei Varianten wählen:</string>
     <string name="TOEIC_COMPLETE_PACKAGE_TEXT">Beinhaltet die Teilnahme an der Lehrveranstaltung mit 14 Unterrichtseinheiten zur Vorbereitung auf den TOEIC Test Listening &amp; Reading und die Teilnahme am TOEIC Test inklusive das Ausstellen eines Ergebniszertifikats.
 Kosten: 160,00 Euro inkl. MwSt</string>
     <string name="TOEIC_LISTENING_AND_READING_TEXT">Beinhaltet die Teilnahme am TOEIC Test Listening &amp; Reading inklusive das Ausstellen eines Ergebniszertifikats.
@@ -410,7 +410,7 @@ Herzlich Willkommen.
         Im dualen Studium werden die Studiengebühren von Deinem neuen Arbeitgeber, der Deutschen Telekom, übernommen.\n
         Im berufsbegleitenden Studium fördert die Deutsche Telekom die Mitarbeiter des Konzerns und Du musst nur einen Teil der Studiengebühren selbst erbringen.</string>
     <string name="title_reason_six">6. Du kannst Die Zukunft und die Gesellschaft mitgestalten</string>
-    <string name="reason_six">Mit einem Abschluss der Hochschule für Telekommunikation Leipzig in der Tasche bist du als Berufseinsteiger gern gesehen. So bekommst Du die Möglichkeit, mit Deinem Wissen und Können die Zukunft mit zu gestalten.</string>
+    <string name="reason_six">Mit einem Abschluss der Hochschule für Telekommunikation Leipzig in der Tasche bist Du als Berufseinsteiger gern gesehen. So bekommst Du die Möglichkeit, mit Deinem Wissen und Können die Zukunft mit zu gestalten.</string>
     <string name="title_reason_seven">7. Du studierst in einer lebendigen und wachsenden Stadt</string>
     <string name="reason_seven">Leipzig ist in: In den letzten Jahren hat sich die sächsische Stadt zu einem Anziehungspunkt für die internationale Kunst- und Kulturszene entwickelt – der Spaßfaktor ist hoch. Leipzig gehört seit 2010 zu den am schnellsten wachsenden Städten Deutschlands.\n
         Dennoch sind die Lebenshaltungskosten niedrig – perfekte Voraussetzungen für ein angenehmes Studentenleben.</string>
@@ -430,7 +430,7 @@ Herzlich Willkommen.
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <string name="portrait_text_one">Hier siehst Du ein Bild der HfTL von vor 60 Jahren. Schon damals, bereits 20 Jahre vor der Erfindung des Internets, konnte man hier die Zukunft der Nachrichtenübertragung aktiv mitgestalten.</string>
-    <string name="portrait_text_two">Und wie die HfTL heute aussieht, siehst du hier.\n
+    <string name="portrait_text_two">Und wie die HfTL heute aussieht, siehst Du hier.\n
     Eine Hochschule, die weiterhin für Fortschritt und Innovation steht und sich in Deutschland und international einen einzigartigen Status geschaffen hat.\n
     An unserer Hochschule betreiben wir gemeinsam mit Partnern der Deutschen Telekom AG und aus der Industrie Forschung und Entwicklung. Dies bedeutet große Praxisnähe: Projekte können unter Deiner aktiven Beteiligung aus der Planungs- in die Realisierungsphase überführt werden.
     </string>
@@ -443,17 +443,19 @@ Herzlich Willkommen.
     <string name="STEPHAN_MAIL">s133235@hftl.de</string>
 
     <string name="SIMION_NAME">Björn Simion Beuran</string>
-    <string name="SIMION_DESCRIPTION">Hey lieber Studieninteressierter! Ich hoffe ich konnte dir mit dieser App ein wenig bei deiner Studiengangwahl helfen und dich für die HFTL überzeugen. Schließlich bin ich für den Inhalt, die Ideen und das Design der App zuständig. Wenn dir also noch etwas einfällt oder du noch Fragen hast, kannst du mich gerne unter folgender E-Mail erreichen: s133202@hftl.de</string>
+    <string name="SIMION_DESCRIPTION">Hey lieber Studieninteressierter! Ich hoffe ich konnte dir mit dieser App ein wenig bei deiner Studiengangwahl helfen und dich für die HFTL überzeugen. Schließlich bin ich für den Inhalt, die Ideen und das Design der App zuständig. Wenn dir also noch etwas einfällt oder Du noch Fragen hast, kannst du mich gerne unter folgender E-Mail erreichen: s133202@hftl.de</string>
     <string name="SIMION_MAIL">s133202@hftl.de</string>
 
     <string name="FLORIAN_NAME">Florian Hollas</string>
-    <string name="FLORIAN_DESCRIPTION">Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast du hier die Möglichkeit: s133215@hftl.de</string>
+    <string name="FLORIAN_DESCRIPTION">Du würdest gerne einen Blick in die Dokumentation unserer App werfen? Dann kann ich dir garantiert weiterhelfen. Als Teamleiter habe ich neben allen organisatorischen Aufgaben auch die Dokumentation gepflegt und hoffe, dass sie keine Fragen offen lässt. Wenn Du sie also gerne haben möchtest, oder dich allgemein für unser Projekt interessierst hast Du hier die Möglichkeit: s133215@hftl.de</string>
     <string name="FLORIAN_MAIL">s133215@hftl.de</string>
 
-    <string name="CONTACT_HFTL_TITLE">Kontakt der HfTL</string>
-    <string name="CONTACT_DEVELOPER_TITLE">Kontakt der Entwickler</string>
+    <string name="CONTACT_HFTL_TITLE">Kontakt zur HfTL aufnehmen</string>
+    <string name="CONTACT_DEVELOPER_TITLE">Kontakt zu Entwicklern aufnehmen</string>
     <string name="SEND_MAIL">Mail Senden</string>
-    <string name="SEND_FORM">Formular über die Website abschicken</string>
+    <string name="CONTACT_HFTL_TEXT">Wenn Du Kontakt zur Hochschule aufnehmen möchtest, kannst Du dies hier tun. Du gelangst direkt auf die Website der HfTL und kannst dort ein Kontaktformular ausfüllen.</string>
+    <string name="DEVELOPER_TEXT">Gerne kannst Du auch Kontakt zu uns Entwicklern aufnehmen und uns eine E-Mail schreiben!</string>
+
 
     <string name="KMI_BACHELOR_NAME">Kommunikations- und Medieninformatik (Bachelor)</string>
     <string name="WI_BACHELOR_NAME">Wirtschaftsinformatik (Bachelor)</string>
@@ -684,13 +686,13 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="QUESTION_ONE_ANSWER_TWO">Gut</string>
     <string name="QUESTION_ONE_ANSWER_THREE">Geht so</string>
     <string name="QUESTION_ONE_ANSWER_FOUR">Nicht so gut</string>
-    <string name="QUESTION_ONE_NAME">Wie schätzt du dein math.-naturwissenschaftliches Vorwissen ein?</string>
+    <string name="QUESTION_ONE_NAME">Wie schätzt Du dein math.-naturwissenschaftliches Vorwissen ein?</string>
 
     <string name="QUESTION_TWO_ANSWER_ONE">Ja, so viele wie möglich</string>
     <string name="QUESTION_TWO_ANSWER_TWO">Ja, einige sind gut</string>
     <string name="QUESTION_TWO_ANSWER_THREE">Nur wenn es sein muss</string>
     <string name="QUESTION_TWO_ANSWER_FOUR">Auf keinen Fall</string>
-    <string name="QUESTION_TWO_NAME">Bist du an den math.-naturwissenschaftlichen Grundlagen der Informatik interessiert?</string>
+    <string name="QUESTION_TWO_NAME">Bist Du an den math.-naturwissenschaftlichen Grundlagen der Informatik interessiert?</string>
 
     <string name="QUESTION_THREE_ANSWER_ONE">Ja, sie sind sehr wichti</string>
     <string name="QUESTION_THREE_ANSWER_TWO">Ja, sie sind wichtig</string>
@@ -717,7 +719,7 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
 
     <string name="QUESTION_SEVEN_ANSWER_ONE">ja</string>
     <string name="QUESTION_SEVEN_ANSWER_TWO">nein</string>
-    <string name="QUESTION_SEVEN_NAME">Hast du bereits eine Ausbildung im IT-Bereich absolviert?</string>
+    <string name="QUESTION_SEVEN_NAME">Hast Du bereits eine Ausbildung im IT-Bereich absolviert?</string>
 
     <string name="QUESTION_EIGHT_ANSWER_ONE">Nein, unter keinen Umständen</string>
     <string name="QUESTION_EIGHT_ANSWER_TWO">Ja, ich wäre bereit sie selbst zu zahlen</string>
@@ -749,17 +751,17 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="QUESTION_THIRTEEN_ANSWER_TWO">Skripte sind gut, aber Vorlesungen sind auch wichtig</string>
     <string name="QUESTION_THIRTEEN_ANSWER_THREE">Ich möchte lieber weniger anhand von Skripten lernen, sondern eher an Vorlesungen teilnehmen</string>
     <string name="QUESTION_THIRTEEN_ANSWER_FOUR">Ich muss bei jeder Vorlesung dabei sein</string>
-    <string name="QUESTION_THIRTEEN_NAME">Vermittelst du dir eher über Skripte oder Vorlesungen die Lerninhalte?</string>
+    <string name="QUESTION_THIRTEEN_NAME">Vermittelst Du dir eher über Skripte oder Vorlesungen die Lerninhalte?</string>
 
     <string name="QUESTION_FOURTEEN_ANSWER_ONE">Ja</string>
     <string name="QUESTION_FOURTEEN_ANSWER_TWO">Nein</string>
     <string name="QUESTION_FOURTEEN_ANSWER_THREE">Teilweise</string>
-    <string name="QUESTION_FOURTEEN_NAME">Bist du bereit auf Freizeit zu verzichten, um dein Studium mit einer Berufstätigkeit zu verbinden?</string>
+    <string name="QUESTION_FOURTEEN_NAME">Bist Du bereit auf Freizeit zu verzichten, um dein Studium mit einer Berufstätigkeit zu verbinden?</string>
 
     <string name="QUESTION_FIFTEEN_ANSWER_ONE">Ja</string>
     <string name="QUESTION_FIFTEEN_ANSWER_TWO">Nein</string>
     <string name="QUESTION_FIFTEEN_ANSWER_THREE">Das weiß ich noch nicht</string>
-    <string name="QUESTION_FIFTEEN_NAME">Planst du nach deinem Bachelor einen Master Studiengang?</string>
+    <string name="QUESTION_FIFTEEN_NAME">Planst Du nach deinem Bachelor einen Master Studiengang?</string>
 
     <!-- NEU -->
     <!-- NEU -->

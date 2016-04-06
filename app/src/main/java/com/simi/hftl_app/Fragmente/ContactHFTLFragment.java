@@ -86,10 +86,10 @@ public class ContactHFTLFragment extends MyRefreshFragment
         }
 
         titleFragment.setText(getActivity().getResources().getString(R.string.CONTACT_TITLE));
-        hftlText.setText("Kontakt hftl Text");
+        hftlText.setText(getActivity().getResources().getString(R.string.CONTACT_HFTL_TEXT));
         hftlTitle.setText(getActivity().getResources().getString(R.string.CONTACT_HFTL_TITLE));
 
-        developerText.setText("Kontakt Entwickler Text");
+        developerText.setText(getActivity().getResources().getString(R.string.DEVELOPER_TEXT));
         developerTitle.setText(getActivity().getResources().getString(R.string.CONTACT_DEVELOPER_TITLE));
 
         sendFormText.setText(getActivity().getResources().getString(R.string.SEND_FORM));

@@ -331,6 +331,8 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="CONTACT_DEVELOPER_TITLE">Developer Contact</string>
     <string name="SEND_MAIL">Send Mail</string>
     <string name="SEND_FORM">Send form through the website.</string>
+    <string name="CONTACT_HFTL_TEXT">text</string>
+    <string name="DEVELOPER_TEXT">text</string>
 
     <string name="KMI_BACHELOR_NAME">Computer Science and Telekommunications (Bachelor)</string>
     <string name="WI_BACHELOR_NAME">Business Information Systems (Bachelor)</string>
