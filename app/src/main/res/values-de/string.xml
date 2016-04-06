@@ -882,7 +882,17 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="JOB_IKT_MASTER_POINT_ONE">Pflichtmodule: Angewandte Mathematik, ICT-Consulting, Projektmanagement, Informations- und Kommunikationstechnik Laborpraktika, Recht, Arbeit am Projekt</string>
     <string name="JOB_IKT_MASTER_POINT_TWO">Profilierungsmodule: 10 aus dem Bereich Kommunikationstechnik, \n 10 aus dem Bereich Informationstechnologie </string>
 
+    <string name="ROOM_TITLE_ONE">text</string>
+    <string name="ROOM_TITLE_TWO">text</string>
+    <string name="ROOM_TITLE_THREE">text</string>
+    <string name="ROOM_TITLE_FOUR">text</string>
+    <string name="ROOM_TITLE_FIVE">text</string>
 
+    <string name="ROOM_TEXT_ONE">text</string>
+    <string name="ROOM_TEXT_TWO">text</string>
+    <string name="ROOM_TEXT_THREE">text</string>
+    <string name="ROOM_TEXT_FOUR">text</string>
+    <string name="ROOM_TEXT_FIVE">text</string>
 
 </resources>
 

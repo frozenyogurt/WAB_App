@@ -34,14 +34,20 @@ public class ServicesRoomsFragment extends MyRefreshFragment
 
         ListView list = (ListView) view.findViewById(R.id.services_rooms_list);
         ArrayList<NewsListItem> news = new ArrayList<>();
-        news.add(new NewsListItem("Raum Titel",
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_ONE),
+                getResources().getString(R.string.ROOM_TEXT_ONE),
                 R.drawable.news_pic_test));
-        news.add(new NewsListItem("Raum Titel",
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_TWO),
+                getResources().getString(R.string.ROOM_TEXT_TWO),
                 R.drawable.news_pic_test));
-        news.add(new NewsListItem("Raum Titel",
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_THREE),
+                getResources().getString(R.string.ROOM_TEXT_THREE),
+                R.drawable.news_pic_test));
+        news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_FOUR),
+                getResources().getString(R.string.ROOM_TEXT_FOUR),
+                R.drawable.news_pic_test));
+        news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_FIVE),
+                getResources().getString(R.string.ROOM_TEXT_FIVE),
                 R.drawable.news_pic_test));
         NewsListAdapter adapter = new NewsListAdapter((MainActivity)getActivity(),R.layout.news_list_item,news);
         list.setAdapter(adapter);
