@@ -635,7 +635,7 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="ACTIVITY_MAPS_TITLE">Auf zur Hochschule!</string>
     <string name="ACTIVITY_HFTL_INFO_TITLE">HfTL Übersicht</string>
     <string name="ACTIVITY_HFTL_INFO_TITLE_BUTTON">Über die HfTL</string>
-    <string name="ACTIVITY_DUAL_TITLE">Dualstudium</string>
+    <string name="ACTIVITY_DUAL_TITLE">Duales Studium</string>
     <string name="ACTIVITY_JOB_TITLE">Berufsbegleitend</string>
     <string name="ACTIVITY_JOB_TITLE_BUTTON">Berufsbegleitendes Studium</string>
     <string name="ACTIVITY_DIRECT_TITLE">Direktstudium</string>
@@ -659,7 +659,7 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="RESULT_DATA_BACHELOR_OR_MASTER">Bachelor oder Master</string>
     <string name="RESULT_DATA_BACHELOR">Bachelor</string>
     <string name="RESULT_DATA_MASTER">Master</string>
-    <string name="RESULT_DATA_DUAL_TITLE">Dualstudium</string>
+    <string name="RESULT_DATA_DUAL_TITLE">Duales Studium</string>
     <string name="RESULT_DATA_JOB_TITLE_BUTTON">Berufsbegleitendes Studium</string>
     <string name="RESULT_DATA_DIRECT_TITLE">Direktstudium</string>
 
