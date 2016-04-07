@@ -773,18 +773,6 @@ Here you will find your perfect study course. Additionally, we give advice regar
     <string name="ROOM_TEXT_FOUR">text</string>
     <string name="ROOM_TEXT_FIVE">text</string>
 
-    <string name="ROOM_TITLE_ONE">Hochfrequenztechnik/Funktechnik</string>
-    <string name="ROOM_TITLE_TWO">Elektrotechnik Labor</string>
-    <string name="ROOM_TITLE_THREE">Übertragungstechnik Labor</string>
-    <string name="ROOM_TITLE_FOUR">Labor für digitale Vermittlungstechnik</string>
-    <string name="ROOM_TITLE_FIVE">Werkstatt</string>
-
-    <string name="ROOM_TEXT_ONE">In diesem Bild sieht Du eine EMV-Kammer. Theoretische Kenntnisse aus den Vorlesungen werden durch praktische Experimente gefestigt und erweitert. Einen Schwerpunkt bildet dabei die Wellenausbreitung in Wellenleitern und im Freiraum. Dazu führst Du zu den folgenden Themen Experimente durch: Messleitung (koaxial bzw. Hohlleiter), Netzwerkanalyse (S-Parameter), Antennencharakteristik, GSM und WCDMA. Die Messungen und Versuche werden in genau dieser EMV-Kammer durchgeführt.</string>
-    <string name="ROOM_TEXT_TWO">Das Elektrotechnik-Labor führt Experimente durch, die einen anschaulichen Einblick in die tatsächlichen Vorgänge hinter dem theoretischen Vorlesungsstoff geben. Versuche zu Gleich- und Wechselstromkreisen, zur Verwendung elektrischer Messgeräte und zu Messverfahren schaffen ein praktisches Fundament, dass später im Beruf sehr nützlich werden kann.</string>
-    <string name="ROOM_TEXT_THREE">Im Übertragungstechnik-Labor hast Du die Möglichkeit, Dich mit Problemen der Signalverarbeitung und Signalanalyse zu beschäftigen. Dabei entwickelst Du Fähigkeiten und Fertigkeiten zum Betreiben von Übergangssystemen und der dazugehörigen Messtechnik. Für diese Aufgabe stehen Dir im Labor moderne Netzelemente zur Verfügung.</string>
-    <string name="ROOM_TEXT_FOUR">Im Labor für digitale Vermittlungstechnik, welches zur Vertiefung und Festigung des vermittelten Lehrstoffes dient, führst Du Versuche im Grundlagenbereich mit Experimenten zum Thema Schnittstellen im ISDN-Bereich, D-Kanal-Protokoll und Leistungsmerkmale in Telekommunikationsnetzen durch. Im zweiten Bereich stehen Laborversuche zu den Themen DSS1, SS#7 und VoIP im Vordergrund. Moderne Technik in den Laboren der HfTL gestattet Lehre und Forschung auf hohem Niveau.</string>
-    <string name="ROOM_TEXT_FIVE">In der mechanischen Werkstatt hast Du die Möglichkeit, für den akademischen Bereich Funktionsmuster anzufertigen. Folgende Unterstützung wird Dir hier gegeben: Praktische Hilfe bei der Durchführung von Diplom- und Projektarbeiten, Beschaffung und Bereitstellung von Materialien und Bauelementen des elektronischen Gerätebaus, Bearbeitung von Metall- und Kunststoffen (spanabhebend und verformend) sowie das Herstellen und Bearbeiten von Leiterplatten. </string>
-
     <string name="SETTINGS_TITLE_CHANGE_SIZE">Textgröße</string>
     <string name="SETTINGS_TEXT_CHANGE_SIZE_BIG">Groß</string>
     <string name="SETTINGS_TEXT_CHANGE_SIZE_MIDDLE">Mittel</string>
