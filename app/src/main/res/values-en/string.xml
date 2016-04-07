@@ -772,4 +772,12 @@ Here you will find your perfect study course. Additionally, we give advice regar
     <string name="ROOM_TEXT_THREE">text</string>
     <string name="ROOM_TEXT_FOUR">text</string>
     <string name="ROOM_TEXT_FIVE">text</string>
+
+    <string name="SETTINGS_TITLE_CHANGE_SIZE">Textgröße</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_BIG">Groß</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_MIDDLE">Mittel</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_SMALL">Klein</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE">Wählen Sie eine Textgröße!</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS">Die Textgröße wurde auf \"</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS_TWO">\" geändert!</string>
 </resources>

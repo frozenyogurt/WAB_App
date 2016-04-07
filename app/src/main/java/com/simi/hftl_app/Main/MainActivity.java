@@ -389,7 +389,7 @@ public class MainActivity extends AppCompatActivity {
         emailIntent.setType("plain/text");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{person.getMail()});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, new String[]{getResources().getString(R.string.ACTIVITY_MAIL_EXTRA_SUBJECT)});
-        emailIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.ACTIVITY_MAIL_HELLO) + person.getName() + ",");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.ACTIVITY_MAIL_HELLO) + " " + person.getName() + ",");
 
         startActivity(Intent.createChooser(emailIntent, getResources().getString(R.string.ACTIVITY_MAIL_CHOOSER_TITLE)));
     }

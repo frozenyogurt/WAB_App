@@ -15,6 +15,8 @@ import com.simi.hftl_app.Main.MainActivity;
 import com.simi.hftl_app.Model.TextSize;
 import com.simi.hftl_app.R;
 
+import java.util.Locale;
+
 /**
  * Created by student on 11.02.2016.
  */
@@ -43,18 +45,18 @@ public class SettingsFragment extends MyRefreshFragment
         final CheckBox magentaDesign = (CheckBox) view.findViewById(R.id.magenta_design);
         magentaDesign.setText(getActivity().getResources().getString(R.string.SETTINGS_DESIGN_MAGENTA));
         final CheckBox textSizeSmall = (CheckBox) view.findViewById(R.id.text_size_small);
-        textSizeSmall.setText("Klein");
+        textSizeSmall.setText(getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_SMALL));
         final CheckBox textSizeMiddle = (CheckBox) view.findViewById(R.id.text_size_middle);
-        textSizeMiddle.setText("Mittel");
+        textSizeMiddle.setText(getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MIDDLE));
         textSizeMiddle.setChecked(true);
         final CheckBox textSizeBig = (CheckBox) view.findViewById(R.id.text_size_big);
-        textSizeBig.setText("Groß");
+        textSizeBig.setText(getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_BIG));
         TextView titleChangeLanguage = (TextView) view.findViewById(R.id.titleChangeLanguage);
         titleChangeLanguage.setText(getActivity().getResources().getString(R.string.SETTINGS_LANGUAGE_TITLE));
         TextView titleChangeDesign = (TextView) view.findViewById(R.id.titleChangeColor);
         titleChangeDesign.setText(getActivity().getResources().getString(R.string.SETTINGS_DESIGN_TITLE));
         TextView titleChangeSize = (TextView) view.findViewById(R.id.title_change_text_size);
-        titleChangeDesign.setText("Textgröße");
+        titleChangeSize.setText(getActivity().getResources().getString(R.string.SETTINGS_TITLE_CHANGE_SIZE));
 
         final MainActivity activity = ((MainActivity) getActivity());
         if (activity.getTextSize().equals(TextSize.MIDDLE))
@@ -124,21 +126,36 @@ public class SettingsFragment extends MyRefreshFragment
                     activity.setLocale("en");
                 }
                 if (!textSizeSmall.isChecked() && !textSizeMiddle.isChecked() && !textSizeBig.isChecked()) {
-                    Toast.makeText(getActivity().getApplicationContext(), "Wählen Sie eine Textgröße.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity().getApplicationContext(), getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MESSAGE), Toast.LENGTH_LONG).show();
                 } else if (textSizeSmall.isChecked()) {
                     if (!activity.getTextSize().equals(TextSize.SMALL)) {
                         activity.setTextSize(TextSize.SMALL);
                         activity.refreshFragments();
+                        Toast.makeText(getActivity().getApplicationContext(),
+                                getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS) +
+                                        getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_SMALL) +
+                                        getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS_TWO),
+                                Toast.LENGTH_LONG).show();
                     }
                 } else if (textSizeMiddle.isChecked()) {
                     if (!activity.getTextSize().equals(TextSize.MIDDLE)) {
                         activity.setTextSize(TextSize.MIDDLE);
                         activity.refreshFragments();
+                        Toast.makeText(getActivity().getApplicationContext(),
+                                getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS) +
+                                        getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MIDDLE) +
+                                        getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS_TWO),
+                                Toast.LENGTH_LONG).show();
                     }
                 } else if (textSizeBig.isChecked()) {
                     if (!activity.getTextSize().equals(TextSize.BIG)) {
                         activity.setTextSize(TextSize.BIG);
                         activity.refreshFragments();
+                        Toast.makeText(getActivity().getApplicationContext(),
+                                getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS) +
+                                        getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_BIG) +
+                                        getActivity().getResources().getString(R.string.SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS_TWO),
+                                Toast.LENGTH_LONG).show();
                     }
                 }
             }
@@ -148,15 +165,32 @@ public class SettingsFragment extends MyRefreshFragment
             @Override
             public void onClick(View v) {
                 MainActivity activity = ((MainActivity) getActivity());
+                boolean isRefresh = false;
                 if (activity.getColor() != null) {
                     activity.setColor(null);
+                    isRefresh = true;
+                }
+                if (!Locale.getDefault().getLanguage().equals("de"))
+                {
+                    activity.setLocale("de");
+                    isRefresh = true;
+                }
+                if (!activity.getTextSize().equals(TextSize.MIDDLE))
+                {
+                    activity.setTextSize(TextSize.MIDDLE);
+                    isRefresh = true;
+                }
+                if (isRefresh)
+                {
                     activity.refreshFragments();
                 }
                 german.setChecked(true);
                 english.setChecked(false);
                 defaultDesign.setChecked(true);
                 magentaDesign.setChecked(false);
-                activity.setLocale("de");
+                textSizeBig.setChecked(false);
+                textSizeMiddle.setChecked(true);
+                textSizeSmall.setChecked(false);
                 showAToast(getActivity().getResources().getString(R.string.SETTINGS_RESET_SUCCESS));
             }
         });
