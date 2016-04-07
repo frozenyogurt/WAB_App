@@ -36,19 +36,19 @@ public class ServicesRoomsFragment extends MyRefreshFragment
         ArrayList<NewsListItem> news = new ArrayList<>();
         news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_ONE),
                 getResources().getString(R.string.ROOM_TEXT_ONE),
-                R.drawable.news_pic_test));
+                R.drawable.emv));
         news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_TWO),
                 getResources().getString(R.string.ROOM_TEXT_TWO),
-                R.drawable.news_pic_test));
+                R.drawable.elektro));
         news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_THREE),
                 getResources().getString(R.string.ROOM_TEXT_THREE),
-                R.drawable.news_pic_test));
+                R.drawable.uebertragungstechnik));
         news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_FOUR),
                 getResources().getString(R.string.ROOM_TEXT_FOUR),
-                R.drawable.news_pic_test));
+                R.drawable.vermittlungstechnik));
         news.add(new NewsListItem(getResources().getString(R.string.ROOM_TITLE_FIVE),
                 getResources().getString(R.string.ROOM_TEXT_FIVE),
-                R.drawable.news_pic_test));
+                R.drawable.werkstatt));
         NewsListAdapter adapter = new NewsListAdapter((MainActivity)getActivity(),R.layout.news_list_item,news);
         list.setAdapter(adapter);
 
