@@ -25,9 +25,8 @@
         android:layout_height="3dp"/>
 
     <ScrollView
-        android:overScrollMode="never"
-        android:scrollbars="none"
-        android:paddingTop="5dp"
+        android:padding="5dp"
+        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

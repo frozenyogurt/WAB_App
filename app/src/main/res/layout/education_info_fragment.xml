@@ -17,7 +17,6 @@
         android:id="@+id/infoEducationTitle" />
 
     <LinearLayout
-        android:layout_margin="5dp"
         android:background="@android:color/black"
         android:id="@+id/underline"
         android:orientation="horizontal"
@@ -25,9 +24,8 @@
         android:layout_height="2dp"/>
 
     <ScrollView
-        android:overScrollMode="never"
-        android:scrollbars="none"
-        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -95,7 +93,7 @@
                 android:text="Titel 3"/>
 
             <TextView
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

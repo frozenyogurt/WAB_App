@@ -24,12 +24,11 @@
         android:layout_height="3dp"/>
 
     <ListView
-        android:overScrollMode="never"
-        android:scrollbars="none"
         android:id="@+id/employee_list"
         android:divider="@color/hftl_info_color"
         android:dividerHeight="1dp"
-        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

@@ -44,8 +44,6 @@
                 android:background="@color/magenta"/>
 
             <ListView
-                android:overScrollMode="never"
-                android:scrollbars="none"
                 android:id="@+id/options_list"
                 android:padding="5dp"
                 android:dividerHeight="1dp"

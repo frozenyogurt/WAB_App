@@ -17,7 +17,6 @@
         android:id="@+id/title_portrait" />
 
     <LinearLayout
-        android:layout_margin="5dp"
         android:background="@android:color/black"
         android:id="@+id/TitleUndeline"
         android:orientation="horizontal"
@@ -25,9 +24,8 @@
         android:layout_height="2dp"/>
 
     <ScrollView
-        android:overScrollMode="never"
-        android:scrollbars="none"
         android:padding="5dp"
+        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

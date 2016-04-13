@@ -25,10 +25,9 @@
         android:layout_height="3dp"/>
 
     <ListView
-        android:overScrollMode="never"
-        android:scrollbars="none"
         android:layout_weight="1"
-        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:clipToPadding="false"
         android:dividerHeight="1dp"
         android:divider="@color/hftl_info_color"
         android:id="@+id/services_links_list"
