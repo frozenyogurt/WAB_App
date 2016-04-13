@@ -32,6 +32,8 @@
                 android:layout_height="2dp"/>
 
             <CheckBox
+                android:button="@drawable/checkbox_selector_magenta"
+                android:paddingLeft="5dp"
                 android:id="@+id/language_german"
                 android:clickable="true"
                 android:checked="true"
@@ -42,6 +44,8 @@
                 android:layout_height="wrap_content" />
 
             <CheckBox
+                android:button="@drawable/checkbox_selector_magenta"
+                android:paddingLeft="5dp"
                 android:id="@+id/language_english"
                 android:clickable="true"
                 android:textSize="20sp"
@@ -65,6 +69,8 @@
                 android:layout_height="2dp"/>
 
             <CheckBox
+                android:button="@drawable/checkbox_selector_magenta"
+                android:paddingLeft="5dp"
                 android:id="@+id/default_design"
                 android:clickable="true"
                 android:textSize="20sp"
@@ -74,6 +80,8 @@
                 android:layout_height="wrap_content" />
 
             <CheckBox
+                android:button="@drawable/checkbox_selector_magenta"
+                android:paddingLeft="5dp"
                 android:id="@+id/magenta_design"
                 android:clickable="true"
                 android:textSize="20sp"
@@ -97,6 +105,8 @@
                 android:layout_height="2dp"/>
 
             <CheckBox
+                android:button="@drawable/checkbox_selector_magenta"
+                android:paddingLeft="5dp"
                 android:id="@+id/text_size_small"
                 android:clickable="true"
                 android:textSize="@dimen/info_title_size"
@@ -106,6 +116,8 @@
                 android:layout_height="wrap_content" />
 
             <CheckBox
+                android:button="@drawable/checkbox_selector_magenta"
+                android:paddingLeft="5dp"
                 android:id="@+id/text_size_middle"
                 android:clickable="true"
                 android:textSize="@dimen/info_title_size_middle"
@@ -115,6 +127,8 @@
                 android:layout_height="wrap_content" />
 
             <CheckBox
+                android:button="@drawable/checkbox_selector_magenta"
+                android:paddingLeft="5dp"
                 android:id="@+id/text_size_big"
                 android:clickable="true"
                 android:textSize="@dimen/info_title_size_big"
