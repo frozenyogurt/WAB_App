@@ -209,15 +209,19 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="ACCEPTED">text</string>
-    <string name="APARTMENTS">text</string>
-    <string name="INTERNSHIP">text</string>
-    <string name="MEANING_ACCREDITATION">text</string>
-    <string name="STUDY_CATEGORY_DIFFERENCE">text</string>
-    <string name="STUDY_COSTS">text</string>
-    <string name="STUDY_COSTS_SEMESTER">text</string>
-    <string name="STUDY_FAR_AWAY">text</string>
-    <string name="WHICH_STUDY_COURSE">text</string>
+    <string name="ACCEPTED">After the meeting of the admission committee at the beginning of August, the permissions and declines will be sent out to the applicants immediately. </string>
+    <string name="APARTMENTS">For regular students the Studentenwerk Leipzig helps with finding an appartment. The college itself doesn't broker dormitory rooms.\n
+        In Leipzig there is plenty of affordable space to live; especially for students.</string>
+    <string name="INTERNSHIP">No, no internship is needed for admission at the HfTL.</string>
+    <string name="MEANING_ACCREDITATION">Im Rahmen des Bologna-Prozesses und der Vereinheitlichung der zu erwerbenden Abschlüsse sind die Hochschulen und Universitäten angehalten, Ihre Studiengänge und Studieninhalte durch Akkreditierungsgesellschaften hinsichtlich der Qualität kontinuierlich überprüfen zu lassen. \n
+Complying with the Bologna process, all study courses offered at the HfTL are accredited. With that, the agencies approve of the quality of education and the successful implementation and continuation of the Bologna process.</string>
+    <string name="STUDY_CATEGORY_DIFFERENCE">A cooperative study course is combined with an indenture at Deutsche Telekom and serves as an initial qualification.\n
+        The extra occupational study is a form of further education not just for Deutsche Telekom employees.</string>
+    <string name="STUDY_COSTS">The monthly fees are 250€.</string>
+    <string name="STUDY_COSTS_SEMESTER">The study fee per semester is 184,50€.</string>
+    <string name="STUDY_FAR_AWAY">As the HfTL has a network of partner colleges all over the world, at which a semester abroad can be passed, the recognition of credits from abroad is guaranteed.</string>
+    <string name="WHICH_STUDY_COURSE">To find out, we prepared an evaluation that you can find in the main menu. \n
+Another opportunity to get informed about the HfTL are the "day of open college doors". Furthermore, you can always call the service hotline (0341 3062 123) to make an appointment - and we will show you the campus.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
@@ -231,9 +235,9 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="MUELLER">text</string>
-    <string name="SAUPE">text</string>
-    <string name="BADERSCHNEIDER">text</string>
+    <string name="MUELLER">Prof. Dr. Jean-Alexander Müller is responsible for the execution and quality of studies and research at the HfTL.</string>
+    <string name="SAUPE">As principal, Prof. Dr.-Ing. habil. Volker Saupe is the academic leader of the HfTL responsible for representing the college and the alignement of doctrine and research. </string>
+    <string name="BADERSCHNEIDER">Prof. Dr. Claus Baderschneider is responsible fpr the international college contacts and the public image of the HfTL.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
@@ -247,18 +251,53 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="TOEIC_BEGINNING_TEXT">text</string>
-    <string name="TOEIC_COMPLETE_PACKAGE_TEXT">text</string>
-    <string name="TOEIC_LISTENING_AND_READING_TEXT">text</string>
-    <string name="TOEIC_CLASSES_TEXT">text</string>
-    <string name="TOEIC_TITLE_ONE">text</string>
-    <string name="TOEIC_TITLE_TWO">text</string>
-    <string name="TOEIC_TITLE_THREE">text</string>
+    <string name="TOEIC_BEGINNING_TEXT">The Test Of English for International Communication, TOEIC in short, is an internationally recognized language test of the Educational Testing Service.\n
+        It consists of 200 multiple-choice questions of listening and reading.
+The HfTL is certified for TOECI tests since 20120.
+        We are offering a language course and the possibility of a certificate test for job related English. Take your chance at this valuable extra qualification.\n
+        The certificate is a perfect complement to your future applications.
+        \n
+        \n
+In the following you can choose one of 3 options:</string>
+    <string name="TOEIC_COMPLETE_PACKAGE_TEXT">Includes participation in 14 lectures and participating in the TOEIC Test Listening &amp; Reading with a corresponding certificate.
+Cost: 160,00 Euro incl. tax</string>
+    <string name="TOEIC_LISTENING_AND_READING_TEXT">Includes participating in the TOEIC Test Listening &amp; Reading with a corresponding certificate.
+Cost: 129,35 Euro incl. tax</string>
+    <string name="TOEIC_CLASSES_TEXT">Includes participation in 14 lectures in preparation of the TOEIC Listening &amp; Reading Test.
+Cost: 70,00 Euro incl. tax</string>
+    <string name="TOEIC_TITLE_ONE">Complete package</string>
+    <string name="TOEIC_TITLE_TWO">TOEIC Listening and Reading Test including certificate</string>
+    <string name="TOEIC_TITLE_THREE">Lectures</string>
 
-    <string name="BEC">text</string>
-    <string name="CAE">text</string>
-    <string name="IT">text</string>
-    <string name="ID">text</string>
+    <string name="BEC">The Course is set at Levels C1/B2 of the Common European Framework of Reference for Languages (CEFR). C1/B2 is the level of English required for demanding professional and academic settings and shows employers you can: \n
+communicate effectively at managerial and professional level \n
+participate with confidence in workplace meetings and presentations \n
+express yourself with a high level of fluency \n
+react appropriately in different cultural and social situations. \n
+The course Business English Cambridge (BEC)  ultimately prepares for the Cambridge Business English exams. These are high-level exams, taken all over the world by people who need to prove that they have a professional level of English for business purposes.</string>
+    <string name="CAE">Preparatory Course for Certificate of Advanced English (CAE)\n
+– CEFR Level C1, Professional Development Seminar\n
+In a globally interconnected world, Cambridge English sets a standard for English as an international language including the world’s most varieties of English. It thus is based on the English spoken in the real world – not just the class room.
+Taught by very experienced, highly knowledgeable native speakers, this course prepares you ideally for the Cambridge Advanced English (CAE) exam. \n
+This course helps you to develop your already good English language skills to a very advanced level - in only 3 semesters.
+The proficiency level that will be achieved in this course will allow you to apply the English language confidently and highly accurate in every professional or social context. \n
+The course “Cambridge Advanced English” is an in-depth learning experience at Level C1 of the Common European Framework of Reference for Languages (CEFR) – the internationally accepted system for describing language ability.
+It provides you with the right knowledge and skill to prevail in demanding academic and professional settings.
+The course ultimately prepares you for “The Certificate in Advanced English (CAE)” also known as “Cambridge English Advanced”. \n
+It is the leading English exam for professional and academic success.</string>
+    <string name="IT">SHAARPEN YOUR PROFESSIONAL INTERCULTURAL COMPETENCES!
+You work in a connected and global organization and want to sharpen your competences in intercultural interaction and insight in combination with ICT specifi thems. \n
+The intercultural seminar provides you with an invaluable knowledge base that allows you to develop deep understanding of cultural differences and specialties. You obtain scientific insights and practice in lectures and workshops. \n
+
+In consequence, you will be more able to recognize and understand cultural specific behavior, and will be able to better accommodate to different cultural situations, especially also in an ICT industry setting.  Thus, communication and cooperation will be facilitated.</string>
+    <string name="ID">Besseres Deutsch für Studium und Beruf! Vertiefen sie mit uns ihre Kenntnisse der deutschen Sprache.
+        Lernen sie das Vokabular der Informationstechnik kennen. Sie wollen an unserer Hochschule studieren?
+        Sie arbeiten im Umfeld der ICT-Branche und möchten Ihre bereits vorhandenen Deutschkenntnisse vertiefen? \n \n
+
+Herzlich Willkommen.
+        Unser Intensivkurs Deutsch als Fremdsprache ist genau auf Ihre Bedürfnisse zugeschnitten.
+        Denn wir legen in unserem Kurs den Schwerpunkt auf die Kommunikation im ICT-Sektor und technische Begriffe der Informationstechnik und Telekommunikation auf akademischem Niveau.
+        In der Telekommunikation und in der IT hat sich ein ganz eigener Wortschatz entwickelt - den Sie in einem normalen Deutschkurs nicht lernen.</string>
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
@@ -272,21 +311,32 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="why_hftl_text">text</string>
-    <string name="title_reason_one">text</string>
-    <string name="reason_one">text</string>
-    <string name="title_reason_two">text</string>
-    <string name="reason_two">text</string>
-    <string name="title_reason_three">text</string>
-    <string name="reason_three">text</string>
-    <string name="title_reason_four">text</string>
-    <string name="reason_four">text</string>
-    <string name="title_reason_five">text</string>
-    <string name="reason_five">text</string>
-    <string name="title_reason_six">text</string>
-    <string name="reason_six">text</string>
-    <string name="title_reason_seven">text</string>
-    <string name="reason_seven">text</string>
+    <string name="why_hftl_text">You are interested in studying at the HfTL?\n
+        Then we would like to congratulate you.
+        At the HfTL you will receive an individual and sustained education that prepares you perfectfly for the dive into the fascinating international telecommunication sector.
+        Your ideas are needed from the get-go: Out of our display of study courses you can choose the study type and study course freely.\n
+        \n
+        A large practical portion and practices in our modern laboratories as well as several insights into different enterprises will guarantte diverse studies.
+        That's why Deutsche Telekom as the owner of the HfTL always aims to keep study contents and the library's inventory up-to-date. \n
+        \n
+        7 additional reasons to choose the HfTL:\n</string>
+    <string name="title_reason_one">1. Studying at the HfTL is individual and flexible</string>
+    <string name="reason_one">Apart from regular studying you can also do extra occupational or integrated studies at Deutsche Telekom. That way you can fit your studies to your personal needs and start a successful career.</string>
+    <string name="title_reason_two">2. You're studying beyond the edge of the plate</string>
+    <string name="reason_two">We support you with planning of a semester, internship or thesis abroad for example at our international partner colleges. The experiences you will collect will enrich your life - professionally and personally.</string>
+    <string name="title_reason_three">3. You're studying and researching with strong partners</string>
+    <string name="reason_three">With our partners from the economy and Deustche Telekom you will be able to participate in various research projects! This will allow you to establish valuable contacts that can become very opponent during your career.</string>
+    <string name="title_reason_four">4. You're studying on a compound and appealing campus</string>
+    <string name="reason_four">Lecture rooms, laboratories, cafeteria – on our Leipzig campus everything is within short distances and without complications. In a familiar atmosphere you can learn or simply take a break in a relaxing environment.</string>
+    <string name="title_reason_five">5. You have very good financial prospects due to scholarships and other financial aids</string>
+    <string name="reason_five">Individual counseling and well educated teaching staff: At the HfTL you can experience all benefits of a private college. And that without study fees – because with our MINT-Bonbon scolarship, after a successful application the study fees will be forgotten immediately!\n
+        When choosing an integrated study course the study fees will be paid by Deutsche Telekom.\n
+        When doing extra occupational studies, Deutsche Telekom aids employees so that you will only have to pay a small portion of the fees.</string>
+    <string name="title_reason_six">6. You can help shape the future and society</string>
+    <string name="reason_six">With a degree from the HfTL you will have a reputation on the job market. That will allow you to shape the future and society.</string>
+    <string name="title_reason_seven">7. You're studying in a lively and buzzing city</string>
+    <string name="reason_seven">Leipzig is trending: During the last few years it has become an attraction for the international art and culture scene – the fun-factor is high. Leipzig has been one of the fastest growing cities in Germany since 2010.\n
+        Nonetheless the living costs are low – perfect conditions for an enjoyable college life.</string>
     <!-- NEU -->
     <!-- NEU -->
     <!-- NEU -->
@@ -304,8 +354,10 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
-    <string name="portrait_text_one">text</string>
-    <string name="portrait_text_two">text</string>
+    <string name="portrait_text_one">Here you can see a picture of the HfTL from 60 years ago. At the time, even 20 years before the invention of the internet, the future of telecommunication was able to be shaped right here.</string>
+    <string name="portrait_text_two">And here you can see what the HfTL looks like today.\n
+    A college, that still stands for progress and innovation and created a unique reputation within Germany and beyond.\n
+    Our college is run in collaboration with our partners at Deutsche Telekom AG and from the industry research and development. This results in an immense practicallity: with your help, projects can be progressed from the design into the implementation phase.</string>
     <!-- NEU -->
     <!-- NEU -->
 
@@ -331,8 +383,8 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="CONTACT_DEVELOPER_TITLE">Developer Contact</string>
     <string name="SEND_MAIL">Send Mail</string>
     <string name="SEND_FORM">Send form through the website.</string>
-    <string name="CONTACT_HFTL_TEXT">text</string>
-    <string name="DEVELOPER_TEXT">text</string>
+    <string name="CONTACT_HFTL_TEXT">If you want to contact the HfTL, do it here! You will be directed to the website to fill a contact form</string>
+    <string name="DEVELOPER_TEXT">Of course you can contact the developers via mail, too!</string>
 
     <string name="KMI_BACHELOR_NAME">Computer Science and Telekommunications (Bachelor)</string>
     <string name="WI_BACHELOR_NAME">Business Information Systems (Bachelor)</string>
@@ -438,7 +490,7 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <string name="SERVICES_SPORT_TITLE_TWO">Set hours for sports at the HfTL</string>
     <string name="SERVICES_SPORT_TITLE_THREE">HfTL sports grounds</string>
     <string name="SERVICES_SPORT_TITLE_FOUR">Competitions and Championships</string>
-    <string name="SERVICES_SPORT_TEXT_ONE">Über unser aktuelles Sportangebot in der Sporthalle Arno-Nitzsche-Str. 29 informiert der Sportreferent des HfTL-Studentenrats. \n
+    <string name="SERVICES_SPORT_TEXT_ONE">Information about the current sports offered at the gym at Arno-Nitzsche-Str. 29 can be obtained from the student's council's sports referent. \n
                                            The following sports are offered at the HfTL: \n
                                            football \n
                                            volleyball \n
@@ -456,10 +508,10 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
                                            (Badminton can be played all weekdays at all times)</string>
     <string name="SERVICES_SPORT_TEXT_THREE">Gym at Arno-Nitzsche-Str. 29 \n
                                              Ping-pong table at the HfTL</string>
-    <string name="SERVICES_SPORT_TEXT_FOUR">Im laufenden Studienjahr werden in Abstimmung mit dem Studentenrat 3 bis 4 Hochschulmeister- schaften und Turniere durchgeführt. Die Auswahlmannschaften nehmen jährlich an den Hochschulmeisterschaften des Landes Sachsen teil. \n
-                                            Die HfTL ist Mitglied des ADH (Allgemeiner Deutscher Hochschulsportverband) und kann bei Qualifizierung in einer Sportart auf Landesebene an den Deutschen Hochschulmeisterschaften der Bundesrepublik Deutschland teilnehmen.</string>
-    <string name="SERVICES_SPORT_BEGINNING">Der Sport bietet eine gute Möglichkeit, im studentischen Umfeld mit KommilitonInnen anderer Studiengänge in Kontakt zu kommen. Deshalb haben wir ein attraktives Sportangebot für unsere Studierenden. \n
-                                            Gemeinsam mit dem Hochschulsportzentrum der HTWK Leipzig können unsere Studierenden auch neue Sporttrends kennenlernen. Durch Hochschulmeisterschaften und nationale Meisterschaften bieten sich Möglichkeiten zum gemeinsamen Sporttreiben und geselligem Beisammmensein.</string>
+    <string name="SERVICES_SPORT_TEXT_FOUR">During the ongoing study year there will be 3 to 4 college championships and tournaments. The winners will participate in the Saxony college championship.\n
+                                            The HfTL is a member of the ADH (General German Collegiate Sports Association) and is eligible to represent Saxony at the Federal Republic of Germany's championships.</string>
+    <string name="SERVICES_SPORT_BEGINNING">Sports offer the perfect opportunity to meet students with different study courses. That's why we offer many different sports to our students. \n
+                                            Joined with the HTWK, our students can experience the newest sports trends, too. Through our college and state championships opportunitys for working out in a group and joyful togetherness arise.</string>
 
     <string name="SERVICES_WAY_TO_NAVIGATE">How to get here</string>
     <string name="SERVICES_WAY_TO_LEIPZIG">Public Transportation Leipzig</string>
@@ -470,9 +522,9 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
                                             04277 Leipzig (Sachsen) \n
                                             Gustav-Freytag-Straße 43 - 45 </string>
     <string name="SERVICES_WAY_TO_TEXT_TWO">From Leipzig Central Station you can comfortably get to the HfTL with the following metro lines. \n \n
-                                            Linie 9 (final destination Markleeberg-West) \n \n
-                                            Linie 10 (final destination Lößnig) \n \n
-                                            Linie 11 (final destination Markleeberg-Ost) \n \n
+                                            Line 9 (final destination Markleeberg-West) \n \n
+                                            Line 10 (final destination Lößnig) \n \n
+                                            Line 11 (final destination Markleeberg-Ost) \n \n
                                             From the stop Connewitzer Kreuz the main entrance to the HfTL (Gustav-Freytag-Straße 43-45) is within 5 minutes of walking distance.</string>
     <string name="SERVICES_WAY_TO_BEGINNING">Here is a draft of the route to the HfT Leipzig, a navigation by car and different ways of getting here with public transportation.</string>
 
@@ -659,7 +711,7 @@ Here you will find your perfect study course. Additionally, we give advice regar
     <string name="STUDY_INFO_TITLE_CONTENT">Study contents</string>
     <string name="STUDY_TEST_RESULT_INFO_BUTTON">Information</string>
     <string name="STUDY_TEST_RESULT_PERFECT_TEXT">The following course fits you perfectly:</string>
-    <string name="STUDY_TEST_RESULT_NEARLY_TEXT">The following study close comes closest to your needs:</string>
+    <string name="STUDY_TEST_RESULT_NEARLY_TEXT">The following study comes closest to your needs:</string>
     <string name="STUDY_TEST_RESULT_NOTHING_TEXT">Unfortunately we were not able to find a fitting study course for you at the HfTL</string>
     <string name="STUDY_TEST_RESULT_OR">or</string>
     <string name="STUDY_TEST_RESULT_NOTHING">None</string>
@@ -761,24 +813,24 @@ Here you will find your perfect study course. Additionally, we give advice regar
     <string name="JOB_IKT_MASTER_POINT_ONE">Obligatory courses: applied mathematics, ICT consulting, project management, ICT laboratory apprenticeships, law, work on projects</string>
     <string name="JOB_IKT_MASTER_POINT_TWO">Profiling courses: 10 out of the field communication technology, \n 10 out of the field information technology </string>
 
-    <string name="ROOM_TITLE_ONE">text</string>
-    <string name="ROOM_TITLE_TWO">text</string>
-    <string name="ROOM_TITLE_THREE">text</string>
-    <string name="ROOM_TITLE_FOUR">text</string>
-    <string name="ROOM_TITLE_FIVE">text</string>
+    <string name="ROOM_TITLE_ONE">High-frequency technologies/Radio</string>
+    <string name="ROOM_TITLE_TWO">Electrical engeneering lab</string>
+    <string name="ROOM_TITLE_THREE">Transmission technologies lab</string>
+    <string name="ROOM_TITLE_FOUR">Lab for digital mediation</string>
+    <string name="ROOM_TITLE_FIVE">Workshop</string>
 
-    <string name="ROOM_TEXT_ONE">text</string>
-    <string name="ROOM_TEXT_TWO">text</string>
-    <string name="ROOM_TEXT_THREE">text</string>
-    <string name="ROOM_TEXT_FOUR">text</string>
-    <string name="ROOM_TEXT_FIVE">text</string>
+    <string name="ROOM_TEXT_ONE">In this picture you can see an EMV chamber. Theoretical knowledge from lectures is solidified and expanded. One focs point is the propagation of waves in conductors and openspace.</string>
+    <string name="ROOM_TEXT_TWO">The electrical engineering lab uses experiments that provide an insight into the actual processes hidden behind the lectures. This foundation can be very useful in a later job.</string>
+    <string name="ROOM_TEXT_THREE">In the transmission technologies lab you have the opportunity to meet problems with signal processing and analysis. That will bring out the ability to operate transmission systems.</string>
+    <string name="ROOM_TEXT_FOUR">In this lab which is supposed to deepen the content presented in the lectures you will be performing experiments with interfaces in ISDN, for example. Modern equipment guarantees high level results.</string>
+    <string name="ROOM_TEXT_FIVE">In the mechanical workshop you can create samples. The following services are offered: Practical help with projects, aquisition of components for electronic apparatus engineering, treatment of metall and plastic material. </string>
 
-    <string name="SETTINGS_TITLE_CHANGE_SIZE">Textgröße</string>
-    <string name="SETTINGS_TEXT_CHANGE_SIZE_BIG">Groß</string>
-    <string name="SETTINGS_TEXT_CHANGE_SIZE_MIDDLE">Mittel</string>
-    <string name="SETTINGS_TEXT_CHANGE_SIZE_SMALL">Klein</string>
-    <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE">Wählen Sie eine Textgröße!</string>
-    <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS">Die Textgröße wurde auf \"</string>
+    <string name="SETTINGS_TITLE_CHANGE_SIZE">Font size</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_BIG">Large</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_MIDDLE">Medium</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_SMALL">Small</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE">Choose a font size!</string>
+    <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS">Font size was changed to \"</string>
     <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS_TWO">\" geändert!</string>
 
 
