@@ -210,7 +210,7 @@ Telecommunications is everywhere, which is why our graduates’ expertise is als
     <!-- Trennzeichen -->
     <!-- Trennzeichen -->
     <string name="ACCEPTED">After the meeting of the admission committee at the beginning of August, the permissions and declines will be sent out to the applicants immediately. </string>
-    <string name="APARTMENTS">For regular students the Studentenwerk Leipzig helps with finding an appartment. The college itself doesn't broker dormitory rooms.\n
+    <string name="APARTMENTS">For regular students the Studentenwerk Leipzig helps with finding an appartment. The college itself does not broker dormitory rooms.\n
         In Leipzig there is plenty of affordable space to live; especially for students.</string>
     <string name="INTERNSHIP">No, no internship is needed for admission at the HfTL.</string>
     <string name="MEANING_ACCREDITATION">Im Rahmen des Bologna-Prozesses und der Vereinheitlichung der zu erwerbenden Abschlüsse sind die Hochschulen und Universitäten angehalten, Ihre Studiengänge und Studieninhalte durch Akkreditierungsgesellschaften hinsichtlich der Qualität kontinuierlich überprüfen zu lassen. \n
@@ -313,11 +313,11 @@ Herzlich Willkommen.
     <!-- Trennzeichen -->
     <string name="why_hftl_text">You are interested in studying at the HfTL?\n
         Then we would like to congratulate you.
-        At the HfTL you will receive an individual and sustained education that prepares you perfectfly for the dive into the fascinating international telecommunication sector.
+        At the HfTL you will receive an individual and sustained education that prepares you perfectly for the dive into the fascinating international telecommunication sector.
         Your ideas are needed from the get-go: Out of our display of study courses you can choose the study type and study course freely.\n
         \n
-        A large practical portion and practices in our modern laboratories as well as several insights into different enterprises will guarantte diverse studies.
-        That's why Deutsche Telekom as the owner of the HfTL always aims to keep study contents and the library's inventory up-to-date. \n
+        A large practical portion and practices in our modern laboratories as well as several insights into different enterprises will guarantee diverse studies.
+        That iss why Deutsche Telekom as the owner of the HfTL always aims to keep study contents and the library's inventory up-to-date. \n
         \n
         7 additional reasons to choose the HfTL:\n</string>
     <string name="title_reason_one">1. Studying at the HfTL is individual and flexible</string>
@@ -490,7 +490,7 @@ Herzlich Willkommen.
     <string name="SERVICES_SPORT_TITLE_TWO">Set hours for sports at the HfTL</string>
     <string name="SERVICES_SPORT_TITLE_THREE">HfTL sports grounds</string>
     <string name="SERVICES_SPORT_TITLE_FOUR">Competitions and Championships</string>
-    <string name="SERVICES_SPORT_TEXT_ONE">Information about the current sports offered at the gym at Arno-Nitzsche-Str. 29 can be obtained from the student's council's sports referent. \n
+    <string name="SERVICES_SPORT_TEXT_ONE">Information about the current sports offered at the gym at Arno-Nitzsche-Str. 29 can be obtained from the students council sports referent. \n
                                            The following sports are offered at the HfTL: \n
                                            football \n
                                            volleyball \n
@@ -509,8 +509,8 @@ Herzlich Willkommen.
     <string name="SERVICES_SPORT_TEXT_THREE">Gym at Arno-Nitzsche-Str. 29 \n
                                              Ping-pong table at the HfTL</string>
     <string name="SERVICES_SPORT_TEXT_FOUR">During the ongoing study year there will be 3 to 4 college championships and tournaments. The winners will participate in the Saxony college championship.\n
-                                            The HfTL is a member of the ADH (General German Collegiate Sports Association) and is eligible to represent Saxony at the Federal Republic of Germany's championships.</string>
-    <string name="SERVICES_SPORT_BEGINNING">Sports offer the perfect opportunity to meet students with different study courses. That's why we offer many different sports to our students. \n
+                                            The HfTL is a member of the ADH (General German Collegiate Sports Association) and is eligible to represent Saxony at the Federal Republic of Germany championships.</string>
+    <string name="SERVICES_SPORT_BEGINNING">Sports offer the perfect opportunity to meet students with different study courses. That is why we offer many different sports to our students. \n
                                             Joined with the HTWK, our students can experience the newest sports trends, too. Through our college and state championships opportunitys for working out in a group and joyful togetherness arise.</string>
 
     <string name="SERVICES_WAY_TO_NAVIGATE">How to get here</string>
