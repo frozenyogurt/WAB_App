@@ -342,6 +342,10 @@ public class MainActivity extends AppCompatActivity {
         {
             toolbarTitle.setTag("TEST");
         }
+        else if (title.equals(getResources().getString(R.string.ACTIVITY_APP_TITLE)))
+        {
+            toolbarTitle.setTag("APP");
+        }
         toolbarTitle.setText(title);
     }
 

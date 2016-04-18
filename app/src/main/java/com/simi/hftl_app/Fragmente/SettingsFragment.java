@@ -341,6 +341,10 @@ public class SettingsFragment extends MyRefreshFragment
             {
                 ((MainActivity) getActivity()).setToolbarTitle(getResources().getString(R.string.ACTIVITY_Test_TITLE));
             }
+            else if (previousTag.equals("APP"))
+            {
+                ((MainActivity) getActivity()).setToolbarTitle(getResources().getString(R.string.ACTIVITY_APP_TITLE));
+            }
         }
         super.onStop();
     }
