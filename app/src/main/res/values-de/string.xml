@@ -902,6 +902,9 @@ Hier erfährst Du den optimalen Studiengang für dich. Außerdem beraten wir dic
     <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE">Wählen Sie eine Textgröße!</string>
     <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS">Die Textgröße wurde auf \"</string>
     <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS_TWO">\" geändert!</string>
+
+    <string name="STUDY_INFO_JOB_TITLE_TEXT">Berufliche Perspektiven</string>
+    <string name="PORTRAIT_TITLE">Portrait</string>
 </resources>
 
 

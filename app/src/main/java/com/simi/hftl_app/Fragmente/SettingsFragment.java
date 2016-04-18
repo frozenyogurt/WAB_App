@@ -23,6 +23,7 @@ import java.util.Locale;
 public class SettingsFragment extends MyRefreshFragment
 {
     private Toast toast;
+    private String previousTag;
 
     public SettingsFragment () {}
 
@@ -301,5 +302,46 @@ public class SettingsFragment extends MyRefreshFragment
             toast = Toast.makeText(getActivity().getApplicationContext(), st, Toast.LENGTH_LONG);
         }
         toast.show();
+    }
+
+    @Override
+    public void onStart()
+    {
+        previousTag = ((MainActivity) getActivity()).getToolbatTag();
+        ((MainActivity) getActivity()).setToolbarTitle(getActivity().getResources().getString(R.string.MENU_SETTINGS_NAME));
+        super.onStart();
+    }
+
+    @Override
+    public void onStop()
+    {
+        if (previousTag != null)
+        {
+            if (previousTag.equals("EDUCATION"))
+            {
+                ((MainActivity) getActivity()).setToolbarTitle(getResources().getString(R.string.ACTIVITY_EDUCATION_TITLE));
+            }
+            else if (previousTag.equals("DIRECT"))
+            {
+                ((MainActivity) getActivity()).setToolbarTitle(getResources().getString(R.string.ACTIVITY_DIRECT_TITLE));
+            }
+            else if (previousTag.equals("JOB"))
+            {
+                ((MainActivity) getActivity()).setToolbarTitle(getResources().getString(R.string.ACTIVITY_JOB_TITLE));
+            }
+            else if (previousTag.equals("DUAL"))
+            {
+                ((MainActivity) getActivity()).setToolbarTitle(getResources().getString(R.string.ACTIVITY_DUAL_TITLE));
+            }
+            else if (previousTag.equals("HFTL_INFO"))
+            {
+                ((MainActivity) getActivity()).setToolbarTitle(getResources().getString(R.string.ACTIVITY_HFTL_INFO_TITLE));
+            }
+            else if (previousTag.equals("TEST"))
+            {
+                ((MainActivity) getActivity()).setToolbarTitle(getResources().getString(R.string.ACTIVITY_Test_TITLE));
+            }
+        }
+        super.onStop();
     }
 }

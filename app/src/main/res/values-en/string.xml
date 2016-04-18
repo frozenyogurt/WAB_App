@@ -550,7 +550,7 @@ Herzlich Willkommen.
     <string name="TEST_QUESTION_THE_QUESTION_NOT_ANSWERED"> was not answered.</string>
     <string name="TEST_QUESTION_THE_QUESTIONS_NOT_ANSWERED"> were not answered.</string>
 
-    <string name="TEST_RESULT_END_TEST">Finish the evaluation</string>
+    <string name="TEST_RESULT_END_TEST">Finish</string>
 
     <string name="TEST_START">Start Evaluation</string>
     <string name="TEST_START_BEGINNING">Introduction</string>
@@ -814,7 +814,7 @@ Here you will find your perfect study course. Additionally, we give advice regar
     <string name="JOB_IKT_MASTER_POINT_TWO">Profiling courses: 10 out of the field communication technology, \n 10 out of the field information technology </string>
 
     <string name="ROOM_TITLE_ONE">High-frequency technologies/Radio</string>
-    <string name="ROOM_TITLE_TWO">Electrical engeneering lab</string>
+    <string name="ROOM_TITLE_TWO">Electrical engineering lab</string>
     <string name="ROOM_TITLE_THREE">Transmission technologies lab</string>
     <string name="ROOM_TITLE_FOUR">Lab for digital mediation</string>
     <string name="ROOM_TITLE_FIVE">Workshop</string>
@@ -833,6 +833,5 @@ Here you will find your perfect study course. Additionally, we give advice regar
     <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS">Font size was changed to \"</string>
     <string name="SETTINGS_TEXT_CHANGE_SIZE_MESSAGE_SUCCESS_TWO">\" geändert!</string>
 
-
-
+    <string name="STUDY_INFO_JOB_TITLE_TEXT">Employment prospects</string>
 </resources>

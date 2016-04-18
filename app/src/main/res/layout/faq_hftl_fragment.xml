@@ -17,6 +17,10 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
         android:id="@+id/underline"
         android:orientation="horizontal"
         android:background="@color/hftl_info_color"
@@ -25,8 +29,6 @@
 
     <ExpandableListView
         android:groupIndicator="@null"
-        android:overScrollMode="never"
-        android:scrollbars="none"
         android:id="@+id/faq_list"
         android:divider="@color/hftl_info_color"
         android:dividerHeight="1dp"

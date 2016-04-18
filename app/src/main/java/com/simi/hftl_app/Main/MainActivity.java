@@ -318,7 +318,36 @@ public class MainActivity extends AppCompatActivity {
 
     public void setToolbarTitle(String title)
     {
+        if (title.equals(getResources().getString(R.string.ACTIVITY_EDUCATION_TITLE)))
+        {
+            toolbarTitle.setTag("EDUCATION");
+        }
+        else if (title.equals(getResources().getString(R.string.ACTIVITY_DIRECT_TITLE)))
+        {
+            toolbarTitle.setTag("DIRECT");
+        }
+        else if (title.equals(getResources().getString(R.string.ACTIVITY_JOB_TITLE)))
+        {
+            toolbarTitle.setTag("JOB");
+        }
+        else if (title.equals(getResources().getString(R.string.ACTIVITY_DUAL_TITLE)))
+        {
+            toolbarTitle.setTag("DUAL");
+        }
+        else if (title.equals(getResources().getString(R.string.ACTIVITY_HFTL_INFO_TITLE)))
+        {
+            toolbarTitle.setTag("HFTL_INFO");
+        }
+        else if (title.equals(getResources().getString(R.string.ACTIVITY_Test_TITLE)))
+        {
+            toolbarTitle.setTag("TEST");
+        }
         toolbarTitle.setText(title);
+    }
+
+    public String getToolbatTag()
+    {
+        return (String) toolbarTitle.getTag();
     }
 
     public int convertColorString()
